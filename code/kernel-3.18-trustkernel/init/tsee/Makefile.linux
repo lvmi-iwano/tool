@@ -1,0 +1,4 @@
+obj-$(CONFIG_TRUSTKERNEL_TSEE_RTKS) += tsee/linux/
+#obj-$(CONFIG_TRUSTKERNEL_TSEE_RTKS) += boot/linux/
+EXTRA_CFLAGS += -DCFG_TSEE_LINUX
+ccflags-y += -DCFG_TSEE_LINUX

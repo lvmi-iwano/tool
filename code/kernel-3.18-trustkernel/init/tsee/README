@@ -1,0 +1,18 @@
+About
+============
+TSEE project of TrustKernel, Shanghai Pingbo Information Technology Co., Ltd.
+
+TSEE for TEE
+=============
+1. put tee.bin under root dir
+2. edit env.sh to select TSEE_TARGET=tee
+
+TODO
+---------------
+1. Full multicore support for TSEE
+2. Replace TLB single entry flush with TSEE call
+
+TSEE for Linux
+==============
+1. Place it in kernel/init/tsee (soft-link)
+2. soft-link include/linux/tsee to kernel/include/tsee

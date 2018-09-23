@@ -1,0 +1,31 @@
+# TrustKernel Secure Execution Environment Real-Time Kernel Security Configuration	  
+config TRUSTKERNEL_TSEE_RTKS
+	bool "TrustKernel Secure Execution Environment Real-Time Kernel Security"
+	default n
+	---help---
+	  This enables TrustKernel TSEE Real-Time Kernel Security.
+
+config TRUSTKERNEL_TSEE_RTKS_TZ
+	bool "TrustKernel Secure Execution Environment Real-Time Kernel Security Using TrustZone"
+	default n
+	---help---
+	  This implements TrustKernel TSEE Real-Time Kernel Security Using TrustZone.
+
+config TRUSTKERNEL_TSEE_RTKS_VMM
+	bool "TrustKernel Secure Execution Environment Real-Time Kernel Security Using VMM"
+	default n
+	---help---
+	  This implements TrustKernel TSEE Real-Time Kernel Security Using VMM.
+
+config TRUSTKERNEL_TSEE_RTKS_KEE
+	bool "TrustKernel Secure Execution Environment Real-Time Kernel Security Using KEE"
+	default n
+	---help---
+	  This implements TrustKernel TSEE Real-Time Kernel Security Using KEE.
+
+config TRUSTKERNEL_TSEE_RTKS_KDP
+	bool "TrustKernel Secure Execution Environment Real-Time Kernel Security with Kernel Data Protection Feature"
+	default n
+	---help---
+	  This implements TrustKernel TSEE Real-Time Kernel Security KDP Mechanism.
+

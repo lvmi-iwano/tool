@@ -1,0 +1,800 @@
+)0[0m(B)0[?1h=[H[J[10;13H[?25l+-----[configuration]------+[11;13H|[0m[7m Filenames and paths      [0m|[12;13H| File transfer protocols  |[13;13H| Serial port setup        |[14;13H| Modem and dialing        |[15;13H| Screen and keyboard      |[16;13H| Save setup as dfl        |[17;13H| Save setup as..          |[18;13H| Exit                     |[19;13H| Exit from Minicom        |[20;13H+--------------------------+[19;32H[?25l[11;14H Filenames and paths      [12;14H[0m[7m File transfer protocols  [12;14H[0m File transfer protocols  [13;14H[0m[7m Serial port setup        [34h[?25h[4;5H[?25l[0m+-----------------------------------------------------------------------+[5;5H| A -    Serial Device      : /dev/ttyUSB2                              |[6;5H| B - Lockfile Location     : /var/lock                                 |[7;5H| C -   Callin Program      :                                           |[8;5H| D -  Callout Program      :                                           |[9;5H| E -    Bps/Par/Bits       : 921600 8N1                                |[10;5H| F - Hardware Flow Control : No                                        |[11;5H| G - Software Flow Control : Yes                                       |[12;5H|                                                                       |[13;5H|    Change which setting?                                              |[14;5H+-----------------------------------------------------------------------+[13;31H[34h[?25h[13;32H[5;35H[5;47H                              [5;46H1                             [5;47H[13;32H[4;23H[?25l+---------[Comm Parameters]----------+[5;23H|                                    |[6;23H|                                    |[7;23H| Speed            Parity      Data  |[8;23H| A: <next>        L: None     S: 5  |[9;23H| B: <prev>        M: Even     T: 6  |[10;23H| C:   9600        N: Odd      U: 7  |[11;23H| D:  38400        O: Mark     V: 8  |[12;23H| E: 115200        P: Space          |[13;23H|                                    |[14;23H| Stopbits                           |[15;23H| W: 1             Q: 8-N-1          |[16;23H| X: 2             R: 7-E-1          |[17;23H|                                    |[18;23H|                                    |[19;23H| Choice, or <Enter> to exit?        |[20;23H+------------------------------------+[19;53H[34h[?25h[6;29HCurrent: 921600 8N1  [19;53H[6;29HCurrent: 1000000 8N1  [19;53H[6;29HCurrent: 1152000 8N1  [19;53H[6;29HCurrent: 1500000 8N1  [19;53H[6;29HCurrent: 2000000 8N1  [19;53H[6;29HCurrent: 2500000 8N1  [19;53H[6;29HCurrent: 3000000 8N1  [19;53H[6;29HCurrent: 3500000 8N1  [19;53H[6;29HCurrent: 4000000 8N1  [19;53H[6;29HCurrent:   300 8N1  [19;53H[6;29HCurrent:  1200 8N1  [19;53H[6;29HCurrent:  2400 8N1  [19;53H[6;29HCurrent:  4800 8N1  [19;53H[6;29HCurrent:  9600 8N1  [19;53H[6;29HCurrent: 19200 8N1  [19;53H[6;29HCurrent: 38400 8N1  [19;53H[6;29HCurrent: 57600 8N1  [19;53H[6;29HCurrent: 115200 8N1  [19;53H[34h[?25h[4;1H    +-------------------------------------------------------[5;1H    | A -    Serial Device      : /dev/ttyUSB1              [6;1H    | B - Lockfile Location     : /var/lock                 [7;1H    | C -   Callin Program      :                           [8;1H    | D -  Callout Program      :                           [9;1H    | E -    Bps/Par/Bits       : 921600 8N1                [10;1H    | F - Hardware Flow Control : No                        [11;1H    | G - Software Flow Control : Yes                       [12;1H    |                                                       [13;1H    |    Change which setting?                              [14;1H    +-------------------------------------------------------[15;1H            | Screen and keyboard      |                    [16;1H            | Save setup as dfl        |                    [17;1H            | Save setup as..          |                    [18;1H            | Exit                     |                    [19;1H            | Exit from Minicom        |                    [20;1H            +--------------------------+                    [13;32H[9;35H115200 8N1  [10;6H[13;32H[34h[?25h[4;1H                                                                             [5;1H                                                                             [6;1H                                                                             [7;1H                                                                             [8;1H                                                                             [9;1H                                                                             [10;1H            +-----[configuration]------+                                     [11;1H            | Filenames and paths      |                                     [12;1H            | File transfer protocols  |                                     [13;1H            |[0m[7m Serial port setup        [0m|                                     [14;1H            | Modem and dialing        |                                     [13;40H[0m[7m[?25l[13;14H[0m Serial port setup        [14;14H[0m[7m Modem and dialing        [14;14H[0m Modem and dialing        [15;14H[0m[7m Screen and keyboard      [15;14H[0m Screen and keyboard      [16;14H[0m[7m Save setup as dfl        [16;14H[0m Save setup as dfl        [17;14H[0m[7m Save setup as..          [17;14H[0m Save setup as..          [18;14H[0m[7m Exit                     [34h[?25h[34h[?25h[10;1H[0m                                        [11;1H                                        [12;1H                                        [13;1H                                        [14;1H                                        [15;1H                                        [16;1H                                        [17;1H                                        [18;1H                                        [19;1H                                        [20;1H                                        [1;1H[0m[7m[62;1H[K[34h[?25h[?25l                                                                                                                                                                                                                   [34h[?25h[34h[?25h[62;34HNOR[1;1H[62;1H[?25l CTRL-A Z for help |115200 8N1 | NOR | Minicom 2.5    | VT102 |      Offline                                                                                                                                       [62;62H[34h[?25h[1;1H[8;95H[?25l[0m+-----------------------+[9;95H|                       |[10;95H|  Initializing Modem   |[11;95H|                       |[12;95H+-----------------------+[10;116H[?25l[34h[?25h[8;1H                                                                                                                       [9;1H                                                                                                                       [10;1H                                                                                                                       [11;1H                                                                                                                       [12;1H                                                                                                                       [1;1H[0m[7m
+[0mWelcome to minicom 2.5
+
+OPTIONS: I18n 
+Compiled on May  2 2011, 10:05:24.
+Port /dev/ttyUSB1
+
+Press CTRL-A Z for help on special keys
+
+[  245.610446] init: untracked pid 2983 exited
+[  245.742274] s3c-fimc3: FIMC3 1 opened.
+[  246.250863] s3c-fimc3: RongPin FIMC3 0 released.
+[  246.269284] init: untracked pid 2953 exited
+[  246.273031] init: untracked pid 2962 exited
+
+127|shell@android:/ $ AT S7=45 S0=0 L1 V1 X4 &c1 E1 Q0
+[1] 2996
+/system/bin/sh: c1: not found
+/system/bin/sh: AT: not found
+127|shell@android:/ $ [  250.300363] init: untracked pid 3021 exited
+[  250.425825] s3c-fimc3: FIMC3 1 opened.
+[  250.934759] s3c-fimc3: RongPin FIMC3 0 released.
+[  250.953724] init: untracked pid 2988 exited
+[  250.957063] init: untracked pid 3001 exited
+OK[26;3H
+U-Boot 2010.12-00000-gf22f445-dirty (Jul 03 2017 - 16:55:12) for SMDK4412[28;74H
+
+CPU: S5PC220 [Samsung SOC on SMP Platform Base on ARM CortexA9][31;64HAPLL = 1000MHz, MPLL = 800MHz[32;30HReserving 1040k for malloc() at: c3cfc000[33;42HReserving 80 Bytes for Board Info at: c3cfbfb0[34;47HReserving 120 Bytes for Global Data at: c3cfbf38[35;49HDRAM:  2047 MiB[36;16Hvol_arm: FF[37;12Hvol_int: FF[38;12Hvol_g3d: FF[39;12Hvol_mif: FF[40;12Hbuck1_ctrl: FF[41;15Hbuck2_ctrl: FF[42;15Hbuck3_ctrl: FF[43;15Hbuck4_ctrl: FF[44;15HTrustZone Enabled BSP[45;22HBL1 version: 20120823[46;22H
+
+Checking Boot Mode ... EMMC4.41[49;32HREVISION: 1.1[50;14HNAME: S5P_MSHC4[51;16HMMC Device 0: 15028 MB[52;23HMMC Device 1: 0 MB[53;19HMMC Device 2 not found[54;23H*** Warning - using default environment[55;40H
+Net:   smc911x: Invalid chip endian 0xff00ff00[57;47HNo ethernet found.[58;19HHit any key to stop autoboot:  3  2  1  0 [59;34Hreading kernel..device 0 Start 1063, Count 36864 [60;50HMMC read: dev # 0, block # 1063, count 36864 ... 36864 blocks read: OK[61;71Hcompleted[1;61r[61;1H
+[1;62r[61;1H[61;10Hreading RFS..device 0 Count 37927, Start 4096 [1;61r[61;1H
+[1;62r[61;1H[61;47HMMC read: dev # 0, block # 37927, count 4096 ... 4096 blocks read: OK[1;61r[61;1H
+[1;62r[61;1H[61;70Hcompleted[1;61r[61;1H
+[1;62r[61;1H[61;10Hbootm_start...[1;61r[61;1H
+[1;62r[61;1H[61;15Hcopying tee to loadaddr 0x50000000 from 0x60000000...[1;61r[61;1H
+[1;62r[61;1H[61;54Hcopying linux to loadaddr 0x40008000 from 0x60a00000...[1;61r[61;1H
+[1;62r[61;1H[61;56Hbooting tee...[1;61r[61;1H
+[1;62r[61;1H[61;15Hconsole init[1;61r[61;1H
+[1;62r[61;1Hcpu0[1;61r[61;1H
+[1;62r[61;1H[    0.000000]: <0>DBG TKCore:core_init_mmu_map:232: mapping: va-> 0x2000000 pa-> 0x2000000, size->0x100000[1;61r[61;1H
+[1;62r[61;1H[61;108H[    0.000000]: <0>DBG TKCore:core_init_mmu_map:232: mapping: va-> 0x50000000 pa-> 0x50000000, size->0x300000[1;61r[61;1H
+[1;62r[61;1H[61;110H[    0.000000]: <0>DBG TKCore:core_init_mmu_map:232: mapping: va-> 0x50300000 pa-> 0x50300000, size->0x500000[1;61r[61;1H
+[1;62r[61;1H[61;110H[    0.000000]: <0>DBG TKCore:core_init_mmu_map:232: mapping: va-> 0x50800000 pa-> 0x50800000, size->0x800000[1;61r[61;1H
+[1;62r[61;1H[61;110H[    0.000000]: <0>DBG TKCore:core_init_mmu_map:232: mapping: va-> 0x51000000 pa-> 0x51000000, size->0xf00000[1;61r[61;1H
+[1;62r[61;1H[61;110H[    0.000000]: <0>DBG TKCore:core_init_mmu_map:232: mapping: va-> 0x10400000 pa-> 0x10400000, size->0x100000[1;61r[61;1H
+[1;62r[61;1H[61;110H[    0.000000]: <0>DBG TKCore:core_init_mmu_map:232: mapping: va-> 0x13800000 pa-> 0x13800000, size->0x100000[1;61r[61;1H
+[1;62r[61;1H[61;110H[    0.000000]: <0>DBG TKCore:core_init_mmu_map:232: mapping: va-> 0x10100000 pa-> 0x10100000, size->0x100000[1;61r[61;1H
+[1;62r[61;1H[61;110H[    0.000000]: <0>DBG TKCore:core_init_mmu_map:232: mapping: va-> 0x13900000 pa-> 0x13900000, size->0x100000[1;61r[61;1H
+[1;62r[61;1H[61;110H[    0.000000]: <0>DBG TKCore:core_init_mmu_map:232: mapping: va-> 0x10700000 pa-> 0x10700000, size->0x100000[1;61r[61;1H
+[1;62r[61;1H[61;110H[    0.000000]: <0>DBG TKCore:core_init_mmu_map:232: mapping: va-> 0x10500000 pa-> 0x10500000, size->0x100000[1;61r[61;1H
+[1;62r[61;1H[61;110H[    0.000000]: <0>DBG TKCore:core_init_mmu_map:232: mapping: va-> 0x13800000 pa-> 0x13800000, size->0x100000[1;61r[61;1H
+[1;62r[61;1H[61;110H[    0.000000]: <0>DBG TKCore:core_init_mmu_map:232: mapping: va-> 0x10000000 pa-> 0x10000000, size->0x100000[1;61r[61;1H
+[1;62r[61;1H[61;110H[    0.000000]: <0>DBG TKCore:core_init_mmu_map:232: mapping: va-> 0x11000000 pa-> 0x11000000, size->0x100000[1;61r[61;1H
+[1;62r[61;1H[61;110H[    0.000000]: <0>DBG TKCore:core_init_mmu_map:232: mapping: va-> 0x11400000 pa-> 0x11400000, size->0x100000[1;61r[61;1H
+[1;62r[61;1H[61;110H[    0.000000]: <0>DBG TKCore:core_init_mmu_map:232: mapping: va-> 0x11c00000 pa-> 0x11c00000, size->0x100000[1;61r[61;1H
+[1;62r[61;1H[61;110H[    0.000000]: <0>DBG TKCore:core_init_mmu_map:232: mapping: va-> 0x10600000 pa-> 0x10600000, size->0x100000[1;61r[61;1H
+[1;62r[61;1H[61;110H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x20 pa-> 0x2000000, size->0x100000, attr->0x10416[1;61r[61;1H
+[1;62r[61;1H[61;109H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x100 pa-> 0x10000000, size->0x100000, attr->0x10412[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x101 pa-> 0x10100000, size->0x100000, attr->0x10412[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x104 pa-> 0x10400000, size->0x100000, attr->0x10412[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x105 pa-> 0x10500000, size->0x100000, attr->0x10412[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x106 pa-> 0x10600000, size->0x100000, attr->0x10412[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x107 pa-> 0x10700000, size->0x100000, attr->0x10412[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x110 pa-> 0x11000000, size->0x100000, attr->0x10412[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x114 pa-> 0x11400000, size->0x100000, attr->0x10412[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x11c pa-> 0x11c00000, size->0x100000, attr->0x10412[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x138 pa-> 0x13800000, size->0x100000, attr->0x10412[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x139 pa-> 0x13900000, size->0x100000, attr->0x10412[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x500 pa-> 0x50000000, size->0x100000, attr->0x10406[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x501 pa-> 0x50100000, size->0x100000, attr->0x10406[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x502 pa-> 0x50200000, size->0x100000, attr->0x10406[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x503 pa-> 0x50300000, size->0x100000, attr->0x10412[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x504 pa-> 0x50400000, size->0x100000, attr->0x10412[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x505 pa-> 0x50500000, size->0x100000, attr->0x10412[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x506 pa-> 0x50600000, size->0x100000, attr->0x10412[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x507 pa-> 0x50700000, size->0x100000, attr->0x10412[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x508 pa-> 0x50800000, size->0x100000, attr->0x10416[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x509 pa-> 0x50900000, size->0x100000, attr->0x10416[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x50a pa-> 0x50a00000, size->0x100000, attr->0x10416[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x50b pa-> 0x50b00000, size->0x100000, attr->0x10416[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x50c pa-> 0x50c00000, size->0x100000, attr->0x10416[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x50d pa-> 0x50d00000, size->0x100000, attr->0x10416[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x50e pa-> 0x50e00000, size->0x100000, attr->0x10416[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x50f pa-> 0x50f00000, size->0x100000, attr->0x10416[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x510 pa-> 0x51000000, size->0x100000, attr->0x90416[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x511 pa-> 0x51100000, size->0x100000, attr->0x90416[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x512 pa-> 0x51200000, size->0x100000, attr->0x90416[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x513 pa-> 0x51300000, size->0x100000, attr->0x90416[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x514 pa-> 0x51400000, size->0x100000, attr->0x90416[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x515 pa-> 0x51500000, size->0x100000, attr->0x90416[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x516 pa-> 0x51600000, size->0x100000, attr->0x90416[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x517 pa-> 0x51700000, size->0x100000, attr->0x90416[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x518 pa-> 0x51800000, size->0x100000, attr->0x90416[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x519 pa-> 0x51900000, size->0x100000, attr->0x90416[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x51a pa-> 0x51a00000, size->0x100000, attr->0x90416[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x51b pa-> 0x51b00000, size->0x100000, attr->0x90416[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x51c pa-> 0x51c00000, size->0x100000, attr->0x90416[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x51d pa-> 0x51d00000, size->0x100000, attr->0x90416[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:map_memarea:647: ttb: idx-> 0x51e pa-> 0x51e00000, size->0x100000, attr->0x90416[1;61r[61;1H
+[1;62r[61;1H[61;111H[    0.000000]: <0>DBG TKCore:init_primary_helper:157: Initializing primary helper. pageable_part 0x40008000, nsec_entry 0xc3e06c50[1;61r[61;1H
+[1;62r[61;1H[61;132H[    0.000000]: <0>DBG TKCore:init_primary_helper:165: Initializing vfp.[1;61r[61;1H
+[1;62r[61;1H[61;73H[    0.000000]: <0>DBG TKCore:init_primary_helper:168: Initializing runtime.[1;61r[61;1H
+[1;62r[61;1H[61;77H[    0.000000]: <0>DBG TKCore:init_runtime:140: Initializing bss: bss_start->0x500be558, size->0x6134[1;61r[61;1H
+[1;62r[61;1H[61;102H[    0.000000]: <0>DBG TKCore:init_runtime:143: Initializing malloc, addr: 0x500c468c, size: 0x103974[1;61r[61;1H
+[1;62r[61;1H[61;102H[    0.000000]: <0>DBG TKCore:init_runtime:146: Initializing ta ram.[1;61r[61;1H
+[1;62r[61;1H[61;69H[    0.000000]: <0>DBG TKCore:init_primary_helper:170: Initializing runtime ok[1;61r[61;1H
+[1;62r[61;1H[61;79H[    0.000000]: <0>INF TKCore:init_primary_helper:172: Initializing (v0.5.3-gp-3-gd435279-dev-smdk4412 -dbg #62 Wed Jul  5 10:02:20 UTC 2017 arm)[1;61r[61;1H
+[1;62r[61;1H[61;146H[    0.000000]: <0>DBG TKCore:init_canaries:240: #Stack canaries for stack_tmp[0] with top at 0x501cd6b8[1;61r[61;1H
+[1;62r[61;1H[61;105H[    0.000000]: <0>DBG TKCore:init_canaries:240: watch *0x501cd6bc[1;61r[61;1H
+[1;62r[61;1H[61;67H[    0.000000]: <0>DBG TKCore:init_canaries:240: #Stack canaries for stack_tmp[1] with top at 0x501ce6f8[1;61r[61;1H
+[1;62r[61;1H[61;105H[    0.000000]: <0>DBG TKCore:init_canaries:240: watch *0x501ce6fc[1;61r[61;1H
+[1;62r[61;1H[61;67H[    0.000000]: <0>DBG TKCore:init_canaries:240: #Stack canaries for stack_tmp[2] with top at 0x501cf738[1;61r[61;1H
+[1;62r[61;1H[61;105H[    0.000000]: <0>DBG TKCore:init_canaries:240: watch *0x501cf73c[1;61r[61;1H
+[1;62r[61;1H[61;67H[    0.000000]: <0>DBG TKCore:init_canaries:240: #Stack canaries for stack_tmp[3] with top at 0x501d0778[1;61r[61;1H
+[1;62r[61;1H[61;105H[    0.000000]: <0>DBG TKCore:init_canaries:240: watch *0x501d077c[1;61r[61;1H
+[1;62r[61;1H[61;67H[    0.000000]: <0>DBG TKCore:init_canaries:241: #Stack canaries for stack_abt[0] with top at 0x501d17b8[1;61r[61;1H
+[1;62r[61;1H[61;105H[    0.000000]: <0>DBG TKCore:init_canaries:241: watch *0x501d17bc[1;61r[61;1H
+[1;62r[61;1H[61;67H[    0.000000]: <0>DBG TKCore:init_canaries:241: #Stack canaries for stack_abt[1] with top at 0x501d27f8[1;61r[61;1H
+[1;62r[61;1H[61;105H[    0.000000]: <0>DBG TKCore:init_canaries:241: watch *0x501d27fc[1;61r[61;1H
+[1;62r[61;1H[61;67H[    0.000000]: <0>DBG TKCore:init_canaries:241: #Stack canaries for stack_abt[2] with top at 0x501d3838[1;61r[61;1H
+[1;62r[61;1H[61;105H[    0.000000]: <0>DBG TKCore:init_canaries:241: watch *0x501d383c[1;61r[61;1H
+[1;62r[61;1H[61;67H[    0.000000]: <0>DBG TKCore:init_canaries:241: #Stack canaries for stack_abt[3] with top at 0x501d4878[1;61r[61;1H
+[1;62r[61;1H[61;105H[    0.000000]: <0>DBG TKCore:init_canaries:241: watch *0x501d487c[1;61r[61;1H
+[1;62r[61;1H[61;67H[    0.000000]: <0>DBG TKCore:init_canaries:243: #Stack canaries for stack_sm[0] with top at 0x501d4938[1;61r[61;1H
+[1;62r[61;1H[61;104H[    0.000000]: <0>DBG TKCore:init_canaries:243: watch *0x501d493c[1;61r[61;1H
+[1;62r[61;1H[61;67H[    0.000000]: <0>DBG TKCore:init_canaries:243: #Stack canaries for stack_sm[1] with top at 0x501d49f8[1;61r[61;1H
+[1;62r[61;1H[61;104H[    0.000000]: <0>DBG TKCore:init_canaries:243: watch *0x501d49fc[1;61r[61;1H
+[1;62r[61;1H[61;67H[    0.000000]: <0>DBG TKCore:init_canaries:243: #Stack canaries for stack_sm[2] with top at 0x501d4ab8[1;61r[61;1H
+[1;62r[61;1H[61;104H[    0.000000]: <0>DBG TKCore:init_canaries:243: watch *0x501d4abc[1;61r[61;1H
+[1;62r[61;1H[61;67H[    0.000000]: <0>DBG TKCore:init_canaries:243: #Stack canaries for stack_sm[3] with top at 0x501d4b78[1;61r[61;1H
+[1;62r[61;1H[61;104H[    0.000000]: <0>DBG TKCore:init_canaries:243: watch *0x501d4b7c[1;61r[61;1H
+[1;62r[61;1H[61;67H[    0.000000]: <0>DBG TKCore:init_canaries:245: #Stack canaries for stack_thread[0] with top at 0x501e4bb8[1;61r[61;1H
+[1;62r[61;1H[61;108H[    0.000000]: <0>DBG TKCore:init_canaries:245: watch *0x501e4bbc[1;61r[61;1H
+[1;62r[61;1H[61;67H[    0.000000]: <0>DBG TKCore:init_canaries:245: #Stack canaries for stack_thread[1] with top at 0x501f4bf8[1;61r[61;1H
+[1;62r[61;1H[61;108H[    0.000000]: <0>DBG TKCore:init_canaries:245: watch *0x501f4bfc[1;61r[61;1H
+[1;62r[61;1H[61;67H[    0.000000]: <0>DBG TKCore:init_canaries:245: #Stack canaries for stack_thread[2] with top at 0x50204c38[1;61r[61;1H
+[1;62r[61;1H[61;108H[    0.000000]: <0>DBG TKCore:init_canaries:245: watch *0x50204c3c[1;61r[61;1H
+[1;62r[61;1H[61;67H[    0.000000]: <0>DBG TKCore:init_canaries:245: #Stack canaries for stack_thread[3] with top at 0x50214c78[1;61r[61;1H
+[1;62r[61;1H[61;108H[    0.000000]: <0>DBG TKCore:init_canaries:245: watch *0x50214c7c[1;61r[61;1H
+[1;62r[61;1H[61;67H[    0.000000]: <0>DBG TKCore:init_canaries:245: #Stack canaries for stack_thread[4] with top at 0x50224cb8[1;61r[61;1H
+[1;62r[61;1H[61;108H[    0.000000]: <0>DBG TKCore:init_canaries:245: watch *0x50224cbc[1;61r[61;1H
+[1;62r[61;1H[61;67H[    0.000000]: <0>DBG TKCore:chip_init_sec_mon:173: waking up cpu1[1;61r[61;1H
+[1;62r[61;1H[61;68H[    0.000000]: <1>DBG TKCore:chip_init_sec_mon:159: cpu1 is waiting to boot......[1;61r[61;1H
+[1;62r[61;1H[61;83H[    0.000000]: <0>DBG TKCore:chip_init_sec_mon:173: waking up cpu2[1;61r[61;1H
+[1;62r[61;1H[61;68H[    0.000000]: <2>DBG TKCore:chip_init_sec_mon:159: cpu2 is waiting to boot......[1;61r[61;1H
+[1;62r[61;1H[61;83H[    0.000000]: <0>DBG TKCore:chip_init_sec_mon:173: waking up cpu3[1;61r[61;1H
+[1;62r[61;1H[61;68H[    0.000000]: <3>DBG TKCore:chip_init_sec_mon:159: cpu3 is waiting to boot......[1;61r[61;1H
+[1;62r[61;1H[61;83H[    0.000000]: <0>DBG TKCore:gic_dist_init:193: gic_dist_init enter[1;61r[61;1H
+[1;62r[61;1H[61;69H[    0.000000]: <0>DBG TKCore:__gic_dist_init:143: gic_dist_init: it_lines_number 4, max_irq 160[1;61r[61;1H
+[1;62r[61;1H[    0.000000]: <0>DBG TKCore:gic_dist_init:197: gic_dist_init ok[1;61r[61;1H
+[1;62r[61;1H[61;66H[    0.000000]: <0>DBG TKCore:gic_cpu_init:184: gic_cpu_init enter[1;61r[61;1H
+[1;62r[61;1H[61;67H[    0.000000]: <0>DBG TKCore:gic_cpu_init:188: gic_cpu_init ok[1;61r[61;1H
+[1;62r[61;1H[61;64H[    0.000000]: <0>DBG TKCore:tz_callback:231: tzpc config[1;61r[61;1H
+[1;62r[61;1H[61;59H[    0.000000]: <0>DBG TKCore:tzasc_init:168: initializing tzasc[1;61r[61;1H
+[1;62r[61;1H[61;65H[    0.000000]: <0>DBG TKCore:tzasc_config_memory:216: tzasc: config memory from 50000000 to 51000000, perm c[1;61r[61;1H
+[1;62r[61;1H[61;110H[    0.000000]: <0>DBG TKCore:tzasc_config_memory:232: tzasc: region offset 1000000, index 17[1;61r[61;1H
+[1;62r[61;1H[61;94H[    0.000000]: <0>DBG TKCore:tzasc_setup_region:151: tzasc_setup_region: base:10700000 addr 50000000[1;61r[61;1H
+[1;62r[61;1H[61;102H[    0.000000]: <0>DBG TKCore:tzasc_setup_region:151: tzasc_setup_region: base:10710000 addr 50000000[1;61r[61;1H
+[1;62r[61;1H[61;102H[    0.000000]: <0>DBG TKCore:tzasc_setup_region:151: tzasc_setup_region: base:10720000 addr 50000000[1;61r[61;1H
+[1;62r[61;1H[61;102H[    0.000000]: <0>DBG TKCore:tzasc_setup_region:151: tzasc_setup_region: base:10730000 addr 50000000[1;61r[61;1H
+[1;62r[61;1H[61;102H[    0.000000]: <0>DBG TKCore:main_init_gic:81: nskernel_entry:0x40008000[1;61r[61;1H
+[1;62r[61;1H[61;74H[    0.000000]: <0>INF TKCore:vfp_init:105: VFP: implementor 41 architecture 3 part 30 variant 9 rev 4[1;61r[61;1H
+[1;62r[61;1H[61;103H[    0.000000]: <0>INF TKCore:vfp_init:108: VFP: VFPv3 supported[1;61r[61;1H
+[1;62r[61;1H[61;65H[    0.000000]: <0>INF TKCore:vfp_init:118: VFP: 32 Float Registers supported[1;61r[61;1H
+[1;62r[61;1H[61;78H[    0.000000]: <0>INF TKCore:vfp_init:129: VFP: Neon Supported[1;61r[61;1H
+[1;62r[61;1H[61;64H[    0.000000]: <0>INF TKCore:init_teecore:87: teecore inits called[1;61r[61;1H
+[1;62r[61;1H[61;68H[    0.000000]: <0>INF TKCore:init_teecore:89: teecore: kmap_init [1;61r[61;1H
+[1;62r[61;1H[61;67H[    0.000000]: <0>INF TKCore:init_teecore:91: teecore: init_pub_ram [1;61r[61;1H
+[1;62r[61;1H[61;70H[    0.000000]: <0>DBG TKCore:tee_log_setup:174: tee_log_setup start 0x51008000 size 0x20000[1;61r[61;1H
+[1;62r[61;1H[61;93H[    0.000000]: <0>INF TKCore:init_teecore:98: teecore: init ctors[1;61r[61;1H
+[1;62r[61;1H[61;67H[    0.000000]: <0>INF TKCore:init_teecore:102: teecore: init time source[1;61r[61;1H
+[1;62r[61;1H[61;74H[    0.000000]: <0>INF TKCore:init_teecore:106: teecore: init calls[1;61r[61;1H
+[1;62r[61;1H[61;68H[    0.000000]: <0>DBG TKCore:call_initcalls:58: service addr: 0x50000188[1;61r[61;1H
+[1;62r[61;1H[61;74H[    0.000000]: <0>DBG TKCore:call_initcalls:58: service addr: 0x5000018c[1;61r[61;1H
+[1;62r[61;1H[61;74H[    0.000000]: <0>DBG TKCore:call_initcalls:58: service addr: 0x50000190[1;61r[61;1H
+[1;62r[61;1H[61;74H[    0.000000]: <0>ERR TKCore:gic_it_add:248: gic.max_it: 0x9f[1;61r[61;1H
+[1;62r[61;1H[61;63H[    0.000000]: <0>ERR TKCore:tee_isr_register:53: interrupt<33> = 0x5003a3b1[1;61r[61;1H
+[1;62r[61;1H[61;78H[    0.000000]: <0>ERR TKCore:gic_it_add:248: gic.max_it: 0x9f[1;61r[61;1H
+[1;62r[61;1H[61;63H[    0.000000]: <0>ERR TKCore:tee_isr_register:53: interrupt<40> = 0x50039d15[1;61r[61;1H
+[1;62r[61;1H[61;78H[    0.000000]: <0>INF TKCore:init_teecore:109: teecore inits done[1;61r[61;1H
+[1;62r[61;1H[61;67H[    0.000000]: <0>DBG TKCore:init_primary_helper:194: Primary CPU switching to normal world boot[1;61r[61;1H
+[1;62r[61;1H[61;98Hkernel entry address is 1073807996[1;61r[61;1H
+[1;62r[61;1Hinitialize tag area data[1;61r[61;1H
+[1;62r[61;1Hsetting dram partition informations[1;61r[61;1H
+[1;62r[61;1Hsetting dram partition informations[1;61r[61;1H
+[1;62r[61;1Hsetting dram partition informations[1;61r[61;1H
+[1;62r[61;1Hsetting dram partition informations[1;61r[61;1H
+[1;62r[61;1Hloading init ramdisk from 1308622848[1;61r[61;1H
+[1;62r[61;1Hinitrd: header crc checksum is -1508979481[1;61r[61;1H
+[1;62r[61;1Hinitrd header:magic 654645590,-1508979481,1499398666,1444932,1082130432,1082130432,-874508223,1280,2,3,0[1;61r[61;1H
+[1;62r[61;1Hdata:1308622912,len 1444932,load:1082130432[1;61r[61;1H
+[1;62r[61;1Hinitrd start from 1308622912 with size 1444932[1;61r[61;1H
+[1;62r[61;1Hframebuffer start from 1610612736 with size 5242880[1;61r[61;1H
+[1;62r[61;1Hstarting Linux kernel...[1;61r[61;1H
+[1;62r[61;1HUncompressing Linux... done, booting the kernel.[1;61r[61;1H
+[1;62r[61;1H[    0.000000] Initializing cgroup subsys cpu[1;61r[61;1H
+[1;62r[61;1H[    0.000000] Linux version 3.0.15 (liwenhaosuper@liwenhaosuper-ubuntu) (gcc version 4.5.1 (Sourcery G++ Lite 2010.09-50) ) #750 SMP PREEMPT Thu Jul 13 16:48:00 CST 2017[1;61r[61;1H
+[1;62r[61;1H[    0.000000] CPU: ARMv7 Processor [413fc090] revision 0 (ARMv7), cr=10c5387d[1;61r[61;1H
+[1;62r[61;1H[    0.000000] CPU: VIPT nonaliasing data cache, VIPT aliasing instruction cache[1;61r[61;1H
+[1;62r[61;1H[    0.000000] Machine: SMDK4X12[1;61r[61;1H
+[1;62r[61;1H[    0.000000] Ignoring unrecognised tag 0x54410008[1;61r[61;1H
+[1;62r[61;1H[    0.000000] Memory policy: ECC disabled, Data cache writealloc[1;61r[61;1H
+[1;62r[61;1H[    0.000000] CPU EXYNOS4412 (id 0xe4412011)[1;61r[61;1H
+[1;62r[61;1H[    0.000000] S3C24XX Clocks, Copyright 2004 Simtec Electronics[1;61r[61;1H
+[1;62r[61;1H[    0.000000] s3c_register_clksrc: clock audiocdclk has no registers set[1;61r[61;1H
+[1;62r[61;1H[    0.000000] audiocdclk: no parent clock specified[1;61r[61;1H
+[1;62r[61;1H[    0.000000] s3c_register_clksrc: clock armclk has no registers set[1;61r[61;1H
+[1;62r[61;1H[    0.000000] EXYNOS4: PLL settings, A=1000000000, M=800000000, E=96000000 V=350000000[1;61r[61;1H
+[1;62r[61;1H[    0.000000] EXYNOS4: ARMCLK=1000000000, DMC=400000000, ACLK200=24000000[1;61r[61;1H
+[1;62r[61;1H[    0.000000] ACLK160=160000000, ACLK133=133333333, ACLK100=100000000[1;61r[61;1H
+[1;62r[61;1H[    0.000000] EXYNOS4: ACLK400=24000000 ACLK266=800000000[1;61r[61;1H
+[1;62r[61;1H[    0.000000] uclk1: source is mout_mpll_user (6), rate is 100000000[1;61r[61;1H
+[1;62r[61;1H[    0.000000] uclk1: source is mout_mpll_user (6), rate is 100000000[1;61r[61;1H
+[1;62r[61;1H[    0.000000] uclk1: source is mout_mpll_user (6), rate is 100000000[1;61r[61;1H
+[1;62r[61;1H[    0.000000] uclk1: source is mout_mpll_user (6), rate is 100000000[1;61r[61;1H
+[1;62r[61;1H[    0.000000] sclk_csis: source is xusbxti (1), rate is 1500000[1;61r[61;1H
+[1;62r[61;1H[    0.000000] sclk_csis: source is xusbxti (1), rate is 1500000[1;61r[61;1H
+[1;62r[61;1H[    0.000000] sclk_cam0: source is xusbxti (1), rate is 1500000[1;61r[61;1H
+[1;62r[61;1H[    0.000000] sclk_cam1: source is xusbxti (1), rate is 1500000[1;61r[61;1H
+[1;62r[61;1H[    0.000000] sclk_fimc: source is xusbxti (1), rate is 1500000[1;61r[61;1H
+[1;62r[61;1H[    0.000000] sclk_fimc: source is xusbxti (1), rate is 1500000[1;61r[61;1H
+[1;62r[61;1H[    0.000000] sclk_fimc: source is xusbxti (1), rate is 1500000[1;61r[61;1H
+[1;62r[61;1H[    0.000000] sclk_fimc: source is xusbxti (1), rate is 1500000[1;61r[61;1H
+[1;62r[61;1H[    0.000000] sclk_fimd: source is xusbxti (1), rate is 1500000[1;61r[61;1H
+[1;62r[61;1H[    0.000000] sclk_fimd: source is xusbxti (1), rate is 1500000[1;61r[61;1H
+[1;62r[61;1H[    0.000000] sclk_mfc: source is mout_mfc0 (0), rate is 50000000[1;61r[61;1H
+[1;62r[61;1H[    0.000000] sclk_g3d: source is mout_g3d0 (0), rate is 50000000[1;61r[61;1H
+[1;62r[61;1H[    0.000000] sclk_pwi: source is xusbxti (1), rate is 1500000[1;61r[61;1H
+[1;62r[61;1H[    0.000000] PERCPU: Embedded 7 pages/cpu @c1ae6000 s7328 r8192 d13152 u32768[1;61r[61;1H
+[1;62r[61;1H[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 519938[1;61r[61;1H
+[1;62r[61;1H[    0.000000] Kernel command line: root=/dev/mmcblk0p2 rw rootfstype=ext4 init=/init console=ttySAC2,115200n8 androidboot.console=ttySAC2 mem=2047M root=/dev/mmcblk0p2 init=/init rw[1;61r[61;1H
+[1;62r[61;1H[    0.000000] PID hash table entries: 4096 (order: 2, 16384 bytes)[1;61r[61;1H
+[1;62r[61;1H[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)[1;61r[61;1H
+[1;62r[61;1H[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)[1;61r[61;1H
+[1;62r[61;1H[    0.000000] Memory: 2047MB = 2047MB total[1;61r[61;1H
+[1;62r[61;1H[    0.000000] Memory: 1715628k/1715628k available, 380500k reserved, 1342464K highmem[1;61r[61;1H
+[1;62r[61;1H[    0.000000] Virtual kernel memory layout:[1;61r[61;1H
+[1;62r[61;1H[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)[1;61r[61;1H
+[1;62r[61;1H[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)[1;61r[61;1H
+[1;62r[61;1H[    0.000000]     DMA     : 0xfea00000 - 0xffe00000   (  20 MB)[1;61r[61;1H
+[1;62r[61;1H[    0.000000]     vmalloc : 0xee800000 - 0xf6000000   ( 120 MB)[1;61r[61;1H
+[1;62r[61;1H[    0.000000]     lowmem  : 0xc0000000 - 0xee000000   ( 736 MB)[1;61r[61;1H
+[1;62r[61;1H[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)[1;61r[61;1H
+[1;62r[61;1H[    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)[1;61r[61;1H
+[1;62r[61;1H[    0.000000]       .init : 0xc0008000 - 0xc00d8000   ( 832 kB)[1;61r[61;1H
+[1;62r[61;1H[    0.000000]       .text : 0xc00d8000 - 0xc0901000   (8356 kB)[1;61r[61;1H
+[1;62r[61;1H[    0.000000]       .data : 0xc0902000 - 0xc0969f90   ( 416 kB)[1;61r[61;1H
+[1;62r[61;1H[    0.000000]        .bss : 0xc0969fb4 - 0xc0ad6600   (1458 kB)[1;61r[61;1H
+[1;62r[61;1H[    0.000000] SLUB: Genslabs=13, HWalign=32, Order=0-3, MinObjects=0, CPUs=4, Nodes=1[1;61r[61;1H
+[1;62r[61;1H[    0.000000] Preemptible hierarchical RCU implementation.[1;61r[61;1H
+[1;62r[61;1H[    0.000000] NR_IRQS:456[1;61r[61;1H
+[1;62r[61;1H[    0.000000] Calibrating delay loop... 1992.29 BogoMIPS (lpj=4980736)[1;61r[61;1H
+[1;62r[61;1H[    0.045000] pid_max: default: 32768 minimum: 301[1;61r[61;1H
+[1;62r[61;1H[    0.045000] Mount-cache hash table entries: 512[1;61r[61;1H
+[1;62r[61;1H[    0.045000] Initializing cgroup subsys debug[1;61r[61;1H
+[1;62r[61;1H[    0.045000] Initializing cgroup subsys cpuacct[1;61r[61;1H
+[1;62r[61;1H[    0.045000] Initializing cgroup subsys freezer[1;61r[61;1H
+[1;62r[61;1H[    0.045000] CPU: Testing write buffer coherency: ok[1;61r[61;1H
+[1;62r[61;1H[    0.045000] hw perfevents: enabled with ARMv7 Cortex-A9 PMU driver, 7 counters available[1;61r[61;1H
+[1;62r[61;1H[    0.055000] rpregister_lcd: add lcd: rp9[1;61r[61;1H
+[1;62r[61;1H[    1.075000] CPU1: failed to boot: -38[1;61r[61;1H
+[1;62r[61;1H[    2.095000] CPU2: failed to boot: -38[1;61r[61;1H
+[1;62r[61;1H[    3.115000] CPU3: failed to boot: -38[1;61r[61;1H
+[1;62r[61;1H[    3.115000] Brought up 1 CPUs[1;61r[61;1H
+[1;62r[61;1H[    3.115000] SMP: Total of 1 processors activated (1992.29 BogoMIPS).[1;61r[61;1H
+[1;62r[61;1H[    3.125000] gpio: GPK0 has missing PM functions[1;61r[61;1H
+[1;62r[61;1H[    3.125000] print_constraints: dummy: [1;61r[61;1H
+[1;62r[61;1H[    3.125000] NET: Registered protocol family 16[1;61r[61;1H
+[1;62r[61;1H[    3.130000] SMDK MAIN Board Rev 0.1 (ADC value:851)[1;61r[61;1H
+[1;62r[61;1H[    3.150000] hw-breakpoint: found 6 breakpoint and 1 watchpoint registers.[1;61r[61;1H
+[1;62r[61;1H[    3.150000] hw-breakpoint: 1 breakpoint(s) reserved for watchpoint single-step.[1;61r[61;1H
+[1;62r[61;1H[    3.150000] hw-breakpoint: maximum watchpoint size is 4 bytes.[1;61r[61;1H
+[1;62r[61;1H[    3.150000] exynos4_pmu_init: PMU supports 4412(96)[1;61r[61;1H
+[1;62r[61;1H[    3.150000] S3C Power Management, Copyright 2004 Simtec Electronics[1;61r[61;1H
+[1;62r[61;1H[    3.150000] EXYNOS4: Initializing architecture[1;61r[61;1H
+[1;62r[61;1H[    3.155000] s3c-adc exynos4412-adc: attached adc driver[1;61r[61;1H
+[1;62r[61;1H[    3.155000] samsung-pd samsung-pd.0: power domain registered[1;61r[61;1H
+[1;62r[61;1H[    3.155000] samsung-pd samsung-pd.1: power domain registered[1;61r[61;1H
+[1;62r[61;1H[    3.155000] samsung-pd samsung-pd.2: power domain registered[1;61r[61;1H
+[1;62r[61;1H[    3.155000] samsung-pd samsung-pd.5: power domain registered[1;61r[61;1H
+[1;62r[61;1H[    3.155000] samsung-pd samsung-pd.4: power domain registered[1;61r[61;1H
+[1;62r[61;1H[    3.155000] samsung-pd samsung-pd.6: power domain registered[1;61r[61;1H
+[1;62r[61;1H[    3.155000] samsung-pd samsung-pd.7: power domain registered[1;61r[61;1H
+[1;62r[61;1H[    3.155000] s3c24xx-pwm s3c24xx-pwm.0: tin at 100000000, tdiv at 100000000, tin=divclk, base 0[1;61r[61;1H
+[1;62r[61;1H[    3.155000] s5p-sysmmu s5p-sysmmu.15: Initialized for s5p-fimg2d.[1;61r[61;1H
+[1;62r[61;1H[    3.155000] s5p-sysmmu s5p-sysmmu.1: Initialized for s3c-fimc.0.[1;61r[61;1H
+[1;62r[61;1H[    3.155000] s5p-sysmmu s5p-sysmmu.2: Initialized for s3c-fimc.1.[1;61r[61;1H
+[1;62r[61;1H[    3.155000] s5p-sysmmu s5p-sysmmu.3: Initialized for s3c-fimc.2.[1;61r[61;1H
+[1;62r[61;1H[    3.155000] s5p-sysmmu s5p-sysmmu.4: Initialized for s3c-fimc.3.[1;61r[61;1H
+[1;62r[61;1H[    3.155000] s5p-sysmmu s5p-sysmmu.5: Initialized for s5p-jpeg.[1;61r[61;1H
+[1;62r[61;1H[    3.155000] s5p-sysmmu s5p-sysmmu.13: Initialized for s3c-mfc.[1;61r[61;1H
+[1;62r[61;1H[    3.155000] s5p-sysmmu s5p-sysmmu.14: Initialized for s3c-mfc.[1;61r[61;1H
+[1;62r[61;1H[    3.155000] s5p-sysmmu s5p-sysmmu.12: Initialized for s5p-tvout.[1;61r[61;1H
+[1;62r[61;1H[    3.220000] bio: create slab <bio-0> at 0[1;61r[61;1H
+[1;62r[61;1H[    3.220000] print_constraints: VDD_1.8V: 1800 mV [1;61r[61;1H
+[1;62r[61;1H[    3.220000] print_constraints: DC_5V: 5000 mV [1;61r[61;1H
+[1;62r[61;1H[    3.220000] print_constraints: VDD_3.3V: 3300 mV [1;61r[61;1H
+[1;62r[61;1H[    3.220000] SCSI subsystem initialized[1;61r[61;1H
+[1;62r[61;1H[    3.225000] usbcore: registered new interface driver usbfs[1;61r[61;1H
+[1;62r[61;1H[    3.225000] usbcore: registered new interface driver hub[1;61r[61;1H
+[1;62r[61;1H[    3.225000] usbcore: registered new device driver usb[1;61r[61;1H
+[1;62r[61;1H[    3.230000] max77686 0-0009: device not found on this channel (this is not an error)[1;61r[61;1H
+[1;62r[61;1H[    3.230000] s3c-i2c s3c2440-i2c.0: i2c-0: S3C I2C adapter[1;61r[61;1H
+[1;62r[61;1H[    3.230000] s3c-i2c s3c2440-i2c.1: i2c-1: S3C I2C adapter[1;61r[61;1H
+[1;62r[61;1H[    3.230000] s3c-i2c s3c2440-i2c.2: no platform data[1;61r[61;1H
+[1;62r[61;1H[    3.230000] s3c-i2c: probe of s3c2440-i2c.2 failed with error -22[1;61r[61;1H
+[1;62r[61;1H[    3.230000] s3c-i2c s3c2440-i2c.3: i2c-3: S3C I2C adapter[1;61r[61;1H
+[1;62r[61;1H[    3.230000] s3c-i2c s3c2440-i2c.4: i2c-4: S3C I2C adapter[1;61r[61;1H
+[1;62r[61;1H[    3.230000] s3c-i2c s3c2440-i2c.5: i2c-5: S3C I2C adapter[1;61r[61;1H
+[1;62r[61;1H[    3.235000] s3c-i2c s3c2440-i2c.6: i2c-6: S3C I2C adapter[1;61r[61;1H
+[1;62r[61;1H[    3.235000] i2c i2c-7: Invalid 7-bit I2C address 0x00[1;61r[61;1H
+[1;62r[61;1H[    3.235000] i2c i2c-7: Can't create device at 0x00[1;61r[61;1H
+[1;62r[61;1H[    3.235000] s3c-i2c s3c2440-i2c.7: i2c-7: S3C I2C adapter[1;61r[61;1H
+[1;62r[61;1H[    3.235000] Advanced Linux Sound Architecture Driver Version 1.0.24.[1;61r[61;1H
+[1;62r[61;1H[    3.240000] Bluetooth: Core ver 2.16[1;61r[61;1H
+[1;62r[61;1H[    3.240000] NET: Registered protocol family 31[1;61r[61;1H
+[1;62r[61;1H[    3.240000] Bluetooth: HCI device and connection manager initialized[1;61r[61;1H
+[1;62r[61;1H[    3.240000] Bluetooth: HCI socket layer initialized[1;61r[61;1H
+[1;62r[61;1H[    3.240000] Bluetooth: L2CAP socket layer initialized[1;61r[61;1H
+[1;62r[61;1H[    3.240000] Bluetooth: SCO socket layer initialized[1;61r[61;1H
+[1;62r[61;1H[    3.240000] Switching to clocksource mct-frc[1;61r[61;1H
+[1;62r[61;1H[    3.242324] Switched to NOHz mode on CPU #0[1;61r[61;1H
+[1;62r[61;1H[    3.245109] cfg80211: Calling CRDA to update world regulatory domain[1;61r[61;1H
+[1;62r[61;1H[    3.254088] NET: Registered protocol family 2[1;61r[61;1H
+[1;62r[61;1H[    3.254298] IP route cache hash table entries: 32768 (order: 5, 131072 bytes)[1;61r[61;1H
+[1;62r[61;1H[    3.255224] TCP established hash table entries: 131072 (order: 8, 1048576 bytes)[1;61r[61;1H
+[1;62r[61;1H[    3.256754] TCP bind hash table entries: 65536 (order: 7, 786432 bytes)[1;61r[61;1H
+[1;62r[61;1H[    3.257690] TCP: Hash tables configured (established 131072 bind 65536)[1;61r[61;1H
+[1;62r[61;1H[    3.257699] TCP reno registered[1;61r[61;1H
+[1;62r[61;1H[    3.257714] UDP hash table entries: 512 (order: 2, 16384 bytes)[1;61r[61;1H
+[1;62r[61;1H[    3.257746] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)[1;61r[61;1H
+[1;62r[61;1H[    3.258088] NET: Registered protocol family 1[1;61r[61;1H
+[1;62r[61;1H[    3.258520] RPC: Registered named UNIX socket transport module.[1;61r[61;1H
+[1;62r[61;1H[    3.258537] RPC: Registered udp transport module.[1;61r[61;1H
+[1;62r[61;1H[    3.258545] RPC: Registered tcp transport module.[1;61r[61;1H
+[1;62r[61;1H[    3.258552] RPC: Registered tcp NFSv4.1 backchannel transport module.[1;61r[61;1H
+[1;62r[61;1H[    3.258762] Trying to unpack rootfs image as initramfs...[1;61r[61;1H
+[1;62r[61;1H[    3.378087] Freeing initrd memory: 1408K[1;61r[61;1H
+[1;62r[61;1H[    3.378191] PMU: registered new PMU device of type 0[1;61r[61;1H
+[1;62r[61;1H[    3.378438] Exynos4 : ARM Clock down on idle mode is enabled[1;61r[61;1H
+[1;62r[61;1H[    3.379358] Loaded driver for PL330 DMAC-0 s3c-pl330[1;61r[61;1H
+[1;62r[61;1H[    3.379374] [61;17HDBUFF-64x8bytes Num_Chans-8 Num_Peri-1 Num_Events-32[1;61r[61;1H
+[1;62r[61;1H[    3.379557] Loaded driver for PL330 DMAC-1 s3c-pl330[1;61r[61;1H
+[1;62r[61;1H[    3.379574] [61;17HDBUFF-32x4bytes Num_Chans-8 Num_Peri-32 Num_Events-32[1;61r[61;1H
+[1;62r[61;1H[    3.379752] Loaded driver for PL330 DMAC-2 s3c-pl330[1;61r[61;1H
+[1;62r[61;1H[    3.379766] [61;17HDBUFF-32x4bytes Num_Chans-8 Num_Peri-32 Num_Events-32[1;61r[61;1H
+[1;62r[61;1H[    3.399653] highmem bounce pool size: 64 pages[1;61r[61;1H
+[1;62r[61;1H[    3.399994] ashmem: initialized[1;61r[61;1H
+[1;62r[61;1H[    3.425606] NTFS driver 2.1.30 [Flags: R/W].[1;61r[61;1H
+[1;62r[61;1H[    3.426549] fuse init (API version 7.16)[1;61r[61;1H
+[1;62r[61;1H[    3.427413] msgmni has been set to 731[1;61r[61;1H
+[1;62r[61;1H[    3.429322] io scheduler noop registered[1;61r[61;1H
+[1;62r[61;1H[    3.429337] io scheduler deadline registered[1;61r[61;1H
+[1;62r[61;1H[    3.429497] io scheduler cfq registered (default)[1;61r[61;1H
+[1;62r[61;1H[    3.431069] rongpin lcdtest=11[1;61r[61;1H
+[1;62r[61;1H[    3.431429] s3cfb s3cfb.0: [fb2] dma: 0x697f4000, cpu: 0xee869000, size: 0x00708000[1;61r[61;1H
+[1;62r[61;1H[    3.487490] Start display and show logo[1;61r[61;1H
+[1;62r[61;1H[    3.507679] rongpin s3cfb_set_clock div=14[1;61r[61;1H
+[1;62r[61;1H[    3.507695] s3cfb s3cfb.0: parent clock: 800000000, vclk: 54001000, vclk div: 15[1;61r[61;1H
+[1;62r[61;1H[    3.859936] rongping ----------pwm--------[1;61r[61;1H
+[1;62r[61;1H[    3.859965] s3cfb s3cfb.0: registered successfully[1;61r[61;1H
+[1;62r[61;1H[    3.860324] [1;61r[61;1H
+[1;62r[61;1H[    3.860333] -------------------------------------------------------------[1;61r[61;1H
+[1;62r[61;1H[    3.860343]                           rongpin pmu[1;61r[61;1H
+[1;62r[61;1H[    3.860350]                           www.rpdzkj.com[1;61r[61;1H
+[1;62r[61;1H[    3.860358]                        TEL: 0755 - 23574363[1;61r[61;1H
+[1;62r[61;1H[    3.860364] -------------------------------------------------------------[1;61r[61;1H
+[1;62r[61;1H[    3.860368] [1;61r[61;1H
+[1;62r[61;1H[    3.861830] print_constraints: vdd_mem range: 1200 <--> 1300 mV at 1500 mV [1;61r[61;1H
+[1;62r[61;1H[    3.862596] print_constraints: vdd_arm range: 800 <--> 1350 mV at 1200 mV [1;61r[61;1H
+[1;62r[61;1H[    3.863368] print_constraints: vdd_g3d range: 850 <--> 1200 mV at 1025 mV [1;61r[61;1H
+[1;62r[61;1H[    3.864153] print_constraints: vdd_int range: 800 <--> 1150 mV at 1075 mV [1;61r[61;1H
+[1;62r[61;1H[    3.864497] rongpin max8647 val=20 ldo=4[1;61r[61;1H
+[1;62r[61;1H[    3.864799] print_constraints: VDD_PLL: 1100 mV [1;61r[61;1H
+[1;62r[61;1H[    3.865182] rongpin max8647 val=16 ldo=5[1;61r[61;1H
+[1;62r[61;1H[    3.865731] print_constraints: VDD_ALIVE: 1000 mV [1;61r[61;1H
+[1;62r[61;1H[    3.866089] print_constraints: vdd dummy: 850 <--> 1200 mV at 600 mV [1;61r[61;1H
+[1;62r[61;1H[    3.866916] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled[1;61r[61;1H
+[1;62r[61;1H[    3.905555] s5pv210-uart.0: ttySAC0 at MMIO 0x13800000 (irq = 16) is a S3C6400/10[1;61r[61;1H
+[1;62r[61;1H[    3.915174] s5pv210-uart.1: ttySAC1 at MMIO 0x13810000 (irq = 20) is a S3C6400/10[1;61r[61;1H
+[1;62r[61;1H[    3.925158] s5pv210-uart.2: ttySAC2 at MMIO 0x13820000 (irq = 24) is a S3C6400/10[1;61r[61;1H
+[1;62r[61;1H[    4.951738] console [ttySAC2] enabled[1;61r[61;1H
+[1;62r[61;1H[    4.965169] s5pv210-uart.3: ttySAC3 at MMIO 0x13830000 (irq = 28) is a S3C6400/10[1;61r[61;1H
+[1;62r[61;1H[    4.993852] brd: module loaded[1;61r[61;1H
+[1;62r[61;1H[    5.002618] loop: module loaded[1;61r[61;1H
+[1;62r[61;1H[    5.005411] wm8994 1-001a: Failed to get supply 'DCVDD': -19[1;61r[61;1H
+[1;62r[61;1H[    5.009936] wm8994 1-001a: Failed to get supplies: -19[1;61r[61;1H
+[1;62r[61;1H[    5.016023] i2c-core: driver [wm8994] using legacy suspend method[1;61r[61;1H
+[1;62r[61;1H[    5.021240] i2c-core: driver [wm8994] using legacy resume method[1;61r[61;1H
+[1;62r[61;1H[    5.028708] CAN device driver interface[1;61r[61;1H
+[1;62r[61;1H[    5.031142] PPP generic driver version 2.4.2[1;61r[61;1H
+[1;62r[61;1H[    5.036032] PPP Deflate Compression module registered[1;61r[61;1H
+[1;62r[61;1H[    5.040454] PPP BSD Compression module registered[1;61r[61;1H
+[1;62r[61;1H[    5.046014] PPP MPPE Compression module registered[1;61r[61;1H
+[1;62r[61;1H[    5.049821] NET: Registered protocol family 24[1;61r[61;1H
+[1;62r[61;1H[    5.054386] dm9000 Ethernet Driver, V1.31[1;61r[61;1H
+[1;62r[61;1H[    5.058414] add rongpin test dm9000---------------[1;61r[61;1H
+[1;62r[61;1H[    5.063152] rongpin test db->addr_res->start =5000000 db->data_res=c09232e4 db->irq_res=c0923300 [1;61r[61;1H
+[1;62r[61;1H[    5.072099] rongpin test db->addr_res->start =0[1;61r[61;1H
+[1;62r[61;1H[    5.476437] rongpin test db->addr=ee83e000 db->data=ee858004[1;61r[61;1H
+[1;62r[61;1H[    5.480730] dm9000 revision 0x19[1;61r[61;1H
+[1;62r[61;1H[    5.485336] eth0: dm9000a at ee83e000,ee858004 IRQ 357 MAC: 00:09:c0:ff:ec:48 (platform data)[1;61r[61;1H
+[1;62r[61;1H[    5.493118] usbcore: registered new interface driver asix[1;61r[61;1H
+[1;62r[61;1H[    5.498173] usbcore: registered new interface driver cdc_ether[1;61r[61;1H
+[1;62r[61;1H[    5.504001] usbcore: registered new interface driver dm9601[1;61r[61;1H
+[1;62r[61;1H[    5.509544] usbcore: registered new interface driver net1080[1;61r[61;1H
+[1;62r[61;1H[    5.515248] usbcore: registered new interface driver cdc_subset[1;61r[61;1H
+[1;62r[61;1H[    5.521080] usbcore: registered new interface driver zaurus[1;61r[61;1H
+[1;62r[61;1H[    5.526612] cdc_ncm: 04-Aug-2011[1;61r[61;1H
+[1;62r[61;1H[    5.529785] usbcore: registered new interface driver cdc_ncm[1;61r[61;1H
+[1;62r[61;1H[    5.535853] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver[1;61r[61;1H
+[1;62r[61;1H[    5.542068] s5p-ehci s5p-ehci: S5P EHCI Host Controller[1;61r[61;1H
+[1;62r[61;1H[    5.547354] s5p-ehci s5p-ehci: new USB bus registered, assigned bus number 1[1;61r[61;1H
+[1;62r[61;1H[    5.554121] s5p-ehci s5p-ehci: irq 134, io mem 0x12580000[1;61r[61;1H
+[1;62r[61;1H[    5.565065] s5p-ehci s5p-ehci: USB 0.0 started, EHCI 1.00[1;61r[61;1H
+[1;62r[61;1H[    5.569064] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002[1;61r[61;1H
+[1;62r[61;1H[    5.575802] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1[1;61r[61;1H
+[1;62r[61;1H[    5.582993] usb usb1: Product: S5P EHCI Host Controller[1;61r[61;1H
+[1;62r[61;1H[    5.588196] usb usb1: Manufacturer: Linux 3.0.15 ehci_hcd[1;61r[61;1H
+[1;62r[61;1H[    5.593574] usb usb1: SerialNumber: s5p-ehci[1;61r[61;1H
+[1;62r[61;1H[    5.598669] hub 1-0:1.0: USB hub found[1;61r[61;1H
+[1;62r[61;1H[    5.601602] hub 1-0:1.0: 3 ports detected[1;61r[61;1H
+[1;62r[61;1H[    5.606483] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver[1;61r[61;1H
+[1;62r[61;1H[    5.611965] s5p-ohci s5p-ohci: Already power on PHY[1;61r[61;1H
+[1;62r[61;1H[    5.616631] s5p-ohci s5p-ohci: s5p OHCI[1;61r[61;1H
+[1;62r[61;1H[    5.620827] s5p-ohci s5p-ohci: new USB bus registered, assigned bus number 2[1;61r[61;1H
+[1;62r[61;1H[    5.627550] s5p-ohci s5p-ohci: irq 134, io mem 0x12590000[1;61r[61;1H
+[1;62r[61;1H[    5.689144] usb usb2: New USB device found, idVendor=1d6b, idProduct=0001[1;61r[61;1H
+[1;62r[61;1H[    5.694497] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1[1;61r[61;1H
+[1;62r[61;1H[    5.701691] usb usb2: Product: s5p OHCI[1;61r[61;1H
+[1;62r[61;1H[    5.705578] usb usb2: Manufacturer: Linux 3.0.15 ohci_hcd[1;61r[61;1H
+[1;62r[61;1H[    5.710898] usb usb2: SerialNumber: s5p-ohci[1;61r[61;1H
+[1;62r[61;1H[    5.715983] hub 2-0:1.0: USB hub found[1;61r[61;1H
+[1;62r[61;1H[    5.718866] hub 2-0:1.0: 3 ports detected[1;61r[61;1H
+[1;62r[61;1H[    5.724443] usbcore: registered new interface driver cdc_acm[1;61r[61;1H
+[1;62r[61;1H[    5.728752] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters[1;61r[61;1H
+[1;62r[61;1H[    5.736688] Initializing USB Mass Storage driver...[1;61r[61;1H
+[1;62r[61;1H[    5.741877] usbcore: registered new interface driver usb-storage[1;61r[61;1H
+[1;62r[61;1H[    5.747569] USB Mass Storage support registered.[1;61r[61;1H
+[1;62r[61;1H[    5.752696] usbcore: registered new interface driver usbserial[1;61r[61;1H
+[1;62r[61;1H[    5.758217] USB Serial support registered for generic[1;61r[61;1H
+[1;62r[61;1H[    5.763300] usbcore: registered new interface driver usbserial_generic[1;61r[61;1H
+[1;62r[61;1H[    5.769538] usbserial: USB Serial Driver core[1;61r[61;1H
+[1;62r[61;1H[    5.774052] USB Serial support registered for cp210x[1;61r[61;1H
+[1;62r[61;1H[    5.779094] usbcore: registered new interface driver cp210x[1;61r[61;1H
+[1;62r[61;1H[    5.784368] cp210x: v0.09:Silicon Labs CP210x RS232 serial adaptor driver[1;61r[61;1H
+[1;62r[61;1H[    5.791317] USB Serial support registered for GSM modem (1-port)[1;61r[61;1H
+[1;62r[61;1H[    5.797575] usbcore: registered new interface driver option[1;61r[61;1H
+[1;62r[61;1H[    5.802685] option: v0.7.2:USB Driver for GSM modems[1;61r[61;1H
+[1;62r[61;1H[    5.808159] s3c-udc : S3C HS USB OTG Device Driver,(c) 2008-2009 Samsung Electronics[1;61r[61;1H
+[1;62r[61;1H[    5.808168] s3c-udc : version 15 March 2009[1;61r[61;1H
+[1;62r[61;1H[    5.824460] android_usb gadget: Mass Storage Function, version: 2009/09/11[1;61r[61;1H
+[1;62r[61;1H[    5.829958] android_usb gadget: Number of LUNs=1[1;61r[61;1H
+[1;62r[61;1H[    5.834600]  lun0: LUN: removable file: (no medium)[1;61r[61;1H
+[1;62r[61;1H[    5.840126] android_usb gadget: android_usb ready[1;61r[61;1H
+[1;62r[61;1H[    5.844012] Registered gadget driver 'android_usb'[1;61r[61;1H
+[1;62r[61;1H[    5.849840] input: gpio-keys as /devices/platform/gpio-keys.0/input/input0[1;61r[61;1H
+[1;62r[61;1H[    5.857160] input: samsung-keypad as /devices/platform/samsung-keypad/input/input1[1;61r[61;1H
+[1;62r[61;1H[    5.864438] usbcore: registered new interface driver xpad[1;61r[61;1H
+[1;62r[61;1H[    5.869062] usbcore: registered new interface driver usb_acecad[1;61r[61;1H
+[1;62r[61;1H[    5.874673] acecad: v3.2:USB Acecad Flair tablet driver[1;61r[61;1H
+[1;62r[61;1H[    5.880149] usbcore: registered new interface driver aiptek[1;61r[61;1H
+[1;62r[61;1H[    5.885401] aiptek: v2.3 (May 2, 2007):Aiptek HyperPen USB Tablet Driver (Linux 2.6.x)[1;61r[61;1H
+[1;62r[61;1H[    5.893241] aiptek: Bryan W. Headley/Chris Atenasio/Cedric Brun/Rene van Paassen[1;61r[61;1H
+[1;62r[61;1H[    5.900898] usbcore: registered new interface driver gtco[1;61r[61;1H
+[1;62r[61;1H[    5.906060] GTCO usb driver version: 2.00.0006[1;61r[61;1H
+[1;62r[61;1H[    5.910542] usbcore: registered new interface driver hanwang[1;61r[61;1H
+[1;62r[61;1H[    5.916127] usb 1-3: new high speed USB device number 2 using s5p-ehci[1;61r[61;1H
+[1;62r[61;1H[    5.923015] usbcore: registered new interface driver kbtab[1;61r[61;1H
+[1;62r[61;1H[    5.928109] kbtab: v0.0.2:USB KB Gear JamStudio Tablet driver[1;61r[61;1H
+[1;62r[61;1H[    5.934093] usbcore: registered new interface driver wacom[1;61r[61;1H
+[1;62r[61;1H[    5.939316] wacom: v1.52:USB Wacom tablet driver[1;61r[61;1H
+[1;62r[61;1H[    5.944722] input: s3c-button as /devices/virtual/input/input2[1;61r[61;1H
+[1;62r[61;1H[    5.950142] s3c button Initialized!![1;61r[61;1H
+[1;62r[61;1H[    5.955571] S3C24XX RTC, (c) 2004,2006 Simtec Electronics[1;61r[61;1H
+[1;62r[61;1H[    5.959629] s3c-rtc s3c64xx-rtc: rtc disabled, re-enabling[1;61r[61;1H
+[1;62r[61;1H[    5.965961] using rtc device, s3c, for alarms[1;61r[61;1H
+[1;62r[61;1H[    5.969170] s3c-rtc s3c64xx-rtc: rtc core: registered s3c as rtc0[1;61r[61;1H
+[1;62r[61;1H[    5.975930] i2c /dev entries driver[1;61r[61;1H
+[1;62r[61;1H[    5.981765] Linux media interface: v0.10[1;61r[61;1H
+[1;62r[61;1H[    5.985177] lirc_dev: IR Remote Control driver registered, major 250 [1;61r[61;1H
+[1;62r[61;1H[    5.990805] IR NEC protocol handler initialized[1;61r[61;1H
+[1;62r[61;1H[    5.995195] IR RC5(x) protocol handler initialized[1;61r[61;1H
+[1;62r[61;1H[    5.999921] IR RC6 protocol handler initialized[1;61r[61;1H
+[1;62r[61;1H[    6.004504] IR JVC protocol handler initialized[1;61r[61;1H
+[1;62r[61;1H[    6.008981] IR Sony protocol handler initialized[1;61r[61;1H
+[1;62r[61;1H[    6.013577] IR RC5 (streamzap) protocol handler initialized[1;61r[61;1H
+[1;62r[61;1H[    6.019128] IR LIRC bridge handler initialized[1;61r[61;1H
+[1;62r[61;1H[    6.023563] Linux video capture interface: v2.00[1;61r[61;1H
+[1;62r[61;1H[    6.028392] *******rptvp5150_mod_init**********[1;61r[61;1H
+[1;62r[61;1H[    6.033569] s3c-csis: Samsung MIPI-CSIS0 driver probed successfully[1;61r[61;1H
+[1;62r[61;1H[    6.039108] s3c-csis: Samsung MIPI-CSIS1 driver probed successfully[1;61r[61;1H
+[1;62r[61;1H[    6.045476] Initialize JPEG driver[1;61r[61;1H
+[1;62r[61;1H[    6.049088] s5p-jpeg s5p-jpeg: JPEG driver is registered to /dev/video12[1;61r[61;1H
+[1;62r[61;1H[    6.055804] usb 1-3: New USB device found, idVendor=0424, idProduct=3503[1;61r[61;1H
+[1;62r[61;1H[    6.062075] s5p-jpeg s5p-jpeg: JPEG driver is registered to /dev/video11[1;61r[61;1H
+[1;62r[61;1H[    6.068714] usb 1-3: New USB device strings: Mfr=0, Product=0, SerialNumber=0[1;61r[61;1H
+[1;62r[61;1H[    6.076750] i2c-core: driver [s5p_ddc] using legacy suspend method[1;61r[61;1H
+[1;62r[61;1H[    6.082177] i2c-core: driver [s5p_ddc] using legacy resume method[1;61r[61;1H
+[1;62r[61;1H[    6.088298] S5P HPD Driver, (c) 2009 Samsung Electronics[1;61r[61;1H
+[1;62r[61;1H[    6.093426] hub 1-3:1.0: USB hub found[1;61r[61;1H
+[1;62r[61;1H[    6.097232] hub 1-3:1.0: 3 ports detected[1;61r[61;1H
+[1;62r[61;1H[    6.102176] S5P CEC Driver, (c) 2009 Samsung Electronics[1;61r[61;1H
+[1;62r[61;1H[    6.109215] MFC(Multi Function Codec - FIMV v5.x) registered successfully[1;61r[61;1H
+[1;62r[61;1H[    6.115906] Samsung Graphics 2D driver, (c) 2011 Samsung Electronics[1;61r[61;1H
+[1;62r[61;1H[    6.121917] UMP: UMP device driver  loaded[1;61r[61;1H
+[1;62r[61;1H[    6.125582] Mali: init_mali_clock mali_clock c091ca0c[1;61r[61;1H
+[1;62r[61;1H[    6.130205] Mali: = regulator_set_voltage: 1025000, 1025000 [1;61r[61;1H
+[1;62r[61;1H[    6.138159] Mali: Mali device driver loaded[1;61r[61;1H
+[1;62r[61;1H[    6.141257] S3C2410 Watchdog Timer, (c) 2004 Simtec Electronics[1;61r[61;1H
+[1;62r[61;1H[    6.147410] s3c2410-wdt s3c2410-wdt: watchdog inactive, reset disabled, irq enabled[1;61r[61;1H
+[1;62r[61;1H[    6.156430] device-mapper: uevent: version 1.0.3[1;61r[61;1H
+[1;62r[61;1H[    6.160556] device-mapper: ioctl: 4.20.0-ioctl (2011-02-02) initialised: dm-devel@redhat.com[1;61r[61;1H
+[1;62r[61;1H[    6.168243] Bluetooth: HCI UART driver ver 2.2[1;61r[61;1H
+[1;62r[61;1H[    6.172485] Bluetooth: Generic Bluetooth USB driver ver 0.6[1;61r[61;1H
+[1;62r[61;1H[    6.178320] usbcore: registered new interface driver btusb[1;61r[61;1H
+[1;62r[61;1H[    6.183547] rtk_btusb: Realtek Bluetooth USB driver module init, version 2.21[1;61r[61;1H
+[1;62r[61;1H[    6.190604] rtk_btusb: Register usb char device interface for BT driver[1;61r[61;1H
+[1;62r[61;1H[    6.198108] usbcore: registered new interface driver rtk_btusb[1;61r[61;1H
+[1;62r[61;1H[    6.203894] cpuidle: using governor ladder[1;61r[61;1H
+[1;62r[61;1H[    6.208484] cpuidle: using governor menu[1;61r[61;1H
+[1;62r[61;1H[    6.211533] dw_mmc dw_mmc: Using internal DMA controller.[1;61r[61;1H
+[1;62r[61;1H[    6.216606] mmc0: no vmmc regulator found[1;61r[61;1H
+[1;62r[61;1H[    6.220859] dw_mmc dw_mmc: DW MMC controller at irq 141, 32 bit host data width, 128 deep fifo[1;61r[61;1H
+[1;62r[61;1H[    6.229442] sdhci: Secure Digital Host Controller Interface driver[1;61r[61;1H
+[1;62r[61;1H[    6.235223] sdhci: Copyright(c) Pierre Ossman[1;61r[61;1H
+[1;62r[61;1H[    6.239603] s3c-sdhci s3c-sdhci.2: clock source 2: sclk_mmc (100000000 Hz)[1;61r[61;1H
+[1;62r[61;1H[    6.246419] mmc1: no vmmc regulator found[1;61r[61;1H
+[1;62r[61;1H[    6.250378] mmc_host mmc0: Bus speed (slot 0) = 100000000Hz (slot req 400000Hz, actual 400000HZ div = 125)[1;61r[61;1H
+[1;62r[61;1H[    6.260408] mmc1: SDHCI controller on samsung-hsmmc [s3c-sdhci.2] using ADMA[1;61r[61;1H
+[1;62r[61;1H[    6.267257] s3c-sdhci s3c-sdhci.3: clock source 2: sclk_mmc (100000000 Hz)[1;61r[61;1H
+[1;62r[61;1H[    6.274998] mmc2: no vmmc regulator found[1;61r[61;1H
+[1;62r[61;1H[    6.280298] mmc2: SDHCI controller on samsung-hsmmc [s3c-sdhci.3] using ADMA[1;61r[61;1H
+[1;62r[61;1H[    6.307079] usbcore: registered new interface driver usbhid[1;61r[61;1H
+[1;62r[61;1H[    6.311330] usbhid: USB HID core driver[1;61r[61;1H
+[1;62r[61;1H[    6.316061] logger: created 256K log 'log_main'[1;61r[61;1H
+[1;62r[61;1H[    6.319872] logger: created 256K log 'log_events'[1;61r[61;1H
+[1;62r[61;1H[    6.324736] logger: created 256K log 'log_radio'[1;61r[61;1H
+[1;62r[61;1H[    6.329303] logger: created 256K log 'log_system'[1;61r[61;1H
+[1;62r[61;1H[    6.337871] Samsung Audio Subsystem Driver, (c) 2011 Samsung Electronics[1;61r[61;1H
+[1;62r[61;1H[    6.343347] audss_init: RCLK SRC[busclk][1;61r[61;1H
+[1;62r[61;1H[    6.347115] audss_clk_div_init: Not supported src clk rate[1;61r[61;1H
+[1;62r[61;1H[    6.353034] [wm8978:]smdk_audio_init[1;61r[61;1H
+[1;62r[61;1H[    6.357790] mmc_host mmc0: Bus speed (slot 0) = 100000000Hz (slot req 52000000Hz, actual 50000000HZ div = 1)[1;61r[61;1H
+[1;62r[61;1H[    6.375248] usb 1-3.1: new high speed USB device number 3 using s5p-ehci[1;61r[61;1H
+[1;62r[61;1H[    6.380931] mmc0: new high speed MMC card at address 0001[1;61r[61;1H
+[1;62r[61;1H[    6.395452] mmcblk0: mmc0:0001 SEM16G 14.6 GiB [1;61r[61;1H
+[1;62r[61;1H[    6.398752] mmcblk0boot0: mmc0:0001 SEM16G partition 1 4.00 MiB[1;61r[61;1H
+[1;62r[61;1H[    6.410253] mmcblk0boot1: mmc0:0001 SEM16G partition 2 4.00 MiB[1;61r[61;1H
+[1;62r[61;1H[    6.421199]  mmcblk0: p1 p2 p3 p4[1;61r[61;1H
+[1;62r[61;1H[    6.437471]  mmcblk0boot1: unknown partition table[1;61r[61;1H
+[1;62r[61;1H[    6.447634]  mmcblk0boot0: unknown partition table[1;61r[61;1H
+[1;62r[61;1H[    6.495723] usb 1-3.1: New USB device found, idVendor=1a40, idProduct=0101[1;61r[61;1H
+[1;62r[61;1H[    6.504941] usb 1-3.1: New USB device strings: Mfr=0, Product=1, SerialNumber=0[1;61r[61;1H
+[1;62r[61;1H[    6.526139] usb 1-3.1: Product: USB 2.0 Hub[1;61r[61;1H
+[1;62r[61;1H[    6.535177] hub 1-3.1:1.0: USB hub found[1;61r[61;1H
+[1;62r[61;1H[    6.537754] hub 1-3.1:1.0: 4 ports detected[1;61r[61;1H
+[1;62r[61;1H[    6.551551] asoc: wm8978_codec <-> samsung-i2s.0 mapping ok[1;61r[61;1H
+[1;62r[61;1H[    6.556557] asoc: wm8978_codec <-> samsung-i2s.0 mapping ok[1;61r[61;1H
+[1;62r[61;1H[    6.576435] ALSA device list:[1;61r[61;1H
+[1;62r[61;1H[    6.577933]   #0: SMDK-I2S[1;61r[61;1H
+[1;62r[61;1H[    6.583052] GACT probability NOT on[1;61r[61;1H
+[1;62r[61;1H[    6.585142] Mirror/redirect action on[1;61r[61;1H
+[1;62r[61;1H[    6.588715] u32 classifier[1;61r[61;1H
+[1;62r[61;1H[    6.592623]     Actions configured[1;61r[61;1H
+[1;62r[61;1H[    6.594791] Netfilter messages via NETLINK v0.30.[1;61r[61;1H
+[1;62r[61;1H[    6.599580] nf_conntrack version 0.5.0 (16384 buckets, 65536 max)[1;61r[61;1H
+[1;62r[61;1H[    6.606772] ctnetlink v0.93: registering with nfnetlink.[1;61r[61;1H
+[1;62r[61;1H[    6.611010] NF_TPROXY: Transparent proxy support initialized, version 4.1.0[1;61r[61;1H
+[1;62r[61;1H[    6.617865] NF_TPROXY: Copyright (c) 2006-2007 BalaBit IT Ltd.[1;61r[61;1H
+[1;62r[61;1H[    6.624193] xt_time: kernel timezone is -0000[1;61r[61;1H
+[1;62r[61;1H[    6.629650] ip_tables: (C) 2000-2006 Netfilter Core Team[1;61r[61;1H
+[1;62r[61;1H[    6.633746] arp_tables: (C) 2002 David S. Miller[1;61r[61;1H
+[1;62r[61;1H[    6.638210] TCP bic registered[1;61r[61;1H
+[1;62r[61;1H[    6.641163] TCP cubic registered[1;61r[61;1H
+[1;62r[61;1H[    6.644334] TCP westwood registered[1;61r[61;1H
+[1;62r[61;1H[    6.647904] TCP htcp registered[1;61r[61;1H
+[1;62r[61;1H[    6.653566] NET: Registered protocol family 10[1;61r[61;1H
+[1;62r[61;1H[    6.660353] Mobile IPv6[1;61r[61;1H
+[1;62r[61;1H[    6.661379] ip6_tables: (C) 2000-2006 Netfilter Core Team[1;61r[61;1H
+[1;62r[61;1H[    6.667108] IPv6 over IPv4 tunneling driver[1;61r[61;1H
+[1;62r[61;1H[    6.676626] NET: Registered protocol family 17[1;61r[61;1H
+[1;62r[61;1H[    6.679643] NET: Registered protocol family 15[1;61r[61;1H
+[1;62r[61;1H[    6.684191] can: controller area network core (rev 20090105 abi 8)[1;61r[61;1H
+[1;62r[61;1H[    6.690398] NET: Registered protocol family 29[1;61r[61;1H
+[1;62r[61;1H[    6.694614] can: raw protocol (rev 20090105)[1;61r[61;1H
+[1;62r[61;1H[    6.698926] can: broadcast manager protocol (rev 20090105 t)[1;61r[61;1H
+[1;62r[61;1H[    6.704693] Bluetooth: RFCOMM TTY layer initialized[1;61r[61;1H
+[1;62r[61;1H[    6.709482] Bluetooth: RFCOMM socket layer initialized[1;61r[61;1H
+[1;62r[61;1H[    6.714558] Bluetooth: RFCOMM ver 1.11[1;61r[61;1H
+[1;62r[61;1H[    6.718252] Bluetooth: BNEP (Ethernet Emulation) ver 1.3[1;61r[61;1H
+[1;62r[61;1H[    6.723542] Bluetooth: BNEP filters: protocol multicast[1;61r[61;1H
+[1;62r[61;1H[    6.728819] NET: Registered protocol family 35[1;61r[61;1H
+[1;62r[61;1H[    6.733408] lib80211: common routines for IEEE802.11 drivers[1;61r[61;1H
+[1;62r[61;1H[    6.738844] Registering the dns_resolver key type[1;61r[61;1H
+[1;62r[61;1H[    6.743551] EXYNOS4X12: Adaptive Support Voltage init[1;61r[61;1H
+[1;62r[61;1H[    6.748543] [1;61r[61;1H
+[1;62r[61;1H[    6.748547] rongpin avs=2[1;61r[61;1H
+[1;62r[61;1H[    6.748550] [1;61r[61;1H
+[1;62r[61;1H[    6.754203] EXYNOS4X12(SG):  ORIG : 2 MOD : 0 RESULT : 2[1;61r[61;1H
+[1;62r[61;1H[    6.759511] VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4[1;61r[61;1H
+[1;62r[61;1H[    6.767050] Registering SWP/SWPB emulation handler[1;61r[61;1H
+[1;62r[61;1H[    6.771836] DVFS : VDD_ARM Voltage table set with 2 Group[1;61r[61;1H
+[1;62r[61;1H[    6.777249] CPUFREQ L0 : 0 uV[1;61r[61;1H
+[1;62r[61;1H[    6.780197] CPUFREQ L1 : 0 uV[1;61r[61;1H
+[1;62r[61;1H[    6.783058] CPUFREQ L2 : 1300000 uV[1;61r[61;1H
+[1;62r[61;1H[    6.786565] CPUFREQ L3 : 1237500 uV[1;61r[61;1H
+[1;62r[61;1H[    6.790002] CPUFREQ L4 : 1200000 uV[1;61r[61;1H
+[1;62r[61;1H[    6.793514] CPUFREQ L5 : 1150000 uV[1;61r[61;1H
+[1;62r[61;1H[    6.796984] CPUFREQ L6 : 1100000 uV[1;61r[61;1H
+[1;62r[61;1H[    6.800446] CPUFREQ L7 : 1050000 uV[1;61r[61;1H
+[1;62r[61;1H[    6.803889] CPUFREQ L8 : 1000000 uV[1;61r[61;1H
+[1;62r[61;1H[    6.807389] CPUFREQ L9 : 975000 uV[1;61r[61;1H
+[1;62r[61;1H[    6.810779] CPUFREQ L10 : 962500 uV[1;61r[61;1H
+[1;62r[61;1H[    6.814218] CPUFREQ L11 : 950000 uV[1;61r[61;1H
+[1;62r[61;1H[    6.817717] CPUFREQ L12 : 950000 uV[1;61r[61;1H
+[1;62r[61;1H[    6.821186] CPUFREQ L13 : 925000 uV[1;61r[61;1H
+[1;62r[61;1H[    6.824634] CPUFREQ L14 : 900000 uV[1;61r[61;1H
+[1;62r[61;1H[    6.828358] setting to 1600000 kHz because of event 1[1;61r[61;1H
+[1;62r[61;1H[    6.833554] setting to 1200000 kHz because of event 3[1;61r[61;1H
+[1;62r[61;1H[    6.838376] usb 1-3.1.1: new high speed USB device number 4 using s5p-ehci[1;61r[61;1H
+[1;62r[61;1H[    0.000000]: <0>DBG TKCore:chip_tee_entry:47: smc reg[1;61r[61;1H
+[1;62r[61;1H[61;57H[    6.851526] [ 0 ] Memory Type Undertermined.[1;61r[61;1H
+[1;62r[61;1H[    6.854407] DVFS : VDD_INT Voltage table set with 2 Group[1;61r[61;1H
+[1;62r[61;1H[    6.865142] rongpin s_dummy_vol_index=18[1;61r[61;1H
+[1;62r[61;1H[    6.867962] Failed to init busfreq.[1;61r[61;1H
+[1;62r[61;1H[    6.871580] exynos4_integrated_dvfs_hotplug_init, max(1600000),min(200000)[1;61r[61;1H
+[1;62r[61;1H[    6.879249] regulator_init_complete: vdd dummy: incomplete constraints, leaving on[1;61r[61;1H
+[1;62r[61;1H[    6.885860] regulator_init_complete: VDD_ALIVE: incomplete constraints, leaving on[1;61r[61;1H
+[1;62r[61;1H[    6.893344] regulator_init_complete: VDD_PLL: incomplete constraints, leaving on[1;61r[61;1H
+[1;62r[61;1H[    6.900579] [1;61r[61;1H
+[1;62r[61;1H[    6.900585] ***********mcp251x_can_init************[1;61r[61;1H
+[1;62r[61;1H[    6.900588] [1;61r[61;1H
+[1;62r[61;1H[    6.908640] [1;61r[61;1H
+[1;62r[61;1H[    6.908647] ***********mcp251x_can_init 2222************[1;61r[61;1H
+[1;62r[61;1H[    6.908651] [1;61r[61;1H
+[1;62r[61;1H[    6.916688] [1;61r[61;1H
+[1;62r[61;1H[    6.916693] ***********mcp251x_can_probe************[1;61r[61;1H
+[1;62r[61;1H[    6.916697] [1;61r[61;1H
+[1;62r[61;1H[    6.924487] [1;61r[61;1H
+[1;62r[61;1H[    6.924494] ***********mcp251x_can_probe************111111[1;61r[61;1H
+[1;62r[61;1H[    6.924497] [1;61r[61;1H
+[1;62r[61;1H[    6.932976] [1;61r[61;1H
+[1;62r[61;1H[    6.932981] ***********mcp251x_can_probe************2222222[1;61r[61;1H
+[1;62r[61;1H[    6.932985] [1;61r[61;1H
+[1;62r[61;1H[    6.941511] [1;61r[61;1H
+[1;62r[61;1H[    6.941516] ***********mcp251x_can_probe************5555555555[1;61r[61;1H
+[1;62r[61;1H[    6.941520] [1;61r[61;1H
+[1;62r[61;1H[    6.950234] [1;61r[61;1H
+[1;62r[61;1H[    6.950241] ***********mcp251x_hw_probe************[1;61r[61;1H
+[1;62r[61;1H[    6.950244] [1;61r[61;1H
+[1;62r[61;1H[    6.958016] ***********mcp251x_hw_reset************[1;61r[61;1H
+[1;62r[61;1H[    6.973134] mcp251x_read_reg(spi, CANSTAT) = 0xff[1;61r[61;1H
+[1;62r[61;1H[    6.976549] mcp251x_read_reg(spi, CANSTAT) = 0xff[1;61r[61;1H
+[1;62r[61;1H[    6.981340] mcp251x_read_reg(spi, CANSTAT) = 0xff[1;61r[61;1H
+[1;62r[61;1H[    6.986023] mcp251x_read_reg(spi, CANSTAT) = 0xff[1;61r[61;1H
+[1;62r[61;1H[    6.990511] usb 1-3.1.1: New USB device found, idVendor=1a40, idProduct=0101[1;61r[61;1H
+[1;62r[61;1H[    6.997603] mcp251x_read_reg(spi, CANSTAT) = 0xff[1;61r[61;1H
+[1;62r[61;1H[    7.002208] usb 1-3.1.1: New USB device strings: Mfr=0, Product=1, SerialNumber=0[1;61r[61;1H
+[1;62r[61;1H[    7.009763] mcp251x_read_reg(spi, CANSTAT) = 0xff[1;61r[61;1H
+[1;62r[61;1H[    7.014431] mcp251x_read_reg(spi, CANSTAT) = 0xff[1;61r[61;1H
+[1;62r[61;1H[    7.019032] usb 1-3.1.1: Product: USB 2.0 Hub[1;61r[61;1H
+[1;62r[61;1H[    7.035174] hub 1-3.1.1:1.0: USB hub found[1;61r[61;1H
+[1;62r[61;1H[    7.037985] hub 1-3.1.1:1.0: 4 ports detected[1;61r[61;1H
+[1;62r[61;1H[    7.140252] usb 1-3.1.2: new high speed USB device number 5 using s5p-ehci[1;61r[61;1H
+[1;62r[61;1H[    7.250971] usb 1-3.1.2: New USB device found, idVendor=0bda, idProduct=b720[1;61r[61;1H
+[1;62r[61;1H[    7.260081] usb 1-3.1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3[1;61r[61;1H
+[1;62r[61;1H[    7.274014] usb 1-3.1.2: Product: 802.11n WLAN Adapter[1;61r[61;1H
+[1;62r[61;1H[    7.282572] usb 1-3.1.2: Manufacturer: Realtek[1;61r[61;1H
+[1;62r[61;1H[    7.285576] usb 1-3.1.2: SerialNumber: 00e04c000001[1;61r[61;1H
+[1;62r[61;1H[    7.305629] rtk_btusb: btusb_probe: usb_interface d846e800, bInterfaceNumber 0, idVendor 0x0bda, idProduct 0x0000[1;61r[61;1H
+[1;62r[61;1H[    7.323595] rtk_btusb: get_fw_table_entry: Product id = 0xb720, fw table entry size 39[1;61r[61;1H
+[1;62r[61;1H[    7.338505] rtk_btusb: firmware_info_init: Auto suspend is disabled[1;61r[61;1H
+[1;62r[61;1H[    7.349615] rtk_btusb: btusb_probe: download begining...[1;61r[61;1H
+[1;62r[61;1H[    7.358519] rtk_btusb: btusb_probe: download ending...[1;61r[61;1H
+[1;62r[61;1H[    7.367078] rtk_btusb: btusb_probe: Check bt reset flag 0[1;61r[61;1H
+[1;62r[61;1H[    8.025049] mcp251x spi1.0: MCP251x didn't enter in conf mode after reset[1;61r[61;1H
+[1;62r[61;1H[    8.030693] CANSTAT 0xee CANCTRL 0x17[1;61r[61;1H
+[1;62r[61;1H[    8.034012] mcp251x spi1.0: Probe failed[1;61r[61;1H
+[1;62r[61;1H[    8.037964] mcp251x spi1.0: probe failed[1;61r[61;1H
+[1;62r[61;1H[    8.042094] spi_register_driver(&mcp251x_can_driver) success[1;61r[61;1H
+[1;62r[61;1H[    8.042103] [1;61r[61;1H
+[1;62r[61;1H[    8.050251] s3c-usbgadget s3c-usbgadget: Already power on PHY[1;61r[61;1H
+[1;62r[61;1H[    8.055828] usb cable = 1[1;61r[61;1H
+[1;62r[61;1H[    8.057511] exynos_usb_switch: Exynos USB Switch Driver[1;61r[61;1H
+[1;62r[61;1H[    8.062589] ==ft5x0x_ts_init=[1;61r[61;1H
+[1;62r[61;1H[    8.330160] ft5x0x_i2c_txdata i2c write error: -6[1;61r[61;1H
+[1;62r[61;1H[    8.333471] ft5x0x_i2c_txdata i2c write error: -6[1;61r[61;1H
+[1;62r[61;1H[    8.338192] ft5x0x_i2c_txdata i2c write error: -6[1;61r[61;1H
+[1;62r[61;1H[    8.342878] ft5x0x_i2c_txdata i2c write error: -6[1;61r[61;1H
+[1;62r[61;1H[    8.347489] ft5x0x_ts_2 6-0038: ft 2 Warnning: I2C connection might be something wrong![1;61r[61;1H
+[1;62r[61;1H[    8.355784] <<-GTP-INFO->> GTP driver installing...[1;61r[61;1H
+[1;62r[61;1H[    8.360550] <<-GTP-INFO->> GTP Driver Version: V2.0<2013/08/28>[1;61r[61;1H
+[1;62r[61;1H[    8.366284] <<-GTP-INFO->> GTP Driver Built@16:47:02, Jul 13 2017[1;61r[61;1H
+[1;62r[61;1H[    8.372325] <<-GTP-INFO->> GTP I2C Address: 0x5d[1;61r[61;1H
+[1;62r[61;1H[    8.377938] <<-GTP-INFO->> Guitar reset[1;61r[61;1H
+[1;62r[61;1H[    8.447384] android_work: sent uevent USB_STATE=CONNECTED[1;61r[61;1H
+[1;62r[61;1H[    8.566390] gt int io end[1;61r[61;1H
+[1;62r[61;1H[    8.568391] <<-GTP-INFO->> IC Version: 9271_1020[1;61r[61;1H
+[1;62r[61;1H[    8.572566] <<-GTP-INFO->> CTP_CONFIG_GROUP1 used, config length: 186[1;61r[61;1H
+[1;62r[61;1H[    8.578977] <<-GTP-INFO->> Driver send config.[1;61r[61;1H
+[1;62r[61;1H[    8.589541] <<-GTP-INFO->> X_MAX: 1024, Y_MAX: 600, TRIGGER: 0x01[1;61r[61;1H
+[1;62r[61;1H[    8.605473] input: Goodix-TS as /devices/virtual/input/input3[1;61r[61;1H
+[1;62r[61;1H[    8.610323] <<-GTP-INFO->> GTP works in interrupt mode.[1;61r[61;1H
+[1;62r[61;1H[    8.615450] i2c-core: driver [Goodix-TS] using legacy suspend method[1;61r[61;1H
+[1;62r[61;1H[    8.621489] i2c-core: driver [Goodix-TS] using legacy resume method[1;61r[61;1H
+[1;62r[61;1H[    8.627722] mma7660 G-Sensor driver: init[1;61r[61;1H
+[1;62r[61;1H[    8.632566] rongpin mma7660: s_i2c_client->addr = 0x4c[1;61r[61;1H
+[1;62r[61;1H[    8.637173] rongpin mma7660_chip_init[1;61r[61;1H
+[1;62r[61;1H[    8.640966] s3c-rtc s3c64xx-rtc: setting system clock to 2000-01-01 00:17:10 UTC (946685830)[1;61r[61;1H
+[1;62r[61;1H[    8.649285] ###s3c_fimc0_cfg_gpio[1;61r[61;1H
+[1;62r[61;1H[    8.652157] ###s3c_fimc0_cfg_gpio end !![1;61r[61;1H
+[1;62r[61;1H[    8.656029] cam->srclk_name = xusbxti[1;61r[61;1H
+[1;62r[61;1H[    8.656035] cam->clk_name = sclk_cam0[1;61r[61;1H
+[1;62r[61;1H[    8.663382] cam->srclk_name = xusbxti[1;61r[61;1H
+[1;62r[61;1H[    8.663388] cam->clk_name = sclk_cam1[1;61r[61;1H
+[1;62r[61;1H[    8.671096] FIMC0 registered successfully[1;61r[61;1H
+[1;62r[61;1H[    8.675257] FIMC1 registered successfully[1;61r[61;1H
+[1;62r[61;1H[    8.679192] FIMC2 registered successfully[1;61r[61;1H
+[1;62r[61;1H[    8.683273] FIMC3 registered successfully[1;61r[61;1H
+[1;62r[61;1H[    8.686984] S5P TVOUT Driver v3.0 (c) 2010 Samsung Electronics[1;61r[61;1H
+[1;62r[61;1H[    8.718090] ++ RPDZKJ Battery driver init.[1;61r[61;1H
+[1;62r[61;1H[    8.721190] ++ RPDZKJ Battery driver init----.[1;61r[61;1H
+[1;62r[61;1H[    8.725297] ++ RPDZKJ Battery driver init.---1[1;61r[61;1H
+[1;62r[61;1H[    8.729573] ++ RPDZKJ Battery driver init.---1[1;61r[61;1H
+[1;62r[61;1H[    8.734520] ++ RPDZKJ Battery driver init.---1q[1;61r[61;1H
+[1;62r[61;1H[    8.739228] ++ RPDZKJ Battery driver init.---1[1;61r[61;1H
+[1;62r[61;1H[    8.743323] ++ RPDZKJ Battery driver init.---2[1;61r[61;1H
+[1;62r[61;1H[    8.747567] rpdzkj bt -----bt_init_module[1;61r[61;1H
+[1;62r[61;1H[    8.752663] [ rp_dev ]: bt_sleep_probe(); name =bt_sleep[1;61r[61;1H
+[1;62r[61;1H[    8.757114] rpdzkj bt----init_module OK [1;61r[61;1H
+[1;62r[61;1H[    8.761121] input: Unspecified device as /devices/virtual/input/input4[1;61r[61;1H
+[1;62r[61;1H[    8.768485] rongpin headset_irq_handler[1;61r[61;1H
+[1;62r[61;1H[    8.771074] headset_switch_work,handset_state:0[1;61r[61;1H
+[1;62r[61;1H[    8.775684] headset_switch_work,handset_state:0[1;61r[61;1H
+[1;62r[61;1H[    8.779993] Headset plug out.[1;61r[61;1H
+[1;62r[61;1H[    8.783054] Headset plug out.[1;61r[61;1H
+[1;62r[61;1H[    8.785951] rongpin earphone_pole_flag:0[1;61r[61;1H
+[1;62r[61;1H[    8.790005] rongpin earphone_pole_flag:0[1;61r[61;1H
+[1;62r[61;1H[    8.795144] Freeing init memory: 832K[1;61r[61;1H
+[1;62r[61;1H[    8.807346] init (1): /proc/1/oom_adj is deprecated, please use /proc/1/oom_score_adj instead.[1;61r[61;1H
+[1;62r[61;1H[    8.815057] rongpin earphone_key_scan -----[1;61r[61;1H
+[1;62r[61;1H[    8.836449] MFC F/W loaded successfully (size: 360152)[1;61r[61;1H
+[1;62r[61;1H[    9.071781] EXT4-fs (mmcblk0p2): recovery complete[1;61r[61;1H
+[1;62r[61;1H[    9.076214] EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)[1;61r[61;1H
+[1;62r[61;1H[    9.093308] EXT4-fs (mmcblk0p3): VFS: Can't find ext4 filesystem[1;61r[61;1H
+[1;62r[61;1H[    9.107676] EXT4-fs (mmcblk0p4): VFS: Can't find ext4 filesystem[1;61r[61;1H
+[1;62r[61;1H[    9.127305] tkcore: Unknown symbol dma_buf_export_named (err 0)[1;61r[61;1H
+[1;62r[61;1H[    9.131843] tkcore: Unknown symbol dma_buf_attach (err 0)[1;61r[61;1H
+[1;62r[61;1H[    9.137204] tkcore: Unknown symbol dma_buf_map_attachment (err 0)[1;61r[61;1H
+[1;62r[61;1H[    9.143257] tkcore: Unknown symbol dma_buf_unmap_attachment (err 0)[1;61r[61;1H
+[1;62r[61;1H[    9.149494] tkcore: Unknown symbol dma_buf_get (err 0)[1;61r[61;1H
+[1;62r[61;1H[    9.154612] tkcore: Unknown symbol dma_buf_put (err 0)[1;61r[61;1H
+[1;62r[61;1H[    9.159836] tkcore: Unknown symbol dma_buf_fd (err 0)[1;61r[61;1H
+[1;62r[61;1H[    9.164935] tkcore: Unknown symbol dma_buf_detach (err 0)[1;61r[61;1H
+[1;62r[61;1H[    9.172215] tkcore_drv: Unknown symbol tee_core_alloc (err 0)[1;61r[61;1H
+[1;62r[61;1H[    9.176558] tkcore_drv: Unknown symbol tee_wait_queue_wakeup (err 0)[1;61r[61;1H
+[1;62r[61;1H[    9.182855] tkcore_drv: Unknown symbol tee_core_add (err 0)[1;61r[61;1H
+[1;62r[61;1H[    9.188411] tkcore_drv: Unknown symbol tee_wait_queue_exit (err 0)[1;61r[61;1H
+[1;62r[61;1H[    9.194570] tkcore_drv: Unknown symbol tee_wait_queue_sleep (err 0)[1;61r[61;1H
+[1;62r[61;1H[    9.200834] tkcore_drv: Unknown symbol tee_supp_cmd (err 0)[1;61r[61;1H
+[1;62r[61;1H[    9.206384] tkcore_drv: Unknown symbol tee_core_del (err 0)[1;61r[61;1H
+[1;62r[61;1H[    9.211931] tkcore_drv: Unknown symbol tee_core_free (err 0)[1;61r[61;1H
+[1;62r[61;1H[    9.217566] tkcore_drv: Unknown symbol tee_wait_queue_init (err 0)[1;61r[61;1H
+[1;62r[61;1H[    9.223740] tkcore_drv: Unknown symbol tee_map_cached_shm (err 0)[1;61r[61;1H
+[1;62r[61;1H[    9.229826] tkcore_drv: Unknown symbol __tee_get (err 0)[1;61r[61;1H
+[1;62r[61;1H[    9.248462] init: cannot find '/system/etc/install-recovery.sh', disabling 'flash_recovery'[1;61r[61;1H
+[1;62r[61;1H[    9.293537] adb_bind_config[1;61r[61;1H
+[1;62r[61;1H[    9.300370] android_work: sent uevent USB_STATE=DISCONNECTED[1;61r[61;1H
+[1;62r[61;1H[    9.359850] init: untracked pid 1293 exited[1;61r[61;1H
+[1;62r[61;1H[    9.365359] adb_open[1;61r[61;1H
+[1;62r[61;1Hshell@android:/ $ [    9.735172] android_work: sent uevent USB_STATE=CONNECTED[1;61r[61;1H
+[1;62r[61;1H[    9.820572] android_usb gadget: high speed config #1: android[1;61r[61;1H
+[1;62r[61;1H[    9.850164] android_work: sent uevent USB_STATE=CONFIGURED[1;61r[61;1H
+[1;62r[61;1H[   10.109468] s3c-fimc3: FIMC3 1 opened.[1;61r[61;1H
+[1;62r[61;1H[   10.645908] s3c-fimc3: RongPin FIMC3 0 released.[1;61r[61;1H
+[1;62r[61;1H[   10.651848] init: untracked pid 1283 exited[1;61r[61;1H
+[1;62r[61;1H[   11.878525] init: untracked pid 1323 exited[1;61r[61;1H
+[1;62r[61;1H[   14.920472] init: untracked pid 1347 exited[1;61r[61;1H
+[1;62r[61;1H[   15.165787] s3c-fimc3: FIMC3 1 opened.[1;61r[61;1H
+[1;62r[61;1H[   15.680637] s3c-fimc3: RongPin FIMC3 0 released.[1;61r[61;1H
+[1;62r[61;1H[   15.686533] init: untracked pid 1332 exited[1;61r[61;1H
+[1;62r[61;1H[   19.191948] init: untracked pid 1341 exited[1;61r[61;1H
+[1;62r[61;1H[   19.220466] init: untracked pid 1360 exited[1;61r[61;1H
+[1;62r[61;1H[   19.475759] s3c-fimc3: FIMC3 1 opened.[1;61r[61;1H
+[1;62r[61;1H[   19.990721] s3c-fimc3: RongPin FIMC3 0 released.[1;61r[61;1H
+[1;62r[61;1H[   19.996710] init: untracked pid 1352 exited[1;61r[61;1H
+[1;62r[61;1H[   21.291849] init: untracked pid 1363 exited[1;61r[61;1H
+[1;62r[61;1H[   24.330467] init: untracked pid 1381 exited[1;61r[61;1H
+[1;62r[61;1H[   24.586697] s3c-fimc3: FIMC3 1 opened.[1;61r[61;1H
+[1;62r[61;1H[   25.101143] s3c-fimc3: RongPin FIMC3 0 released.[1;61r[61;1H
+[1;62r[61;1H[   25.117671] init: untracked pid 1367 exited[1;61r[61;1H
+[1;62r[61;1H[   28.948844] warning: `zygote' uses 32-bit capabilities (legacy support in use)[1;61r[61;1H
+[1;62r[61;1H[   29.140600] init: untracked pid 1417 exited[1;61r[61;1H
+[1;62r[61;1H[   29.267290] s3c-fimc3: FIMC3 1 opened.[1;61r[61;1H
+[1;62r[61;1Hq[   29.775928] s3c-fimc3: RongPin FIMC3 0 released.[1;61r[61;1H
+[1;62r[61;1H[   29.794922] init: untracked pid 1387 exited[1;61r[61;1H
+[1;62r[61;1H[   29.798674] init: untracked pid 1397 exited[1;61r[61;1H
+[1;62r[61;1H[8;96H[?25l+----------------------+[9;96H|    Leave Minicom?    |[10;96H|               No     |[11;96H+----------------------+[10;117H[?25l[10;99H[0m[7m   Yes  [34h[?25h[8;1H[0m[    9.093308] EXT4-fs (mmcblk0p3): VFS: Can't find ext4 filesystem                                                    [9;1H[    9.107676] EXT4-fs (mmcblk0p4): VFS: Can't find ext4 filesystem                                                    [10;1H[    9.127305] tkcore: Unknown symbol dma_buf_export_named (err 0)                                                     [11;1H[    9.131843] tkcore: Unknown symbol dma_buf_attach (err 0)                                                           [61;1H[8;97H[?25l+-------------------+[9;97H|                   |[10;97H|  Resetting Modem  |[11;97H|                   |[12;97H+-------------------+[10;115H[?25l[34h[?25h[8;1H[    9.093308] EXT4-fs (mmcblk0p3): VFS: Can't find ext4 filesystem                                                  [9;1H[    9.107676] EXT4-fs (mmcblk0p4): VFS: Can't find ext4 filesystem                                                  [10;1H[    9.127305] tkcore: Unknown symbol dma_buf_export_named (err 0)                                                   [11;1H[    9.131843] tkcore: Unknown symbol dma_buf_attach (err 0)                                                         [12;1H[    9.137204] tkcore: Unknown symbol dma_buf_map_attachment (err 0)                                                 [61;1H[34h[?25h[34h[?25h[H[J[34h[?25h[?1l>c[?1000l[?25h

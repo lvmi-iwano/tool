@@ -1,0 +1,39 @@
+-- auto-gen settings (DO NOT MODIFY) --
+
+CWD=/home/liwenhaosuper/data/trustkernel/tsee/tsee
+Version=25
+VimEntryName=tsee
+VimfilesDirName=.vimfiles.tsee
+
+-- ex-plugins File Settings --
+
+LangType=auto
+Project=./.vimfiles.tsee/project_tree.exproject
+FilenameList=./.vimfiles.tsee/filenamelist
+Tag=./.vimfiles.tsee/tags
+ID=./.vimfiles.tsee/ID
+Symbol=./.vimfiles.tsee/symbol
+Macro=./.vimfiles.tsee/macro
+Cscope=./.vimfiles.tsee/cscope.out
+Inherits=./.vimfiles.tsee/inherits
+Bookmarks=./.vimfiles.tsee/bookmarks
+
+vimentryRefs+=
+
+-- ex-plugins Behavior Settings --
+
+RestoreBuffers=false
+AskForRestoration=true
+RestoreInfo=./.vimfiles.tsee/restore_info
+
+-- LookupFile Settings --
+
+LookupFileTag=./.vimfiles.tsee/filenametags
+
+-- Visual Studio Settings --
+
+vsTaskList=./.vimfiles.tsee/vs_task_list
+vsOutput=./.vimfiles.tsee/vs_output
+vsFindResult1=./.vimfiles.tsee/vs_find_results_1
+vsFindResult2=./.vimfiles.tsee/vs_find_results_2
+

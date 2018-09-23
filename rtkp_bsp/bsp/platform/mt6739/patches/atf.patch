@@ -1,0 +1,63 @@
+diff --git a/bl31/bl31.mk b/bl31/bl31.mk
+index e9b1470..ece2295 100644
+--- a/bl31/bl31.mk
++++ b/bl31/bl31.mk
+@@ -38,6 +38,7 @@ BL31_SOURCES		+=	bl31/bl31_main.c				\
+ 				bl31/bl31_context_mgmt.c			\
+ 				common/runtime_svc.c				\
+ 				services/std_svc/std_svc_setup.c		\
++				services/hyp_svc/hyp_svc.c   \
+ 				${PSCI_LIB_SOURCES}
+ 
+ ifeq (${ENABLE_PMF}, 1)
+diff --git a/services/hyp_svc/hyp_svc.c b/services/hyp_svc/hyp_svc.c
+new file mode 100644
+index 0000000..31dc4cc
+--- /dev/null
++++ b/services/hyp_svc/hyp_svc.c
+@@ -0,0 +1,45 @@
++#include <debug.h>
++#include <stdint.h>
++#include <assert.h>
++#include <context_mgmt.h>
++#include <context.h>
++#include <bl_common.h>
++#include <runtime_svc.h>
++#include <console.h>
++
++/*
++ * Top-level Standard Service SMC handler. This handler will in turn dispatch
++ * calls to PSCI SMC handler
++ */
++uint64_t vendor_hyp_svc_smc_handler(uint32_t smc_fid,
++                                    uint64_t x1,
++                                    uint64_t x2,
++                                    uint64_t x3,
++                                    uint64_t x4,
++                                    void *cookie,
++                                    void *handle,
++                                    uint64_t flags)
++{
++	switch (smc_fid) {
++	default: {
++		uint64_t non_sec_elr = get_el3state_ctx(cm_get_context(NON_SECURE))->_regs[CTX_ELR_EL3 / sizeof(uint64_t)];
++		uint64_t non_sec_spsr = get_el3state_ctx(cm_get_context(NON_SECURE))->_regs[CTX_SPSR_EL3 / sizeof(uint64_t)];
++		cm_set_elr_spsr_el3(NON_SECURE, x1,
++		                    SPSR_64(MODE_EL2, MODE_SP_ELX, DISABLE_ALL_EXCEPTIONS));
++		cm_set_next_eret_context(NON_SECURE);
++		SMC_RET2(cm_get_context(NON_SECURE), non_sec_elr, non_sec_spsr);
++		break; }
++	}
++    
++}
++
++/* Register Standard Service Calls as runtime service */
++DECLARE_RT_SVC(
++		vendor_hyp_svc,
++
++		6,
++		6,
++		SMC_TYPE_FAST,
++		NULL,
++		vendor_hyp_svc_smc_handler
++);

@@ -1,0 +1,1617 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALT	lib/libutils/isoc/snprintf.c	148;"	d	file:
+AR	mk/gcc.mk	/^AR		:= $(CROSS_COMPILE)ar$/;"	m
+ARCH	mk/config.mk	/^ARCH := arm$/;"	m
+ARCH	out/exynos4412/conf.mk	/^ARCH=arm$/;"	m
+ARRAY_SIZE	lib/libutils/ext/include/util.h	28;"	d
+ASSERT_H	lib/libutils/isoc/include/assert.h	40;"	d
+AWK	boot/tee/link.mk	/^AWK	 = awk$/;"	m
+BDH	lib/libutils/isoc/bget.c	527;"	d	file:
+BECtl	lib/libutils/isoc/bget.c	469;"	d	file:
+BECtl	lib/libutils/isoc/bget_malloc.c	66;"	d	file:
+BFH	lib/libutils/isoc/bget.c	535;"	d	file:
+BH	lib/libutils/isoc/bget.c	519;"	d	file:
+BIGBLOCKSIZE	lib/libutils/isoc/newlib/memcpy.c	87;"	d	file:
+BIGBLOCKSIZE	lib/libutils/isoc/newlib/memmove.c	90;"	d	file:
+BOARD_BASE	include/tee/tsee/tsee_mm.h	18;"	d
+BPOOL_FOREACH	lib/libutils/isoc/bget_malloc.c	229;"	d	file:
+BUILD_COUNT_STR	boot/tee/link.mk	/^BUILD_COUNT_STR = `cat $(link-out-dir)\/.buildcount`$/;"	m
+BestFit	lib/libutils/isoc/bget.c	463;"	d	file:
+BestFit	lib/libutils/isoc/bget_malloc.c	60;"	d	file:
+BufDump	lib/libutils/isoc/bget.c	438;"	d	file:
+BufDump	lib/libutils/isoc/bget_malloc.c	35;"	d	file:
+BufStats	lib/libutils/isoc/bget.c	451;"	d	file:
+BufStats	lib/libutils/isoc/bget_malloc.c	48;"	d	file:
+BufStats	lib/libutils/isoc/bget_malloc.c	79;"	d	file:
+BufValid	lib/libutils/isoc/bget.c	442;"	d	file:
+BufValid	lib/libutils/isoc/bget_malloc.c	39;"	d	file:
+BufValid	lib/libutils/isoc/bget_malloc.c	74;"	d	file:
+CC	mk/gcc.mk	/^CC		:= $(CROSS_COMPILE)gcc$/;"	m
+CFG_EXYNOS	boot/plat-exynos4412/conf.mk	/^CFG_EXYNOS := y$/;"	m
+CFG_EXYNOS	out/exynos4412/conf.mk	/^CFG_EXYNOS=y$/;"	m
+CFG_EXYNOS	out/exynos4412/include/generated/conf.h	3;"	d
+CFG_EXYNOS4412_UART	boot/plat-exynos4412/conf.mk	/^CFG_EXYNOS4412_UART := y$/;"	m
+CFG_EXYNOS4412_UART	out/exynos4412/conf.mk	/^CFG_EXYNOS4412_UART=y$/;"	m
+CFG_EXYNOS4412_UART	out/exynos4412/include/generated/conf.h	4;"	d
+CFG_GIC	boot/plat-exynos4412/conf.mk	/^CFG_GIC := y$/;"	m
+CFG_GIC	out/exynos4412/conf.mk	/^CFG_GIC=y$/;"	m
+CFG_GIC	out/exynos4412/include/generated/conf.h	5;"	d
+CFG_TSEE_IMPL_DESCR	mk/config.mk	/^CFG_TSEE_IMPL_DESCR ?= TrustKernel_TSEE$/;"	m
+CFG_TSEE_IMPL_DESCR	out/exynos4412/conf.mk	/^CFG_TSEE_IMPL_DESCR=TrustKernel_TSEE$/;"	m
+CFG_TSEE_IMPL_DESCR	out/exynos4412/include/generated/conf.h	6;"	d
+CFG_TSEE_IMPL_VERSION	mk/config.mk	/^CFG_TSEE_IMPL_VERSION ?= $(shell git describe --always --dirty=-dev 2>\/dev\/null || echo Unknown)--$(TSEE_MODIFIER)$/;"	m
+CFG_TSEE_IMPL_VERSION	out/exynos4412/conf.mk	/^CFG_TSEE_IMPL_VERSION=53837b9--dbg$/;"	m
+CFG_TSEE_IMPL_VERSION	out/exynos4412/include/generated/conf.h	7;"	d
+CFG_TSEE_LINUX	mk/config.mk	/^CFG_TSEE_LINUX := n$/;"	m
+CFG_TSEE_LINUX	mk/config.mk	/^CFG_TSEE_LINUX := y$/;"	m
+CFG_TSEE_LOAD_ADDR	boot/plat-exynos4412/platform_config.h	36;"	d
+CFG_TSEE_MANUFACTURER	mk/config.mk	/^CFG_TSEE_MANUFACTURER ?= TrustKernel$/;"	m
+CFG_TSEE_MANUFACTURER	out/exynos4412/conf.mk	/^CFG_TSEE_MANUFACTURER=TrustKernel$/;"	m
+CFG_TSEE_MANUFACTURER	out/exynos4412/include/generated/conf.h	9;"	d
+CFG_TSEE_RAM_SIZE	boot/plat-exynos4412/platform_config.h	38;"	d
+CFG_TSEE_TEE	mk/config.mk	/^CFG_TSEE_TEE := n$/;"	m
+CFG_TSEE_TEE	mk/config.mk	/^CFG_TSEE_TEE := y$/;"	m
+CFG_TSEE_TEE	out/exynos4412/conf.mk	/^CFG_TSEE_TEE=y$/;"	m
+CFG_TSEE_TEE	out/exynos4412/include/generated/conf.h	10;"	d
+CHAR_BIT	lib/libutils/isoc/include/limits.h	42;"	d
+CHAR_MAX	lib/libutils/isoc/include/limits.h	45;"	d
+CHAR_MAX	lib/libutils/isoc/include/limits.h	48;"	d
+CHAR_MIN	lib/libutils/isoc/include/limits.h	46;"	d
+CHAR_MIN	lib/libutils/isoc/include/limits.h	49;"	d
+CHECK	mk/compile.mk	/^CHECK ?= sparse$/;"	m
+CIRCLEQ_EMPTY	lib/libutils/isoc/include/sys/queue.h	696;"	d
+CIRCLEQ_ENTRY	lib/libutils/isoc/include/sys/queue.h	607;"	d
+CIRCLEQ_FIRST	lib/libutils/isoc/include/sys/queue.h	697;"	d
+CIRCLEQ_FOREACH	lib/libutils/isoc/include/sys/queue.h	683;"	d
+CIRCLEQ_FOREACH_REVERSE	lib/libutils/isoc/include/sys/queue.h	688;"	d
+CIRCLEQ_HEAD	lib/libutils/isoc/include/sys/queue.h	598;"	d
+CIRCLEQ_HEAD_INITIALIZER	lib/libutils/isoc/include/sys/queue.h	604;"	d
+CIRCLEQ_INIT	lib/libutils/isoc/include/sys/queue.h	616;"	d
+CIRCLEQ_INSERT_AFTER	lib/libutils/isoc/include/sys/queue.h	621;"	d
+CIRCLEQ_INSERT_BEFORE	lib/libutils/isoc/include/sys/queue.h	633;"	d
+CIRCLEQ_INSERT_HEAD	lib/libutils/isoc/include/sys/queue.h	645;"	d
+CIRCLEQ_INSERT_TAIL	lib/libutils/isoc/include/sys/queue.h	656;"	d
+CIRCLEQ_LAST	lib/libutils/isoc/include/sys/queue.h	698;"	d
+CIRCLEQ_LOOP_NEXT	lib/libutils/isoc/include/sys/queue.h	702;"	d
+CIRCLEQ_LOOP_PREV	lib/libutils/isoc/include/sys/queue.h	706;"	d
+CIRCLEQ_NEXT	lib/libutils/isoc/include/sys/queue.h	699;"	d
+CIRCLEQ_PREV	lib/libutils/isoc/include/sys/queue.h	700;"	d
+CIRCLEQ_REMOVE	lib/libutils/isoc/include/sys/queue.h	667;"	d
+COMPILER	boot/plat-exynos4412/conf.mk	/^COMPILER	?= gcc$/;"	m
+COMPILER	mk/config.mk	/^COMPILER := gcc$/;"	m
+COMPILER_H	lib/libutils/ext/include/compiler.h	14;"	d
+COMPILE_TIME_ASSERT	lib/libutils/isoc/include/assert.h	76;"	d
+CONCAT	lib/libutils/isoc/newlib/setjmp.S	/^#define CONCAT(a, b)  CONCAT2(a, b)$/;"	d
+CONCAT2	lib/libutils/isoc/newlib/setjmp.S	/^#define CONCAT2(a, b) a##b$/;"	d
+CONSOLE_BAUDRATE	boot/plat-exynos4412/platform_config.h	25;"	d
+CONSOLE_H	boot/include/console.h	14;"	d
+CONSOLE_UART_BASE	boot/plat-exynos4412/platform_config.h	23;"	d
+CONSOLE_UART_CLK_IN_HZ	boot/plat-exynos4412/platform_config.h	26;"	d
+CPP	mk/gcc.mk	/^CPP		:= $(CROSS_COMPILE)cpp$/;"	m
+CROSS_COMPILE	boot/plat-exynos4412/conf.mk	/^CROSS_COMPILE	:= ${CROSS_COMPILE_NEWLIB}$/;"	m
+CROSS_COMPILE	mk/config.mk	/^CROSS_COMPILE := arm-linux-gnueabihf-$/;"	m
+CTYPE_H	lib/libutils/isoc/include/ctype.h	40;"	d
+CXX	mk/gcc.mk	/^CXX		:= $(CROSS_COMPILE)g++$/;"	m
+CompactTries	lib/libutils/isoc/bget.c	1333;"	d	file:
+DATA_H	include/tee/tsee/data.h	18;"	d
+DATA_H	lib/libutils/isoc/include/sys/list.h	18;"	d
+DATE_STR	boot/tee/link.mk	/^DATE_STR = `date -u`$/;"	m
+DEBUG	boot/plat-exynos4412/platform_flags.mk	/^DEBUG		?= 1$/;"	m
+DETECTCHAR	lib/libutils/isoc/newlib/memchr.c	112;"	d	file:
+DETECTNULL	lib/libutils/isoc/newlib/memchr.c	100;"	d	file:
+DETECTNULL	lib/libutils/isoc/newlib/memchr.c	96;"	d	file:
+DETECTNULL	lib/libutils/isoc/newlib/strcmp.c	93;"	d	file:
+DETECTNULL	lib/libutils/isoc/newlib/strcmp.c	96;"	d	file:
+DETECTNULL	lib/libutils/isoc/newlib/strlen.c	87;"	d	file:
+DETECTNULL	lib/libutils/isoc/newlib/strlen.c	91;"	d	file:
+DETECTNULL	lib/libutils/isoc/newlib/strncmp.c	92;"	d	file:
+DETECTNULL	lib/libutils/isoc/newlib/strncmp.c	95;"	d	file:
+DEVRAM_BASE	boot/plat-exynos4412/platform_config.h	33;"	d
+DEVRAM_SIZE	boot/plat-exynos4412/platform_config.h	34;"	d
+DHEXDUMP	lib/libutils/ext/include/trace.h	100;"	d
+DHEXDUMP	lib/libutils/ext/include/trace.h	102;"	d
+DMSG	lib/libutils/ext/include/trace.h	73;"	d
+DMSG	lib/libutils/ext/include/trace.h	75;"	d
+DMSG_RAW	lib/libutils/ext/include/trace.h	135;"	d
+DMSG_RAW	lib/libutils/ext/include/trace.h	137;"	d
+DRAM0_BASE	boot/plat-exynos4412/platform_config.h	28;"	d
+DRAM0_SIZE	boot/plat-exynos4412/platform_config.h	29;"	d
+DRAM1_BASE	boot/plat-exynos4412/platform_config.h	30;"	d
+DRAM1_SIZE	boot/plat-exynos4412/platform_config.h	31;"	d
+DumpData	lib/libutils/isoc/bget.c	446;"	d	file:
+DumpData	lib/libutils/isoc/bget.c	487;"	d	file:
+DumpData	lib/libutils/isoc/bget_malloc.c	43;"	d	file:
+DumpData	lib/libutils/isoc/bget_malloc.c	73;"	d	file:
+EMSG	lib/libutils/ext/include/trace.h	59;"	d
+EMSG	lib/libutils/ext/include/trace.h	61;"	d
+EMSG_RAW	lib/libutils/ext/include/trace.h	121;"	d
+EMSG_RAW	lib/libutils/ext/include/trace.h	123;"	d
+END_FUNC	boot/tee/entry.S	/^END_FUNC _start$/;"	l
+END_FUNC	boot/tee/entry.S	/^END_FUNC get_core_pos$/;"	l
+END_FUNC	boot/tee/entry.S	/^END_FUNC reset$/;"	l
+END_FUNC	boot/tee/entry.S	/^END_FUNC reset_secondary$/;"	l
+END_FUNC	lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod_a32.S	/^END_FUNC __aeabi_uldivmod$/;"	l
+END_FUNC	tsee/linux/tsee_rtks_call.S	/^END_FUNC tsee_rtks_call$/;"	l
+END_FUNC	tsee/linux/tsee_rtks_call.S	/^END_FUNC tsee_rtks_ns_call$/;"	l
+END_FUNC	tsee/tee/tsee_rtks_call.S	/^END_FUNC tsee_rtks_call$/;"	l
+END_FUNC	tsee/tee/tsee_rtks_call.S	/^END_FUNC tsee_rtks_ns_call$/;"	l
+ESent	lib/libutils/isoc/bget.c	581;"	d	file:
+EXYNOS4412_UART_H	boot/plat-exynos4412/exynos4412_uart.h	15;"	d
+ExpIncr	lib/libutils/isoc/bget.c	1332;"	d	file:
+FILE	lib/libutils/isoc/include/stdio.h	/^typedef struct _FILE FILE;$/;"	t	typeref:struct:_FILE
+FMSG	lib/libutils/ext/include/trace.h	80;"	d
+FMSG	lib/libutils/ext/include/trace.h	82;"	d
+FMSG_RAW	lib/libutils/ext/include/trace.h	142;"	d
+FMSG_RAW	lib/libutils/ext/include/trace.h	144;"	d
+FPT	lib/libutils/isoc/snprintf.c	159;"	d	file:
+FUNC	boot/tee/entry.S	/^FUNC _start , :$/;"	l
+FUNC	boot/tee/entry.S	/^FUNC get_core_pos , : $/;"	l
+FUNC	lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod_a32.S	/^FUNC __aeabi_ldivmod , :$/;"	l
+FUNC	lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod_a32.S	/^FUNC __aeabi_uldivmod , :$/;"	l
+FUNC	tsee/linux/tsee_rtks_call.S	/^FUNC tsee_rtks_call , :$/;"	l
+FUNC	tsee/linux/tsee_rtks_call.S	/^FUNC tsee_rtks_ns_call , :$/;"	l
+FUNC	tsee/tee/tsee_rtks_call.S	/^FUNC tsee_rtks_call , :$/;"	l
+FUNC	tsee/tee/tsee_rtks_call.S	/^FUNC tsee_rtks_ns_call , :$/;"	l
+FreeWipe	lib/libutils/isoc/bget.c	458;"	d	file:
+FreeWipe	lib/libutils/isoc/bget_malloc.c	55;"	d	file:
+FreeWipe	lib/libutils/isoc/bget_malloc.c	75;"	d	file:
+HAS_CXX	mk/gcc.mk	/^HAS_CXX	:= $(if $(shell which $(CXX) 2>\/dev\/null),y,n)$/;"	m
+HEXDIGITS	lib/libutils/isoc/snprintf.c	/^static const char HEXDIGITS[] = "0123456789ABCDEF";$/;"	v	file:
+HEXPREFIX	lib/libutils/isoc/snprintf.c	149;"	d	file:
+IMSG	lib/libutils/ext/include/trace.h	66;"	d
+IMSG	lib/libutils/ext/include/trace.h	68;"	d
+IMSG_RAW	lib/libutils/ext/include/trace.h	128;"	d
+IMSG_RAW	lib/libutils/ext/include/trace.h	130;"	d
+INIT_LIST_HEAD	include/tee/tsee/data.h	/^static inline void INIT_LIST_HEAD(struct list_head *list)$/;"	f
+INIT_LIST_HEAD	lib/libutils/isoc/include/sys/list.h	/^static inline void INIT_LIST_HEAD(struct list_head *list)$/;"	f
+INMSG	lib/libutils/ext/include/trace.h	86;"	d
+INT16_MAX	lib/libutils/isoc/include/stdint.h	131;"	d
+INT16_MIN	lib/libutils/isoc/include/stdint.h	126;"	d
+INT32_MAX	lib/libutils/isoc/include/stdint.h	132;"	d
+INT32_MIN	lib/libutils/isoc/include/stdint.h	127;"	d
+INT64_MAX	lib/libutils/isoc/include/stdint.h	133;"	d
+INT64_MIN	lib/libutils/isoc/include/stdint.h	128;"	d
+INT8_MAX	lib/libutils/isoc/include/stdint.h	130;"	d
+INT8_MIN	lib/libutils/isoc/include/stdint.h	125;"	d
+INTMAX_MAX	lib/libutils/isoc/include/stdint.h	146;"	d
+INTMAX_MIN	lib/libutils/isoc/include/stdint.h	147;"	d
+INTPTR_MAX	lib/libutils/isoc/include/stdint.h	143;"	d
+INTPTR_MIN	lib/libutils/isoc/include/stdint.h	142;"	d
+INTTYPES_H	lib/libutils/isoc/include/inttypes.h	40;"	d
+INT_MAX	lib/libutils/isoc/include/limits.h	52;"	d
+INT_MIN	lib/libutils/isoc/include/limits.h	53;"	d
+IS_POWER_OF_TWO	lib/libutils/ext/include/util.h	37;"	d
+IT_CONSOLE_UART	boot/plat-exynos4412/platform_config.h	24;"	d
+IT_UART0	boot/plat-exynos4412/platform_config.h	21;"	d
+KEE_ELF_PATH	tsee/linux/_kee.S	/^#define KEE_ELF_PATH "..\/..\/..\/..\/..\/kernel-3.18\/init\/tsee\/tsee\/linux\/kee.elf"$/;"	d
+KEE_RUNTIME_BASE	include/linux/tsee/kee.h	16;"	d
+KEE_RUNTIME_SIZE	include/linux/tsee/kee.h	17;"	d
+KERNBASE	include/tee/tsee/tsee_mm.h	17;"	d
+KPRINTF_BUFSIZE	lib/libutils/isoc/snprintf.c	71;"	d	file:
+KPRINTF_PUTCHAR	lib/libutils/isoc/snprintf.c	182;"	d	file:
+LADJUST	lib/libutils/isoc/snprintf.c	150;"	d	file:
+LBLOCKSIZE	lib/libutils/isoc/newlib/memchr.c	90;"	d	file:
+LBLOCKSIZE	lib/libutils/isoc/newlib/memcmp.c	89;"	d	file:
+LBLOCKSIZE	lib/libutils/isoc/newlib/memset.c	82;"	d	file:
+LBLOCKSIZE	lib/libutils/isoc/newlib/strlen.c	83;"	d	file:
+LD	mk/gcc.mk	/^LD		:= $(CROSS_COMPILE)ld$/;"	m
+LD_DEBUG	tsee/linux/ld.c	27;"	d	file:
+LIMITS_H	lib/libutils/isoc/include/limits.h	40;"	d
+LIST_EMPTY	lib/libutils/isoc/include/sys/queue.h	184;"	d
+LIST_ENTRY	lib/libutils/isoc/include/sys/queue.h	108;"	d
+LIST_FIRST	lib/libutils/isoc/include/sys/queue.h	185;"	d
+LIST_FOREACH	lib/libutils/isoc/include/sys/queue.h	176;"	d
+LIST_HEAD	include/tee/tsee/data.h	37;"	d
+LIST_HEAD	lib/libutils/isoc/include/sys/queue.h	100;"	d
+LIST_HEAD_DEFINE	lib/libutils/isoc/include/sys/list.h	38;"	d
+LIST_HEAD_INIT	include/tee/tsee/data.h	35;"	d
+LIST_HEAD_INIT	lib/libutils/isoc/include/sys/list.h	36;"	d
+LIST_HEAD_INITIALIZER	lib/libutils/isoc/include/sys/queue.h	105;"	d
+LIST_INIT	lib/libutils/isoc/include/sys/queue.h	138;"	d
+LIST_INSERT_AFTER	lib/libutils/isoc/include/sys/queue.h	142;"	d
+LIST_INSERT_BEFORE	lib/libutils/isoc/include/sys/queue.h	151;"	d
+LIST_INSERT_HEAD	lib/libutils/isoc/include/sys/queue.h	159;"	d
+LIST_NEXT	lib/libutils/isoc/include/sys/queue.h	186;"	d
+LIST_POISON1	include/tee/tsee/data.h	32;"	d
+LIST_POISON1	lib/libutils/isoc/include/sys/list.h	33;"	d
+LIST_POISON2	include/tee/tsee/data.h	33;"	d
+LIST_POISON2	lib/libutils/isoc/include/sys/list.h	34;"	d
+LIST_REMOVE	lib/libutils/isoc/include/sys/queue.h	167;"	d
+LITTLEBLOCKSIZE	lib/libutils/isoc/newlib/memcpy.c	90;"	d	file:
+LITTLEBLOCKSIZE	lib/libutils/isoc/newlib/memmove.c	93;"	d	file:
+LLONG_MAX	lib/libutils/isoc/include/limits.h	58;"	d
+LLONG_MIN	lib/libutils/isoc/include/limits.h	59;"	d
+LOCAL_FUNC	boot/tee/entry.S	/^LOCAL_FUNC reset , :$/;"	l
+LOCAL_FUNC	boot/tee/entry.S	/^LOCAL_FUNC reset_secondary , :$/;"	l
+LONGDBL	lib/libutils/isoc/snprintf.c	151;"	d	file:
+LONGINT	lib/libutils/isoc/snprintf.c	152;"	d	file:
+LONG_MAX	lib/libutils/isoc/include/limits.h	55;"	d
+LONG_MIN	lib/libutils/isoc/include/limits.h	56;"	d
+M	tsee/linux/Makefile	/^M ?= $(srctree)\/init\/tsee$/;"	m
+MALLOC_H	lib/libutils/isoc/include/malloc.h	40;"	d
+MAX	lib/libutils/ext/include/util.h	17;"	d
+MAXINT	lib/libutils/isoc/snprintf.c	155;"	d	file:
+MAX_FUNC_PRINT_SIZE	lib/libutils/ext/include/trace.h	26;"	d
+MAX_PRINT_SIZE	lib/libutils/ext/include/trace.h	25;"	d
+MB_LEN_MAX	lib/libutils/isoc/include/limits.h	61;"	d
+MDBG_FOOTER_MAGIC	lib/libutils/isoc/bget_malloc.c	556;"	d	file:
+MDBG_HEADER_MAGIC	lib/libutils/isoc/bget_malloc.c	555;"	d	file:
+MDBG_MODE_DYNAMIC	lib/libutils/isoc/include/malloc.h	/^	MDBG_MODE_DYNAMIC$/;"	e	enum:mdbg_mode
+MDBG_MODE_STATIC	lib/libutils/isoc/include/malloc.h	/^	MDBG_MODE_STATIC,$/;"	e	enum:mdbg_mode
+MEMORY_H	lib/libutils/isoc/include/memory.h	40;"	d
+MIN	lib/libutils/ext/include/util.h	22;"	d
+MODE	lib/libutils/isoc/newlib/setjmp.S	/^#define	MODE		.code 32$/;"	d
+MODE	lib/libutils/isoc/newlib/setjmp.S	/^#define	MODE		.thumb_func$/;"	d
+MSG	lib/libutils/ext/include/trace.h	52;"	d
+MSG	lib/libutils/ext/include/trace.h	54;"	d
+MSG_RAW	lib/libutils/ext/include/trace.h	114;"	d
+MSG_RAW	lib/libutils/ext/include/trace.h	116;"	d
+MemSize	lib/libutils/isoc/bget.c	500;"	d	file:
+NDEBUG	lib/libutils/isoc/bget.c	477;"	d	file:
+NDEBUG	lib/libutils/isoc/bget_malloc.c	72;"	d	file:
+NM	mk/gcc.mk	/^NM		:= $(CROSS_COMPILE)nm$/;"	m
+NOLOCK	lib/libutils/isoc/snprintf.c	68;"	d	file:
+NULL	lib/libutils/isoc/include/stdint.h	115;"	d
+NUM_PTE	include/tee/tsee/defs.h	30;"	d
+OBJCOPY	mk/gcc.mk	/^OBJCOPY	:= $(CROSS_COMPILE)objcopy$/;"	m
+OBJDUMP	mk/gcc.mk	/^OBJDUMP	:= $(CROSS_COMPILE)objdump$/;"	m
+OUR_RAND	lib/libutils/isoc/bget.c	1323;"	d	file:
+OUTMSG	lib/libutils/ext/include/trace.h	88;"	d
+OUTRMSG	lib/libutils/ext/include/trace.h	91;"	d
+PAGE_MASK	include/tee/tsee/defs.h	18;"	d
+PAGE_SHIFT	include/tee/tsee/defs.h	16;"	d
+PAGE_SIZE	include/tee/tsee/defs.h	17;"	d
+PDE_IDX	include/tee/tsee/defs.h	31;"	d
+PDE_PAGE_TYPE	include/tee/tsee/defs.h	24;"	d
+PDE_SECTION_TYPE	include/tee/tsee/defs.h	23;"	d
+PDE_SHIFT	include/tee/tsee/defs.h	28;"	d
+PE_TYPES	include/tee/tsee/defs.h	22;"	d
+PLATFORM_CONFIG_H	boot/plat-exynos4412/platform_config.h	14;"	d
+PLATFORM_FLAVOR	boot/plat-exynos4412/platform_flags.mk	/^PLATFORM_FLAVOR ?= exynos4412$/;"	m
+PLATFORM_FLAVOR	mk/flags.mk	/^PLATFORM_FLAVOR ?= default$/;"	m
+PRIX16	lib/libutils/isoc/include/inttypes.h	83;"	d
+PRIX32	lib/libutils/isoc/include/inttypes.h	84;"	d
+PRIX64	lib/libutils/isoc/include/inttypes.h	85;"	d
+PRIX8	lib/libutils/isoc/include/inttypes.h	82;"	d
+PRIXPTR	lib/libutils/isoc/include/inttypes.h	86;"	d
+PRId16	lib/libutils/isoc/include/inttypes.h	53;"	d
+PRId32	lib/libutils/isoc/include/inttypes.h	54;"	d
+PRId64	lib/libutils/isoc/include/inttypes.h	55;"	d
+PRId8	lib/libutils/isoc/include/inttypes.h	52;"	d
+PRIdPTR	lib/libutils/isoc/include/inttypes.h	56;"	d
+PRIi16	lib/libutils/isoc/include/inttypes.h	59;"	d
+PRIi32	lib/libutils/isoc/include/inttypes.h	60;"	d
+PRIi64	lib/libutils/isoc/include/inttypes.h	61;"	d
+PRIi8	lib/libutils/isoc/include/inttypes.h	58;"	d
+PRIiPTR	lib/libutils/isoc/include/inttypes.h	62;"	d
+PRIo16	lib/libutils/isoc/include/inttypes.h	65;"	d
+PRIo32	lib/libutils/isoc/include/inttypes.h	66;"	d
+PRIo64	lib/libutils/isoc/include/inttypes.h	67;"	d
+PRIo8	lib/libutils/isoc/include/inttypes.h	64;"	d
+PRIoPTR	lib/libutils/isoc/include/inttypes.h	68;"	d
+PRIu16	lib/libutils/isoc/include/inttypes.h	71;"	d
+PRIu32	lib/libutils/isoc/include/inttypes.h	72;"	d
+PRIu64	lib/libutils/isoc/include/inttypes.h	73;"	d
+PRIu8	lib/libutils/isoc/include/inttypes.h	70;"	d
+PRIuPTR	lib/libutils/isoc/include/inttypes.h	74;"	d
+PRIx16	lib/libutils/isoc/include/inttypes.h	77;"	d
+PRIx32	lib/libutils/isoc/include/inttypes.h	78;"	d
+PRIx64	lib/libutils/isoc/include/inttypes.h	79;"	d
+PRIx8	lib/libutils/isoc/include/inttypes.h	76;"	d
+PRIxPA	lib/libutils/ext/include/types_ext.h	26;"	d
+PRIxPTR	lib/libutils/isoc/include/inttypes.h	80;"	d
+PRIxVA	lib/libutils/ext/include/types_ext.h	23;"	d
+PROTOTYPES	lib/libutils/isoc/bget_malloc.c	13;"	d	file:
+PTE_IDX	include/tee/tsee/defs.h	32;"	d
+PTE_LARGE_TYPE	include/tee/tsee/defs.h	25;"	d
+PTE_SHIFT	include/tee/tsee/defs.h	29;"	d
+PTE_SMALL_TYPE	include/tee/tsee/defs.h	26;"	d
+PTE_VALID	include/linux/tsee/tsee_mm.h	25;"	d
+PTRINT	lib/libutils/isoc/snprintf.c	156;"	d	file:
+PT_ADDR	include/tee/tsee/defs.h	34;"	d
+PT_SZ	include/tee/tsee/defs.h	33;"	d
+PoolSize	lib/libutils/isoc/bget.c	1328;"	d	file:
+PoolSize	lib/libutils/isoc/bget.c	1330;"	d	file:
+QLSize	lib/libutils/isoc/bget.c	572;"	d	file:
+QUADINT	lib/libutils/isoc/snprintf.c	153;"	d	file:
+QUEUEDEBUG_CIRCLEQ_ELM	lib/libutils/isoc/include/sys/queue.h	570;"	d
+QUEUEDEBUG_CIRCLEQ_ELM	lib/libutils/isoc/include/sys/queue.h	594;"	d
+QUEUEDEBUG_CIRCLEQ_HEAD	lib/libutils/isoc/include/sys/queue.h	561;"	d
+QUEUEDEBUG_CIRCLEQ_HEAD	lib/libutils/isoc/include/sys/queue.h	593;"	d
+QUEUEDEBUG_CIRCLEQ_POSTREMOVE	lib/libutils/isoc/include/sys/queue.h	589;"	d
+QUEUEDEBUG_CIRCLEQ_POSTREMOVE	lib/libutils/isoc/include/sys/queue.h	595;"	d
+QUEUEDEBUG_LIST_INSERT_HEAD	lib/libutils/isoc/include/sys/queue.h	118;"	d
+QUEUEDEBUG_LIST_INSERT_HEAD	lib/libutils/isoc/include/sys/queue.h	133;"	d
+QUEUEDEBUG_LIST_OP	lib/libutils/isoc/include/sys/queue.h	122;"	d
+QUEUEDEBUG_LIST_OP	lib/libutils/isoc/include/sys/queue.h	134;"	d
+QUEUEDEBUG_LIST_POSTREMOVE	lib/libutils/isoc/include/sys/queue.h	129;"	d
+QUEUEDEBUG_LIST_POSTREMOVE	lib/libutils/isoc/include/sys/queue.h	135;"	d
+QUEUEDEBUG_TAILQ_INSERT_HEAD	lib/libutils/isoc/include/sys/queue.h	431;"	d
+QUEUEDEBUG_TAILQ_INSERT_HEAD	lib/libutils/isoc/include/sys/queue.h	454;"	d
+QUEUEDEBUG_TAILQ_INSERT_TAIL	lib/libutils/isoc/include/sys/queue.h	435;"	d
+QUEUEDEBUG_TAILQ_INSERT_TAIL	lib/libutils/isoc/include/sys/queue.h	455;"	d
+QUEUEDEBUG_TAILQ_OP	lib/libutils/isoc/include/sys/queue.h	438;"	d
+QUEUEDEBUG_TAILQ_OP	lib/libutils/isoc/include/sys/queue.h	456;"	d
+QUEUEDEBUG_TAILQ_POSTREMOVE	lib/libutils/isoc/include/sys/queue.h	450;"	d
+QUEUEDEBUG_TAILQ_POSTREMOVE	lib/libutils/isoc/include/sys/queue.h	458;"	d
+QUEUEDEBUG_TAILQ_PREREMOVE	lib/libutils/isoc/include/sys/queue.h	445;"	d
+QUEUEDEBUG_TAILQ_PREREMOVE	lib/libutils/isoc/include/sys/queue.h	457;"	d
+READELF	mk/gcc.mk	/^READELF	:= $(CROSS_COMPILE)readelf$/;"	m
+RET	lib/libutils/isoc/newlib/setjmp.S	/^#define RET	bx lr$/;"	d
+RET	lib/libutils/isoc/newlib/setjmp.S	/^#define RET	movs		pc, lr$/;"	d
+RET	lib/libutils/isoc/newlib/setjmp.S	/^#define RET	tst		lr, #1; \\$/;"	d
+ROUNDDOWN	lib/libutils/ext/include/util.h	34;"	d
+ROUNDUP	lib/libutils/ext/include/util.h	31;"	d
+Repeatable	lib/libutils/isoc/bget.c	1317;"	d	file:
+SARG	lib/libutils/isoc/snprintf.c	165;"	d	file:
+SCHAR_MAX	lib/libutils/isoc/include/limits.h	63;"	d
+SCHAR_MIN	lib/libutils/isoc/include/limits.h	64;"	d
+SECTION_SHIFT	include/tee/tsee/defs.h	19;"	d
+SECTION_SIZE	include/tee/tsee/defs.h	20;"	d
+SHORTINT	lib/libutils/isoc/snprintf.c	154;"	d	file:
+SHRT_MAX	lib/libutils/isoc/include/limits.h	66;"	d
+SHRT_MIN	lib/libutils/isoc/include/limits.h	67;"	d
+SIGNAL_H	lib/libutils/isoc/include/signal.h	40;"	d
+SIMPLEQ_EMPTY	lib/libutils/isoc/include/sys/queue.h	403;"	d
+SIMPLEQ_ENTRY	lib/libutils/isoc/include/sys/queue.h	346;"	d
+SIMPLEQ_FIRST	lib/libutils/isoc/include/sys/queue.h	404;"	d
+SIMPLEQ_FOREACH	lib/libutils/isoc/include/sys/queue.h	395;"	d
+SIMPLEQ_HEAD	lib/libutils/isoc/include/sys/queue.h	337;"	d
+SIMPLEQ_HEAD_INITIALIZER	lib/libutils/isoc/include/sys/queue.h	343;"	d
+SIMPLEQ_INIT	lib/libutils/isoc/include/sys/queue.h	354;"	d
+SIMPLEQ_INSERT_AFTER	lib/libutils/isoc/include/sys/queue.h	371;"	d
+SIMPLEQ_INSERT_HEAD	lib/libutils/isoc/include/sys/queue.h	359;"	d
+SIMPLEQ_INSERT_TAIL	lib/libutils/isoc/include/sys/queue.h	365;"	d
+SIMPLEQ_NEXT	lib/libutils/isoc/include/sys/queue.h	405;"	d
+SIMPLEQ_REMOVE	lib/libutils/isoc/include/sys/queue.h	382;"	d
+SIMPLEQ_REMOVE_HEAD	lib/libutils/isoc/include/sys/queue.h	377;"	d
+SIZE	lib/libutils/isoc/newlib/setjmp.S	/^#define SIZE(x) .size SYM(x), . - SYM(x)$/;"	d
+SIZE	lib/libutils/isoc/newlib/setjmp.S	/^#define SIZE(x)$/;"	d
+SIZEINT	lib/libutils/isoc/snprintf.c	157;"	d	file:
+SLIST_EMPTY	lib/libutils/isoc/include/sys/queue.h	249;"	d
+SLIST_ENTRY	lib/libutils/isoc/include/sys/queue.h	199;"	d
+SLIST_FIRST	lib/libutils/isoc/include/sys/queue.h	250;"	d
+SLIST_FOREACH	lib/libutils/isoc/include/sys/queue.h	243;"	d
+SLIST_HEAD	lib/libutils/isoc/include/sys/queue.h	191;"	d
+SLIST_HEAD_INITIALIZER	lib/libutils/isoc/include/sys/queue.h	196;"	d
+SLIST_INIT	lib/libutils/isoc/include/sys/queue.h	207;"	d
+SLIST_INSERT_AFTER	lib/libutils/isoc/include/sys/queue.h	211;"	d
+SLIST_INSERT_HEAD	lib/libutils/isoc/include/sys/queue.h	216;"	d
+SLIST_NEXT	lib/libutils/isoc/include/sys/queue.h	251;"	d
+SLIST_REMOVE	lib/libutils/isoc/include/sys/queue.h	225;"	d
+SLIST_REMOVE_AFTER	lib/libutils/isoc/include/sys/queue.h	238;"	d
+SLIST_REMOVE_HEAD	lib/libutils/isoc/include/sys/queue.h	221;"	d
+SMSG	lib/libutils/ext/include/trace.h	148;"	d
+SMSG	lib/libutils/ext/include/trace.h	155;"	d
+STAILQ_CONCAT	lib/libutils/isoc/include/sys/queue.h	319;"	d
+STAILQ_EMPTY	lib/libutils/isoc/include/sys/queue.h	330;"	d
+STAILQ_ENTRY	lib/libutils/isoc/include/sys/queue.h	265;"	d
+STAILQ_FIRST	lib/libutils/isoc/include/sys/queue.h	331;"	d
+STAILQ_FOREACH	lib/libutils/isoc/include/sys/queue.h	314;"	d
+STAILQ_HEAD	lib/libutils/isoc/include/sys/queue.h	256;"	d
+STAILQ_HEAD_INITIALIZER	lib/libutils/isoc/include/sys/queue.h	262;"	d
+STAILQ_INIT	lib/libutils/isoc/include/sys/queue.h	273;"	d
+STAILQ_INSERT_AFTER	lib/libutils/isoc/include/sys/queue.h	290;"	d
+STAILQ_INSERT_HEAD	lib/libutils/isoc/include/sys/queue.h	278;"	d
+STAILQ_INSERT_TAIL	lib/libutils/isoc/include/sys/queue.h	284;"	d
+STAILQ_NEXT	lib/libutils/isoc/include/sys/queue.h	332;"	d
+STAILQ_REMOVE	lib/libutils/isoc/include/sys/queue.h	301;"	d
+STAILQ_REMOVE_HEAD	lib/libutils/isoc/include/sys/queue.h	296;"	d
+STDINT_H	lib/libutils/isoc/include/stdint.h	50;"	d
+STDIO_H	lib/libutils/isoc/include/stdio.h	40;"	d
+STDLIB_H	lib/libutils/isoc/include/stdlib.h	46;"	d
+STRING_EXT_H	lib/libutils/ext/include/string_ext.h	18;"	d
+STRING_H	lib/libutils/isoc/include/string.h	46;"	d
+SWAPINIT	lib/libutils/isoc/qsort.c	61;"	d	file:
+SYM	lib/libutils/isoc/newlib/setjmp.S	/^#define SYM(x) CONCAT (__USER_LABEL_PREFIX__, x)$/;"	d
+SYM	lib/libutils/isoc/newlib/setjmp.S	/^SYM (.arm_start_of.\\name):$/;"	l
+SYM	lib/libutils/isoc/newlib/setjmp.S	/^SYM (\\name):$/;"	l
+SYM	lib/libutils/isoc/newlib/setjmp.S	/^SYM (longjmp):$/;"	l
+SYM	lib/libutils/isoc/newlib/setjmp.S	/^SYM (setjmp):$/;"	l
+SYS_CDEFS_H	lib/libutils/isoc/include/sys/cdefs.h	40;"	d
+SYS_TYPES_H	lib/libutils/isoc/include/sys/types.h	40;"	d
+SizeQ	lib/libutils/isoc/bget.c	573;"	d	file:
+SizeQuant	lib/libutils/isoc/bget.c	433;"	d	file:
+SizeQuant	lib/libutils/isoc/bget_malloc.c	29;"	d	file:
+TAILQ_CONCAT	lib/libutils/isoc/include/sys/queue.h	536;"	d
+TAILQ_EMPTY	lib/libutils/isoc/include/sys/queue.h	548;"	d
+TAILQ_ENTRY	lib/libutils/isoc/include/sys/queue.h	425;"	d
+TAILQ_FIRST	lib/libutils/isoc/include/sys/queue.h	549;"	d
+TAILQ_FOREACH	lib/libutils/isoc/include/sys/queue.h	516;"	d
+TAILQ_FOREACH_REVERSE	lib/libutils/isoc/include/sys/queue.h	526;"	d
+TAILQ_FOREACH_REVERSE_SAFE	lib/libutils/isoc/include/sys/queue.h	531;"	d
+TAILQ_FOREACH_SAFE	lib/libutils/isoc/include/sys/queue.h	521;"	d
+TAILQ_HEAD	lib/libutils/isoc/include/sys/queue.h	415;"	d
+TAILQ_HEAD_INITIALIZER	lib/libutils/isoc/include/sys/queue.h	417;"	d
+TAILQ_INIT	lib/libutils/isoc/include/sys/queue.h	461;"	d
+TAILQ_INSERT_AFTER	lib/libutils/isoc/include/sys/queue.h	485;"	d
+TAILQ_INSERT_BEFORE	lib/libutils/isoc/include/sys/queue.h	496;"	d
+TAILQ_INSERT_HEAD	lib/libutils/isoc/include/sys/queue.h	466;"	d
+TAILQ_INSERT_TAIL	lib/libutils/isoc/include/sys/queue.h	477;"	d
+TAILQ_LAST	lib/libutils/isoc/include/sys/queue.h	552;"	d
+TAILQ_NEXT	lib/libutils/isoc/include/sys/queue.h	550;"	d
+TAILQ_PREV	lib/libutils/isoc/include/sys/queue.h	554;"	d
+TAILQ_REMOVE	lib/libutils/isoc/include/sys/queue.h	504;"	d
+THEE_32BIT_SMC_CALL_MAGIC	tsee/linux/thee.c	27;"	d	file:
+THEE_64BIT_SMC_CALL_MAGIC	tsee/linux/thee.c	28;"	d	file:
+THEE_MODE_AARCH32	tsee/linux/thee.c	32;"	d	file:
+THEE_MODE_AARCH64	tsee/linux/thee.c	33;"	d	file:
+THEE_RUNTIME_BASE	include/linux/tsee/thee.h	16;"	d
+THEE_RUNTIME_SIZE	include/linux/tsee/thee.h	17;"	d
+THEE_STACK_OFFSET	tsee/linux/thee.c	30;"	d	file:
+TIME_H	lib/libutils/isoc/include/time.h	40;"	d
+TOBUFONLY	lib/libutils/isoc/snprintf.c	66;"	d	file:
+TOCONS	lib/libutils/isoc/snprintf.c	63;"	d	file:
+TODDB	lib/libutils/isoc/snprintf.c	67;"	d	file:
+TOLOG	lib/libutils/isoc/snprintf.c	65;"	d	file:
+TOO_SMALL	lib/libutils/isoc/newlib/memchr.c	93;"	d	file:
+TOO_SMALL	lib/libutils/isoc/newlib/memcmp.c	92;"	d	file:
+TOO_SMALL	lib/libutils/isoc/newlib/memcpy.c	93;"	d	file:
+TOO_SMALL	lib/libutils/isoc/newlib/memmove.c	96;"	d	file:
+TOO_SMALL	lib/libutils/isoc/newlib/memset.c	84;"	d	file:
+TOTTY	lib/libutils/isoc/snprintf.c	64;"	d	file:
+TO_STR	lib/libutils/ext/include/util.h	39;"	d
+TRACE_DEBUG	lib/libutils/ext/include/trace_levels.h	37;"	d
+TRACE_ERROR	lib/libutils/ext/include/trace_levels.h	35;"	d
+TRACE_FLOW	lib/libutils/ext/include/trace_levels.h	38;"	d
+TRACE_H	lib/libutils/ext/include/trace.h	14;"	d
+TRACE_INFO	lib/libutils/ext/include/trace_levels.h	36;"	d
+TRACE_LEVEL	lib/libutils/ext/include/trace.h	29;"	d
+TRACE_LEVELS_H	lib/libutils/ext/include/trace_levels.h	14;"	d
+TRACE_MAX	lib/libutils/ext/include/trace_levels.h	39;"	d
+TRACE_MIN	lib/libutils/ext/include/trace_levels.h	34;"	d
+TRACE_PRINTF_LEVEL	lib/libutils/ext/include/trace_levels.h	42;"	d
+TSEE_BUILD	mk/config.mk	/^TSEE_BUILD := ${TKCORE_BUILD}$/;"	m
+TSEE_BUILD	mk/config.mk	/^TSEE_BUILD := debug$/;"	m
+TSEE_BUILD	mk/config.mk	/^TSEE_BUILD := release$/;"	m
+TSEE_MODIFIER	mk/config.mk	/^TSEE_MODIFIER := "dbg"$/;"	m
+TSEE_MODIFIER	mk/config.mk	/^TSEE_MODIFIER := "rls"$/;"	m
+TSEE_RTKS_CMDID	include/linux/tsee/tsee_entry.h	22;"	d
+TSEE_RTKS_CMDID	include/tee/tsee/tsee_entry.h	19;"	d
+TSEE_RTKS_DACR_SET	include/tee/tsee/tsee_entry.h	36;"	d
+TSEE_RTKS_DEF_INIT	include/linux/tsee/tsee_entry.h	25;"	d
+TSEE_RTKS_DEF_INIT	include/tee/tsee/tsee_entry.h	22;"	d
+TSEE_RTKS_EXTRA_MEM_SIZE	include/linux/tsee/tsee_entry.h	45;"	d
+TSEE_RTKS_INIT	include/linux/tsee/tsee_entry.h	24;"	d
+TSEE_RTKS_INIT	include/tee/tsee/tsee_entry.h	21;"	d
+TSEE_RTKS_INIT_MAGIC	include/linux/tsee/tsee_entry.h	18;"	d
+TSEE_RTKS_KDATA_SET	include/tee/tsee/tsee_entry.h	40;"	d
+TSEE_RTKS_KPGTBL_SET	include/tee/tsee/tsee_entry.h	41;"	d
+TSEE_RTKS_KRODATA_SET	include/tee/tsee/tsee_entry.h	38;"	d
+TSEE_RTKS_KTEXT_SET	include/tee/tsee/tsee_entry.h	39;"	d
+TSEE_RTKS_L2PGTBL_SET	include/tee/tsee/tsee_entry.h	47;"	d
+TSEE_RTKS_LOCK_DOWN	include/tee/tsee/tsee_entry.h	29;"	d
+TSEE_RTKS_MEM_PROTECT	include/tee/tsee/tsee_entry.h	49;"	d
+TSEE_RTKS_MEM_PROTECT_NS	include/tee/tsee/tsee_entry.h	52;"	d
+TSEE_RTKS_MEM_UNPROTECT	include/tee/tsee/tsee_entry.h	50;"	d
+TSEE_RTKS_MEM_UNPROTECT_NS	include/tee/tsee/tsee_entry.h	53;"	d
+TSEE_RTKS_MVBAR_SET	include/tee/tsee/tsee_entry.h	30;"	d
+TSEE_RTKS_PGD_FREE	include/linux/tsee/tsee_entry.h	30;"	d
+TSEE_RTKS_PGD_FREE	include/tee/tsee/tsee_entry.h	27;"	d
+TSEE_RTKS_PGD_NEW	include/linux/tsee/tsee_entry.h	31;"	d
+TSEE_RTKS_PGD_NEW	include/tee/tsee/tsee_entry.h	28;"	d
+TSEE_RTKS_PGD_SET	include/linux/tsee/tsee_entry.h	27;"	d
+TSEE_RTKS_PGD_SET	include/tee/tsee/tsee_entry.h	24;"	d
+TSEE_RTKS_PGT_BITMAP_LEN	include/linux/tsee/tsee_entry.h	33;"	d
+TSEE_RTKS_PGT_BITMAP_LEN	include/tee/tsee/tsee_entry.h	57;"	d
+TSEE_RTKS_PHYS_ADDR_MASK	include/linux/tsee/tsee_mm.h	34;"	d
+TSEE_RTKS_PHYS_OFFSET_MAX	include/linux/tsee/tsee_mm.h	33;"	d
+TSEE_RTKS_PMD_SET	include/linux/tsee/tsee_entry.h	28;"	d
+TSEE_RTKS_PMD_SET	include/tee/tsee/tsee_entry.h	25;"	d
+TSEE_RTKS_PREFIX	include/linux/tsee/tsee_entry.h	21;"	d
+TSEE_RTKS_PREFIX	include/tee/tsee/tsee_entry.h	18;"	d
+TSEE_RTKS_PTE_SET	include/linux/tsee/tsee_entry.h	29;"	d
+TSEE_RTKS_PTE_SET	include/tee/tsee/tsee_entry.h	26;"	d
+TSEE_RTKS_PTS_ADD	include/tee/tsee/tsee_entry.h	43;"	d
+TSEE_RTKS_PTS_FREE	include/tee/tsee/tsee_entry.h	44;"	d
+TSEE_RTKS_REEMEM_SHR_SET	include/tee/tsee/tsee_entry.h	42;"	d
+TSEE_RTKS_ROBUF_SIZE	include/linux/tsee/tsee_entry.h	40;"	d
+TSEE_RTKS_ROBUF_START	include/linux/tsee/tsee_entry.h	39;"	d
+TSEE_RTKS_ROBUF_VA	include/linux/tsee/tsee_entry.h	43;"	d
+TSEE_RTKS_RO_PAGES	include/linux/tsee/tsee_entry.h	41;"	d
+TSEE_RTKS_SCTLR_SET	include/tee/tsee/tsee_entry.h	35;"	d
+TSEE_RTKS_TEEMEM_SET	include/tee/tsee/tsee_entry.h	45;"	d
+TSEE_RTKS_TTBCR_SET	include/tee/tsee/tsee_entry.h	32;"	d
+TSEE_RTKS_TTBR0_SET	include/tee/tsee/tsee_entry.h	33;"	d
+TSEE_RTKS_TTBR1_SET	include/tee/tsee/tsee_entry.h	34;"	d
+TSEE_RTKS_VMM_BUFFER_SIZE	include/linux/tsee/tsee_entry.h	19;"	d
+TSEE_TEE_DEFS_H	include/tee/tsee/defs.h	14;"	d
+TVEE_SIZE	include/linux/tsee/tsee_entry.h	37;"	d
+TVEE_START	include/linux/tsee/tsee_entry.h	36;"	d
+TYPE	lib/libutils/isoc/newlib/setjmp.S	/^#define TYPE(x) .type SYM(x),function$/;"	d
+TYPE	lib/libutils/isoc/newlib/setjmp.S	/^#define TYPE(x)$/;"	d
+TYPES_EXT_H	lib/libutils/ext/include/types_ext.h	14;"	d
+TestProg	lib/libutils/isoc/bget.c	428;"	d	file:
+TestProg	lib/libutils/isoc/bget_malloc.c	22;"	d	file:
+UARG	lib/libutils/isoc/snprintf.c	173;"	d	file:
+UART0_BASE	boot/plat-exynos4412/platform_config.h	19;"	d
+UARTCR_EN	boot/plat-exynos4412/exynos4412_uart.c	57;"	d	file:
+UARTCR_RXE	boot/plat-exynos4412/exynos4412_uart.c	55;"	d	file:
+UARTCR_TXE	boot/plat-exynos4412/exynos4412_uart.c	56;"	d	file:
+UARTFR_RXFE	boot/plat-exynos4412/exynos4412_uart.c	54;"	d	file:
+UARTFR_TXFF	boot/plat-exynos4412/exynos4412_uart.c	53;"	d	file:
+UARTLCR_FEN	boot/plat-exynos4412/exynos4412_uart.c	58;"	d	file:
+UART_BITRATE	boot/plat-exynos4412/exynos4412_uart.c	61;"	d	file:
+UART_CR	boot/plat-exynos4412/exynos4412_uart.c	48;"	d	file:
+UART_DR	boot/plat-exynos4412/exynos4412_uart.c	42;"	d	file:
+UART_FBRD	boot/plat-exynos4412/exynos4412_uart.c	46;"	d	file:
+UART_FR	boot/plat-exynos4412/exynos4412_uart.c	44;"	d	file:
+UART_IBRD	boot/plat-exynos4412/exynos4412_uart.c	45;"	d	file:
+UART_ICR	boot/plat-exynos4412/exynos4412_uart.c	51;"	d	file:
+UART_IMSC	boot/plat-exynos4412/exynos4412_uart.c	49;"	d	file:
+UART_LCR	boot/plat-exynos4412/exynos4412_uart.c	47;"	d	file:
+UART_MIS	boot/plat-exynos4412/exynos4412_uart.c	50;"	d	file:
+UART_RSR	boot/plat-exynos4412/exynos4412_uart.c	43;"	d	file:
+UART_RXI	boot/plat-exynos4412/exynos4412_uart.c	59;"	d	file:
+UART_TXI	boot/plat-exynos4412/exynos4412_uart.c	60;"	d	file:
+UCHAR_MAX	lib/libutils/isoc/include/limits.h	70;"	d
+UCHAR_MAX	lib/libutils/isoc/include/limits.h	72;"	d
+UINT16_MAX	lib/libutils/isoc/include/stdint.h	136;"	d
+UINT32_MAX	lib/libutils/isoc/include/stdint.h	137;"	d
+UINT64_MAX	lib/libutils/isoc/include/stdint.h	138;"	d
+UINT8_MAX	lib/libutils/isoc/include/stdint.h	135;"	d
+UINTMAX_MAX	lib/libutils/isoc/include/stdint.h	148;"	d
+UINTPTR_MAX	lib/libutils/isoc/include/stdint.h	144;"	d
+UINT_MAX	lib/libutils/isoc/include/limits.h	81;"	d
+ULLONG_MAX	lib/libutils/isoc/include/limits.h	84;"	d
+ULONG_MAX	lib/libutils/isoc/include/limits.h	83;"	d
+UNALIGNED	lib/libutils/isoc/newlib/memchr.c	87;"	d	file:
+UNALIGNED	lib/libutils/isoc/newlib/memcmp.c	85;"	d	file:
+UNALIGNED	lib/libutils/isoc/newlib/memcpy.c	83;"	d	file:
+UNALIGNED	lib/libutils/isoc/newlib/memmove.c	86;"	d	file:
+UNALIGNED	lib/libutils/isoc/newlib/memset.c	83;"	d	file:
+UNALIGNED	lib/libutils/isoc/newlib/strcmp.c	88;"	d	file:
+UNALIGNED	lib/libutils/isoc/newlib/strlen.c	84;"	d	file:
+UNALIGNED	lib/libutils/isoc/newlib/strncmp.c	87;"	d	file:
+UNISTD_H	lib/libutils/isoc/include/unistd.h	40;"	d
+USHRT_MAX	lib/libutils/isoc/include/limits.h	76;"	d
+USHRT_MAX	lib/libutils/isoc/include/limits.h	78;"	d
+UTIL_H	lib/libutils/ext/include/util.h	14;"	d
+V	lib/libutils/isoc/bget.c	575;"	d	file:
+WARNS	mk/compile.mk	/^WARNS		?= 3$/;"	m
+WARNS	mk/config.mk	/^WARNS ?= 3$/;"	m
+WCHAR_H	lib/libutils/isoc/include/wchar.h	40;"	d
+ZEROPAD	lib/libutils/isoc/snprintf.c	158;"	d	file:
+_	lib/libutils/isoc/bget.h	34;"	d
+_	lib/libutils/isoc/bget.h	36;"	d
+_AND	lib/libutils/isoc/include/_ansi.h	73;"	d
+_AND	lib/libutils/isoc/include/_ansi.h	98;"	d
+_AND	lib/libutils/isoc/newlib/_ansi.h	73;"	d
+_AND	lib/libutils/isoc/newlib/_ansi.h	98;"	d
+_ANSIDECL_H_	lib/libutils/isoc/include/_ansi.h	56;"	d
+_ANSIDECL_H_	lib/libutils/isoc/newlib/_ansi.h	56;"	d
+_ATTRIBUTE	lib/libutils/isoc/include/_ansi.h	118;"	d
+_ATTRIBUTE	lib/libutils/isoc/include/_ansi.h	120;"	d
+_ATTRIBUTE	lib/libutils/isoc/newlib/_ansi.h	118;"	d
+_ATTRIBUTE	lib/libutils/isoc/newlib/_ansi.h	120;"	d
+_BEGIN_STD_C	lib/libutils/isoc/include/_ansi.h	128;"	d
+_BEGIN_STD_C	lib/libutils/isoc/include/_ansi.h	131;"	d
+_BEGIN_STD_C	lib/libutils/isoc/include/_ansi.h	136;"	d
+_BEGIN_STD_C	lib/libutils/isoc/newlib/_ansi.h	128;"	d
+_BEGIN_STD_C	lib/libutils/isoc/newlib/_ansi.h	131;"	d
+_BEGIN_STD_C	lib/libutils/isoc/newlib/_ansi.h	136;"	d
+_CAST_VOID	lib/libutils/isoc/include/_ansi.h	108;"	d
+_CAST_VOID	lib/libutils/isoc/include/_ansi.h	89;"	d
+_CAST_VOID	lib/libutils/isoc/newlib/_ansi.h	108;"	d
+_CAST_VOID	lib/libutils/isoc/newlib/_ansi.h	89;"	d
+_CONST	lib/libutils/isoc/include/_ansi.h	100;"	d
+_CONST	lib/libutils/isoc/include/_ansi.h	75;"	d
+_CONST	lib/libutils/isoc/newlib/_ansi.h	100;"	d
+_CONST	lib/libutils/isoc/newlib/_ansi.h	75;"	d
+_CYGWIN_WORKING_SIGSETJMP	lib/libutils/isoc/include/machine/setjmp.h	329;"	d
+_DEFUN	lib/libutils/isoc/include/_ansi.h	106;"	d
+_DEFUN	lib/libutils/isoc/include/_ansi.h	87;"	d
+_DEFUN	lib/libutils/isoc/newlib/_ansi.h	106;"	d
+_DEFUN	lib/libutils/isoc/newlib/_ansi.h	87;"	d
+_DEFUN_VOID	lib/libutils/isoc/include/_ansi.h	107;"	d
+_DEFUN_VOID	lib/libutils/isoc/include/_ansi.h	88;"	d
+_DEFUN_VOID	lib/libutils/isoc/newlib/_ansi.h	107;"	d
+_DEFUN_VOID	lib/libutils/isoc/newlib/_ansi.h	88;"	d
+_DOTS	lib/libutils/isoc/include/_ansi.h	103;"	d
+_DOTS	lib/libutils/isoc/include/_ansi.h	78;"	d
+_DOTS	lib/libutils/isoc/newlib/_ansi.h	103;"	d
+_DOTS	lib/libutils/isoc/newlib/_ansi.h	78;"	d
+_DT_FINI	tsee/linux/elf.h	33;"	d
+_DT_FINI	tsee/linux/elf.h	49;"	d
+_DT_INIT	tsee/linux/elf.h	32;"	d
+_DT_INIT	tsee/linux/elf.h	48;"	d
+_DT_JMPREL	tsee/linux/elf.h	37;"	d
+_DT_JMPREL	tsee/linux/elf.h	62;"	d
+_DT_NEEDED	tsee/linux/elf.h	22;"	d
+_DT_NULL	tsee/linux/elf.h	21;"	d
+_DT_PLTGOT	tsee/linux/elf.h	24;"	d
+_DT_PLTREL	tsee/linux/elf.h	36;"	d
+_DT_PLTREL	tsee/linux/elf.h	64;"	d
+_DT_PLTRELSZ	tsee/linux/elf.h	23;"	d
+_DT_PLTRELSZ	tsee/linux/elf.h	63;"	d
+_DT_REL	tsee/linux/elf.h	35;"	d
+_DT_REL	tsee/linux/elf.h	58;"	d
+_DT_RELA	tsee/linux/elf.h	27;"	d
+_DT_RELA	tsee/linux/elf.h	53;"	d
+_DT_RELAENT	tsee/linux/elf.h	29;"	d
+_DT_RELAENT	tsee/linux/elf.h	55;"	d
+_DT_RELASZ	tsee/linux/elf.h	28;"	d
+_DT_RELASZ	tsee/linux/elf.h	54;"	d
+_DT_RELENT	tsee/linux/elf.h	60;"	d
+_DT_RELSZ	tsee/linux/elf.h	59;"	d
+_DT_SONAME	tsee/linux/elf.h	34;"	d
+_DT_SONAME	tsee/linux/elf.h	50;"	d
+_DT_STRSZ	tsee/linux/elf.h	30;"	d
+_DT_STRSZ	tsee/linux/elf.h	56;"	d
+_DT_STRTAB	tsee/linux/elf.h	25;"	d
+_DT_STRTAB	tsee/linux/elf.h	51;"	d
+_DT_SYMENT	tsee/linux/elf.h	31;"	d
+_DT_SYMENT	tsee/linux/elf.h	57;"	d
+_DT_SYMTAB	tsee/linux/elf.h	26;"	d
+_DT_SYMTAB	tsee/linux/elf.h	52;"	d
+_EI_NIDENT	tsee/linux/elf.h	89;"	d
+_ELF_R_SYM	tsee/linux/elf.h	178;"	d
+_ELF_R_SYM	tsee/linux/elf.h	188;"	d
+_ELF_R_TYPE	tsee/linux/elf.h	179;"	d
+_ELF_R_TYPE	tsee/linux/elf.h	189;"	d
+_ELF_ST_BIND	tsee/linux/elf.h	166;"	d
+_ELF_ST_INFO	tsee/linux/elf.h	168;"	d
+_ELF_ST_TYPE	tsee/linux/elf.h	167;"	d
+_END_STD_C	lib/libutils/isoc/include/_ansi.h	129;"	d
+_END_STD_C	lib/libutils/isoc/include/_ansi.h	132;"	d
+_END_STD_C	lib/libutils/isoc/include/_ansi.h	137;"	d
+_END_STD_C	lib/libutils/isoc/newlib/_ansi.h	129;"	d
+_END_STD_C	lib/libutils/isoc/newlib/_ansi.h	132;"	d
+_END_STD_C	lib/libutils/isoc/newlib/_ansi.h	137;"	d
+_EXFUN	lib/libutils/isoc/include/_ansi.h	105;"	d
+_EXFUN	lib/libutils/isoc/include/_ansi.h	81;"	d
+_EXFUN	lib/libutils/isoc/include/_ansi.h	84;"	d
+_EXFUN	lib/libutils/isoc/newlib/_ansi.h	105;"	d
+_EXFUN	lib/libutils/isoc/newlib/_ansi.h	81;"	d
+_EXFUN	lib/libutils/isoc/newlib/_ansi.h	84;"	d
+_EXPARM	lib/libutils/isoc/include/_ansi.h	82;"	d
+_EXPARM	lib/libutils/isoc/include/_ansi.h	85;"	d
+_EXPARM	lib/libutils/isoc/newlib/_ansi.h	82;"	d
+_EXPARM	lib/libutils/isoc/newlib/_ansi.h	85;"	d
+_Elf_Addr	tsee/linux/elf.h	/^typedef unsigned long long _Elf_Addr;$/;"	t
+_Elf_Dyn	tsee/linux/elf.h	/^} _Elf_Dyn;$/;"	t	typeref:struct:__anon10
+_Elf_Dyn	tsee/linux/elf.h	/^} _Elf_Dyn;$/;"	t	typeref:struct:__anon12
+_Elf_Ehdr	tsee/linux/elf.h	/^} _Elf_Ehdr;$/;"	t	typeref:struct:__anon1
+_Elf_Half	tsee/linux/elf.h	/^typedef unsigned short _Elf_Half;$/;"	t
+_Elf_Off	tsee/linux/elf.h	/^typedef unsigned long long _Elf_Off;$/;"	t
+_Elf_Phdr	tsee/linux/elf.h	/^} _Elf_Phdr;$/;"	t	typeref:struct:__anon8
+_Elf_Phdr	tsee/linux/elf.h	/^} _Elf_Phdr;$/;"	t	typeref:struct:__anon9
+_Elf_Rel	tsee/linux/elf.h	/^} _Elf_Rel;$/;"	t	typeref:struct:__anon7
+_Elf_Rela	tsee/linux/elf.h	/^} _Elf_Rela;$/;"	t	typeref:struct:__anon6
+_Elf_Section	tsee/linux/elf.h	/^typedef unsigned short _Elf_Section;$/;"	t
+_Elf_Shdr	tsee/linux/elf.h	/^} _Elf_Shdr;$/;"	t	typeref:struct:__anon2
+_Elf_Shdr	tsee/linux/elf.h	/^} _Elf_Shdr;$/;"	t	typeref:struct:__anon3
+_Elf_Sword	tsee/linux/elf.h	/^typedef	int _Elf_Sword;$/;"	t
+_Elf_Sxword	tsee/linux/elf.h	/^typedef	long long  _Elf_Sxword;$/;"	t
+_Elf_Sym	tsee/linux/elf.h	/^} _Elf_Sym;$/;"	t	typeref:struct:__anon4
+_Elf_Sym	tsee/linux/elf.h	/^} _Elf_Sym;$/;"	t	typeref:struct:__anon5
+_Elf_Word	tsee/linux/elf.h	/^typedef unsigned int _Elf_Word;$/;"	t
+_Elf_Xword	tsee/linux/elf.h	/^typedef unsigned long long _Elf_Xword;$/;"	t
+_HAVE_STDC	lib/libutils/isoc/include/_ansi.h	68;"	d
+_HAVE_STDC	lib/libutils/isoc/newlib/_ansi.h	68;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	105;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	113;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	120;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	124;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	130;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	136;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	141;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	146;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	154;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	159;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	167;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	175;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	180;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	190;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	194;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	197;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	201;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	205;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	209;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	213;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	218;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	21;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	223;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	227;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	233;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	238;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	242;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	246;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	251;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	256;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	25;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	260;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	266;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	271;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	275;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	279;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	284;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	293;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	298;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	30;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	38;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	42;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	48;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	59;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	67;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	72;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	80;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	84;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	95;"	d
+_JBLEN	lib/libutils/isoc/include/machine/setjmp.h	99;"	d
+_JBTYPE	lib/libutils/isoc/include/machine/setjmp.h	110;"	d
+_JBTYPE	lib/libutils/isoc/include/machine/setjmp.h	125;"	d
+_JBTYPE	lib/libutils/isoc/include/machine/setjmp.h	131;"	d
+_JBTYPE	lib/libutils/isoc/include/machine/setjmp.h	137;"	d
+_JBTYPE	lib/libutils/isoc/include/machine/setjmp.h	147;"	d
+_JBTYPE	lib/libutils/isoc/include/machine/setjmp.h	163;"	d
+_JBTYPE	lib/libutils/isoc/include/machine/setjmp.h	168;"	d
+_JBTYPE	lib/libutils/isoc/include/machine/setjmp.h	214;"	d
+_JBTYPE	lib/libutils/isoc/include/machine/setjmp.h	219;"	d
+_JBTYPE	lib/libutils/isoc/include/machine/setjmp.h	234;"	d
+_JBTYPE	lib/libutils/isoc/include/machine/setjmp.h	252;"	d
+_JBTYPE	lib/libutils/isoc/include/machine/setjmp.h	261;"	d
+_JBTYPE	lib/libutils/isoc/include/machine/setjmp.h	26;"	d
+_JBTYPE	lib/libutils/isoc/include/machine/setjmp.h	288;"	d
+_JBTYPE	lib/libutils/isoc/include/machine/setjmp.h	294;"	d
+_JBTYPE	lib/libutils/isoc/include/machine/setjmp.h	47;"	d
+_JBTYPE	lib/libutils/isoc/include/machine/setjmp.h	94;"	d
+_LONG_DOUBLE	lib/libutils/isoc/include/_ansi.h	109;"	d
+_LONG_DOUBLE	lib/libutils/isoc/include/_ansi.h	91;"	d
+_LONG_DOUBLE	lib/libutils/isoc/newlib/_ansi.h	109;"	d
+_LONG_DOUBLE	lib/libutils/isoc/newlib/_ansi.h	91;"	d
+_NOARGS	lib/libutils/isoc/include/_ansi.h	74;"	d
+_NOARGS	lib/libutils/isoc/include/_ansi.h	99;"	d
+_NOARGS	lib/libutils/isoc/newlib/_ansi.h	74;"	d
+_NOARGS	lib/libutils/isoc/newlib/_ansi.h	99;"	d
+_PARAMS	lib/libutils/isoc/include/_ansi.h	111;"	d
+_PARAMS	lib/libutils/isoc/include/_ansi.h	94;"	d
+_PARAMS	lib/libutils/isoc/newlib/_ansi.h	111;"	d
+_PARAMS	lib/libutils/isoc/newlib/_ansi.h	94;"	d
+_PTR	lib/libutils/isoc/include/_ansi.h	72;"	d
+_PTR	lib/libutils/isoc/include/_ansi.h	97;"	d
+_PTR	lib/libutils/isoc/newlib/_ansi.h	72;"	d
+_PTR	lib/libutils/isoc/newlib/_ansi.h	97;"	d
+_PT_LOAD	tsee/linux/elf.h	73;"	d
+_R_AARCH64_ABS64	tsee/linux/elf.h	40;"	d
+_R_AARCH64_GLOB_DAT	tsee/linux/elf.h	43;"	d
+_R_AARCH64_IRELATIVE	tsee/linux/elf.h	42;"	d
+_R_AARCH64_JUMP_SLOT	tsee/linux/elf.h	44;"	d
+_R_AARCH64_NONE	tsee/linux/elf.h	39;"	d
+_R_AARCH64_RELATIVE	tsee/linux/elf.h	41;"	d
+_R_AARCH64_RELATIVE	tsee/linux/elf.h	45;"	d
+_R_ARM_ABS32	tsee/linux/elf.h	67;"	d
+_R_ARM_GLOB_DAT	tsee/linux/elf.h	68;"	d
+_R_ARM_JUMP_SLOT	tsee/linux/elf.h	69;"	d
+_R_ARM_NONE	tsee/linux/elf.h	66;"	d
+_R_ARM_RELATIVE	tsee/linux/elf.h	70;"	d
+_SAVEMASK	lib/libutils/isoc/include/machine/setjmp.h	325;"	d
+_SETJMP_H_	lib/libutils/isoc/include/setjmp.h	19;"	d
+_SHN_UNDEF	tsee/linux/elf.h	18;"	d
+_SIGMASK	lib/libutils/isoc/include/machine/setjmp.h	326;"	d
+_SIGNED	lib/libutils/isoc/include/_ansi.h	102;"	d
+_SIGNED	lib/libutils/isoc/include/_ansi.h	77;"	d
+_SIGNED	lib/libutils/isoc/newlib/_ansi.h	102;"	d
+_SIGNED	lib/libutils/isoc/newlib/_ansi.h	77;"	d
+_STDINT_H	lib/libutils/isoc/include/stdint.h	51;"	d
+_SYS_BITSTRING_H_	lib/libutils/ext/include/bitstring.h	48;"	d
+_SYS_QUEUE_H_	lib/libutils/isoc/include/sys/queue.h	47;"	d
+_TAILQ_ENTRY	lib/libutils/isoc/include/sys/queue.h	420;"	d
+_TAILQ_HEAD	lib/libutils/isoc/include/sys/queue.h	410;"	d
+_TO_STR	lib/libutils/ext/include/util.h	40;"	d
+_TSEE_SM_H_	tsee/linux/tsee_sm.h	14;"	d
+_TSEE_SM_H_	tsee/tee/tsee_sm.h	14;"	d
+_VOID	lib/libutils/isoc/include/_ansi.h	104;"	d
+_VOID	lib/libutils/isoc/include/_ansi.h	79;"	d
+_VOID	lib/libutils/isoc/newlib/_ansi.h	104;"	d
+_VOID	lib/libutils/isoc/newlib/_ansi.h	79;"	d
+_VOLATILE	lib/libutils/isoc/include/_ansi.h	101;"	d
+_VOLATILE	lib/libutils/isoc/include/_ansi.h	76;"	d
+_VOLATILE	lib/libutils/isoc/newlib/_ansi.h	101;"	d
+_VOLATILE	lib/libutils/isoc/newlib/_ansi.h	76;"	d
+__BARRIER_H	include/tee/tsee/barrier.h	14;"	d
+__ELF_H__	tsee/linux/elf.h	14;"	d
+__ILP32__	lib/libutils/isoc/include/stdint.h	61;"	d
+__KEE_H__	include/linux/tsee/kee.h	14;"	d
+__LD_H__	tsee/linux/ld.h	14;"	d
+__LP64__	lib/libutils/isoc/include/stdint.h	64;"	d
+__PRI64_PREFIX	lib/libutils/isoc/include/inttypes.h	45;"	d
+__PRI64_PREFIX	lib/libutils/isoc/include/inttypes.h	48;"	d
+__PRIPTR_PREFIX	lib/libutils/isoc/include/inttypes.h	50;"	d
+__SIGMASK_FUNC	lib/libutils/isoc/include/machine/setjmp.h	333;"	d
+__SIGMASK_FUNC	lib/libutils/isoc/include/machine/setjmp.h	335;"	d
+__STRICT_ANSI__	lib/libutils/isoc/newlib/strnlen.c	77;"	d	file:
+__TARGET_64__	tsee/linux/elf.h	16;"	d
+__TARGET_64__	tsee/linux/ld.h	17;"	d
+__THEE_H__	include/linux/tsee/thee.h	14;"	d
+__TSEE_ENTRY_H_	include/linux/tsee/tsee_entry.h	14;"	d
+__TSEE_ENTRY_H_	include/tee/tsee/tsee_entry.h	14;"	d
+__TSEE_MM_H_	include/linux/tsee/tsee_mm.h	14;"	d
+__TSEE_MM_H_	include/tee/tsee/tsee_mm.h	14;"	d
+__UNCONST	lib/libutils/isoc/snprintf.c	82;"	d	file:
+__aeabi_idiv	lib/libutils/isoc/arch/arm/arm32_aeabi_divmod.c	/^signed __aeabi_idiv(signed numerator, signed denominator)$/;"	f
+__aeabi_idivmod	lib/libutils/isoc/arch/arm/arm32_aeabi_divmod.c	/^signed __aeabi_idivmod(signed numerator, signed denominator)$/;"	f
+__aeabi_imod	lib/libutils/isoc/arch/arm/arm32_aeabi_divmod.c	/^signed __aeabi_imod(signed numerator, signed denominator)$/;"	f
+__aeabi_uidiv	lib/libutils/isoc/arch/arm/arm32_aeabi_divmod.c	/^unsigned __aeabi_uidiv(unsigned numerator, unsigned denominator)$/;"	f
+__aeabi_uidivmod	lib/libutils/isoc/arch/arm/arm32_aeabi_divmod.c	/^unsigned __aeabi_uidivmod(unsigned numerator, unsigned denominator)$/;"	f
+__aeabi_uimod	lib/libutils/isoc/arch/arm/arm32_aeabi_divmod.c	/^unsigned __aeabi_uimod(unsigned numerator, unsigned denominator)$/;"	f
+__aligned	lib/libutils/ext/include/compiler.h	26;"	d
+__attr_const	lib/libutils/ext/include/compiler.h	29;"	d
+__bss	lib/libutils/ext/include/compiler.h	36;"	d
+__bss_end	boot/tee/boot.ld.S	/^		__bss_end = .;$/;"	d
+__bss_start	boot/tee/boot.ld.S	/^		__bss_start = .;$/;"	d
+__cold	lib/libutils/ext/include/compiler.h	33;"	d
+__ctor_end	boot/tee/boot.ld.S	/^		__ctor_end = .;$/;"	d
+__ctor_list	boot/tee/boot.ld.S	/^		__ctor_list = .;$/;"	d
+__data	lib/libutils/ext/include/compiler.h	35;"	d
+__data_end	boot/tee/boot.ld.S	/^	__data_end = .;$/;"	d
+__data_start	boot/tee/boot.ld.S	/^		__data_start = .;$/;"	d
+__deprecated	lib/libutils/ext/include/compiler.h	21;"	d
+__dtor_end	boot/tee/boot.ld.S	/^		__dtor_end = .;$/;"	d
+__dtor_list	boot/tee/boot.ld.S	/^		__dtor_list = .;$/;"	d
+__exidx_end	boot/tee/boot.ld.S	/^		__exidx_end = .;$/;"	d
+__exidx_start	boot/tee/boot.ld.S	/^		__exidx_start = .;$/;"	d
+__init_mem_usage	boot/tee/boot.ld.S	/^	__init_mem_usage = _end - CFG_TSEE_LOAD_ADDR;$/;"	d
+__int8_t_defined	lib/libutils/isoc/include/stdint.h	75;"	d
+__l_divmod	lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod.c	/^void __l_divmod(struct asm_lqr *asm_lqr)$/;"	f
+__list_add	include/tee/tsee/data.h	/^static inline void __list_add(struct list_head *new,$/;"	f
+__list_add	lib/libutils/isoc/include/sys/list.h	/^static inline void __list_add(struct list_head *new,$/;"	f
+__list_del	include/tee/tsee/data.h	/^static inline void __list_del(struct list_head * prev, struct list_head * next)$/;"	f
+__list_del	lib/libutils/isoc/include/sys/list.h	/^static inline void __list_del(struct list_head * prev, struct list_head * next)$/;"	f
+__must_check	lib/libutils/ext/include/compiler.h	32;"	d
+__noinline	lib/libutils/ext/include/compiler.h	28;"	d
+__noreturn	lib/libutils/ext/include/compiler.h	24;"	d
+__packed	lib/libutils/ext/include/compiler.h	22;"	d
+__printf	lib/libutils/ext/include/compiler.h	27;"	d
+__pure	lib/libutils/ext/include/compiler.h	25;"	d
+__restrict	lib/libutils/isoc/include/sys/cdefs.h	50;"	d
+__restrict	lib/libutils/isoc/include/sys/cdefs.h	52;"	d
+__rodata	lib/libutils/ext/include/compiler.h	37;"	d
+__rodata_end	boot/tee/boot.ld.S	/^		__rodata_end = .;$/;"	d
+__rodata_start	boot/tee/boot.ld.S	/^		__rodata_start = .;$/;"	d
+__section	lib/libutils/ext/include/compiler.h	34;"	d
+__ssize_t_defined	lib/libutils/isoc/include/unistd.h	45;"	d
+__stack_chk_fail	lib/libutils/isoc/stack_check.c	/^void __stack_chk_fail(void)$/;"	f
+__stack_chk_guard	lib/libutils/isoc/stack_check.c	/^void *__stack_chk_guard = (void *)0x00000aff;$/;"	v
+__text_end	boot/tee/boot.ld.S	/^		__text_end = .;$/;"	d
+__text_start	boot/tee/boot.ld.S	/^		__text_start = .;$/;"	d
+__tsee_data_ro_end	boot/tee/boot.ld.S	/^		__tsee_data_ro_end = .;$/;"	d
+__tsee_data_ro_start	boot/tee/boot.ld.S	/^		__tsee_data_ro_start = .;$/;"	d
+__tsee_text_ro_end	boot/tee/boot.ld.S	/^		__tsee_text_ro_end = .;$/;"	d
+__tsee_text_ro_start	boot/tee/boot.ld.S	/^		__tsee_text_ro_start = .;$/;"	d
+__uint32_t_defined	lib/libutils/isoc/include/stdint.h	93;"	d
+__ul_divmod	lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod.c	/^void __ul_divmod(struct asm_ulqr *asm_ulqr)$/;"	f
+__unused	lib/libutils/ext/include/compiler.h	30;"	d
+__used	lib/libutils/ext/include/compiler.h	31;"	d
+__weak	lib/libutils/ext/include/compiler.h	23;"	d
+_binary_tee_img_size	boot/tee/boot.ld.S	/^	_binary_tee_img_size = _binary_tee_img_end - _binary_tee_img_start;$/;"	d
+_bit_byte	lib/libutils/ext/include/bitstring.h	54;"	d
+_bit_mask	lib/libutils/ext/include/bitstring.h	58;"	d
+_cfg-vars-by-prefix	mk/checkconf.mk	/^define _cfg-vars-by-prefix$/;"	m
+_ekee	tsee/linux/_kee.S	/^_ekee:$/;"	l
+_end	boot/tee/boot.ld.S	/^	_end = .;$/;"	d
+_end_of_ram	boot/tee/boot.ld.S	/^	_end_of_ram = .;$/;"	d
+_erodata	include/linux/tsee/tsee_entry.h	/^	u64 _erodata;$/;"	m	struct:tsee_rtks_init
+_etext	include/linux/tsee/tsee_entry.h	/^	u64 _etext;$/;"	m	struct:tsee_rtks_init
+_ethee	tsee/linux/_thee.S	/^_ethee:$/;"	l
+_kee_entry	tsee/linux/_kee.S	/^_kee_entry:$/;"	l
+_kee_exit	tsee/linux/_kee.S	/^_kee_exit:$/;"	l
+_longjmp	lib/libutils/isoc/include/machine/setjmp.h	379;"	d
+_out_exynos4412_include_generated_conf_h_	out/exynos4412/include/generated/conf.h	2;"	d
+_setjmp	lib/libutils/isoc/include/machine/setjmp.h	378;"	d
+_skee	tsee/linux/_kee.S	/^_skee:$/;"	l
+_srodata	include/linux/tsee/tsee_entry.h	/^	u64 _srodata;$/;"	m	struct:tsee_rtks_init
+_sthee	tsee/linux/_thee.S	/^_sthee:$/;"	l
+_text	include/linux/tsee/tsee_entry.h	/^	u64 _text;$/;"	m	struct:tsee_rtks_init
+_thee_goto_EL2	tsee/linux/_thee.S	/^_thee_goto_EL2:$/;"	l
+_tsee_pgtbl	boot/tee/boot.ld.S	/^	_tsee_pgtbl = .;$/;"	d
+abort	lib/libutils/isoc/abort.c	/^void abort(void)$/;"	f
+acqfcn	lib/libutils/isoc/bget.c	/^static void *(*acqfcn) _((bufsize size)) = NULL;$/;"	v	file:
+align_dn	include/tee/tsee/defs.h	37;"	d
+align_up	include/tee/tsee/defs.h	36;"	d
+append	lib/libutils/ext/trace.c	/^static int __printf(2, 3) append(struct strbuf *sbuf, const char *fmt, ...)$/;"	f
+asm_lqr	lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod.c	/^struct asm_lqr {$/;"	s	file:
+asm_ulqr	lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod.c	/^struct asm_ulqr {$/;"	s	file:
+assert	lib/libutils/isoc/include/assert.h	49;"	d
+assert	lib/libutils/isoc/include/assert.h	57;"	d
+assert	lib/libutils/isoc/include/assert.h	66;"	d
+assert_header	lib/libutils/isoc/bget_malloc.c	/^static void assert_header(struct mdbg_hdr *hdr)$/;"	f	file:
+bchain	lib/libutils/isoc/bget.c	/^static char *bchain = NULL;	      \/* Our private buffer chain *\/$/;"	v	file:
+bcompact	lib/libutils/isoc/bget.c	/^static int bcompact(bsize, seq)$/;"	f	file:
+bdhead	lib/libutils/isoc/bget.c	/^struct bdhead {$/;"	s	file:
+bectl	lib/libutils/isoc/bget.c	/^void bectl(compact, acquire, release, pool_incr)$/;"	f
+bexpand	lib/libutils/isoc/bget.c	/^static void *bexpand(size)$/;"	f	file:
+bfhead	lib/libutils/isoc/bget.c	/^struct bfhead {$/;"	s	file:
+bget	lib/libutils/isoc/bget.c	/^void *bget(requested_size)$/;"	f
+bget_buf_size	lib/libutils/isoc/bget_malloc.c	/^static bufsize bget_buf_size(void *buf)$/;"	f	file:
+bgetr	lib/libutils/isoc/bget.c	/^void *bgetr(buf, size)$/;"	f
+bgetz	lib/libutils/isoc/bget.c	/^void *bgetz(size)$/;"	f
+bh	lib/libutils/isoc/bget.c	/^    struct bhead bh;		      \/* Common allocated\/free header *\/$/;"	m	struct:bfhead	typeref:struct:bfhead::bhead	file:
+bh	lib/libutils/isoc/bget.c	/^    struct bhead bh;		      \/* Common header *\/$/;"	m	struct:bdhead	typeref:struct:bdhead::bhead	file:
+bhead	lib/libutils/isoc/bget.c	/^struct bhead {$/;"	s	file:
+bit_alloc	lib/libutils/ext/include/bitstring.h	67;"	d
+bit_clear	lib/libutils/ext/include/bitstring.h	83;"	d
+bit_decl	lib/libutils/ext/include/bitstring.h	71;"	d
+bit_ffc	lib/libutils/ext/include/bitstring.h	121;"	d
+bit_ffs	lib/libutils/ext/include/bitstring.h	140;"	d
+bit_nclear	lib/libutils/ext/include/bitstring.h	87;"	d
+bit_nset	lib/libutils/ext/include/bitstring.h	104;"	d
+bit_set	lib/libutils/ext/include/bitstring.h	79;"	d
+bit_test	lib/libutils/ext/include/bitstring.h	75;"	d
+bitstr_size	lib/libutils/ext/include/bitstring.h	63;"	d
+bitstr_t	lib/libutils/ext/include/bitstring.h	/^typedef	unsigned char bitstr_t;$/;"	t
+blimit	lib/libutils/isoc/bget.c	/^static bufsize blimit(bs)$/;"	f	file:
+blink	lib/libutils/isoc/bget.c	/^    struct bfhead *blink;	      \/* Backward link *\/$/;"	m	struct:qlinks	typeref:struct:qlinks::bfhead	file:
+boot_secondary	boot/tee/entry.S	/^boot_secondary:$/;"	l
+bp	lib/libutils/isoc/bget.c	/^static char *bp = NULL; 	      \/* Our initial buffer pool *\/$/;"	v	file:
+bpool	lib/libutils/isoc/bget.c	/^void bpool(buf, len)$/;"	f
+bpool_foreach	lib/libutils/isoc/bget_malloc.c	/^static bool bpool_foreach(struct bpool_iterator *iterator, void **buf)$/;"	f	file:
+bpool_foreach_iterator_init	lib/libutils/isoc/bget_malloc.c	/^static void bpool_foreach_iterator_init(struct bpool_iterator *iterator)$/;"	f	file:
+bpool_foreach_pool	lib/libutils/isoc/bget_malloc.c	/^static bool bpool_foreach_pool(struct bpool_iterator *iterator, void **buf,$/;"	f	file:
+bpool_iterator	lib/libutils/isoc/bget_malloc.c	/^struct bpool_iterator {$/;"	s	file:
+bpoold	lib/libutils/isoc/bget.c	/^void bpoold(buf, dumpalloc, dumpfree)$/;"	f
+bpoolv	lib/libutils/isoc/bget.c	/^int bpoolv(buf)$/;"	f
+brel	lib/libutils/isoc/bget.c	/^void brel(buf)$/;"	f
+brel_after	lib/libutils/isoc/bget_malloc.c	/^static void brel_after(char *buf, bufsize size)$/;"	f	file:
+brel_before	lib/libutils/isoc/bget_malloc.c	/^static void brel_before(char *orig_buf, char *new_buf)$/;"	f	file:
+bshrink	lib/libutils/isoc/bget.c	/^static void bshrink(buf)$/;"	f	file:
+bsize	lib/libutils/isoc/bget.c	/^    bufsize bsize;		      \/* Buffer size: positive if free,$/;"	m	struct:bhead	file:
+bstats	lib/libutils/isoc/bget.c	/^void bstats(curalloc, totfree, maxfree, nget, nrel)$/;"	f
+bstatse	lib/libutils/isoc/bget.c	/^void bstatse(pool_incr, npool, npget, nprel, ndget, ndrel)$/;"	f
+buf	lib/libutils/ext/trace.c	/^	char buf[MAX_PRINT_SIZE];$/;"	m	struct:strbuf	file:
+buf	lib/libutils/isoc/bget_malloc.c	/^	void *buf;$/;"	m	struct:malloc_pool	file:
+buf_compare_ct	lib/libutils/ext/buf_compare_ct.c	/^int buf_compare_ct(const void *s1, const void *s2, size_t n)$/;"	f
+bufdump	lib/libutils/isoc/bget.c	/^void bufdump(buf)$/;"	f
+bufsize	lib/libutils/isoc/bget.h	/^typedef long bufsize;$/;"	t
+calloc	lib/libutils/isoc/bget_malloc.c	/^void *calloc(size_t nmemb, size_t size)$/;"	f
+calloc	lib/libutils/isoc/include/malloc.h	64;"	d
+cfg-all-enabled	mk/checkconf.mk	/^cfg-all-enabled =                                                             \\$/;"	m
+cfg-depends-all	mk/checkconf.mk	/^cfg-depends-all =                                                           \\$/;"	m
+cfg-depends-one	mk/checkconf.mk	/^cfg-depends-one =                                                                    \\$/;"	m
+cfg-enable-all-depends	mk/checkconf.mk	/^cfg-enable-all-depends =                                                                   \\$/;"	m
+cfg-make-define	mk/checkconf.mk	/^define cfg-make-define$/;"	m
+cfg-make-variable	mk/checkconf.mk	/^define cfg-make-variable$/;"	m
+cfg-one-enabled	mk/checkconf.mk	/^cfg-one-enabled = $(if $(filter y, $(foreach var,$(1),$($(var)))),y,)$/;"	m
+cfg-vars-by-prefix	mk/checkconf.mk	/^define cfg-vars-by-prefix$/;"	m
+check-conf-h	mk/checkconf.mk	/^define check-conf-h$/;"	m
+check-conf-mk	mk/checkconf.mk	/^define check-conf-mk$/;"	m
+cleanfiles	mk/lib.mk	/^cleanfiles	:= $(cleanfiles) $(lib-libfile)$/;"	m
+comp-aflags	mk/compile.mk	/^comp-aflags =$/;"	m
+comp-cflags	mk/compile.mk	/^comp-cflags = -fno-builtin$/;"	m
+comp-cflags-warns-1	mk/compile.mk	/^comp-cflags-warns-1:= $(comp-cflags-warns-high)$/;"	m
+comp-cflags-warns-2	mk/compile.mk	/^comp-cflags-warns-2:= $(comp-cflags-warns-1) $(comp-cflags-warns-medium)$/;"	m
+comp-cflags-warns-3	mk/compile.mk	/^comp-cflags-warns-3:= $(comp-cflags-warns-2) $(comp-cflags-warns-low)$/;"	m
+comp-cflags-warns-high	mk/compile.mk	/^comp-cflags-warns-high = \\$/;"	m
+comp-cflags-warns-low	mk/compile.mk	/^comp-cflags-warns-low = \\$/;"	m
+comp-cflags-warns-medium	mk/compile.mk	/^comp-cflags-warns-medium = \\$/;"	m
+comp-cppflags	mk/compile.mk	/^comp-cppflags =$/;"	m
+comp-cxxflags-incompatible	mk/compile.mk	/^comp-cxxflags-incompatible := -Wmissing-prototypes -Wnested-externs \\$/;"	m
+compfcn	lib/libutils/isoc/bget.c	/^static int (*compfcn) _((bufsize sizereq, int sequence)) = NULL;$/;"	v	file:
+console_flush	boot/plat-exynos4412/setup.c	/^void console_flush(void)$/;"	f
+console_init	boot/plat-exynos4412/setup.c	/^void console_init(void)$/;"	f
+console_putc	boot/plat-exynos4412/setup.c	/^void console_putc(int ch)$/;"	f
+container_of	include/tee/tsee/data.h	24;"	d
+container_of	lib/libutils/isoc/include/sys/list.h	24;"	d
+cpu_init	boot/tee/entry.S	/^cpu_init:$/;"	l
+create_free_block	lib/libutils/isoc/bget_malloc.c	/^static void create_free_block(struct bfhead *bf, bufsize size, struct bhead *bn)$/;"	f	file:
+d_ptr	tsee/linux/elf.h	/^      _Elf_Addr d_ptr;			\/* Address value *\/$/;"	m	union:__anon10::__anon11
+d_ptr	tsee/linux/elf.h	/^      _Elf_Addr d_ptr;			\/* Address value *\/$/;"	m	union:__anon12::__anon13
+d_tag	tsee/linux/elf.h	/^  _Elf_Sword	d_tag;			\/* Dynamic entry type *\/$/;"	m	struct:__anon12
+d_tag	tsee/linux/elf.h	/^  _Elf_Sxword	d_tag;			\/* Dynamic entry type *\/$/;"	m	struct:__anon10
+d_un	tsee/linux/elf.h	/^    } d_un;$/;"	m	struct:__anon10	typeref:union:__anon10::__anon11
+d_un	tsee/linux/elf.h	/^    } d_un;$/;"	m	struct:__anon12	typeref:union:__anon12::__anon13
+d_val	tsee/linux/elf.h	/^      _Elf_Word d_val;			\/* Integer value *\/$/;"	m	union:__anon12::__anon13
+d_val	tsee/linux/elf.h	/^      _Elf_Xword d_val;		\/* Integer value *\/$/;"	m	union:__anon10::__anon11
+dabort_handler	tsee/linux/tsee_fault.c	/^void dabort_handler (struct trapframe *r)$/;"	f
+dabort_handler	tsee/tee/tsee_fault.c	/^void dabort_handler (struct trapframe *r)$/;"	f
+data_abt_fault_string	tsee/linux/tsee_fault.c	/^static const char* data_abt_fault_string[] =$/;"	v	file:
+data_abt_fault_string	tsee/tee/tsee_fault.c	/^static const char* data_abt_fault_string[] =$/;"	v	file:
+default_sm_handler	tsee/tee/tsee_sm_gate.S	/^default_sm_handler:$/;"	l
+dhex_dump	lib/libutils/ext/trace.c	/^void dhex_dump(const char *function __unused, int line __unused,$/;"	f
+dhex_dump	lib/libutils/ext/trace.c	/^void dhex_dump(const char *function, int line, int level,$/;"	f
+division_lqr	lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod.c	/^static void division_lqr(unsigned long long n, unsigned long long p,$/;"	f	file:
+division_qr	lib/libutils/isoc/arch/arm/arm32_aeabi_divmod.c	/^static void division_qr(unsigned n, unsigned p, struct qr *qr)$/;"	f	file:
+dmb	include/tee/tsee/barrier.h	26;"	d
+dsb	include/tee/tsee/barrier.h	25;"	d
+dumpAlloc	lib/libutils/isoc/bget.c	1335;"	d	file:
+dumpFree	lib/libutils/isoc/bget.c	1336;"	d	file:
+dump_trapframe	tsee/linux/tsee_fault.c	/^void dump_trapframe (struct trapframe *tf)$/;"	f
+dump_trapframe	tsee/tee/tsee_fault.c	/^void dump_trapframe (struct trapframe *tf)$/;"	f
+e_ehsize	tsee/linux/elf.h	/^  _Elf_Half	e_ehsize;$/;"	m	struct:__anon1
+e_entry	tsee/linux/elf.h	/^  _Elf_Addr	e_entry;$/;"	m	struct:__anon1
+e_flags	tsee/linux/elf.h	/^  _Elf_Word	e_flags;$/;"	m	struct:__anon1
+e_ident	tsee/linux/elf.h	/^  unsigned char	e_ident[_EI_NIDENT];$/;"	m	struct:__anon1
+e_machine	tsee/linux/elf.h	/^  _Elf_Half	e_machine;$/;"	m	struct:__anon1
+e_phentsize	tsee/linux/elf.h	/^  _Elf_Half	e_phentsize;$/;"	m	struct:__anon1
+e_phnum	tsee/linux/elf.h	/^  _Elf_Half	e_phnum;$/;"	m	struct:__anon1
+e_phoff	tsee/linux/elf.h	/^  _Elf_Off	e_phoff;$/;"	m	struct:__anon1
+e_shentsize	tsee/linux/elf.h	/^  _Elf_Half	e_shentsize;$/;"	m	struct:__anon1
+e_shnum	tsee/linux/elf.h	/^  _Elf_Half	e_shnum;$/;"	m	struct:__anon1
+e_shoff	tsee/linux/elf.h	/^  _Elf_Off	e_shoff;$/;"	m	struct:__anon1
+e_shstrndx	tsee/linux/elf.h	/^  _Elf_Half	e_shstrndx;$/;"	m	struct:__anon1
+e_type	tsee/linux/elf.h	/^  _Elf_Half	e_type;$/;"	m	struct:__anon1
+e_version	tsee/linux/elf.h	/^  _Elf_Word	e_version;$/;"	m	struct:__anon1
+exp_incr	lib/libutils/isoc/bget.c	/^static bufsize exp_incr = 0;	      \/* Expansion block size *\/$/;"	v	file:
+extra_memory_addr	include/linux/tsee/tsee_entry.h	/^	u64 extra_memory_addr;$/;"	m	struct:tsee_rtks_init
+extra_memory_size	include/linux/tsee/tsee_entry.h	/^	u32 extra_memory_size;$/;"	m	struct:tsee_rtks_init
+exynos_uart	boot/plat-exynos4412/exynos4412_uart.c	/^struct exynos_uart {$/;"	s	file:
+finished	boot/tee/entry.S	/^finished:$/;"	l
+flink	lib/libutils/isoc/bget.c	/^    struct bfhead *flink;	      \/* Forward link *\/$/;"	m	struct:qlinks	typeref:struct:qlinks::bfhead	file:
+flush_cache_all	boot/tee/entry.S	/^flush_cache_all:$/;"	l
+flush_tlb_all	boot/tee/entry.S	/^flush_tlb_all: $/;"	l
+fname	lib/libutils/isoc/bget_malloc.c	/^	const char *fname;$/;"	m	struct:mdbg_hdr	file:
+free	lib/libutils/isoc/bget_malloc.c	/^void free(void *ptr)$/;"	f
+free	lib/libutils/isoc/include/malloc.h	63;"	d
+freelist	lib/libutils/isoc/bget.c	/^static struct bfhead freelist = {     \/* List of free buffers *\/$/;"	v	typeref:struct:bfhead	file:
+gen-srcs	mk/cleanvars.mk	/^gen-srcs	:=$/;"	m
+gen-version-o	boot/tee/link.mk	/^define gen-version-o$/;"	m
+get_payload_start_size	lib/libutils/isoc/bget_malloc.c	/^static void *get_payload_start_size(void *ptr, size_t *size)$/;"	f	file:
+get_payload_start_size	lib/libutils/isoc/bget_malloc.c	/^static void *get_payload_start_size(void *raw_buf, size_t *size)$/;"	f	file:
+get_phymap_index	tsee/linux/dispatch.c	/^static uint32_t get_phymap_index(uint32_t pa) {$/;"	f	file:
+get_phymap_index	tsee/tee/dispatch.c	/^static uint32_t get_phymap_index(uint32_t pa) {$/;"	f	file:
+hexdigits	lib/libutils/isoc/snprintf.c	/^static const char hexdigits[] = "0123456789abcdef";$/;"	v	file:
+iabort_handler	tsee/linux/tsee_fault.c	/^void iabort_handler (struct trapframe *r)$/;"	f
+iabort_handler	tsee/tee/tsee_fault.c	/^void iabort_handler (struct trapframe *r)$/;"	f
+id_map_pgd	include/linux/tsee/tsee_entry.h	/^	u64 id_map_pgd;$/;"	m	struct:tsee_rtks_init
+ignore	lib/libutils/isoc/bget_malloc.c	/^	bool ignore;$/;"	m	struct:mdbg_hdr	file:
+incdirs	mk/cleanvars.mk	/^incdirs		:=$/;"	m
+init_mm_pgd	include/linux/tsee/tsee_entry.h	/^	u64 init_mm_pgd;$/;"	m	struct:tsee_rtks_init
+int16_t	lib/libutils/isoc/include/stdint.h	/^typedef short int               int16_t;$/;"	t
+int32_t	lib/libutils/isoc/include/stdint.h	/^typedef int                     int32_t;$/;"	t
+int64_t	lib/libutils/isoc/include/stdint.h	/^typedef long int		int64_t;$/;"	t
+int64_t	lib/libutils/isoc/include/stdint.h	/^typedef long long int           int64_t;$/;"	t
+int8_t	lib/libutils/isoc/include/stdint.h	/^typedef signed char             int8_t;$/;"	t
+intmax_t	lib/libutils/isoc/include/stdint.h	/^typedef int64_t intmax_t;$/;"	t
+intptr_t	lib/libutils/isoc/include/stdint.h	/^typedef long intptr_t;$/;"	t
+is_devmem_range	tsee/linux/dispatch.c	/^static int is_devmem_range(uint32_t pa) {$/;"	f	file:
+is_devmem_range	tsee/tee/dispatch.c	/^static int is_devmem_range(uint32_t pa) {$/;"	f	file:
+is_devmem_ranges	tsee/linux/dispatch.c	/^static int is_devmem_ranges(uint32_t ps, uint32_t pe) {$/;"	f	file:
+is_devmem_ranges	tsee/tee/dispatch.c	/^static int is_devmem_ranges(uint32_t ps, uint32_t pe) {$/;"	f	file:
+is_digit	lib/libutils/isoc/snprintf.c	142;"	d	file:
+is_dram0_ranges	tsee/linux/dispatch.c	/^static int is_dram0_ranges(uint32_t ps, uint32_t pe) {$/;"	f	file:
+is_dram0_ranges	tsee/tee/dispatch.c	/^static int is_dram0_ranges(uint32_t ps, uint32_t pe) {$/;"	f	file:
+is_dram1_ranges	tsee/linux/dispatch.c	/^static int is_dram1_ranges(uint32_t ps, uint32_t pe) {$/;"	f	file:
+is_dram1_ranges	tsee/tee/dispatch.c	/^static int is_dram1_ranges(uint32_t ps, uint32_t pe) {$/;"	f	file:
+is_init	tsee/linux/tsee_sm.c	/^static int is_init = 0;$/;"	v	file:
+is_init	tsee/tee/tsee_sm.c	/^static int is_init = 0;$/;"	v	file:
+is_kdata_range	tsee/linux/dispatch.c	/^static int is_kdata_range(uint32_t pa) {$/;"	f	file:
+is_kdata_range	tsee/tee/dispatch.c	/^static int is_kdata_range(uint32_t pa) {$/;"	f	file:
+is_kpgtbl_range	tsee/linux/dispatch.c	/^static int is_kpgtbl_range(uint32_t pa) {$/;"	f	file:
+is_kpgtbl_range	tsee/tee/dispatch.c	/^static int is_kpgtbl_range(uint32_t pa) {$/;"	f	file:
+is_kpt_range	tsee/linux/dispatch.c	/^static int is_kpt_range(uint32_t pa) {$/;"	f	file:
+is_kpt_range	tsee/tee/dispatch.c	/^static int is_kpt_range(uint32_t pa) {$/;"	f	file:
+is_krodata_range	tsee/linux/dispatch.c	/^static int is_krodata_range(uint32_t pa) {$/;"	f	file:
+is_krodata_range	tsee/tee/dispatch.c	/^static int is_krodata_range(uint32_t pa) {$/;"	f	file:
+is_ktext_range	tsee/linux/dispatch.c	/^static int is_ktext_range(uint32_t pa) {$/;"	f	file:
+is_ktext_range	tsee/tee/dispatch.c	/^static int is_ktext_range(uint32_t pa) {$/;"	f	file:
+is_l2pgtbl_range	tsee/linux/dispatch.c	/^static int is_l2pgtbl_range(uint32_t pa) {$/;"	f	file:
+is_l2pgtbl_range	tsee/tee/dispatch.c	/^static int is_l2pgtbl_range(uint32_t pa) {$/;"	f	file:
+is_lock_down	tsee/linux/tsee_sm.c	/^static int is_lock_down = 0;$/;"	v	file:
+is_lock_down	tsee/tee/tsee_sm.c	/^static int is_lock_down = 0;$/;"	v	file:
+is_reeshr_range	tsee/linux/dispatch.c	/^static int is_reeshr_range(uint32_t pa) {$/;"	f	file:
+is_reeshr_range	tsee/tee/dispatch.c	/^static int is_reeshr_range(uint32_t pa) {$/;"	f	file:
+is_sm_lock_down	tsee/linux/tsee_sm.c	/^int is_sm_lock_down(void) {$/;"	f
+is_sm_lock_down	tsee/tee/tsee_sm.c	/^int is_sm_lock_down(void) {$/;"	f
+is_tee_range	tsee/linux/dispatch.c	/^static int is_tee_range(uint32_t pa) {$/;"	f	file:
+is_tee_range	tsee/tee/dispatch.c	/^static int is_tee_range(uint32_t pa) {$/;"	f	file:
+is_tsee_call	tsee/linux/tsee_sm.c	/^int is_tsee_call(uint32_t prefix) {$/;"	f
+is_tsee_call	tsee/tee/tsee_sm.c	/^int is_tsee_call(uint32_t prefix) {$/;"	f
+is_tsee_range	tsee/linux/dispatch.c	/^static int is_tsee_range(uint32_t pa) {$/;"	f	file:
+is_tsee_range	tsee/tee/dispatch.c	/^static int is_tsee_range(uint32_t pa) {$/;"	f	file:
+is_tsee_rtks_ro_page	tsee/linux/tsee_mm.c	/^unsigned int is_tsee_rtks_ro_page(u64 addr)$/;"	f
+isalnum	lib/libutils/isoc/include/ctype.h	/^static inline int isalnum(int c) {$/;"	f
+isalpha	lib/libutils/isoc/include/ctype.h	/^static inline int isalpha(int c) {$/;"	f
+isb	include/tee/tsee/barrier.h	24;"	d
+isdigit	lib/libutils/isoc/include/ctype.h	/^static inline int isdigit(int c) {$/;"	f
+islower	lib/libutils/isoc/include/ctype.h	/^static inline int islower(int c) {$/;"	f
+isprint	lib/libutils/isoc/include/ctype.h	/^static inline int isprint(int c) {$/;"	f
+isr_uart	boot/plat-exynos4412/exynos4412_uart.c	/^void isr_uart (size_t it)$/;"	f
+isspace	lib/libutils/isoc/include/ctype.h	/^static inline int isspace(int c) {$/;"	f
+isupper	lib/libutils/isoc/include/ctype.h	/^static inline int isupper(int c) {$/;"	f
+isxdigit	lib/libutils/isoc/include/ctype.h	/^static inline int isxdigit(int c) {$/;"	f
+jmp_buf	lib/libutils/isoc/include/machine/setjmp.h	/^typedef	_JBTYPE jmp_buf[_JBLEN];$/;"	t
+kdata_end	include/tee/tsee/tsee_entry.h	/^	u32 kdata_end;$/;"	m	struct:tsee_rtks_init
+kdata_end2	include/tee/tsee/tsee_entry.h	/^	u32 kdata_end2;$/;"	m	struct:tsee_rtks_init
+kdata_start	include/tee/tsee/tsee_entry.h	/^	u32 kdata_start;$/;"	m	struct:tsee_rtks_init
+kdata_start2	include/tee/tsee/tsee_entry.h	/^	u32 kdata_start2;$/;"	m	struct:tsee_rtks_init
+kee_init	tsee/linux/kee.c	/^int kee_init(void) {$/;"	f
+kmem_end	include/tee/tsee/tsee_entry.h	/^	u32 kmem_end;$/;"	m	struct:tsee_rtks_init
+kmem_end2	include/tee/tsee/tsee_entry.h	/^	u32 kmem_end2;$/;"	m	struct:tsee_rtks_init
+kmem_start	include/tee/tsee/tsee_entry.h	/^	u32 kmem_start;$/;"	m	struct:tsee_rtks_init
+kmem_start2	include/tee/tsee/tsee_entry.h	/^	u32 kmem_start2;$/;"	m	struct:tsee_rtks_init
+kpgtbl	include/tee/tsee/tsee_entry.h	/^	u32 kpgtbl;$/;"	m	struct:tsee_rtks_init
+kpgtbl_size	include/tee/tsee/tsee_entry.h	/^	u32 kpgtbl_size;$/;"	m	struct:tsee_rtks_init
+kprintf	lib/libutils/isoc/snprintf.c	/^kprintf(const char *fmt0, int oflags, void *vp, char *sbuf, va_list ap)$/;"	f	file:
+kpt_end	include/tee/tsee/tsee_entry.h	/^	u32 kpt_end;$/;"	m	struct:tsee_rtks_init
+kpt_end2	include/tee/tsee/tsee_entry.h	/^	u32 kpt_end2;$/;"	m	struct:tsee_rtks_init
+kpt_start	include/tee/tsee/tsee_entry.h	/^	u32 kpt_start;$/;"	m	struct:tsee_rtks_init
+kpt_start2	include/tee/tsee/tsee_entry.h	/^	u32 kpt_start2;$/;"	m	struct:tsee_rtks_init
+krodata_end	include/tee/tsee/tsee_entry.h	/^	u32 krodata_end;$/;"	m	struct:tsee_rtks_init
+krodata_start	include/tee/tsee/tsee_entry.h	/^	u32	krodata_start;$/;"	m	struct:tsee_rtks_init
+ktext_end	include/tee/tsee/tsee_entry.h	/^	u32 ktext_end;$/;"	m	struct:tsee_rtks_init
+ktext_end2	include/tee/tsee/tsee_entry.h	/^	u32 ktext_end2;$/;"	m	struct:tsee_rtks_init
+ktext_start	include/tee/tsee/tsee_entry.h	/^	u32 ktext_start;$/;"	m	struct:tsee_rtks_init
+ktext_start2	include/tee/tsee/tsee_entry.h	/^	u32 ktext_start2;$/;"	m	struct:tsee_rtks_init
+l2pgtbl_end	include/tee/tsee/tsee_entry.h	/^	u32 l2pgtbl_end;$/;"	m	struct:tsee_rtks_init
+l2pgtbl_start	include/tee/tsee/tsee_entry.h	/^	u32 l2pgtbl_start;$/;"	m	struct:tsee_rtks_init
+large_memory	include/linux/tsee/tsee_entry.h	/^	u32 large_memory;$/;"	m	struct:tsee_rtks_init
+ld_Elf_Ehdr_to_Elf_Phdr	tsee/linux/ld.c	/^int ld_Elf_Ehdr_to_Elf_Phdr(_Elf_Ehdr *ehdr, _Elf_Phdr **phdr, size_t *size) {$/;"	f
+ld_Elf_Ehdr_to_Elf_Shdr	tsee/linux/ld.c	/^int ld_Elf_Ehdr_to_Elf_Shdr(_Elf_Ehdr *ehdr, _Elf_Shdr **shdr, size_t *size) {$/;"	f
+ld_binary_to_Elf_Ehdr	tsee/linux/ld.c	/^int ld_binary_to_Elf_Ehdr(void *binary, _Elf_Ehdr **ehdr) {$/;"	f
+ld_fini_t	tsee/linux/ld.h	/^typedef int (*ld_fini_t)(void);$/;"	t
+ld_fixup_dynamic_plttab	tsee/linux/ld.c	/^int ld_fixup_dynamic_plttab(void *binary, ld_resolve_t resolve, ld_translate_t translate) {$/;"	f
+ld_fixup_dynamic_relatab	tsee/linux/ld.c	/^int ld_fixup_dynamic_relatab(void *binary, ld_resolve_t resolve, ld_translate_t translate) {$/;"	f
+ld_fixup_dynamic_reltab	tsee/linux/ld.c	/^int ld_fixup_dynamic_reltab(void *binary, ld_resolve_t resolve, ld_translate_t translate) {$/;"	f
+ld_get_base	tsee/linux/ld.c	/^int ld_get_base(void *binary, void **address) {$/;"	f
+ld_get_dynamic_plttab	tsee/linux/ld.c	/^int ld_get_dynamic_plttab(void *binary, _Elf_Rela **plttab, size_t *size) {$/;"	f
+ld_get_dynamic_relatab	tsee/linux/ld.c	/^int ld_get_dynamic_relatab(void *binary, _Elf_Rela **relatab, size_t *size) {$/;"	f
+ld_get_dynamic_reltab	tsee/linux/ld.c	/^int ld_get_dynamic_reltab(void *binary, _Elf_Rel **reltab, size_t *size) {$/;"	f
+ld_get_dynamic_strtab	tsee/linux/ld.c	/^int ld_get_dynamic_strtab(void *binary, char **strtab, size_t *size) {$/;"	f
+ld_get_dynamic_symtab	tsee/linux/ld.c	/^int ld_get_dynamic_symtab(void *binary, _Elf_Sym **symtab, size_t *size) {$/;"	f
+ld_get_entry	tsee/linux/ld.c	/^int ld_get_entry(void *binary, void **entry) {$/;"	f
+ld_get_name	tsee/linux/ld.c	/^int ld_get_name(void *binary, char **name) {$/;"	f
+ld_get_sect	tsee/linux/ld.c	/^int ld_get_sect(void *binary, char *name, void **section, size_t *size) {$/;"	f
+ld_get_size	tsee/linux/ld.c	/^int ld_get_size(void *binary, size_t *size) {$/;"	f
+ld_get_string	tsee/linux/ld.c	/^int ld_get_string(char *strtab, int index, char **string) {$/;"	f
+ld_get_symbol	tsee/linux/ld.c	/^int ld_get_symbol(_Elf_Sym *symtab, int index, _Elf_Sym **symbol) {$/;"	f
+ld_get_version	tsee/linux/ld.c	/^int ld_get_version(void *binary, char **version) {$/;"	f
+ld_init_t	tsee/linux/ld.h	/^typedef int (*ld_init_t)(void);$/;"	t
+ld_log	tsee/linux/ld.c	30;"	d	file:
+ld_log	tsee/linux/ld.c	32;"	d	file:
+ld_resolve_t	tsee/linux/ld.h	/^typedef int (*ld_resolve_t)(void *binary, _Elf_Sym *sym, _Elf_Sword *value);$/;"	t
+ld_resolve_t	tsee/linux/ld.h	/^typedef int (*ld_resolve_t)(void *binary, _Elf_Sym *sym, _Elf_Sxword *value);$/;"	t
+ld_translate_t	tsee/linux/ld.h	/^typedef int (*ld_translate_t)(void *binary, void *in, void **out);$/;"	t
+ldargs-tsee.elf	boot/tee/link.mk	/^ldargs-tsee.elf := $(link-ldflags) $(objs) $(link-out-dir)\/version.o \\$/;"	m
+len	lib/libutils/isoc/bget_malloc.c	/^	size_t len;$/;"	m	struct:malloc_pool	file:
+lib-libfile	mk/lib.mk	/^lib-libfile	 = $(out-dir)\/$(base-prefix)$(libdir)\/lib$(libname).a$/;"	m
+lib-use-ld	mk/lib.mk	/^lib-use-ld	:=$/;"	m
+libdeps	mk/cleanvars.mk	/^libdeps		:=$/;"	m
+libdeps	mk/lib.mk	/^libdeps		:= $(lib-libfile) $(libdeps)$/;"	m
+libdirs	mk/cleanvars.mk	/^libdirs 	:=$/;"	m
+libdirs	mk/lib.mk	/^libdirs 	:= $(out-dir)\/$(base-prefix)$(libdir) $(libdirs)$/;"	m
+libfiles	mk/cleanvars.mk	/^libfiles	:=$/;"	m
+libfiles	mk/lib.mk	/^libfiles	:= $(lib-libfile) $(libfiles)$/;"	m
+libgcc	mk/gcc.mk	/^libgcc  	:= $(shell $(CC) $(comp-cflags) \\$/;"	m
+libname	mk/lib.mk	/^libname		:=$/;"	m
+libnames	mk/cleanvars.mk	/^libnames	:=$/;"	m
+libnames	mk/lib.mk	/^libnames	:= $(libname) $(libnames)$/;"	m
+line	lib/libutils/isoc/bget_malloc.c	/^	uint16_t line;$/;"	m	struct:mdbg_hdr	file:
+link-ldadd	boot/tee/link.mk	/^link-ldadd  = $(LDADD)$/;"	m
+link-ldflags	boot/tee/link.mk	/^link-ldflags  = $(LDFLAGS)$/;"	m
+link-out-dir	boot/tee/link.mk	/^link-out-dir = $(out-dir)$/;"	m
+link-script	boot/tee/link.mk	/^link-script = $(platform-dir)\/boot.ld.S$/;"	m
+link-script-cppflags	boot/tee/link.mk	/^link-script-cppflags := -DASM=1 \\$/;"	m
+link-script-dep	boot/tee/link.mk	/^link-script-dep = $(link-out-dir)\/.boot.ld.d$/;"	m
+link-script-pp	boot/tee/link.mk	/^link-script-pp = $(link-out-dir)\/boot.ld$/;"	m
+list_add	include/tee/tsee/data.h	/^static inline void list_add(struct list_head *new, struct list_head *head)$/;"	f
+list_add	lib/libutils/isoc/include/sys/list.h	/^static inline void list_add(struct list_head *new, struct list_head *head)$/;"	f
+list_add_tail	include/tee/tsee/data.h	/^static inline void list_add_tail(struct list_head *new, struct list_head *head)$/;"	f
+list_add_tail	lib/libutils/isoc/include/sys/list.h	/^static inline void list_add_tail(struct list_head *new, struct list_head *head)$/;"	f
+list_del	include/tee/tsee/data.h	/^static inline void list_del(struct list_head *entry)$/;"	f
+list_del	lib/libutils/isoc/include/sys/list.h	/^static inline void list_del(struct list_head *entry)$/;"	f
+list_empty	include/tee/tsee/data.h	/^static inline int list_empty(const struct list_head *head)$/;"	f
+list_empty	lib/libutils/isoc/include/sys/list.h	/^static inline int list_empty(const struct list_head *head)$/;"	f
+list_entry	include/tee/tsee/data.h	84;"	d
+list_entry	lib/libutils/isoc/include/sys/list.h	85;"	d
+list_for_each	include/tee/tsee/data.h	87;"	d
+list_for_each	lib/libutils/isoc/include/sys/list.h	88;"	d
+list_for_each_entry	include/tee/tsee/data.h	90;"	d
+list_for_each_entry	lib/libutils/isoc/include/sys/list.h	95;"	d
+list_for_each_safe	lib/libutils/isoc/include/sys/list.h	91;"	d
+list_head	include/tee/tsee/data.h	/^struct list_head {$/;"	s
+list_head	lib/libutils/isoc/include/sys/list.h	/^struct list_head {$/;"	s
+load_pgtlb	boot/tee/start.c	/^void load_pgtlb (uint32_t * kernel_pgtbl)$/;"	f
+loop1	boot/tee/entry.S	/^loop1:$/;"	l
+loop2	boot/tee/entry.S	/^loop2:  $/;"	l
+loop3	boot/tee/entry.S	/^loop3:$/;"	l
+lqr	lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod.c	/^struct lqr {$/;"	s	file:
+lr_usr	tsee/linux/tsee_fault.c	/^	uint32_t    lr_usr;     \/\/ user mode lr$/;"	m	struct:trapframe	file:
+lr_usr	tsee/tee/tsee_fault.c	/^	uint32_t    lr_usr;     \/\/ user mode lr$/;"	m	struct:trapframe	file:
+magic	include/linux/tsee/tsee_entry.h	/^	u32 magic;$/;"	m	struct:tsee_rtks_init
+magic	lib/libutils/isoc/bget_malloc.c	/^	uint32_t magic;$/;"	m	struct:mdbg_hdr	file:
+main	lib/libutils/isoc/bget.c	/^int main()$/;"	f
+malloc	lib/libutils/isoc/bget_malloc.c	/^void *malloc(size_t size)$/;"	f
+malloc	lib/libutils/isoc/include/malloc.h	62;"	d
+malloc_add_pool	lib/libutils/isoc/bget_malloc.c	/^void malloc_add_pool(void *buf, size_t len)$/;"	f
+malloc_buffer_is_within_alloced	lib/libutils/isoc/bget_malloc.c	/^bool malloc_buffer_is_within_alloced(void *buf, size_t len)$/;"	f
+malloc_buffer_overlaps_heap	lib/libutils/isoc/bget_malloc.c	/^bool malloc_buffer_overlaps_heap(void *buf, size_t len)$/;"	f
+malloc_get_allocated	lib/libutils/isoc/bget_malloc.c	/^size_t malloc_get_allocated(void)$/;"	f
+malloc_get_heap_size	lib/libutils/isoc/bget_malloc.c	/^size_t malloc_get_heap_size(void)$/;"	f
+malloc_get_max_allocated	lib/libutils/isoc/bget_malloc.c	/^size_t malloc_get_max_allocated(void)$/;"	f
+malloc_init	lib/libutils/isoc/bget_malloc.c	/^void malloc_init(void *buf, size_t len)$/;"	f
+malloc_pool	lib/libutils/isoc/bget_malloc.c	/^static struct malloc_pool *malloc_pool;$/;"	v	typeref:struct:malloc_pool	file:
+malloc_pool	lib/libutils/isoc/bget_malloc.c	/^struct malloc_pool {$/;"	s	file:
+malloc_pool_len	lib/libutils/isoc/bget_malloc.c	/^static size_t malloc_pool_len;$/;"	v	file:
+malloc_reset_max_allocated	lib/libutils/isoc/bget_malloc.c	/^void malloc_reset_max_allocated(void)$/;"	f
+map_tsee	tsee/linux/tsee_sm.c	/^void map_tsee(void) {$/;"	f
+map_tsee	tsee/tee/tsee_sm.c	/^void map_tsee(void) {$/;"	f
+max_alloc_heap	lib/libutils/isoc/bget_malloc.c	/^static size_t max_alloc_heap;$/;"	v	file:
+mdbg_calloc	lib/libutils/isoc/bget_malloc.c	/^void *mdbg_calloc(const char *fname, int lineno, size_t nmemb, size_t size)$/;"	f
+mdbg_check	lib/libutils/isoc/bget_malloc.c	/^void mdbg_check(int bufdump)$/;"	f
+mdbg_check	lib/libutils/isoc/include/malloc.h	79;"	d
+mdbg_free	lib/libutils/isoc/bget_malloc.c	/^void mdbg_free(void *ptr)$/;"	f
+mdbg_get_footer	lib/libutils/isoc/bget_malloc.c	/^static uint32_t *mdbg_get_footer(struct mdbg_hdr *hdr)$/;"	f	file:
+mdbg_get_ftr_size	lib/libutils/isoc/bget_malloc.c	/^static size_t mdbg_get_ftr_size(size_t pl_size)$/;"	f	file:
+mdbg_hdr	lib/libutils/isoc/bget_malloc.c	/^struct mdbg_hdr {$/;"	s	file:
+mdbg_malloc	lib/libutils/isoc/bget_malloc.c	/^void *mdbg_malloc(const char *fname, int lineno, size_t size)$/;"	f
+mdbg_memalign	lib/libutils/isoc/bget_malloc.c	/^void *mdbg_memalign(const char *fname, int lineno, size_t alignment,$/;"	f
+mdbg_mode	lib/libutils/isoc/bget_malloc.c	/^static enum mdbg_mode mdbg_mode = MDBG_MODE_DYNAMIC;$/;"	v	typeref:enum:mdbg_mode	file:
+mdbg_mode	lib/libutils/isoc/include/malloc.h	/^enum mdbg_mode {$/;"	g
+mdbg_realloc	lib/libutils/isoc/bget_malloc.c	/^void *mdbg_realloc(const char *fname, int lineno, void *ptr, size_t size)$/;"	f
+mdbg_set_mode	lib/libutils/isoc/bget_malloc.c	/^enum mdbg_mode mdbg_set_mode(enum mdbg_mode mode)$/;"	f
+mdbg_set_mode	lib/libutils/isoc/include/malloc.h	/^static inline enum mdbg_mode mdbg_set_mode(enum mdbg_mode mode)$/;"	f
+mdbg_update_hdr	lib/libutils/isoc/bget_malloc.c	/^static void mdbg_update_hdr(struct mdbg_hdr *hdr, const char *fname,$/;"	f	file:
+med3	lib/libutils/isoc/qsort.c	/^med3(char *a, char *b, char *c, int (*cmp)(const void *, const void *))$/;"	f	file:
+mem_enforce_perm	tsee/linux/tsee_sm.c	/^void mem_enforce_perm(uint32_t start, uint32_t end, uint32_t apx, uint32_t ap, uint32_t xn, uint32_t pxn) {$/;"	f
+mem_enforce_perm	tsee/tee/tsee_sm.c	/^void mem_enforce_perm(uint32_t start, uint32_t end, uint32_t apx, uint32_t ap, uint32_t xn, uint32_t pxn) {$/;"	f
+memalign	lib/libutils/isoc/bget_malloc.c	/^void *memalign(size_t alignment, size_t size)$/;"	f
+memalign	lib/libutils/isoc/include/malloc.h	68;"	d
+min	lib/libutils/isoc/qsort.c	47;"	d	file:
+monitor_entry	tsee/tee/tsee_sm_gate.S	/^monitor_entry:$/;"	l
+monitor_smc	tsee/tee/tsee_sm_gate.S	/^monitor_smc:$/;"	l
+mv-if-changed	mk/checkconf.mk	/^define mv-if-changed$/;"	m
+next	include/tee/tsee/data.h	/^	struct list_head *prev, *next;$/;"	m	struct:list_head	typeref:struct:list_head::
+next	lib/libutils/isoc/bget.c	/^static unsigned long int next = 1;$/;"	v	file:
+next	lib/libutils/isoc/include/sys/list.h	/^	struct list_head *prev, *next;$/;"	m	struct:list_head	typeref:struct:list_head::
+next_buf	lib/libutils/isoc/bget_malloc.c	/^	struct bfhead *next_buf;$/;"	m	struct:bpool_iterator	typeref:struct:bpool_iterator::bfhead	file:
+nop	include/tee/tsee/barrier.h	18;"	d
+nostdinc	mk/gcc.mk	/^nostdinc	:= -nostdinc -isystem $(shell $(CC) \\$/;"	m
+numdget	lib/libutils/isoc/bget.c	/^static long numdget = 0, numdrel = 0; \/* Number of direct gets and rels *\/$/;"	v	file:
+numdrel	lib/libutils/isoc/bget.c	/^static long numdget = 0, numdrel = 0; \/* Number of direct gets and rels *\/$/;"	v	file:
+numget	lib/libutils/isoc/bget.c	/^static long numget = 0, numrel = 0;   \/* Number of bget() and brel() calls *\/$/;"	v	file:
+numpblk	lib/libutils/isoc/bget.c	/^static long numpblk = 0;	      \/* Number of pool blocks *\/$/;"	v	file:
+numpget	lib/libutils/isoc/bget.c	/^static long numpget = 0, numprel = 0; \/* Number of block gets and rels *\/$/;"	v	file:
+numprel	lib/libutils/isoc/bget.c	/^static long numpget = 0, numprel = 0; \/* Number of block gets and rels *\/$/;"	v	file:
+numrel	lib/libutils/isoc/bget.c	/^static long numget = 0, numrel = 0;   \/* Number of bget() and brel() calls *\/$/;"	v	file:
+objs	mk/cleanvars.mk	/^objs		:=$/;"	m
+objs	mk/compile.mk	/^objs		:=$/;"	m
+objs	mk/lib.mk	/^objs		:=$/;"	m
+offsetof	include/tee/tsee/data.h	21;"	d
+offsetof	include/tee/tsee/data.h	22;"	d
+offsetof	lib/libutils/isoc/include/sys/list.h	21;"	d
+offsetof	lib/libutils/isoc/include/sys/list.h	22;"	d
+p_align	tsee/linux/elf.h	/^	_Elf_Xword	p_align;		\/* Segment alignment *\/$/;"	m	struct:__anon8
+p_align	tsee/linux/elf.h	/^  _Elf_Word	p_align;		\/* Segment alignment *\/$/;"	m	struct:__anon9
+p_filesz	tsee/linux/elf.h	/^	_Elf_Xword	p_filesz;		\/* Segment size in file *\/$/;"	m	struct:__anon8
+p_filesz	tsee/linux/elf.h	/^  _Elf_Word	p_filesz;		\/* Segment size in file *\/$/;"	m	struct:__anon9
+p_flags	tsee/linux/elf.h	/^	_Elf_Word	p_flags;		\/* Segment flags *\/$/;"	m	struct:__anon8
+p_flags	tsee/linux/elf.h	/^  _Elf_Word	p_flags;		\/* Segment flags *\/$/;"	m	struct:__anon9
+p_memsz	tsee/linux/elf.h	/^	_Elf_Xword	p_memsz;		\/* Segment size in memory *\/$/;"	m	struct:__anon8
+p_memsz	tsee/linux/elf.h	/^  _Elf_Word	p_memsz;		\/* Segment size in memory *\/$/;"	m	struct:__anon9
+p_offset	tsee/linux/elf.h	/^	_Elf_Off	p_offset;		\/* Segment file offset *\/$/;"	m	struct:__anon8
+p_offset	tsee/linux/elf.h	/^  _Elf_Off	p_offset;		\/* Segment file offset *\/$/;"	m	struct:__anon9
+p_paddr	tsee/linux/elf.h	/^	_Elf_Addr	p_paddr;		\/* Segment physical address *\/$/;"	m	struct:__anon8
+p_paddr	tsee/linux/elf.h	/^  _Elf_Addr	p_paddr;		\/* Segment physical address *\/$/;"	m	struct:__anon9
+p_type	tsee/linux/elf.h	/^	_Elf_Word	p_type;			\/* Segment type *\/$/;"	m	struct:__anon8
+p_type	tsee/linux/elf.h	/^  _Elf_Word	p_type;			\/* Segment type *\/$/;"	m	struct:__anon9
+p_vaddr	tsee/linux/elf.h	/^	_Elf_Addr	p_vaddr;		\/* Segment virtual address *\/$/;"	m	struct:__anon8
+p_vaddr	tsee/linux/elf.h	/^  _Elf_Addr	p_vaddr;		\/* Segment virtual address *\/$/;"	m	struct:__anon9
+paddr_t	lib/libutils/ext/include/types_ext.h	/^typedef uintptr_t paddr_t;$/;"	t
+pc	tsee/linux/tsee_fault.c	/^	uint32_t    pc;         \/\/ (lr on entry) instruction to resume execution$/;"	m	struct:trapframe	file:
+pc	tsee/tee/tsee_fault.c	/^	uint32_t    pc;         \/\/ (lr on entry) instruction to resume execution$/;"	m	struct:trapframe	file:
+physmap_addr	include/linux/tsee/tsee_entry.h	/^	u64 physmap_addr;$/;"	m	struct:tsee_rtks_init
+pl_size	lib/libutils/isoc/bget_malloc.c	/^	uint32_t pl_size;$/;"	m	struct:mdbg_hdr	file:
+platform-cpuarch	boot/plat-exynos4412/platform_flags.mk	/^platform-cpuarch	:= cortex-a9$/;"	m
+pmd_block	include/linux/tsee/tsee_mm.h	24;"	d
+pool_idx	lib/libutils/isoc/bget_malloc.c	/^	size_t pool_idx;$/;"	m	struct:bpool_iterator	file:
+pool_len	lib/libutils/isoc/bget.c	/^static bufsize pool_len = 0;	      \/* 0: no bpool calls have been made$/;"	v	file:
+prefetch_abt_fault_string	tsee/linux/tsee_fault.c	/^static const char* prefetch_abt_fault_string[] =$/;"	v	file:
+prefetch_abt_fault_string	tsee/tee/tsee_fault.c	/^static const char* prefetch_abt_fault_string[] =$/;"	v	file:
+prev	include/tee/tsee/data.h	/^	struct list_head *prev, *next;$/;"	m	struct:list_head	typeref:struct:list_head::list_head
+prev	lib/libutils/isoc/include/sys/list.h	/^	struct list_head *prev, *next;$/;"	m	struct:list_head	typeref:struct:list_head::list_head
+prevfree	lib/libutils/isoc/bget.c	/^    bufsize prevfree;		      \/* Relative link back to previous$/;"	m	struct:bhead	file:
+process-lib	mk/lib.mk	/^define process-lib$/;"	m
+process-subdir	mk/subdir.mk	/^define process-subdir$/;"	m
+process-subdir-srcs-y	mk/subdir.mk	/^define process-subdir-srcs-y$/;"	m
+process_srcs	mk/compile.mk	/^define process_srcs$/;"	m
+protect	lib/libutils/isoc/bget.c	/^static int protect = 0; 	      \/* Disable compaction during bgetr() *\/$/;"	v	file:
+pt_state	tsee/linux/tsee_sm.h	/^struct pt_state{$/;"	s
+pt_state	tsee/tee/tsee_sm.h	/^struct pt_state{$/;"	s
+pt_state_t	tsee/linux/tsee_sm.h	/^typedef struct pt_state pt_state_t;$/;"	t	typeref:struct:pt_state
+pt_state_t	tsee/tee/tsee_sm.h	/^typedef struct pt_state pt_state_t;$/;"	t	typeref:struct:pt_state
+pte_valid_not_user	include/linux/tsee/tsee_mm.h	26;"	d
+ptr	lib/libutils/ext/trace.c	/^	char *ptr;$/;"	m	struct:strbuf	file:
+putchar	lib/libutils/isoc/snprintf.c	84;"	d	file:
+q	lib/libutils/isoc/arch/arm/arm32_aeabi_divmod.c	/^	unsigned q;		\/* computed quotient *\/$/;"	m	struct:qr	file:
+q	lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod.c	/^	unsigned long long q;	\/* computed quotient *\/$/;"	m	struct:lqr	file:
+q_n	lib/libutils/isoc/arch/arm/arm32_aeabi_divmod.c	/^	unsigned q_n;		\/* specficies if quotient shall be negative *\/$/;"	m	struct:qr	file:
+q_n	lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod.c	/^	unsigned q_n;		\/* specficies if quotient shall be negative *\/$/;"	m	struct:lqr	file:
+ql	lib/libutils/isoc/bget.c	/^    struct qlinks ql;		      \/* Links on free list *\/$/;"	m	struct:bfhead	typeref:struct:bfhead::qlinks	file:
+qlinks	lib/libutils/isoc/bget.c	/^struct qlinks {$/;"	s	file:
+qr	lib/libutils/isoc/arch/arm/arm32_aeabi_divmod.c	/^struct qr {$/;"	s	file:
+qsort	lib/libutils/isoc/qsort.c	/^qsort(void *aa, size_t n, size_t es, int (*cmp)(const void *, const void *))$/;"	f
+r	lib/libutils/isoc/arch/arm/arm32_aeabi_divmod.c	/^	unsigned r;		\/* computed remainder *\/$/;"	m	struct:qr	file:
+r	lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod.c	/^	unsigned long long r;	\/* computed remainder *\/$/;"	m	struct:lqr	file:
+r0	tsee/linux/tsee_fault.c	/^	uint32_t    r0; $/;"	m	struct:trapframe	file:
+r0	tsee/tee/tsee_fault.c	/^	uint32_t    r0; $/;"	m	struct:trapframe	file:
+r1	tsee/linux/tsee_fault.c	/^	uint32_t    r1; $/;"	m	struct:trapframe	file:
+r1	tsee/tee/tsee_fault.c	/^	uint32_t    r1; $/;"	m	struct:trapframe	file:
+r10	tsee/linux/tsee_fault.c	/^	uint32_t    r10;$/;"	m	struct:trapframe	file:
+r10	tsee/tee/tsee_fault.c	/^	uint32_t    r10;$/;"	m	struct:trapframe	file:
+r11	tsee/linux/tsee_fault.c	/^	uint32_t    r11;$/;"	m	struct:trapframe	file:
+r11	tsee/tee/tsee_fault.c	/^	uint32_t    r11;$/;"	m	struct:trapframe	file:
+r12	tsee/linux/tsee_fault.c	/^	uint32_t    r12;$/;"	m	struct:trapframe	file:
+r12	tsee/tee/tsee_fault.c	/^	uint32_t    r12;$/;"	m	struct:trapframe	file:
+r14_svc	tsee/linux/tsee_fault.c	/^	uint32_t    r14_svc;    \/\/ r14_svc (r14_svc == pc if SWI)$/;"	m	struct:trapframe	file:
+r14_svc	tsee/tee/tsee_fault.c	/^	uint32_t    r14_svc;    \/\/ r14_svc (r14_svc == pc if SWI)$/;"	m	struct:trapframe	file:
+r2	tsee/linux/tsee_fault.c	/^	uint32_t    r2; $/;"	m	struct:trapframe	file:
+r2	tsee/tee/tsee_fault.c	/^	uint32_t    r2; $/;"	m	struct:trapframe	file:
+r3	tsee/linux/tsee_fault.c	/^	uint32_t    r3; $/;"	m	struct:trapframe	file:
+r3	tsee/tee/tsee_fault.c	/^	uint32_t    r3; $/;"	m	struct:trapframe	file:
+r4	tsee/linux/tsee_fault.c	/^	uint32_t    r4; $/;"	m	struct:trapframe	file:
+r4	tsee/tee/tsee_fault.c	/^	uint32_t    r4; $/;"	m	struct:trapframe	file:
+r5	tsee/linux/tsee_fault.c	/^	uint32_t    r5; $/;"	m	struct:trapframe	file:
+r5	tsee/tee/tsee_fault.c	/^	uint32_t    r5; $/;"	m	struct:trapframe	file:
+r6	tsee/linux/tsee_fault.c	/^	uint32_t    r6; $/;"	m	struct:trapframe	file:
+r6	tsee/tee/tsee_fault.c	/^	uint32_t    r6; $/;"	m	struct:trapframe	file:
+r7	tsee/linux/tsee_fault.c	/^	uint32_t    r7; $/;"	m	struct:trapframe	file:
+r7	tsee/tee/tsee_fault.c	/^	uint32_t    r7; $/;"	m	struct:trapframe	file:
+r8	tsee/linux/tsee_fault.c	/^	uint32_t    r8; $/;"	m	struct:trapframe	file:
+r8	tsee/tee/tsee_fault.c	/^	uint32_t    r8; $/;"	m	struct:trapframe	file:
+r9	tsee/linux/tsee_fault.c	/^	uint32_t    r9; $/;"	m	struct:trapframe	file:
+r9	tsee/tee/tsee_fault.c	/^	uint32_t    r9; $/;"	m	struct:trapframe	file:
+r_addend	tsee/linux/elf.h	/^  _Elf_Sxword	r_addend;		\/* Addend *\/$/;"	m	struct:__anon6
+r_info	tsee/linux/elf.h	/^  _Elf_Word	r_info;			\/* Relocation type and symbol index *\/$/;"	m	struct:__anon7
+r_info	tsee/linux/elf.h	/^  _Elf_Xword	r_info;			\/* Relocation type and symbol index *\/$/;"	m	struct:__anon6
+r_n	lib/libutils/isoc/arch/arm/arm32_aeabi_divmod.c	/^	unsigned r_n;		\/* specficies if remainder shall be negative *\/$/;"	m	struct:qr	file:
+r_n	lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod.c	/^	unsigned r_n;		\/* specficies if remainder shall be negative *\/$/;"	m	struct:lqr	file:
+r_offset	tsee/linux/elf.h	/^  _Elf_Addr	r_offset;		\/* Address *\/$/;"	m	struct:__anon6
+r_offset	tsee/linux/elf.h	/^  _Elf_Addr	r_offset;		\/* Address *\/$/;"	m	struct:__anon7
+rand	lib/libutils/isoc/bget.c	/^int rand()$/;"	f
+raw_calloc	lib/libutils/isoc/bget_malloc.c	/^static void *raw_calloc(size_t hdr_size, size_t ftr_size, size_t pl_nmemb,$/;"	f	file:
+raw_free	lib/libutils/isoc/bget_malloc.c	/^static void raw_free(void *ptr)$/;"	f	file:
+raw_malloc	lib/libutils/isoc/bget_malloc.c	/^static void *raw_malloc(size_t hdr_size, size_t ftr_size, size_t pl_size)$/;"	f	file:
+raw_malloc_save_max_alloced_size	lib/libutils/isoc/bget_malloc.c	/^static void raw_malloc_save_max_alloced_size(void)$/;"	f	file:
+raw_malloc_validate_pools	lib/libutils/isoc/bget_malloc.c	/^static void raw_malloc_validate_pools(void)$/;"	f	file:
+raw_memalign	lib/libutils/isoc/bget_malloc.c	/^static void *raw_memalign(size_t hdr_size, size_t ftr_size, size_t alignment,$/;"	f	file:
+raw_realloc	lib/libutils/isoc/bget_malloc.c	/^static void *raw_realloc(void *ptr, size_t hdr_size, size_t ftr_size,$/;"	f	file:
+rcsid	lib/libutils/ext/strlcat.c	/^static char *rcsid =$/;"	v	file:
+rcsid	lib/libutils/ext/strlcpy.c	/^static char *rcsid =$/;"	v	file:
+realloc	lib/libutils/isoc/bget_malloc.c	/^void *realloc(void *ptr, size_t size)$/;"	f
+realloc	lib/libutils/isoc/include/malloc.h	66;"	d
+reemem_shr_end	include/tee/tsee/tsee_entry.h	/^	u32 reemem_shr_end;$/;"	m	struct:tsee_rtks_init
+reemem_shr_start	include/tee/tsee/tsee_entry.h	/^	u32 reemem_shr_start;$/;"	m	struct:tsee_rtks_init
+relfcn	lib/libutils/isoc/bget.c	/^static void (*relfcn) _((void *buf)) = NULL;$/;"	v	file:
+res1	boot/plat-exynos4412/exynos4412_uart.c	/^	volatile unsigned char   res1[3]; $/;"	m	struct:exynos_uart	file:
+res2	boot/plat-exynos4412/exynos4412_uart.c	/^	volatile unsigned char   res2[3];$/;"	m	struct:exynos_uart	file:
+ret_idivmod_values	lib/libutils/isoc/arch/arm/arm32_aeabi_divmod_a32.S	/^ret_idivmod_values:$/;"	l
+ret_uidivmod_values	lib/libutils/isoc/arch/arm/arm32_aeabi_divmod_a32.S	/^ret_uidivmod_values:$/;"	l
+ro_alloc_last	tsee/linux/tsee_mm.c	/^static unsigned ro_alloc_last = 0;$/;"	v	file:
+ro_pages_stat	tsee/linux/tsee_mm.c	/^static char ro_pages_stat[TSEE_RTKS_RO_PAGES] = {0};$/;"	v	file:
+ro_tsee_rtks_pages_lock	tsee/linux/tsee_mm.c	/^static spinlock_t ro_tsee_rtks_pages_lock = __SPIN_LOCK_UNLOCKED();$/;"	v	file:
+sctlr	tsee/linux/tsee_sm.h	/^	uint32_t sctlr;$/;"	m	struct:pt_state
+sctlr	tsee/tee/tsee_sm.h	/^	uint32_t sctlr;$/;"	m	struct:pt_state
+set_bootpgtbl	boot/tee/start.c	/^void set_bootpgtbl (uint32_t virt, uint32_t phy, uint32_t len, int dev_mem )$/;"	f
+set_jump_addr	tsee/linux/tsee_sm.c	/^static void set_jump_addr(uint32_t *instr, uint32_t addr)$/;"	f	file:
+set_jump_addr	tsee/tee/tsee_sm.c	/^static void set_jump_addr(uint32_t *instr, uint32_t addr)$/;"	f	file:
+sev	include/tee/tsee/barrier.h	20;"	d
+sh_addr	tsee/linux/elf.h	/^  _Elf_Addr	sh_addr;$/;"	m	struct:__anon2
+sh_addr	tsee/linux/elf.h	/^  _Elf_Addr	sh_addr;$/;"	m	struct:__anon3
+sh_addralign	tsee/linux/elf.h	/^  _Elf_Word	sh_addralign;$/;"	m	struct:__anon3
+sh_addralign	tsee/linux/elf.h	/^  _Elf_Xword	sh_addralign;$/;"	m	struct:__anon2
+sh_entsize	tsee/linux/elf.h	/^  _Elf_Word	sh_entsize;$/;"	m	struct:__anon3
+sh_entsize	tsee/linux/elf.h	/^  _Elf_Xword	sh_entsize;$/;"	m	struct:__anon2
+sh_flags	tsee/linux/elf.h	/^  _Elf_Word	sh_flags;$/;"	m	struct:__anon3
+sh_flags	tsee/linux/elf.h	/^  _Elf_Xword	sh_flags;$/;"	m	struct:__anon2
+sh_info	tsee/linux/elf.h	/^  _Elf_Word	sh_info;$/;"	m	struct:__anon2
+sh_info	tsee/linux/elf.h	/^  _Elf_Word	sh_info;$/;"	m	struct:__anon3
+sh_link	tsee/linux/elf.h	/^  _Elf_Word	sh_link;$/;"	m	struct:__anon2
+sh_link	tsee/linux/elf.h	/^  _Elf_Word	sh_link;$/;"	m	struct:__anon3
+sh_name	tsee/linux/elf.h	/^  _Elf_Word	sh_name;$/;"	m	struct:__anon2
+sh_name	tsee/linux/elf.h	/^  _Elf_Word	sh_name;$/;"	m	struct:__anon3
+sh_offset	tsee/linux/elf.h	/^  _Elf_Off	sh_offset;$/;"	m	struct:__anon2
+sh_offset	tsee/linux/elf.h	/^  _Elf_Off	sh_offset;$/;"	m	struct:__anon3
+sh_size	tsee/linux/elf.h	/^  _Elf_Word	sh_size;$/;"	m	struct:__anon3
+sh_size	tsee/linux/elf.h	/^  _Elf_Xword	sh_size;$/;"	m	struct:__anon2
+sh_type	tsee/linux/elf.h	/^  _Elf_Word	sh_type;$/;"	m	struct:__anon2
+sh_type	tsee/linux/elf.h	/^  _Elf_Word	sh_type;$/;"	m	struct:__anon3
+sigjmp_buf	lib/libutils/isoc/include/machine/setjmp.h	/^typedef _JBTYPE sigjmp_buf[_JBLEN+1+(sizeof (sigset_t)\/sizeof (_JBTYPE))];$/;"	t
+siglongjmp	lib/libutils/isoc/include/machine/setjmp.h	349;"	d
+siglongjmp	lib/libutils/isoc/include/machine/setjmp.h	365;"	d
+sigsetjmp	lib/libutils/isoc/include/machine/setjmp.h	340;"	d
+sigsetjmp	lib/libutils/isoc/include/machine/setjmp.h	361;"	d
+skip	boot/tee/entry.S	/^skip:$/;"	l
+sm_lock_down	tsee/linux/tsee_sm.c	/^void sm_lock_down(void) {$/;"	f
+sm_lock_down	tsee/tee/tsee_sm.c	/^void sm_lock_down(void) {$/;"	f
+sm_tee_abort_handler	tsee/tee/tsee_sm_gate.S	/^sm_tee_abort_handler:$/;"	l
+sm_tee_deinit	tsee/linux/tsee_sm.c	/^void sm_tee_deinit(void) {$/;"	f
+sm_tee_deinit	tsee/tee/tsee_sm.c	/^void sm_tee_deinit(void) {$/;"	f
+sm_tee_fiq_handler	tsee/tee/tsee_sm_gate.S	/^sm_tee_fiq_handler:$/;"	l
+sm_tee_irq_handler	tsee/tee/tsee_sm_gate.S	/^sm_tee_irq_handler:$/;"	l
+sm_tee_pref_handler	tsee/tee/tsee_sm_gate.S	/^sm_tee_pref_handler:$/;"	l
+sm_tee_reserv_handler	tsee/tee/tsee_sm_gate.S	/^sm_tee_reserv_handler:$/;"	l
+sm_tee_reset_handler	tsee/tee/tsee_sm_gate.S	/^sm_tee_reset_handler:$/;"	l
+sm_tee_smc_handler	tsee/tee/tsee_sm_gate.S	/^sm_tee_smc_handler:$/;"	l
+sm_tee_undef_handler	tsee/tee/tsee_sm_gate.S	/^sm_tee_undef_handler:$/;"	l
+sm_write_mvbar	tsee/linux/tsee_sm.c	/^void sm_write_mvbar(void* handler) {$/;"	f
+sm_write_mvbar	tsee/tee/tsee_sm.c	/^void sm_write_mvbar(void* handler) {$/;"	f
+snprintf	lib/libutils/isoc/snprintf.c	/^snprintf(char *bf, size_t size, const char *fmt, ...)$/;"	f
+sp	tsee/linux/tsee_sm.h	/^	uint32_t sp;$/;"	m	struct:pt_state
+sp	tsee/tee/tsee_sm.h	/^	uint32_t sp;$/;"	m	struct:pt_state
+sp_usr	tsee/linux/tsee_fault.c	/^	uint32_t 	sp_usr;     \/\/ user mode sp$/;"	m	struct:trapframe	file:
+sp_usr	tsee/tee/tsee_fault.c	/^	uint32_t 	sp_usr;     \/\/ user mode sp$/;"	m	struct:trapframe	file:
+spsr	tsee/linux/tsee_fault.c	/^	uint32_t    spsr;$/;"	m	struct:trapframe	file:
+spsr	tsee/tee/tsee_fault.c	/^	uint32_t    spsr;$/;"	m	struct:trapframe	file:
+srand	lib/libutils/isoc/bget.c	/^void srand(seed)$/;"	f
+srcs	mk/cleanvars.mk	/^srcs		:=$/;"	m
+srcs	mk/subdir.mk	/^srcs :=$/;"	m
+ssize_t	lib/libutils/isoc/include/unistd.h	/^typedef intptr_t ssize_t;$/;"	t
+st_info	tsee/linux/elf.h	/^  unsigned char	st_info;$/;"	m	struct:__anon4
+st_info	tsee/linux/elf.h	/^  unsigned char	st_info;$/;"	m	struct:__anon5
+st_name	tsee/linux/elf.h	/^  _Elf_Word	st_name;$/;"	m	struct:__anon4
+st_name	tsee/linux/elf.h	/^  _Elf_Word	st_name;$/;"	m	struct:__anon5
+st_other	tsee/linux/elf.h	/^  unsigned char	st_other;$/;"	m	struct:__anon5
+st_other	tsee/linux/elf.h	/^  unsigned char st_other;$/;"	m	struct:__anon4
+st_shndx	tsee/linux/elf.h	/^  _Elf_Section	st_shndx;$/;"	m	struct:__anon4
+st_shndx	tsee/linux/elf.h	/^  _Elf_Section	st_shndx;$/;"	m	struct:__anon5
+st_size	tsee/linux/elf.h	/^  _Elf_Word	st_size;$/;"	m	struct:__anon5
+st_size	tsee/linux/elf.h	/^  _Elf_Xword	st_size;$/;"	m	struct:__anon4
+st_value	tsee/linux/elf.h	/^  _Elf_Addr	st_value;$/;"	m	struct:__anon4
+st_value	tsee/linux/elf.h	/^  _Elf_Addr	st_value;$/;"	m	struct:__anon5
+start	boot/tee/start.c	/^void start (void) {$/;"	f
+start_secondary	boot/tee/start.c	/^void start_secondary(void) {$/;"	f
+stats	lib/libutils/isoc/bget.c	/^static void stats(when)$/;"	f	file:
+strbuf	lib/libutils/ext/trace.c	/^struct strbuf {$/;"	s	file:
+strcat	lib/libutils/isoc/newlib/strcat.c	/^strcat(char *s1, const char* s2)$/;"	f
+strchr	lib/libutils/isoc/newlib/strchr.c	/^char *strchr(const char *s, int c){                                                                                                                     $/;"	f
+strcpy	lib/libutils/isoc/newlib/strcpy.c	/^strcpy(char *s, const char *t)$/;"	f
+strdup	lib/libutils/isoc/strdup.c	/^char *strdup(const char *s)$/;"	f
+strlcat	lib/libutils/ext/strlcat.c	/^size_t strlcat(char *dst, const char *src, size_t siz)$/;"	f
+strlcpy	lib/libutils/ext/strlcpy.c	/^size_t strlcpy(char *dst, const char *src, size_t siz)$/;"	f
+strncpy	lib/libutils/isoc/newlib/strcpy.c	/^char* strncpy(char *s, const char *t, int n)$/;"	f
+strndup	lib/libutils/isoc/strndup.c	/^char *strndup(const char *s, size_t n)$/;"	f
+strrchr	lib/libutils/isoc/newlib/strrchr.c	/^strrchr(const char *p, int ch)$/;"	f
+strstr	lib/libutils/isoc/newlib/strstr.c	/^char *strstr(const char *searchee, const char *lookfor){ $/;"	f
+subdirs	mk/lib.mk	/^subdirs = $(libdir)$/;"	m
+swap	lib/libutils/isoc/qsort.c	71;"	d	file:
+swapcode	lib/libutils/isoc/qsort.c	51;"	d	file:
+swapfunc	lib/libutils/isoc/qsort.c	/^swapfunc(char *a, char *b, int n, int swaptype)$/;"	f	file:
+tee_entry_call	boot/tee/start.c	/^typedef void (*tee_entry_call) (u32, u32, u32);$/;"	t	file:
+tee_phys_to_virt	include/tee/tsee/tsee_mm.h	/^static inline uint32_t tee_phys_to_virt(uint32_t a) {$/;"	f
+tee_pt	tsee/linux/tsee_sm.c	/^pt_state_t tee_pt  __attribute__((section(".data.tsee_ro"))) = { .ttbcr = 0, .ttbr0 = 0, .ttbr1 = 0, .sctlr = 0};$/;"	v
+tee_pt	tsee/tee/tsee_sm.c	/^pt_state_t tee_pt  __attribute__((section(".data.tsee_ro"))) = { .ttbcr = 0, .ttbr0 = 0, .ttbr1 = 0, .sctlr = 0};$/;"	v
+tee_virt_to_phys	include/tee/tsee/tsee_mm.h	/^static inline uint32_t tee_virt_to_phys(void *a) {$/;"	f
+thee	tsee/linux/thee.c	/^char *thee;$/;"	v
+thee_ELF_PATH	tsee/linux/_thee.S	/^#define thee_ELF_PATH "..\/..\/..\/..\/..\/kernel-3.18\/init\/tsee\/src\/thee.elf"$/;"	d
+thee_entry	tsee/linux/thee.c	/^int thee_entry(void) {$/;"	f
+thee_init	tsee/linux/thee.c	/^int thee_init(void) {$/;"	f
+thee_resolve	tsee/linux/thee.c	/^int thee_resolve(void *binary, _Elf_Sym *sym, _Elf_Sxword *value) {$/;"	f
+thee_size	tsee/linux/thee.c	/^size_t thee_size;$/;"	v
+thee_translate	tsee/linux/thee.c	/^int thee_translate(void *binary, void *in, void **out) {$/;"	f
+tlb_lockdown	boot/tee/entry.S	/^tlb_lockdown:$/;"	l
+to_char	lib/libutils/isoc/snprintf.c	143;"	d	file:
+to_digit	lib/libutils/isoc/snprintf.c	141;"	d	file:
+tolower	lib/libutils/isoc/include/ctype.h	/^static inline uint8_t tolower(int ch) {$/;"	f
+totalloc	lib/libutils/isoc/bget.c	/^static bufsize totalloc = 0;	      \/* Total space currently allocated *\/$/;"	v	file:
+trace_ext_get_thread_id	boot/tee/trace_ext.c	/^int trace_ext_get_thread_id(void)$/;"	f
+trace_ext_prefix	boot/tee/trace_ext.c	/^const char trace_ext_prefix[] = "TrustKernel_TSEE";$/;"	v
+trace_ext_puts	boot/tee/trace_ext.c	/^void trace_ext_puts(const char *str)$/;"	f
+trace_get_level	lib/libutils/ext/trace.c	/^int trace_get_level(void)$/;"	f
+trace_level	boot/tee/trace_ext.c	/^int trace_level = TRACE_LEVEL;$/;"	v
+trace_level_to_string	lib/libutils/ext/trace.c	/^static const char *trace_level_to_string(int level, bool level_ok)$/;"	f	file:
+trace_printf	lib/libutils/ext/trace.c	/^void trace_printf(const char *function __unused, int line __unused,$/;"	f
+trace_printf	lib/libutils/ext/trace.c	/^void trace_printf(const char *function, int line, int level, bool level_ok,$/;"	f
+trace_printf_helper	lib/libutils/ext/include/trace.h	46;"	d
+trace_printf_helper_raw	lib/libutils/ext/include/trace.h	109;"	d
+trace_set_level	lib/libutils/ext/trace.c	/^void trace_set_level(int level __unused)$/;"	f
+trace_set_level	lib/libutils/ext/trace.c	/^void trace_set_level(int level)$/;"	f
+trap_dabort	tsee/tee/tsee_sm_gate.S	/^trap_dabort:$/;"	l
+trap_entry	tsee/tee/tsee_sm_gate.S	/^trap_entry:$/;"	l
+trap_iabort	tsee/tee/tsee_sm_gate.S	/^trap_iabort:$/;"	l
+trapframe	tsee/linux/tsee_fault.c	/^struct trapframe {$/;"	s	file:
+trapframe	tsee/tee/tsee_fault.c	/^struct trapframe {$/;"	s	file:
+tsee-objs	tsee/linux/Makefile	/^tsee-objs := \\$/;"	m
+tsee_init	tsee/linux/dispatch.c	/^tsee_rtks_init_t tsee_init;$/;"	v
+tsee_init	tsee/tee/dispatch.c	/^tsee_rtks_init_t tsee_init;$/;"	v
+tsee_is_mempg_protected	tsee/linux/dispatch.c	/^static int tsee_is_mempg_protected(uint32_t pa) {$/;"	f	file:
+tsee_is_mempg_protected	tsee/tee/dispatch.c	/^static int tsee_is_mempg_protected(uint32_t pa) {$/;"	f	file:
+tsee_main	tsee/linux/dispatch.c	/^int tsee_main(uint32_t cmd, uint32_t arg0, uint32_t arg1, uint32_t arg2, uint32_t arg3, uint32_t arg4)$/;"	f
+tsee_main	tsee/linux/dispatch.c	/^int tsee_main(uint64_t cmd, uint64_t arg0, uint64_t arg1, uint64_t arg2, uint64_t arg3, uint64_t arg4)$/;"	f
+tsee_main	tsee/tee/dispatch.c	/^int tsee_main(uint32_t cmd, uint32_t arg0, uint32_t arg1, uint32_t arg2, uint32_t arg3, uint32_t arg4)$/;"	f
+tsee_mempg_protect	tsee/linux/dispatch.c	/^static int tsee_mempg_protect(uint32_t pa) {$/;"	f	file:
+tsee_mempg_protect	tsee/tee/dispatch.c	/^static int tsee_mempg_protect(uint32_t pa) {$/;"	f	file:
+tsee_mempg_unprotect	tsee/linux/dispatch.c	/^static int tsee_mempg_unprotect(uint32_t pa) {$/;"	f	file:
+tsee_mempg_unprotect	tsee/tee/dispatch.c	/^static int tsee_mempg_unprotect(uint32_t pa) {$/;"	f	file:
+tsee_ns_main	tsee/linux/dispatch.c	/^int tsee_ns_main(uint32_t cmd, uint32_t arg0, uint32_t arg1, uint32_t arg2, uint32_t arg3, uint32_t arg4)$/;"	f
+tsee_ns_main	tsee/tee/dispatch.c	/^int tsee_ns_main(uint32_t cmd, uint32_t arg0, uint32_t arg1, uint32_t arg2, uint32_t arg3, uint32_t arg4)$/;"	f
+tsee_pgtbl	boot/tee/start.c	/^uint32_t *tsee_pgtbl = &_tsee_pgtbl;$/;"	v
+tsee_pt	tsee/linux/tsee_sm.c	/^pt_state_t tsee_pt __attribute__((section(".data.tsee_ro"))) = { .ttbcr = 0, .ttbr0 = 0, .ttbr1 = 0, .sctlr = 0};$/;"	v
+tsee_pt	tsee/tee/tsee_sm.c	/^pt_state_t tsee_pt __attribute__((section(".data.tsee_ro"))) = { .ttbcr = 0, .ttbr0 = 0, .ttbr1 = 0, .sctlr = 0};$/;"	v
+tsee_rtks_extra_mem	tsee/linux/tsee_rtks.c	/^EXPORT_SYMBOL(tsee_rtks_extra_mem);$/;"	v
+tsee_rtks_extra_mem	tsee/linux/tsee_rtks.c	/^void* tsee_rtks_extra_mem = 0;$/;"	v
+tsee_rtks_init	include/linux/tsee/tsee_entry.h	/^struct tsee_rtks_init {$/;"	s
+tsee_rtks_init	include/tee/tsee/tsee_entry.h	/^struct tsee_rtks_init {$/;"	s
+tsee_rtks_init	tsee/linux/tsee_rtks.c	/^EXPORT_SYMBOL(tsee_rtks_init);$/;"	v
+tsee_rtks_init	tsee/linux/tsee_rtks.c	/^void tsee_rtks_init(void) $/;"	f
+tsee_rtks_init_t	include/linux/tsee/tsee_entry.h	/^typedef struct tsee_rtks_init tsee_rtks_init_t;$/;"	t	typeref:struct:tsee_rtks_init
+tsee_rtks_init_t	include/tee/tsee/tsee_entry.h	/^typedef struct tsee_rtks_init tsee_rtks_init_t;$/;"	t	typeref:struct:tsee_rtks_init
+tsee_rtks_is_pg_dbl_mapped	include/linux/tsee/tsee_mm.h	31;"	d
+tsee_rtks_is_pg_protected	include/linux/tsee/tsee_mm.h	30;"	d
+tsee_rtks_is_protected	include/linux/tsee/tsee_mm.h	/^static inline u8 tsee_rtks_is_protected(u64 va,u64 pa, u64 *base_addr,u64 type)$/;"	f
+tsee_rtks_map_bitmap	boot/tee/boot.ld.S	/^		tsee_rtks_map_bitmap = .;$/;"	d
+tsee_rtks_map_bitmap	include/linux/tsee/tsee_entry.h	/^	u64 tsee_rtks_map_bitmap;$/;"	m	struct:tsee_rtks_init
+tsee_rtks_map_bitmap_arr	tsee/linux/tsee_rtks.c	/^__attribute__((section(".tsee_rtks.dblmap"))) u8 tsee_rtks_map_bitmap_arr[TSEE_RTKS_PGT_BITMAP_LEN] = {0}; $/;"	v
+tsee_rtks_map_bitmap_end	boot/tee/boot.ld.S	/^		tsee_rtks_map_bitmap_end = .;$/;"	d
+tsee_rtks_pgt_bitmap	include/linux/tsee/tsee_entry.h	/^	u64 tsee_rtks_pgt_bitmap;$/;"	m	struct:tsee_rtks_init
+tsee_rtks_pgt_bitmap_arr	tsee/linux/tsee_rtks.c	/^__attribute__((section(".tsee_rtks.bitmap"))) u8 tsee_rtks_pgt_bitmap_arr[TSEE_RTKS_PGT_BITMAP_LEN] = {0}; $/;"	v
+tsee_rtks_pgt_bitmap_size	include/linux/tsee/tsee_entry.h	/^	u32 tsee_rtks_pgt_bitmap_size;$/;"	m	struct:tsee_rtks_init
+tsee_rtks_phymap	include/tee/tsee/tsee_entry.h	/^	u32 tsee_rtks_phymap;$/;"	m	struct:tsee_rtks_init
+tsee_rtks_phymap	tsee/linux/dispatch.c	/^__attribute__((section(".tsee_rtks.phymap"))) char tsee_rtks_phymap[TSEE_RTKS_PGT_BITMAP_LEN] = {0};$/;"	v
+tsee_rtks_phymap	tsee/tee/dispatch.c	/^__attribute__((section(".tsee_rtks.phymap"))) char tsee_rtks_phymap[TSEE_RTKS_PGT_BITMAP_LEN] = {0};$/;"	v
+tsee_rtks_ro_alloc	tsee/linux/tsee_mm.c	/^void *tsee_rtks_ro_alloc(void)$/;"	f
+tsee_rtks_ro_free	tsee/linux/tsee_mm.c	/^void tsee_rtks_ro_free(void *free_addr)$/;"	f
+tsee_rtks_set_pmd	include/linux/tsee/tsee_mm.h	/^static inline void tsee_rtks_set_pmd(pmd_t *pmdp, pmd_t pmd)$/;"	f
+tsee_rtks_set_pte	include/linux/tsee/tsee_mm.h	/^static inline void tsee_rtks_set_pte(pte_t *ptep, pte_t pte)$/;"	f
+tsee_rtks_set_pud	include/linux/tsee/tsee_mm.h	/^static inline void tsee_rtks_set_pud(pud_t *pudp, pud_t pud)$/;"	f
+tsee_rtks_started	tsee/linux/tsee_rtks.c	/^EXPORT_SYMBOL(tsee_rtks_started);$/;"	v
+tsee_rtks_started	tsee/linux/tsee_rtks.c	/^u8 tsee_rtks_started = 0;$/;"	v
+tsee_rtks_support_large_memory	tsee/linux/tsee_rtks.c	/^EXPORT_SYMBOL(tsee_rtks_support_large_memory);$/;"	v
+tsee_rtks_support_large_memory	tsee/linux/tsee_rtks.c	/^int tsee_rtks_support_large_memory;$/;"	v
+tsee_sm_from_ns_entry	tsee/tee/tsee_sm_gate.S	/^tsee_sm_from_ns_entry:$/;"	l
+tsee_sm_from_s_entry	tsee/tee/tsee_sm_gate.S	/^tsee_sm_from_s_entry:$/;"	l
+tsee_sm_proxy	tsee/tee/tsee_sm_gate.S	/^tsee_sm_proxy:$/;"	l
+tsize	lib/libutils/isoc/bget.c	/^    bufsize tsize;		      \/* Total size, including overhead *\/$/;"	m	struct:bdhead	file:
+ttbcr	tsee/linux/tsee_sm.h	/^	uint32_t ttbcr;$/;"	m	struct:pt_state
+ttbcr	tsee/tee/tsee_sm.h	/^	uint32_t ttbcr;$/;"	m	struct:pt_state
+ttbr0	tsee/linux/tsee_sm.h	/^	uint32_t ttbr0;$/;"	m	struct:pt_state
+ttbr0	tsee/tee/tsee_sm.h	/^	uint32_t ttbr0;$/;"	m	struct:pt_state
+ttbr1	tsee/linux/tsee_sm.h	/^	uint32_t ttbr1;$/;"	m	struct:pt_state
+ttbr1	tsee/tee/tsee_sm.h	/^	uint32_t ttbr1;$/;"	m	struct:pt_state
+u16	lib/libutils/isoc/include/stdint.h	/^typedef uint16_t u16;$/;"	t
+u32	lib/libutils/isoc/include/stdint.h	/^typedef uint32_t u32;$/;"	t
+u64	lib/libutils/isoc/include/stdint.h	/^typedef uint64_t u64;$/;"	t
+u8	lib/libutils/isoc/include/stdint.h	/^typedef uint8_t u8;$/;"	t
+uart_base	boot/plat-exynos4412/exynos4412_uart.c	/^uint32_t *uart_base = (uint32_t *) UART0_BASE;$/;"	v
+uart_enable_rx	boot/plat-exynos4412/exynos4412_uart.c	/^void uart_enable_rx (void)$/;"	f
+uart_init	boot/plat-exynos4412/exynos4412_uart.c	/^void uart_init(void *addr){$/;"	f
+uart_puts	boot/plat-exynos4412/exynos4412_uart.c	/^void uart_puts(const char* c){ $/;"	f
+uartgetc	boot/plat-exynos4412/exynos4412_uart.c	/^int uartgetc (void)$/;"	f
+uartputc	boot/plat-exynos4412/exynos4412_uart.c	/^void uartputc(int c){ $/;"	f
+ubrdiv	boot/plat-exynos4412/exynos4412_uart.c	/^	volatile unsigned int    ubrdiv; \/\/0x28$/;"	m	struct:exynos_uart	file:
+ucon	boot/plat-exynos4412/exynos4412_uart.c	/^	volatile unsigned int    ucon; \/\/0x4$/;"	m	struct:exynos_uart	file:
+uerstat	boot/plat-exynos4412/exynos4412_uart.c	/^	volatile unsigned int    uerstat; \/\/0x14$/;"	m	struct:exynos_uart	file:
+ufcon	boot/plat-exynos4412/exynos4412_uart.c	/^	volatile unsigned int    ufcon; \/\/0x8$/;"	m	struct:exynos_uart	file:
+ufracval	boot/plat-exynos4412/exynos4412_uart.c	/^	volatile unsigned int	 ufracval; \/\/0x2c$/;"	m	struct:exynos_uart	file:
+ufstat	boot/plat-exynos4412/exynos4412_uart.c	/^	volatile unsigned int    ufstat; \/\/0x18$/;"	m	struct:exynos_uart	file:
+uint16_t	lib/libutils/isoc/include/stdint.h	/^typedef unsigned short int      uint16_t;$/;"	t
+uint32_t	lib/libutils/isoc/include/stdint.h	/^typedef unsigned int            uint32_t;$/;"	t
+uint32_tm	boot/plat-exynos4412/exynos4412_uart.c	/^	volatile unsigned int 	 uint32_tm; \/\/0x38$/;"	m	struct:exynos_uart	file:
+uint32_tp	boot/plat-exynos4412/exynos4412_uart.c	/^	volatile unsigned int 	 uint32_tp; \/\/0x30$/;"	m	struct:exynos_uart	file:
+uint32_ts	boot/plat-exynos4412/exynos4412_uart.c	/^	volatile unsigned int	 uint32_ts; \/\/0x34$/;"	m	struct:exynos_uart	file:
+uint64_t	lib/libutils/isoc/include/stdint.h	/^typedef unsigned long int	uint64_t;$/;"	t
+uint64_t	lib/libutils/isoc/include/stdint.h	/^typedef unsigned long long int  uint64_t;$/;"	t
+uint8_t	lib/libutils/isoc/include/stdint.h	/^typedef unsigned char           uint8_t;$/;"	t
+uint_div_qr	lib/libutils/isoc/arch/arm/arm32_aeabi_divmod.c	/^static void uint_div_qr(unsigned numerator, unsigned denominator, struct qr *qr)$/;"	f	file:
+uintmax_t	lib/libutils/isoc/include/stdint.h	/^typedef uint64_t uintmax_t;$/;"	t
+uintptr_t	lib/libutils/isoc/include/stdint.h	/^typedef unsigned long uintptr_t;$/;"	t
+ul_div_qr	lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod.c	/^static void ul_div_qr(unsigned long long numerator,$/;"	f	file:
+ulcon	boot/plat-exynos4412/exynos4412_uart.c	/^	volatile unsigned int    ulcon;\/\/0x0$/;"	m	struct:exynos_uart	file:
+umcon	boot/plat-exynos4412/exynos4412_uart.c	/^	volatile unsigned int    umcon; \/\/0xc$/;"	m	struct:exynos_uart	file:
+umstat	boot/plat-exynos4412/exynos4412_uart.c	/^	volatile unsigned int    umstat; \/\/0x1c$/;"	m	struct:exynos_uart	file:
+unmap_tsee	tsee/linux/tsee_sm.c	/^void unmap_tsee(void) {$/;"	f
+unmap_tsee	tsee/tee/tsee_sm.c	/^void unmap_tsee(void) {$/;"	f
+update-buildcount	boot/tee/link.mk	/^define update-buildcount$/;"	m
+urxh	boot/plat-exynos4412/exynos4412_uart.c	/^	volatile unsigned char   urxh; \/\/0x24$/;"	m	struct:exynos_uart	file:
+utrstat	boot/plat-exynos4412/exynos4412_uart.c	/^	volatile unsigned int    utrstat; \/\/0x10$/;"	m	struct:exynos_uart	file:
+utxh	boot/plat-exynos4412/exynos4412_uart.c	/^	volatile unsigned char   utxh; \/\/0x20$/;"	m	struct:exynos_uart	file:
+v0	lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod.c	/^	long long v0;$/;"	m	struct:asm_lqr	file:
+v0	lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod.c	/^	unsigned long long v0;$/;"	m	struct:asm_ulqr	file:
+v1	lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod.c	/^	long long v1;$/;"	m	struct:asm_lqr	file:
+v1	lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod.c	/^	unsigned long long v1;$/;"	m	struct:asm_ulqr	file:
+v7_flush_dcache_all	boot/tee/entry.S	/^v7_flush_dcache_all:$/;"	l
+vaddr_t	lib/libutils/ext/include/types_ext.h	/^typedef uintptr_t vaddr_t;$/;"	t
+vbar	tsee/linux/tsee_sm.h	/^	uint32_t vbar;$/;"	m	struct:pt_state
+vbar	tsee/tee/tsee_sm.h	/^	uint32_t vbar;$/;"	m	struct:pt_state
+vecswap	lib/libutils/isoc/qsort.c	78;"	d	file:
+version-o-cflags	boot/tee/link.mk	/^version-o-cflags = $(filter-out -g3,$(platform-cflags) \\$/;"	m
+vmalloc_end	include/linux/tsee/tsee_entry.h	/^	u64 vmalloc_end;$/;"	m	struct:tsee_rtks_init
+vmalloc_start	include/linux/tsee/tsee_entry.h	/^	u64 vmalloc_start;$/;"	m	struct:tsee_rtks_init
+vsnprintf	lib/libutils/isoc/snprintf.c	/^vsnprintf(char *bf, size_t size, const char *fmt, va_list ap)$/;"	f
+wfe	include/tee/tsee/barrier.h	21;"	d
+wfi	include/tee/tsee/barrier.h	22;"	d
+zero_pg_addr	include/linux/tsee/tsee_entry.h	/^	u64 zero_pg_addr;$/;"	m	struct:tsee_rtks_init

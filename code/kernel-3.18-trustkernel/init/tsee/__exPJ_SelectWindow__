@@ -1,0 +1,173 @@
+file filter = s,ld,S,c,C,c++,cc,cp,cpp,cxx,h,H,h++,hh,hp,hpp,hxx,inl,ipp,cs,js,as,java,hlsl,vsh,psh,fx,fxh,cg,shd,glsl,py,pyw,pyx,pxd,lua,wlua,vim,uc,m,wiki,ini,cfg,mak,mk,Makefile,makefile,sh,SH,bsh,bash,ksh,zsh,bat,log,err,exe,qrc,pro,pri,i,swg,
+dir filter = 
+
+-[F]tsee {
+ |-[F]boot {
+ | |-[F]core {
+ | | |-[S]asm.S
+ | | |-[S]boot.ld.S
+ | | |-[S]entry.S
+ | | |-[m]link.mk
+ | | |-[c]start.c
+ | | |-[m]sub.mk
+ | | |-[c]trace_ext.c }
+ | |
+ | |-[F]include {
+ | | |-[h]console.h }
+ | |
+ | |-[F]plat-exynos4412 {
+ | | |-[S]boot.ld.S
+ | | |-[m]conf.mk
+ | | |-[c]exynos4412_uart.c
+ | | |-[h]exynos4412_uart.h
+ | | |-[m]link.mk
+ | | |-[h]platform_config.h
+ | | |-[m]platform_flags.mk
+ | | |-[c]setup.c
+ | | |-[m]sub.mk }
+ | |
+ | |-[m]sub.mk }
+ |
+ |-[F]include {
+ | |-[F]linux {
+ | | |-[F]tsee {
+ | |   |-[h]kee.h
+ | |   |-[h]thee.h
+ | |   |-[h]tsee_entry.h
+ | |   |-[h]tsee_mm.h } }
+ | |
+ | |-[F]tee {
+ |   |-[F]tsee {
+ |     |-[h]barrier.h
+ |     |-[h]defs.h
+ |     |-[h]kee.h
+ |     |-[h]thee.h
+ |     |-[h]tsee_entry.h
+ |     |-[h]tsee_mm.h } } }
+ |
+ |-[F]lib {
+ | |-[F]libutils {
+ |   |-[F]ext {
+ |   | |-[F]include {
+ |   | | |-[h]bitstring.h
+ |   | | |-[h]compiler.h
+ |   | | |-[h]string_ext.h
+ |   | | |-[h]trace.h
+ |   | | |-[h]trace_levels.h
+ |   | | |-[h]types_ext.h
+ |   | | |-[h]util.h }
+ |   | |
+ |   | |-[c]buf_compare_ct.c
+ |   | |-[c]strlcat.c
+ |   | |-[c]strlcpy.c
+ |   | |-[m]sub.mk
+ |   | |-[c]trace.c }
+ |   |
+ |   |-[F]isoc {
+ |   | |-[F]arch {
+ |   | | |-[F]arm {
+ |   | |   |-[c]arm32_aeabi_divmod.c
+ |   | |   |-[S]arm32_aeabi_divmod_a32.S
+ |   | |   |-[c]arm32_aeabi_ldivmod.c
+ |   | |   |-[S]arm32_aeabi_ldivmod_a32.S
+ |   | |   |-[m]sub.mk } }
+ |   | |
+ |   | |-[F]include {
+ |   | | |-[F]machine {
+ |   | | | |-[h]ansi.h
+ |   | | | |-[h]setjmp.h }
+ |   | | |
+ |   | | |-[F]sys {
+ |   | | | |-[h]cdefs.h
+ |   | | | |-[h]list.h
+ |   | | | |-[h]queue.h
+ |   | | | |-[h]types.h }
+ |   | | |
+ |   | | |-[h]_ansi.h
+ |   | | |-[h]assert.h
+ |   | | |-[h]ctype.h
+ |   | | |-[h]inttypes.h
+ |   | | |-[h]limits.h
+ |   | | |-[h]malloc.h
+ |   | | |-[h]memory.h
+ |   | | |-[h]setjmp.h
+ |   | | |-[h]signal.h
+ |   | | |-[h]stdint.h
+ |   | | |-[h]stdio.h
+ |   | | |-[h]stdlib.h
+ |   | | |-[h]string.h
+ |   | | |-[h]time.h
+ |   | | |-[h]unistd.h
+ |   | | |-[h]wchar.h }
+ |   | |
+ |   | |-[F]newlib {
+ |   | | |-[h]_ansi.h
+ |   | | |-[c]memchr.c
+ |   | | |-[c]memcmp.c
+ |   | | |-[c]memcpy.c
+ |   | | |-[c]memmove.c
+ |   | | |-[c]memset.c
+ |   | | |-[S]setjmp.S
+ |   | | |-[c]strcat.c
+ |   | | |-[c]strchr.c
+ |   | | |-[c]strcmp.c
+ |   | | |-[c]strcpy.c
+ |   | | |-[c]strlen.c
+ |   | | |-[c]strncmp.c
+ |   | | |-[c]strnlen.c
+ |   | | |-[c]strrchr.c
+ |   | | |-[c]strstr.c
+ |   | | |-[m]sub.mk }
+ |   | |
+ |   | |-[c]abort.c
+ |   | |-[c]bget.c
+ |   | |-[h]bget.h
+ |   | |-[c]bget_malloc.c
+ |   | |-[c]dlmalloc.c
+ |   | |-[h]dlmalloc.h
+ |   | |-[c]qsort.c
+ |   | |-[c]snprintf.c
+ |   | |-[c]stack_check.c
+ |   | |-[c]strdup.c
+ |   | |-[c]strndup.c
+ |   | |-[m]sub.mk }
+ |   |
+ |   |-[m]sub.mk } }
+ |
+ |-[F]mk {
+ | |-[m]checkconf.mk
+ | |-[m]cleanvars.mk
+ | |-[m]compile.mk
+ | |-[m]config.mk
+ | |-[m]flags.mk
+ | |-[m]gcc.mk
+ | |-[m]lib.mk
+ | |-[m]subdir.mk }
+ |
+ |-[F]out {
+ | |-[F]exynos4412 {
+ |   |-[F]include {
+ |   | |-[F]generated {
+ |   |   |-[h]conf.h } }
+ |   |
+ |   |-[l]boot.ld
+ |   |-[m]conf.mk } }
+ |
+ |-[F]tsee {
+ | |-[S]_kee.S
+ | |-[S]_thee.S
+ | |-[c]dispatch.c
+ | |-[h]elf.h
+ | |-[c]kee.c
+ | |-[c]ld.c
+ | |-[h]ld.h
+ | |-[m]sub.mk
+ | |-[c]thee.c
+ | |-[c]tsee_mm.c
+ | |-[c]tsee_rtks.c
+ | |-[S]tsee_rtks_call.S }
+ |
+ |-[s]env.sh
+ |-[s]quick_gen_project_tsee_autogen.sh }
+
+

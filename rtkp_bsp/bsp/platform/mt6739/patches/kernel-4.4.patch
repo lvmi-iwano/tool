@@ -1,0 +1,558 @@
+diff --git a/arch/arm64/include/asm/tlb.h b/arch/arm64/include/asm/tlb.h
+index ffdaea7..33e7c95 100644
+--- a/arch/arm64/include/asm/tlb.h
++++ b/arch/arm64/include/asm/tlb.h
+@@ -35,6 +35,10 @@ static inline void __tlb_remove_table(void *_table)
+ 
+ #include <asm-generic/tlb.h>
+ 
++#ifdef CONFIG_TRUSTKERNEL_RTKP_SUPPORT
++#include <linux/rtkp/init_rtkp.h>
++#endif
++
+ static inline void tlb_flush(struct mmu_gather *tlb)
+ {
+ 	struct vm_area_struct vma = { .vm_mm = tlb->mm, };
+@@ -57,6 +61,11 @@ static inline void tlb_flush(struct mmu_gather *tlb)
+ static inline void __pte_free_tlb(struct mmu_gather *tlb, pgtable_t pte,
+ 				  unsigned long addr)
+ {
++#ifdef CONFIG_TRUSTKERNEL_RTKP_SUPPORT
++    if (rtkp_started)
++        rtkp_call(RTKP_PTE_FREE, (unsigned long)page_to_phys(pte), 0, 0);
++#endif
++
+ 	__flush_tlb_pgtable(tlb->mm, addr);
+ 	pgtable_page_dtor(pte);
+ 	tlb_remove_entry(tlb, pte);
+@@ -66,6 +75,10 @@ static inline void __pte_free_tlb(struct mmu_gather *tlb, pgtable_t pte,
+ static inline void __pmd_free_tlb(struct mmu_gather *tlb, pmd_t *pmdp,
+ 				  unsigned long addr)
+ {
++#ifdef CONFIG_TRUSTKERNEL_RTKP_SUPPORT
++    if (rtkp_started)
++        rtkp_call(RTKP_PMD_FREE, (unsigned long)pmdp, 0 , 0);
++#endif
+ 	__flush_tlb_pgtable(tlb->mm, addr);
+ 	tlb_remove_entry(tlb, virt_to_page(pmdp));
+ }
+diff --git a/arch/arm64/kernel/vmlinux.lds.S b/arch/arm64/kernel/vmlinux.lds.S
+index e5b5863..80134bb 100644
+--- a/arch/arm64/kernel/vmlinux.lds.S
++++ b/arch/arm64/kernel/vmlinux.lds.S
+@@ -194,8 +194,14 @@ SECTIONS
+ 	. = ALIGN(PAGE_SIZE);
+ 	idmap_pg_dir = .;
+ 	. += IDMAP_DIR_SIZE;
++#ifdef CONFIG_TRUSTKERNEL_RTKP_SUPPORT
++    . = ALIGN(PAGE_SIZE);
++#endif
+ 	swapper_pg_dir = .;
+ 	. += SWAPPER_DIR_SIZE;
++#ifdef CONFIG_TRUSTKERNEL_RTKP_SUPPORT
++    . = ALIGN(PAGE_SIZE);
++#endif
+ 
+ #ifdef CONFIG_ARM64_SW_TTBR0_PAN
+ 	reserved_ttbr0 = .;
+diff --git a/arch/arm64/mm/fault.c b/arch/arm64/mm/fault.c
+index acfc15b..b1842a2 100644
+--- a/arch/arm64/mm/fault.c
++++ b/arch/arm64/mm/fault.c
+@@ -56,6 +56,7 @@ void show_pte(struct mm_struct *mm, unsigned long addr)
+ 		mm = &init_mm;
+ 
+ 	pr_alert("pgd = %p\n", mm->pgd);
++
+ 	pgd = pgd_offset(mm, addr);
+ 	pr_alert("[%08lx] *pgd=%016llx", addr, pgd_val(*pgd));
+ 
+diff --git a/arch/arm64/mm/mmu.c b/arch/arm64/mm/mmu.c
+index e06b8a5..2ddfb00 100644
+--- a/arch/arm64/mm/mmu.c
++++ b/arch/arm64/mm/mmu.c
+@@ -46,6 +46,12 @@
+ 
+ #include "mm.h"
+ 
++#ifdef CONFIG_TRUSTKERNEL_RTKP_SUPPORT
++#include <linux/rtkp/init_rtkp.h>
++void *pthee = NULL; /* memory needed by VMM */
++void *ro_buffer = NULL;
++#endif
++
+ u64 idmap_t0sz = TCR_T0SZ(VA_BITS);
+ 
+ u64 kimage_voffset __read_mostly;
+@@ -73,6 +79,15 @@ pgprot_t phys_mem_access_prot(struct file *file, unsigned long pfn,
+ }
+ EXPORT_SYMBOL(phys_mem_access_prot);
+ 
++#ifdef CONFIG_TRUSTKERNEL_RTKP_SUPPORT
++static void __init *early_alloc(unsigned long sz)
++{
++	void *ptr = __va(memblock_alloc(sz, sz));
++	memset(ptr, 0, sz);
++	return ptr;
++}
++#endif
++
+ static phys_addr_t __init early_pgtable_alloc(void)
+ {
+ 	phys_addr_t phys;
+@@ -614,11 +629,52 @@ void __init paging_init(void)
+ 	 * allocated with it.
+ 	 */
+ 	memblock_free(__pa(swapper_pg_dir) + PAGE_SIZE,
+-		      SWAPPER_DIR_SIZE - PAGE_SIZE);
++                     SWAPPER_DIR_SIZE - PAGE_SIZE);
+ 
+ 	bootmem_init();
++#ifdef CONFIG_TRUSTKERNEL_RTKP_SUPPORT
++	pthee = early_alloc(0x600000);
++	ro_buffer = early_alloc(RTKP_ROBUF_SIZE);
++#endif
+ }
+ 
++#ifdef CONFIG_TRUSTKERNEL_RTKP_SUPPORT
++static spinlock_t ro_rtkp_pages_lock = __SPIN_LOCK_UNLOCKED();
++static char ro_pages_stat[RTKP_RO_PAGES] = {0};
++static uint16_t ro_alloc_last = 0;
++
++void *rtkp_ro_alloc(void)
++{
++	unsigned long flags;
++	uint16_t i, j;
++	void * alloc_addr = NULL;
++
++	spin_lock_irqsave(&ro_rtkp_pages_lock,flags);
++	for (i = 0, j = ro_alloc_last; i < (RTKP_RO_PAGES) ; i++) {
++		j =  (j+i) %(RTKP_RO_PAGES);
++		if (!ro_pages_stat[j]) {
++			ro_pages_stat[j] = 1;
++			ro_alloc_last = j+1;
++			alloc_addr = (void*) ((u64)ro_buffer +  (j << PAGE_SHIFT));
++			break;
++		}
++	}
++	spin_unlock_irqrestore(&ro_rtkp_pages_lock,flags);
++	return alloc_addr;
++}
++
++void rtkp_ro_free(void *free_addr)
++{
++	uint16_t i;
++	unsigned long flags;
++
++	i =  ((u64)free_addr - (u64)ro_buffer) >> PAGE_SHIFT;
++	spin_lock_irqsave(&ro_rtkp_pages_lock,flags);
++    ro_pages_stat[i] = 0;
++    ro_alloc_last = i;
++	spin_unlock_irqrestore(&ro_rtkp_pages_lock,flags);
++}
++#endif
+ /*
+  * Check whether a kernel address is valid (derived from arch/x86/).
+  */
+diff --git a/arch/arm64/mm/pgd.c b/arch/arm64/mm/pgd.c
+index ae11d4e..863f19f 100644
+--- a/arch/arm64/mm/pgd.c
++++ b/arch/arm64/mm/pgd.c
+@@ -28,8 +28,14 @@
+ 
+ #include "mm.h"
+ 
++#ifdef CONFIG_TRUSTKERNEL_RTKP_SUPPORT
++#include <linux/rtkp/init_rtkp.h>
++extern void* ro_buffer;
++#endif
++
+ static struct kmem_cache *pgd_cache;
+ 
++#ifndef CONFIG_TRUSTKERNEL_RTKP_SUPPORT
+ pgd_t *pgd_alloc(struct mm_struct *mm)
+ {
+ 	if (PGD_SIZE == PAGE_SIZE)
+@@ -37,7 +43,26 @@ pgd_t *pgd_alloc(struct mm_struct *mm)
+ 	else
+ 		return kmem_cache_alloc(pgd_cache, PGALLOC_GFP);
+ }
++#else
++pgd_t *pgd_alloc(struct mm_struct *mm)
++{
++	pgd_t *ret = NULL;
++    if (rtkp_started) {
++	    ret = (pgd_t *) rtkp_ro_alloc();
++        if (ret)
++            return ret;
++    }
++	if (PGD_SIZE == PAGE_SIZE)
++	    ret = (pgd_t *)__get_free_page(PGALLOC_GFP);
++	else
++	    ret = kmem_cache_alloc(pgd_cache, PGALLOC_GFP);
++    if (rtkp_started)
++        rtkp_call(RTKP_PGD_CREATE, (unsigned long)ret, 0, 0);
++    return ret;
++}
++#endif
+ 
++#ifndef CONFIG_TRUSTKERNEL_RTKP_SUPPORT
+ void pgd_free(struct mm_struct *mm, pgd_t *pgd)
+ {
+ 	if (PGD_SIZE == PAGE_SIZE)
+@@ -45,7 +70,22 @@ void pgd_free(struct mm_struct *mm, pgd_t *pgd)
+ 	else
+ 		kmem_cache_free(pgd_cache, pgd);
+ }
+-
++#else
++void pgd_free(struct mm_struct *mm, pgd_t *pgd)
++{
++	if (rtkp_started && (unsigned long)pgd >= (unsigned long)ro_buffer && (unsigned long)pgd < ((unsigned long)ro_buffer +  RTKP_ROBUF_SIZE))
++		rtkp_ro_free((void*)pgd);
++    else {
++        if (rtkp_started) {
++            rtkp_call(RTKP_PGD_FREE, (unsigned long)pgd, 0, 0);
++        }
++	    if (PGD_SIZE == PAGE_SIZE)
++		    free_page((unsigned long)pgd);
++	    else
++		    kmem_cache_free(pgd_cache, pgd);
++    }
++}
++#endif
+ void __init pgd_cache_init(void)
+ {
+ 	if (PGD_SIZE == PAGE_SIZE)
+diff --git a/drivers/Kconfig b/drivers/Kconfig
+index cf85fb4..d02d559 100644
+--- a/drivers/Kconfig
++++ b/drivers/Kconfig
+@@ -202,4 +202,6 @@ source "drivers/hwtracing/intel_th/Kconfig"
+ 
+ source "drivers/fpga/Kconfig"
+ 
++source "drivers/thee/Kconfig"
++
+ endmenu
+diff --git a/drivers/Makefile b/drivers/Makefile
+index 4c00a13..8905286 100644
+--- a/drivers/Makefile
++++ b/drivers/Makefile
+@@ -176,3 +176,4 @@ obj-$(CONFIG_STM)		+= hwtracing/stm/
+ obj-$(CONFIG_ANDROID)		+= android/
+ obj-$(CONFIG_NVMEM)		+= nvmem/
+ obj-$(CONFIG_FPGA)		+= fpga/
++obj-$(CONFIG_TRUSTKERNEL_RTKP_SUPPORT) += thee/
+diff --git a/drivers/thee/Kconfig b/drivers/thee/Kconfig
+new file mode 100644
+index 0000000..e69de29
+diff --git a/drivers/thee/Makefile b/drivers/thee/Makefile
+new file mode 100644
+index 0000000..98a2704
+--- /dev/null
++++ b/drivers/thee/Makefile
+@@ -0,0 +1,6 @@
++obj-$(CONFIG_TRUSTKERNEL_RTKP_SUPPORT) += init.o hypervisor.o
++
++$(obj)/hypervisor.o: $(O)/$(obj)/hypervisor.bin
++
++$(O)/$(obj)/hypervisor.bin: $(srctree)/$(obj)/hypervisor.bin
++	cp $< $@
+diff --git a/drivers/thee/hypervisor.S b/drivers/thee/hypervisor.S
+new file mode 100644
+index 0000000..37ac352
+--- /dev/null
++++ b/drivers/thee/hypervisor.S
+@@ -0,0 +1,8 @@
++.section ".data"
++.global hypervisor_bin
++.global hypervisor_bin_end
++
++hypervisor_bin:
++	.incbin "drivers/thee/hypervisor.bin"
++hypervisor_bin_end:
++.size hypervisor_bin, . - hypervisor_bin
+diff --git a/drivers/thee/init.c b/drivers/thee/init.c
+new file mode 100644
+index 0000000..8895b48
+--- /dev/null
++++ b/drivers/thee/init.c
+@@ -0,0 +1,26 @@
++#include <linux/module.h>
++#include <asm/cacheflush.h>
++#include <asm/io.h>
++#include <linux/slab.h>
++
++extern u8 hypervisor_bin[], hypervisor_bin_end[];
++extern void *pthee;
++
++int __init thee_init(void)
++{
++    void* p = pthee;
++	pr_err("Hypervisor at %p\n", p);
++	memcpy(p, hypervisor_bin, hypervisor_bin_end - hypervisor_bin);
++	__flush_dcache_area(p, hypervisor_bin_end - hypervisor_bin);
++	pr_err("Booting hypervisor\n");
++	asm volatile (
++		"mov x0, %0\n"
++		"mov x1, %1\n"
++		"smc #0\n"
++		:
++		: "r"(0x86000000),
++		  "r"(virt_to_phys(p))
++		: "memory", "x0", "x1");
++	pr_err("Hypervisor booted\n");
++	return 0;
++}
+diff --git a/include/linux/rtkp/init_rtkp.h b/include/linux/rtkp/init_rtkp.h
+new file mode 100644
+index 0000000..30026b7
+--- /dev/null
++++ b/include/linux/rtkp/init_rtkp.h
+@@ -0,0 +1,52 @@
++/*
++ *
++ * Copyright (C) 2015 - 2018 TrustKernel Team, Shanghai Pingbo Information Technology Corporation Limited - All Rights Reserved
++ *
++ *      https://www.trustkernel.com
++ *
++ */
++#ifndef __INIT_RTKP_H_
++#define __INIT_RTKP_H_
++
++#ifndef __ASSEMBLY__
++
++#define   RTKP_ROBUF_SIZE       0x400000
++#define   RTKP_RO_PAGES  		0x400 // (RTKP_ROBUF_SIZE/PAGE_SIZE)
++
++#define RTKP_INIT 0
++#define RTKP_PGD_FREE 1
++#define RTKP_PMD_FREE 2
++#define RTKP_PTE_FREE 3
++#define RTKP_PGD_CREATE 4
++
++struct rtkp_init {
++    u64 _text;
++    u64 _etext;
++    u64 _srodata;
++    u64 _erodata;
++    u64 _sdata;
++    u64 _edata;
++    u64 _bss_start;
++    u64 _bss_stop;
++    u64 swapper_pg_dir;
++    u64 vdso_start;
++    u64 vdso_end;
++    u64 vdso_data;
++    u64 phys_offset;
++    u64 high_memory;
++    u64 page_offset;
++    u64 empty_zero_page;
++    u64 ro_buffer_va;
++    u64 ro_buffer_size;
++} __attribute__((packed));
++
++typedef struct rtkp_init rtkp_init_t;
++extern u8 rtkp_started;
++
++void rtkp_call(unsigned long long cmd, unsigned long long arg0, unsigned long long arg1, unsigned long long arg2);
++void rtkp_init(void);
++extern void *rtkp_ro_alloc(void);
++extern void rtkp_ro_free(void *free_addr);
++
++#endif /* __ASSEMBLY__ */
++#endif /* __INIT_RTKP_H_ */
+diff --git a/init/Kconfig b/init/Kconfig
+index d8af878..593763e 100644
+--- a/init/Kconfig
++++ b/init/Kconfig
+@@ -2121,3 +2121,4 @@ config ASN1
+ 	  functions to call on what tags.
+ 
+ source "kernel/Kconfig.locks"
++source "init/rtkp/Kconfig"
+diff --git a/init/Makefile b/init/Makefile
+index 7911193..be65654 100644
+--- a/init/Makefile
++++ b/init/Makefile
+@@ -18,6 +18,7 @@ ifneq ($(CONFIG_ARCH_INIT_TASK),y)
+ obj-y                          += init_task.o
+ endif
+ 
++obj-$(CONFIG_TRUSTKERNEL_RTKP_SUPPORT) += rtkp/
+ mounts-y			:= do_mounts.o
+ mounts-$(CONFIG_BLK_DEV_RAM)	+= do_mounts_rd.o
+ mounts-$(CONFIG_BLK_DEV_INITRD)	+= do_mounts_initrd.o
+diff --git a/init/main.c b/init/main.c
+index 56856fd..a0e1379 100644
+--- a/init/main.c
++++ b/init/main.c
+@@ -92,6 +92,10 @@
+ #include <mt-plat/mtk_ram_console.h>
+ #endif
+ 
++#ifdef CONFIG_TRUSTKERNEL_RTKP_SUPPORT
++#include <linux/rtkp/init_rtkp.h>
++#endif
++
+ static int kernel_init(void *);
+ 
+ extern void init_IRQ(void);
+@@ -988,6 +992,9 @@ static int __ref kernel_init(void *unused)
+ #ifdef CONFIG_MTPROF
+ 	log_boot("Kernel_init_done");
+ #endif
++#ifdef CONFIG_TRUSTKERNEL_RTKP_SUPPORT
++    rtkp_init();
++#endif
+ 
+ 	if (ramdisk_execute_command) {
+ 		ret = run_init_process(ramdisk_execute_command);
+diff --git a/init/rtkp/Kconfig b/init/rtkp/Kconfig
+new file mode 100644
+index 0000000..5b3adc6
+--- /dev/null
++++ b/init/rtkp/Kconfig
+@@ -0,0 +1,6 @@
++# TrustKernel Real-Time Kernel Protection Configuration
++config TRUSTKERNEL_RTKP_SUPPORT
++    bool "TrustKernel Real-Time Kernel Protection Support"
++    default y
++    ---help---
++        This enables TrustKernel Kernel Real-Time Protection.
+diff --git a/init/rtkp/Makefile b/init/rtkp/Makefile
+new file mode 100755
+index 0000000..073af04
+--- /dev/null
++++ b/init/rtkp/Makefile
+@@ -0,0 +1,3 @@
++ifeq ($(CONFIG_TRUSTKERNEL_RTKP_SUPPORT), y)
++obj-y += rtkp_call.o init_rtkp.o
++endif
+diff --git a/init/rtkp/init_rtkp.c b/init/rtkp/init_rtkp.c
+new file mode 100644
+index 0000000..6ca8487
+--- /dev/null
++++ b/init/rtkp/init_rtkp.c
+@@ -0,0 +1,50 @@
++/*
++ *
++ * Copyright (C) 2015 - 2018 TrustKernel Team, Shanghai Pingbo Information Technology Corporation Limited - All Rights Reserved
++ *
++ *      https://www.trustkernel.com
++ */
++
++#ifdef CONFIG_TRUSTKERNEL_RTKP_SUPPORT
++#include <linux/types.h>
++#include <asm/sections.h>
++#include <asm/pgtable.h>
++#include <asm/memory.h>
++#include <asm/vdso_datapage.h>
++#include <linux/rtkp/init_rtkp.h>
++
++extern char vdso_start, vdso_end;
++extern struct vdso_data *vdso_data;
++extern void* high_memory;
++extern void* ro_buffer;
++extern unsigned long empty_zero_page[PAGE_SIZE / sizeof(unsigned long)];
++u8 rtkp_started = 0;
++EXPORT_SYMBOL(rtkp_started);
++
++void rtkp_init(void)
++{
++    rtkp_init_t init;
++    init._text = roundup((u64) _text, PAGE_SIZE);
++    init._etext = roundup((u64) _etext, PAGE_SIZE);
++    init._srodata = roundup((u64) __start_rodata, PAGE_SIZE);
++    init._erodata = roundup((u64) __end_rodata, PAGE_SIZE);
++    init._sdata = roundup((u64) _sdata, PAGE_SIZE);
++    init._edata = roundup((u64) _edata, PAGE_SIZE);
++    init._bss_start = roundup((u64) __bss_start, PAGE_SIZE);
++    init._bss_stop = roundup((u64) __bss_stop, PAGE_SIZE);
++    init.swapper_pg_dir = (u64)swapper_pg_dir;
++    init.vdso_start = (u64)__pa(&vdso_start);
++    init.vdso_end = (u64)__pa(&vdso_end);
++    init.vdso_data = (u64)__pa(vdso_data);
++    init.phys_offset = PHYS_OFFSET;
++    init.high_memory = __pa(high_memory);
++    init.page_offset = PAGE_OFFSET;
++    init.empty_zero_page = (u64)empty_zero_page;
++    init.ro_buffer_va = (u64)ro_buffer;
++    init.ro_buffer_size = RTKP_ROBUF_SIZE;
++    rtkp_call(RTKP_INIT, (phys_addr_t)&init, 0, 0);
++    rtkp_started = 1;
++	pr_err("RTKP enabled\n");
++}
++EXPORT_SYMBOL(rtkp_init);
++#endif
+diff --git a/init/rtkp/rtkp_call.S b/init/rtkp/rtkp_call.S
+new file mode 100644
+index 0000000..53b182c
+--- /dev/null
++++ b/init/rtkp/rtkp_call.S
+@@ -0,0 +1,7 @@
++#include <linux/linkage.h>
++#include <linux/rtkp/init_rtkp.h>
++
++ENTRY(rtkp_call)
++	hvc #0
++	ret
++ENDPROC(rtkp_call)
+diff --git a/kernel/smp.c b/kernel/smp.c
+index 60a73c3..0c1958e 100644
+--- a/kernel/smp.c
++++ b/kernel/smp.c
+@@ -813,6 +813,11 @@ static int create_procfs(void)
+ 
+ }
+ #endif
++
++#ifdef CONFIG_TRUSTKERNEL_RTKP_SUPPORT
++extern void thee_init(void);
++#endif
++
+ /* Called by boot processor to activate the rest. */
+ void __init smp_init(void)
+ {
+@@ -832,6 +837,10 @@ void __init smp_init(void)
+ 	profile_timestamp_init();
+ #endif
+ 
++#ifdef CONFIG_TRUSTKERNEL_RTKP_SUPPORT
++	thee_init();
++#endif
++
+ 	/* FIXME: This should be done in userspace --RR */
+ 	for_each_present_cpu(cpu) {
+ 		if (num_online_cpus() >= setup_max_cpus)
+diff --git a/mm/memory.c b/mm/memory.c
+index 1ad62d8..5e01567 100644
+--- a/mm/memory.c
++++ b/mm/memory.c
+@@ -1050,7 +1050,7 @@ static inline int copy_pud_range(struct mm_struct *dst_mm, struct mm_struct *src
+ 		if (copy_pmd_range(dst_mm, src_mm, dst_pud, src_pud,
+ 						vma, addr, next))
+ 			return -ENOMEM;
+-	} while (dst_pud++, src_pud++, addr = next, addr != end);
++       } while (dst_pud++, src_pud++, addr = next, addr != end);
+ 	return 0;
+ }
+ 
+@@ -3451,6 +3451,7 @@ static int __handle_mm_fault(struct mm_struct *mm, struct vm_area_struct *vma,
+ 	 */
+ 	if (unlikely(pmd_trans_unstable(pmd)))
+ 		return 0;
++
+ 	/*
+ 	 * A regular pmd is established and it can't morph into a huge pmd
+ 	 * from under us anymore at this point because we hold the mmap_sem
+@@ -3546,7 +3547,7 @@ int __pmd_alloc(struct mm_struct *mm, pud_t *pud, unsigned long address)
+ #ifndef __ARCH_HAS_4LEVEL_HACK
+ 	if (!pud_present(*pud)) {
+ 		mm_inc_nr_pmds(mm);
+-		pud_populate(mm, pud, new);
++        pud_populate(mm, pud, new);
+ 	} else	/* Another has populated it */
+ 		pmd_free(mm, new);
+ #else

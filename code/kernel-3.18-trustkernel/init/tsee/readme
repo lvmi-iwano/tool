@@ -1,0 +1,1468 @@
+quick_gen_project_tsee_autogen.sh:8:export file_filter="s|S|ld|lds|c|C|c\+\+|cc|cp|cpp|cxx|h|H|h\+\+|hh|hp|hpp|hxx|inl|ipp|cs|js|as|java|hlsl|vsh|psh|fx|fxh|cg|shd|glsl|py|pyw|pyx|pxd|lua|wlua|vim|uc|m|wiki|ini|cfg|mak|mk|Makefile|makefile|sh|SH|bsh|bash|ksh|zsh|bat|log|err|exe|qrc|pro|pri|i|swg"
+quick_gen_project_tsee_autogen.sh:9:export file_filter_pattern='\\.s$|\\.S$|\\.ld$|\\.lds$|\\.c$|\\.C$|\\.c++$|\\.cc$|\\.cp$|\\.cpp$|\\.cxx$|\\.h$|\\.H$|\\.h++$|\\.hh$|\\.hp$|\\.hpp$|\\.hxx$|\\.inl$|\\.ipp$|\\.cs$|\\.js$|\\.as$|\\.java$|\\.hlsl$|\\.vsh$|\\.psh$|\\.fx$|\\.fxh$|\\.cg$|\\.shd$|\\.glsl$|\\.py$|\\.pyw$|\\.pyx$|\\.pxd$|\\.lua$|\\.wlua$|\\.vim$|\\.uc$|\\.m$|\\.wiki$|\\.ini$|\\.cfg$|\\.mak$|\\.mk$|\\.Makefile$|\\.makefile$|\\.sh$|\\.SH$|\\.bsh$|\\.bash$|\\.ksh$|\\.zsh$|\\.bat$|\\.log$|\\.err$|\\.exe$|\\.qrc$|\\.pro$|\\.pri$|\\.i$|\\.swg$'
+quick_gen_project_tsee_autogen.sh:21:if [ -f "./${vimfiles_path}/quick_gen_project_pre_custom.sh" ]; then
+quick_gen_project_tsee_autogen.sh:22:    sh ./${vimfiles_path}/quick_gen_project_pre_custom.sh
+quick_gen_project_tsee_autogen.sh:24:sh ${toolkit_path}/quickgen/bash/quick_gen_project.sh $1
+quick_gen_project_tsee_autogen.sh:25:if [ -f "./${vimfiles_path}/quick_gen_project_post_custom.sh" ]; then
+quick_gen_project_tsee_autogen.sh:26:    sh ./${vimfiles_path}/quick_gen_project_post_custom.sh
+boot/plat-exynos4412/platform_config.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+boot/plat-exynos4412/platform_config.h:9: * Proprietary and confidential
+boot/plat-exynos4412/conf.mk:3:#CROSS_COMPILE	:= arm-linux-gnueabihf-
+boot/plat-exynos4412/conf.mk:4:CROSS_COMPILE	:= ${CROSS_COMPILE_NEWLIB}
+boot/plat-exynos4412/exynos4412_uart.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+boot/plat-exynos4412/exynos4412_uart.h:9: * Proprietary and confidential
+boot/plat-exynos4412/exynos4412_uart.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+boot/plat-exynos4412/exynos4412_uart.c:9: * Proprietary and confidential
+boot/plat-exynos4412/exynos4412_uart.c:43:#define UART_RSR	1	// receive status register/error clear register
+boot/plat-exynos4412/exynos4412_uart.c:47:#define UART_LCR	11	// line control register
+boot/plat-exynos4412/exynos4412_uart.c:48:#define UART_CR		12	// control register
+boot/plat-exynos4412/exynos4412_uart.c:109:	/*no interrupt, auto flow control*/
+boot/plat-exynos4412/exynos4412_uart.c:122:	// no interrupt, auto flow control
+boot/include/console.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+boot/include/console.h:9: * Proprietary and confidential
+boot/plat-exynos4412/setup.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+boot/plat-exynos4412/setup.c:9: * Proprietary and confidential
+boot/tee/start.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+boot/tee/start.c:9: * Proprietary and confidential
+boot/tee/start.c:78:    // set domain access control: all domain will be checked for permission in the TLB entry
+boot/tee/start.c:80:    asm("MCR p15, 0, %[v], c3, c0, 0": :[v]"r" (val):); //write domain access control register
+boot/tee/start.c:84:	//write to translation table control register: 
+boot/tee/start.c:101:	//setting the control register
+boot/tee/trace_ext.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+boot/tee/trace_ext.c:9: * Proprietary and confidential
+boot/tee/boot.ld.S:19:		__tsee_text_ro_start = .;
+boot/tee/boot.ld.S:20:		KEEP(*(.text.tsee_ro))
+boot/tee/boot.ld.S:22:		__tsee_text_ro_end = .;
+boot/tee/boot.ld.S:36:	.rel.rodata : { *(.rel.rodata) *(.rel.gnu.linkonce.r*) }
+boot/tee/boot.ld.S:37:	.rela.rodata : { *(.rela.rodata) *(.rela.gnu.linkonce.r*) }
+boot/tee/boot.ld.S:62:	.rodata : ALIGN(4) {
+boot/tee/boot.ld.S:63:		__rodata_start = .;
+boot/tee/boot.ld.S:65:		*(.rodata .rodata.*)
+boot/tee/boot.ld.S:68:		__rodata_end = .;
+boot/tee/boot.ld.S:74:		__tsee_data_ro_start = .;
+boot/tee/boot.ld.S:75:		KEEP(*(.data.tsee_ro))
+boot/tee/boot.ld.S:77:		__tsee_data_ro_end = .;
+boot/tee/boot.ld.S:109:		PROVIDE (mon_stktop = .); 
+boot/tee/boot.ld.S:110:		PROVIDE (tee_rw_stack_start = .); 
+boot/tee/boot.ld.S:112:		PROVIDE (mon_stktop_init = .); 
+boot/tee/boot.ld.S:113:		PROVIDE (tee_rw_stack_end = .); 
+boot/tee/boot.ld.S:115:		PROVIDE (mon_stktop_others = .); 
+boot/tee/boot.ld.S:139:	PROVIDE (_binary_tee_img_start = .);
+boot/tee/boot.ld.S:143:	PROVIDE (_binary_tee_img_end = .);
+mk/subdir.mk:20:define process-subdir-srcs-y
+mk/subdir.mk:63:endef #process-subdir-srcs-y
+mk/subdir.mk:65:define process-subdir
+mk/subdir.mk:77:# Process files in current directory
+mk/subdir.mk:78:$$(foreach s, $$(srcs-y), $$(eval $$(call process-subdir-srcs-y,$$(s))))
+mk/subdir.mk:79:# Clear flags used when processing current directory
+mk/subdir.mk:95:# Process subdirectories in current directory
+mk/subdir.mk:96:$$(foreach sd, $$(sub-subdirs), $$(eval $$(call process-subdir,$$(sd))))
+mk/subdir.mk:97:endef #process-subdir
+mk/subdir.mk:100:$(foreach sd, $(subdirs), $(eval $(call process-subdir,$(sd))))
+boot/tee/entry.S:71:	# initialize cpu environment
+boot/tee/entry.S:104:	orr     r1, r1, #0x00004000    @bit 14. replacement strategy for cacheds, BTAC and micro TLB: round-robin replacement
+boot/tee/entry.S:109:	orr		r1, r1, #(0x1 << 0)			 @ bit 0, FW, cache and TLB maintainance broadcast
+boot/tee/entry.S:151:	ands    r3, r0, #0x7000000      @ extract loc from clidr
+boot/tee/entry.S:157:	mov r1, r0, lsr r2          @ extract cache type bits from clidr
+mk/compile.mk:3:# The output from mk/sub.mk
+mk/compile.mk:28:	-Werror-implicit-function-declaration -Wextra -Wfloat-equal \
+mk/compile.mk:32:	-Wmissing-prototypes -Wnested-externs -Wpointer-arith \
+mk/compile.mk:33:	-Wshadow -Wstrict-prototypes -Wswitch-default \
+mk/compile.mk:35:	-Wno-missing-field-initializers -Wno-format-zero-length
+mk/compile.mk:51:comp-cxxflags-incompatible := -Wmissing-prototypes -Wnested-externs \
+mk/compile.mk:52:	-Wstrict-prototypes -Wold-style-definition -Wdeclaration-after-statement
+mk/compile.mk:61:define process_srcs
+mk/compile.mk:109:$$(error "Don't know what to do with $1")
+mk/compile.mk:125:	--rename-section .rodata=.rodata.$1 \
+mk/compile.mk:126:	--rename-section .rodata.str1.1=.rodata.str1.1.$1 \
+mk/compile.mk:161:	process_srcs,$(f),$(out-dir)/$(base-prefix)$$(basename $f).o)))
+mk/compile.mk:163:# Handle generated source files, that is, files that are compiled from out-dir
+mk/compile.mk:165:	process_srcs,$(out-dir)/$(f),$(out-dir)/$(base-prefix)$$(basename $f).o)))
+boot/tee/link.mk:49:			$(platform-cflags)) # Workaround objdump warning
+boot/tee/asm.S:1:	.macro FUNC name colon
+boot/tee/asm.S:7:	.macro DATA name colon
+boot/tee/asm.S:13:	.macro LOCAL_FUNC name colon
+boot/tee/asm.S:18:	.macro LOCAL_DATA name colon
+boot/tee/asm.S:23:	.macro END_DATA name
+boot/tee/asm.S:27:	.macro END_FUNC name
+boot/tee/asm.S:33:	.macro read_mpidr reg
+boot/tee/asm.S:37:	.macro read_sctlr reg
+boot/tee/asm.S:41:	.macro write_sctlr reg
+boot/tee/asm.S:45:	.macro write_actlr reg
+boot/tee/asm.S:49:	.macro read_scr reg
+boot/tee/asm.S:53:	.macro write_scr reg
+boot/tee/asm.S:57:	.macro write_nsacr reg
+boot/tee/asm.S:61:	.macro write_ttbr0 reg
+boot/tee/asm.S:65:	.macro write_ttbr1 reg
+boot/tee/asm.S:69:	.macro write_ttbcr reg
+boot/tee/asm.S:73:	.macro write_dacr reg
+boot/tee/asm.S:77:	.macro read_dfsr reg
+boot/tee/asm.S:81:	.macro write_iciallu
+boot/tee/asm.S:86:	.macro write_bpiall
+boot/tee/asm.S:91:	.macro write_tlbiall
+boot/tee/asm.S:96:	.macro write_tlbiallis
+boot/tee/asm.S:101:	.macro write_tlbiasidis reg
+boot/tee/asm.S:106:	.macro write_vbar reg
+boot/tee/asm.S:110:	.macro write_mvbar reg
+boot/tee/asm.S:114:	.macro write_contextidr reg
+boot/tee/asm.S:118:	.macro read_contextidr reg
+boot/tee/asm.S:122:	.macro write_pcr reg
+boot/tee/asm.S:126:	.macro read_actlr reg
+boot/tee/asm.S:130:	.macro read_nsacr reg
+mk/gcc.mk:2:CC		:= $(CROSS_COMPILE)gcc
+mk/gcc.mk:3:CXX		:= $(CROSS_COMPILE)g++
+mk/gcc.mk:5:CPP		:= $(CROSS_COMPILE)cpp
+mk/gcc.mk:6:LD		:= $(CROSS_COMPILE)ld
+mk/gcc.mk:7:AR		:= $(CROSS_COMPILE)ar
+mk/gcc.mk:8:NM		:= $(CROSS_COMPILE)nm
+mk/gcc.mk:9:OBJCOPY	:= $(CROSS_COMPILE)objcopy
+mk/gcc.mk:10:OBJDUMP	:= $(CROSS_COMPILE)objdump
+mk/gcc.mk:11:READELF	:= $(CROSS_COMPILE)readelf
+mk/gcc.mk:16:# Get location of libgcc from gcc
+mk/cleanvars.mk:1:# Cleans all output variables from other make files to allow for a new start
+include/linux/tsee/thee.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+include/linux/tsee/thee.h:9: * Proprietary and confidential
+mk/config.mk:4:$(error TARGET_PLAT not defined)
+mk/config.mk:7:# Cross-compiler prefix and suffix
+mk/config.mk:8:CROSS_COMPILE := arm-linux-gnueabihf-
+mk/config.mk:36:$(error BAD TSEE_BUILD=$(TKCORE_BUILD))
+include/linux/tsee/tsee_mm.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+include/linux/tsee/tsee_mm.h:9: * Proprietary and confidential
+include/linux/tsee/tsee_mm.h:30:#define tsee_rtks_is_pg_protected(va) tsee_rtks_is_protected(va,__pa(va),(u64 *)tsee_rtks_pgt_bitmap,1)
+include/linux/tsee/tsee_mm.h:31:#define tsee_rtks_is_pg_dbl_mapped(pa) tsee_rtks_is_protected((u64)__va(pa),pa,(u64 *)tsee_rtks_map_bitmap,0)
+include/linux/tsee/tsee_mm.h:42:static inline u8 tsee_rtks_is_protected(u64 va,u64 pa, u64 *base_addr,u64 type)
+include/linux/tsee/tsee_mm.h:66:	if (tsee_rtks_is_pg_protected((u64)pudp)) {
+include/linux/tsee/tsee_mm.h:82:	if (tsee_rtks_is_pg_protected((u64)pmdp)) {
+include/linux/tsee/tsee_mm.h:102:	if (tsee_rtks_is_pg_protected((u64)ptep)) {
+include/linux/tsee/tsee_mm.h:122:	if ((unsigned long)pmdp >= (unsigned long)TSEE_RTKS_ROBUF_VA && (unsigned long)pmdp < ((unsigned long)TSEE_RTKS_ROBUF_VA + TSEE_RTKS_ROBUF_SIZE))
+include/linux/tsee/tsee_mm.h:123:		tsee_rtks_ro_free((void*)pmdp);
+include/linux/tsee/tsee_mm.h:133:	if ((unsigned long)pudp >= (unsigned long)TSEE_RTKS_ROBUF_VA && (unsigned long)pudp < ((unsigned long)TSEE_RTKS_ROBUF_VA + TSEE_RTKS_ROBUF_SIZE))
+include/linux/tsee/tsee_mm.h:134:		tsee_rtks_ro_free((void*)pudp);
+include/tee/tsee/defs.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+include/tee/tsee/defs.h:9: * Proprietary and confidential
+include/tee/tsee/barrier.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+include/tee/tsee/barrier.h:9: * Proprietary and confidential
+tsee.vimentry:11:Project=./.vimfiles.tsee/project_tree.exproject
+tsee.vimentry:16:Macro=./.vimfiles.tsee/macro
+Kconfig:1:# TrustKernel Secure Execution Environment Real-Time Kernel Security Configuration	  
+Kconfig:3:	bool "TrustKernel Secure Execution Environment Real-Time Kernel Security"
+Kconfig:9:	bool "TrustKernel Secure Execution Environment Real-Time Kernel Security Using TrustZone"
+Kconfig:15:	bool "TrustKernel Secure Execution Environment Real-Time Kernel Security Using VMM"
+Kconfig:21:	bool "TrustKernel Secure Execution Environment Real-Time Kernel Security Using KEE"
+Kconfig:27:	bool "TrustKernel Secure Execution Environment Real-Time Kernel Security with Kernel Data Protection Feature"
+include/linux/tsee/tsee_entry.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+include/linux/tsee/tsee_entry.h:9: * Proprietary and confidential
+include/linux/tsee/tsee_entry.h:39:#define   TSEE_RTKS_ROBUF_START      0x44700000
+include/linux/tsee/tsee_entry.h:40:#define   TSEE_RTKS_ROBUF_SIZE       0x800000
+include/linux/tsee/tsee_entry.h:41:#define   TSEE_RTKS_RO_PAGES  		 0x800 // (TSEE_RTKS_ROBUF_SIZE/PAGE_SIZE)
+include/linux/tsee/tsee_entry.h:43:#define TSEE_RTKS_ROBUF_VA      (phys_to_virt(TSEE_RTKS_ROBUF_START))
+include/linux/tsee/tsee_entry.h:53:	u64 zero_pg_addr;
+include/linux/tsee/tsee_entry.h:62:	u64 _srodata;
+include/linux/tsee/tsee_entry.h:63:	u64 _erodata;
+include/linux/tsee/tsee_entry.h:75:void *tsee_rtks_ro_alloc(void);
+include/linux/tsee/tsee_entry.h:77:void tsee_rtks_ro_free(void *free_addr);
+include/linux/tsee/tsee_entry.h:79:unsigned int is_tsee_rtks_ro_page(u64 addr);
+include/linux/tsee/kee.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+include/linux/tsee/kee.h:9: * Proprietary and confidential
+mk/lib.mk:25:define process-lib
+mk/lib.mk:37:endef #process-lib
+mk/lib.mk:39:$(eval $(call process-lib))
+mk/lib.mk:43:# Clean residues from processing
+include/tee/tsee/tsee_mm.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+include/tee/tsee/tsee_mm.h:9: * Proprietary and confidential
+include/tee/tsee/tsee_mm.h:16:// TEE virtual address base, differs across TEEs
+include/tee/tsee/tsee_entry.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+include/tee/tsee/tsee_entry.h:9: * Proprietary and confidential
+include/tee/tsee/tsee_entry.h:38:#define TSEE_RTKS_KRODATA_SET		TSEE_RTKS_CMDID(0x30)
+include/tee/tsee/tsee_entry.h:49:#define TSEE_RTKS_MEM_PROTECT		TSEE_RTKS_CMDID(0x40)
+include/tee/tsee/tsee_entry.h:50:#define TSEE_RTKS_MEM_UNPROTECT		TSEE_RTKS_CMDID(0x41)
+include/tee/tsee/tsee_entry.h:52:#define TSEE_RTKS_MEM_PROTECT_NS	TSEE_RTKS_CMDID(0x50)
+include/tee/tsee/tsee_entry.h:53:#define TSEE_RTKS_MEM_UNPROTECT_NS	TSEE_RTKS_CMDID(0x51)
+include/tee/tsee/tsee_entry.h:56:// track protected pages and double mapping pages
+include/tee/tsee/tsee_entry.h:61:	// TEE rodata
+include/tee/tsee/tsee_entry.h:62:	u32	krodata_start;
+include/tee/tsee/tsee_entry.h:63:	u32 krodata_end;
+include/tee/tsee/data.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+include/tee/tsee/data.h:9: * Proprietary and confidential
+tags:3:!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+tags:4:!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+tags:5:!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+tags:6:!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+tags:8:AR	mk/gcc.mk	/^AR		:= $(CROSS_COMPILE)ar$/;"	m
+tags:34:CC	mk/gcc.mk	/^CC		:= $(CROSS_COMPILE)gcc$/;"	m
+tags:95:CPP	mk/gcc.mk	/^CPP		:= $(CROSS_COMPILE)cpp$/;"	m
+tags:96:CROSS_COMPILE	boot/plat-exynos4412/conf.mk	/^CROSS_COMPILE	:= ${CROSS_COMPILE_NEWLIB}$/;"	m
+tags:97:CROSS_COMPILE	mk/config.mk	/^CROSS_COMPILE := arm-linux-gnueabihf-$/;"	m
+tags:99:CXX	mk/gcc.mk	/^CXX		:= $(CROSS_COMPILE)g++$/;"	m
+tags:202:LD	mk/gcc.mk	/^LD		:= $(CROSS_COMPILE)ld$/;"	m
+tags:257:NM	mk/gcc.mk	/^NM		:= $(CROSS_COMPILE)nm$/;"	m
+tags:262:OBJCOPY	mk/gcc.mk	/^OBJCOPY	:= $(CROSS_COMPILE)objcopy$/;"	m
+tags:263:OBJDUMP	mk/gcc.mk	/^OBJDUMP	:= $(CROSS_COMPILE)objdump$/;"	m
+tags:310:PROTOTYPES	lib/libutils/isoc/bget_malloc.c	1;"	d	file:
+tags:345:READELF	mk/gcc.mk	/^READELF	:= $(CROSS_COMPILE)readelf$/;"	m
+tags:349:ROUNDDOWN	lib/libutils/ext/include/util.h	22;"	d
+tags:350:ROUNDUP	lib/libutils/ext/include/util.h	19;"	d
+tags:462:TRACE_ERROR	lib/libutils/ext/include/trace_levels.h	23;"	d
+tags:487:TSEE_RTKS_KRODATA_SET	include/tee/tsee/tsee_entry.h	26;"	d
+tags:491:TSEE_RTKS_MEM_PROTECT	include/tee/tsee/tsee_entry.h	37;"	d
+tags:492:TSEE_RTKS_MEM_PROTECT_NS	include/tee/tsee/tsee_entry.h	40;"	d
+tags:493:TSEE_RTKS_MEM_UNPROTECT	include/tee/tsee/tsee_entry.h	38;"	d
+tags:494:TSEE_RTKS_MEM_UNPROTECT_NS	include/tee/tsee/tsee_entry.h	41;"	d
+tags:515:TSEE_RTKS_ROBUF_SIZE	include/linux/tsee/tsee_entry.h	28;"	d
+tags:516:TSEE_RTKS_ROBUF_START	include/linux/tsee/tsee_entry.h	27;"	d
+tags:517:TSEE_RTKS_ROBUF_VA	include/linux/tsee/tsee_entry.h	31;"	d
+tags:518:TSEE_RTKS_RO_PAGES	include/linux/tsee/tsee_entry.h	29;"	d
+tags:531:TestProg	lib/libutils/isoc/bget.c	416;"	d	file:
+tags:532:TestProg	lib/libutils/isoc/bget_malloc.c	10;"	d	file:
+tags:581:ZEROPAD	lib/libutils/isoc/snprintf.c	146;"	d	file:
+tags:876:__rodata	lib/libutils/ext/include/compiler.h	25;"	d
+tags:877:__rodata_end	boot/tee/boot.ld.S	/^		__rodata_end = .;$/;"	d
+tags:878:__rodata_start	boot/tee/boot.ld.S	/^		__rodata_start = .;$/;"	d
+tags:885:__tsee_data_ro_end	boot/tee/boot.ld.S	/^		__tsee_data_ro_end = .;$/;"	d
+tags:886:__tsee_data_ro_start	boot/tee/boot.ld.S	/^		__tsee_data_ro_start = .;$/;"	d
+tags:887:__tsee_text_ro_end	boot/tee/boot.ld.S	/^		__tsee_text_ro_end = .;$/;"	d
+tags:888:__tsee_text_ro_start	boot/tee/boot.ld.S	/^		__tsee_text_ro_start = .;$/;"	d
+tags:901:_erodata	include/linux/tsee/tsee_entry.h	/^	u64 _erodata;$/;"	m	struct:tsee_rtks_init
+tags:910:_srodata	include/linux/tsee/tsee_entry.h	/^	u64 _srodata;$/;"	m	struct:tsee_rtks_init
+tags:999:comp-cxxflags-incompatible	mk/compile.mk	/^comp-cxxflags-incompatible := -Wmissing-prototypes -Wnested-externs \\$/;"	m
+tags:1096:is_krodata_range	tsee/linux/dispatch.c	/^static int is_krodata_range(uint32_t pa) {$/;"	f	file:
+tags:1097:is_krodata_range	tsee/tee/dispatch.c	/^static int is_krodata_range(uint32_t pa) {$/;"	f	file:
+tags:1114:is_tsee_rtks_ro_page	tsee/linux/tsee_mm.c	/^unsigned int is_tsee_rtks_ro_page(u64 addr)$/;"	f
+tags:1142:krodata_end	include/tee/tsee/tsee_entry.h	/^	u32 krodata_end;$/;"	m	struct:tsee_rtks_init
+tags:1143:krodata_start	include/tee/tsee/tsee_entry.h	/^	u32	krodata_start;$/;"	m	struct:tsee_rtks_init
+tags:1320:process-lib	mk/lib.mk	/^define process-lib$/;"	m
+tags:1321:process-subdir	mk/subdir.mk	/^define process-subdir$/;"	m
+tags:1322:process-subdir-srcs-y	mk/subdir.mk	/^define process-subdir-srcs-y$/;"	m
+tags:1323:process_srcs	mk/compile.mk	/^define process_srcs$/;"	m
+tags:1324:protect	lib/libutils/isoc/bget.c	/^static int protect = 0; 	      \/* Disable compaction during bgetr() *\/$/;"	v	file:
+tags:1398:ro_alloc_last	tsee/linux/tsee_mm.c	/^static unsigned ro_alloc_last = 0;$/;"	v	file:
+tags:1399:ro_pages_stat	tsee/linux/tsee_mm.c	/^static char ro_pages_stat[TSEE_RTKS_RO_PAGES] = {0};$/;"	v	file:
+tags:1400:ro_tsee_rtks_pages_lock	tsee/linux/tsee_mm.c	/^static spinlock_t ro_tsee_rtks_pages_lock = __SPIN_LOCK_UNLOCKED();$/;"	v	file:
+tags:1491:tee_pt	tsee/linux/tsee_sm.c	/^pt_state_t tee_pt  __attribute__((section(".data.tsee_ro"))) = { .ttbcr = 0, .ttbr0 = 0, .ttbr1 = 0, .sctlr = 0};$/;"	v
+tags:1492:tee_pt	tsee/tee/tsee_sm.c	/^pt_state_t tee_pt  __attribute__((section(".data.tsee_ro"))) = { .ttbcr = 0, .ttbr0 = 0, .ttbr1 = 0, .sctlr = 0};$/;"	v
+tags:1526:tsee_is_mempg_protected	tsee/linux/dispatch.c	/^static int tsee_is_mempg_protected(uint32_t pa) {$/;"	f	file:
+tags:1527:tsee_is_mempg_protected	tsee/tee/dispatch.c	/^static int tsee_is_mempg_protected(uint32_t pa) {$/;"	f	file:
+tags:1531:tsee_mempg_protect	tsee/linux/dispatch.c	/^static int tsee_mempg_protect(uint32_t pa) {$/;"	f	file:
+tags:1532:tsee_mempg_protect	tsee/tee/dispatch.c	/^static int tsee_mempg_protect(uint32_t pa) {$/;"	f	file:
+tags:1533:tsee_mempg_unprotect	tsee/linux/dispatch.c	/^static int tsee_mempg_unprotect(uint32_t pa) {$/;"	f	file:
+tags:1534:tsee_mempg_unprotect	tsee/tee/dispatch.c	/^static int tsee_mempg_unprotect(uint32_t pa) {$/;"	f	file:
+tags:1538:tsee_pt	tsee/linux/tsee_sm.c	/^pt_state_t tsee_pt __attribute__((section(".data.tsee_ro"))) = { .ttbcr = 0, .ttbr0 = 0, .ttbr1 = 0, .sctlr = 0};$/;"	v
+tags:1539:tsee_pt	tsee/tee/tsee_sm.c	/^pt_state_t tsee_pt __attribute__((section(".data.tsee_ro"))) = { .ttbcr = 0, .ttbr0 = 0, .ttbr1 = 0, .sctlr = 0};$/;"	v
+tags:1549:tsee_rtks_is_pg_protected	include/linux/tsee/tsee_mm.h	18;"	d
+tags:1550:tsee_rtks_is_protected	include/linux/tsee/tsee_mm.h	/^static inline u8 tsee_rtks_is_protected(u64 va,u64 pa, u64 *base_addr,u64 type)$/;"	f
+tags:1561:tsee_rtks_ro_alloc	tsee/linux/tsee_mm.c	/^void *tsee_rtks_ro_alloc(void)$/;"	f
+tags:1562:tsee_rtks_ro_free	tsee/linux/tsee_mm.c	/^void tsee_rtks_ro_free(void *free_addr)$/;"	f
+tags:1570:tsee_sm_from_ns_entry	tsee/tee/tsee_sm_gate.S	/^tsee_sm_from_ns_entry:$/;"	l
+tags:1571:tsee_sm_from_s_entry	tsee/tee/tsee_sm_gate.S	/^tsee_sm_from_s_entry:$/;"	l
+tags:1572:tsee_sm_proxy	tsee/tee/tsee_sm_gate.S	/^tsee_sm_proxy:$/;"	l
+tags:1632:zero_pg_addr	include/linux/tsee/tsee_entry.h	/^	u64 zero_pg_addr;$/;"	m	struct:tsee_rtks_init
+out/exynos4412/tsee.symb_sizes:24:500030f8 000000b8 t tsee_is_mempg_protected
+out/exynos4412/tsee.symb_sizes:25:50003044 000000b4 t tsee_mempg_unprotect
+out/exynos4412/tsee.symb_sizes:26:50002f94 000000b0 t tsee_mempg_protect
+out/exynos4412/tsee.symb_sizes:48:50002c54 0000005c t is_krodata_range
+out/exynos4412/boot.ld:19:  __tsee_text_ro_start = .;
+out/exynos4412/boot.ld:20:  KEEP(*(.text.tsee_ro))
+out/exynos4412/boot.ld:22:  __tsee_text_ro_end = .;
+out/exynos4412/boot.ld:36: .rel.rodata : { *(.rel.rodata) *(.rel.gnu.linkonce.r*) }
+out/exynos4412/boot.ld:37: .rela.rodata : { *(.rela.rodata) *(.rela.gnu.linkonce.r*) }
+out/exynos4412/boot.ld:62: .rodata : ALIGN(4) {
+out/exynos4412/boot.ld:63:  __rodata_start = .;
+out/exynos4412/boot.ld:65:  *(.rodata .rodata.*)
+out/exynos4412/boot.ld:68:  __rodata_end = .;
+out/exynos4412/boot.ld:74:  __tsee_data_ro_start = .;
+out/exynos4412/boot.ld:75:  KEEP(*(.data.tsee_ro))
+out/exynos4412/boot.ld:77:  __tsee_data_ro_end = .;
+out/exynos4412/boot.ld:109:  PROVIDE (mon_stktop = .);
+out/exynos4412/boot.ld:110:  PROVIDE (tee_rw_stack_start = .);
+out/exynos4412/boot.ld:112:  PROVIDE (mon_stktop_init = .);
+out/exynos4412/boot.ld:113:  PROVIDE (tee_rw_stack_end = .);
+out/exynos4412/boot.ld:115:  PROVIDE (mon_stktop_others = .);
+out/exynos4412/boot.ld:139: PROVIDE (_binary_tee_img_start = .);
+out/exynos4412/boot.ld:143: PROVIDE (_binary_tee_img_end = .);
+README:3:TSEE project of TrustKernel, Shanghai Pingbo Information Technology Co., Ltd.
+README:7:1. put tee.bin under root dir
+lib/libutils/ext/include/types_ext.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/ext/include/types_ext.h:9: * Proprietary and confidential
+out/exynos4412/tsee.map:70:                0x50001000                __tsee_text_ro_start = .
+out/exynos4412/tsee.map:71: *(SORT(.text.tsee_ro))
+out/exynos4412/tsee.map:72: .text.tsee_ro  0x50001000      0x500 out/exynos4412/tsee/tee/tsee_sm_gate.o
+out/exynos4412/tsee.map:83: .text.tsee_ro  0x50001500       0x44 out/exynos4412/tsee/tee/tsee_sm.o
+out/exynos4412/tsee.map:87:                0x50002000                __tsee_text_ro_end = .
+out/exynos4412/tsee.map:149: .text.is_krodata_range
+out/exynos4412/tsee.map:163: .text.tsee_mempg_protect
+out/exynos4412/tsee.map:165: .text.tsee_mempg_unprotect
+out/exynos4412/tsee.map:167: .text.tsee_is_mempg_protected
+out/exynos4412/tsee.map:312:.rel.rodata
+out/exynos4412/tsee.map:313: *(SORT(.rel.rodata))
+out/exynos4412/tsee.map:316:.rela.rodata
+out/exynos4412/tsee.map:317: *(SORT(.rela.rodata))
+out/exynos4412/tsee.map:374:.rodata         0x50009538     0x104c
+out/exynos4412/tsee.map:375:                0x50009538                __rodata_start = .
+out/exynos4412/tsee.map:377: *(SORT(.rodata) SORT(.rodata.*))
+out/exynos4412/tsee.map:378: .rodata.boot/plat-exynos4412/setup.c
+out/exynos4412/tsee.map:380: .rodata.boot/plat-exynos4412/exynos4412_uart.c
+out/exynos4412/tsee.map:382: .rodata.__func__.901
+out/exynos4412/tsee.map:384: .rodata.trace_ext_prefix
+out/exynos4412/tsee.map:387: .rodata.boot/tee/start.c
+out/exynos4412/tsee.map:389: .rodata.__func__.1021
+out/exynos4412/tsee.map:391: .rodata.__func__.1014
+out/exynos4412/tsee.map:393: .rodata.tsee/tee/dispatch.c
+out/exynos4412/tsee.map:395: .rodata.__func__.1087
+out/exynos4412/tsee.map:397: .rodata.__func__.1067
+out/exynos4412/tsee.map:399: .rodata.tsee/tee/tsee_sm.c
+out/exynos4412/tsee.map:401: .rodata.__func__.979
+out/exynos4412/tsee.map:403: .rodata.__func__.972
+out/exynos4412/tsee.map:405: .rodata.__func__.956
+out/exynos4412/tsee.map:407: .rodata.tsee/tee/tsee_fault.c
+out/exynos4412/tsee.map:409: .rodata.__func__.901
+out/exynos4412/tsee.map:411: .rodata.__func__.896
+out/exynos4412/tsee.map:413: .rodata.__func__.889
+out/exynos4412/tsee.map:415: .rodata.v_str  0x5000a498       0x34 out/exynos4412/version.o
+out/exynos4412/tsee.map:417: .rodata.lib/libutils/ext/trace.c
+out/exynos4412/tsee.map:419: .rodata.__func__.969
+out/exynos4412/tsee.map:421: .rodata.lvl_strs.927
+out/exynos4412/tsee.map:423: .rodata.hexdigits
+out/exynos4412/tsee.map:425: .rodata.HEXDIGITS
+out/exynos4412/tsee.map:427: .rodata.lib/libutils/isoc/snprintf.c
+out/exynos4412/tsee.map:430:                0x5000a584                __rodata_end = .
+out/exynos4412/tsee.map:439:                0x5000b000                __tsee_data_ro_start = .
+out/exynos4412/tsee.map:440: *(SORT(.data.tsee_ro))
+out/exynos4412/tsee.map:441: .data.tsee_ro  0x5000b000       0x30 out/exynos4412/tsee/tee/tsee_sm.o
+out/exynos4412/tsee.map:446:                0x5000c000                __tsee_data_ro_end = .
+out/exynos4412/tsee.map:546:                0x5000e000                PROVIDE (mon_stktop, .)
+out/exynos4412/tsee.map:547:                0x5000e000                PROVIDE (tee_rw_stack_start, .)
+out/exynos4412/tsee.map:550:                0x5000f000                PROVIDE (mon_stktop_init, .)
+out/exynos4412/tsee.map:551:                0x5000f000                PROVIDE (tee_rw_stack_end, .)
+out/exynos4412/tsee.map:554:                0x50013000                PROVIDE (mon_stktop_others, .)
+out/exynos4412/tsee.map:575:                0x50100000                PROVIDE (_binary_tee_img_start, .)
+out/exynos4412/tsee.map:580:                0x510ae138                PROVIDE (_binary_tee_img_end, .)
+lib/libutils/ext/include/trace_levels.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/ext/include/trace_levels.h:9: * Proprietary and confidential
+lib/libutils/ext/include/trace_levels.h:20: * an error.
+lib/libutils/ext/include/trace_levels.h:22: * ERROR is used when some kind of error has happened, this is most likely the
+lib/libutils/ext/include/trace_levels.h:23: * print you will use most of the time when you report some kind of error.
+lib/libutils/ext/include/trace_levels.h:35:#define TRACE_ERROR     TRACE_MIN
+lib/libutils/ext/include/trace_levels.h:42:#define TRACE_PRINTF_LEVEL TRACE_ERROR
+lib/libutils/ext/include/trace.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/ext/include/trace.h:9: * Proprietary and confidential
+lib/libutils/ext/include/trace.h:33: * Symbols provided by the entity that uses this API.
+lib/libutils/ext/include/trace.h:42:/* Internal functions used by the macros below */
+lib/libutils/ext/include/trace.h:57:/* Formatted trace tagged with TRACE_ERROR level */
+lib/libutils/ext/include/trace.h:58:#if (TRACE_LEVEL < TRACE_ERROR)
+lib/libutils/ext/include/trace.h:61:#define EMSG(...)   trace_printf_helper(TRACE_ERROR, true, __VA_ARGS__)
+lib/libutils/ext/include/trace.h:90: * an error message if r != 0 */
+lib/libutils/ext/include/trace.h:119:/* No formatted trace tagged with TRACE_ERROR level */
+lib/libutils/ext/include/trace.h:120:#if (TRACE_LEVEL < TRACE_ERROR)
+lib/libutils/ext/include/trace.h:123:#define EMSG_RAW(...)   trace_printf_helper_raw(TRACE_ERROR, true, __VA_ARGS__)
+lib/libutils/ext/include/trace.h:151: * Synchronised flushed trace, an Always message straight to HW trace IP.
+lib/libutils/ext/include/trace.h:156:	trace_printf(__func__, __LINE__, TRACE_ERROR, true, __VA_ARGS__)
+lib/libutils/ext/include/string_ext.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/ext/include/string_ext.h:9: * Proprietary and confidential
+lib/libutils/ext/include/string_ext.h:14: * This file provides extensions for functions not defined in <string.h>
+lib/libutils/ext/include/string_ext.h:35: * traditional libc memcmp which return either less than or greater than zero
+lib/libutils/ext/include/string_ext.h:37: * return 0 if it is a match, otherwise it will return a non-zero value.
+lib/libutils/ext/strlcat.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/ext/strlcat.c:9: * Proprietary and confidential
+lib/libutils/ext/strlcat.c:13:/* This file is copied from newlib-1.19 */
+lib/libutils/ext/strlcat.c:22: * modification, are permitted provided that the following conditions
+lib/libutils/ext/strlcat.c:26: * 2. Redistributions in binary form must reproduce the above copyright
+lib/libutils/ext/strlcat.c:28: *    documentation and/or other materials provided with the distribution.
+lib/libutils/ext/strlcat.c:29: * 3. The name of the author may not be used to endorse or promote products
+lib/libutils/ext/strlcat.c:30: *    derived from this software without specific prior written permission.
+lib/libutils/ext/strlcat.c:32: * THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES,
+lib/libutils/ext/strlcat.c:37: * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+lib/libutils/ext/include/bitstring.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/ext/include/bitstring.h:9: * Proprietary and confidential
+lib/libutils/ext/include/bitstring.h:17: * This code is derived from software contributed to Berkeley by
+lib/libutils/ext/include/bitstring.h:21: * modification, are permitted provided that the following conditions
+lib/libutils/ext/include/bitstring.h:25: * 2. Redistributions in binary form must reproduce the above copyright
+lib/libutils/ext/include/bitstring.h:27: *    documentation and/or other materials provided with the distribution.
+lib/libutils/ext/include/bitstring.h:29: *    may be used to endorse or promote products derived from this software
+lib/libutils/ext/include/bitstring.h:32: * THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
+lib/libutils/ext/include/bitstring.h:37: * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+lib/libutils/ext/include/bitstring.h:38: * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+lib/libutils/ext/include/bitstring.h:52:/* internal macros */
+lib/libutils/ext/include/bitstring.h:61:/* external macros */
+lib/libutils/ext/include/compiler.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/ext/include/compiler.h:9: * Proprietary and confidential
+lib/libutils/ext/include/compiler.h:17: * Macros that should be used instead of using __attributue__ directly to
+lib/libutils/ext/include/compiler.h:37:#define __rodata	__section(".rodata")
+lib/libutils/ext/trace.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/ext/trace.c:9: * Proprietary and confidential
+lib/libutils/ext/trace.c:22:#error "Invalid value of TRACE_LEVEL"
+lib/libutils/ext/trace.c:104: * In case we have a zero or negative trace level when compiling optee_os, we
+lib/libutils/ext/trace.c:106: * non-zero trace level
+lib/libutils/ext/trace.c:145:		/* Format error */
+lib/libutils/ext/trace.c:189:	DMSG("Hex dump error");
+lib/libutils/ext/include/util.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/ext/include/util.h:9: * Proprietary and confidential
+lib/libutils/ext/include/util.h:30:/* Round up the even multiple of size, size has to be a multiple of 2 */
+lib/libutils/ext/include/util.h:31:#define ROUNDUP(v, size) (((v) + ((size) - 1)) & ~((size) - 1))
+lib/libutils/ext/include/util.h:33:/* Round down the even multiple of size, size has to be a multiple of 2 */
+lib/libutils/ext/include/util.h:34:#define ROUNDDOWN(v, size) ((v) & ~((size) - 1))
+lib/libutils/ext/strlcpy.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/ext/strlcpy.c:9: * Proprietary and confidential
+lib/libutils/ext/strlcpy.c:13:/* This file is copied from newlib-1.19 */
+lib/libutils/ext/strlcpy.c:22: * modification, are permitted provided that the following conditions
+lib/libutils/ext/strlcpy.c:26: * 2. Redistributions in binary form must reproduce the above copyright
+lib/libutils/ext/strlcpy.c:28: *    documentation and/or other materials provided with the distribution.
+lib/libutils/ext/strlcpy.c:29: * 3. The name of the author may not be used to endorse or promote products
+lib/libutils/ext/strlcpy.c:30: *    derived from this software without specific prior written permission.
+lib/libutils/ext/strlcpy.c:32: * THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES,
+lib/libutils/ext/strlcpy.c:37: * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+lib/libutils/ext/strlcpy.c:71:	/* Not enough room in dst, add NUL and traverse rest of src */
+lib/libutils/ext/buf_compare_ct.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/ext/buf_compare_ct.c:9: * Proprietary and confidential
+lib/libutils/isoc/bget.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/bget.h:9: * Proprietary and confidential
+lib/libutils/isoc/bget.h:14: * THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+lib/libutils/isoc/bget.h:19: * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+lib/libutils/isoc/bget.h:20: * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+lib/libutils/isoc/bget.h:33:#ifdef PROTOTYPES
+lib/libutils/isoc/bget.h:34:#define  _(x)  x		      /* If compiler knows prototypes */
+lib/libutils/isoc/bget.h:37:#endif /* PROTOTYPES */
+lib/libutils/isoc/qsort.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/qsort.c:9: * Proprietary and confidential
+lib/libutils/isoc/qsort.c:19: * modification, are permitted provided that the following conditions
+lib/libutils/isoc/qsort.c:23: * 2. Redistributions in binary form must reproduce the above copyright
+lib/libutils/isoc/qsort.c:25: *    documentation and/or other materials provided with the distribution.
+lib/libutils/isoc/qsort.c:27: *    may be used to endorse or promote products derived from this software
+lib/libutils/isoc/qsort.c:30: * THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
+lib/libutils/isoc/qsort.c:35: * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+lib/libutils/isoc/qsort.c:36: * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+lib/libutils/isoc/qsort.c:49: * Qsort routine from Bentley & McIlroy's "Engineering a Sort Function".
+lib/libutils/isoc/strndup.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/strndup.c:9: * Proprietary and confidential
+lib/libutils/isoc/abort.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/abort.c:9: * Proprietary and confidential
+lib/libutils/isoc/abort.c:19: * Not used directly from any source file, but required by some compiler
+lib/libutils/isoc/include/malloc.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/include/malloc.h:9: * Proprietary and confidential
+lib/libutils/isoc/include/malloc.h:14: * Copyright (c) 2014, STMicroelectronics International N.V.
+lib/libutils/isoc/include/malloc.h:18: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/include/malloc.h:23: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/include/malloc.h:25: * and/or other materials provided with the distribution.
+lib/libutils/isoc/include/malloc.h:27: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/include/malloc.h:32: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/include/malloc.h:33: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/include/malloc.h:105: * Sets an initial pool of memory to allocate from, must only be called
+lib/libutils/isoc/include/malloc.h:111: * Adds a pool of memory to allocate from. If malloc_init hasn't been
+lib/libutils/isoc/include/stdint.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/include/stdint.h:9: * Proprietary and confidential
+lib/libutils/isoc/include/stdint.h:14: * Copyright (c) 2014, STMicroelectronics International N.V.
+lib/libutils/isoc/include/stdint.h:18: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/include/stdint.h:23: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/include/stdint.h:25: * and/or other materials provided with the distribution.
+lib/libutils/isoc/include/stdint.h:27: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/include/stdint.h:32: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/include/stdint.h:33: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/include/stdint.h:41: * This file provides what C99 standard requires in
+lib/libutils/isoc/include/stdint.h:70:#error Neither __ILP32__ nor __LP64__ is defined
+lib/libutils/isoc/include/wchar.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/include/wchar.h:9: * Proprietary and confidential
+lib/libutils/isoc/include/wchar.h:14: * Copyright (c) 2014, STMicroelectronics International N.V.
+lib/libutils/isoc/include/wchar.h:18: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/include/wchar.h:23: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/include/wchar.h:25: * and/or other materials provided with the distribution.
+lib/libutils/isoc/include/wchar.h:27: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/include/wchar.h:32: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/include/wchar.h:33: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/include/time.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/include/time.h:9: * Proprietary and confidential
+lib/libutils/isoc/include/time.h:14: * Copyright (c) 2014, STMicroelectronics International N.V.
+lib/libutils/isoc/include/time.h:18: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/include/time.h:23: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/include/time.h:25: * and/or other materials provided with the distribution.
+lib/libutils/isoc/include/time.h:27: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/include/time.h:32: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/include/time.h:33: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/include/stdlib.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/include/stdlib.h:9: * Proprietary and confidential
+lib/libutils/isoc/include/stdlib.h:14: * Copyright (c) 2014, STMicroelectronics International N.V.
+lib/libutils/isoc/include/stdlib.h:18: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/include/stdlib.h:23: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/include/stdlib.h:25: * and/or other materials provided with the distribution.
+lib/libutils/isoc/include/stdlib.h:27: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/include/stdlib.h:32: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/include/stdlib.h:33: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/include/stdlib.h:41: * This file provides what C99 standard requires for <stdlib.h> in
+lib/libutils/isoc/include/memory.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/include/memory.h:9: * Proprietary and confidential
+lib/libutils/isoc/include/memory.h:14: * Copyright (c) 2014, STMicroelectronics International N.V.
+lib/libutils/isoc/include/memory.h:18: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/include/memory.h:23: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/include/memory.h:25: * and/or other materials provided with the distribution.
+lib/libutils/isoc/include/memory.h:27: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/include/memory.h:32: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/include/memory.h:33: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/include/stdio.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/include/stdio.h:9: * Proprietary and confidential
+lib/libutils/isoc/include/stdio.h:14: * Copyright (c) 2014, STMicroelectronics International N.V.
+lib/libutils/isoc/include/stdio.h:18: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/include/stdio.h:23: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/include/stdio.h:25: * and/or other materials provided with the distribution.
+lib/libutils/isoc/include/stdio.h:27: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/include/stdio.h:32: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/include/stdio.h:33: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/include/setjmp.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/include/setjmp.h:9: * Proprietary and confidential
+lib/libutils/isoc/bget.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/bget.c:9: * Proprietary and confidential
+lib/libutils/isoc/bget.c:20:    Case Algol OPRO$ algorithm implemented in 1966.
+lib/libutils/isoc/bget.c:35:    Bug in built-in test program fixed, ANSI compiler warnings eradicated,
+lib/libutils/isoc/bget.c:39:    This program is in the public domain.
+lib/libutils/isoc/bget.c:92:	concerning  our  work and toil of our hands, because of the ground
+lib/libutils/isoc/bget.c:108:    INTRODUCTION
+lib/libutils/isoc/bget.c:119:	*   A  built-in  test  program	to  exercise  BGET   and
+lib/libutils/isoc/bget.c:128:	*   Built-in  routines to dump individual buffers or the
+lib/libutils/isoc/bget.c:136:	*   Automatic  pool compaction, growth, and shrinkage by
+lib/libutils/isoc/bget.c:139:    Applications  of  BGET  can  range	from  storage  management   in
+lib/libutils/isoc/bget.c:140:    ROM-based  embedded programs to providing the framework upon which
+lib/libutils/isoc/bget.c:151:    systems: the Macintosh and Microsoft Windows to name two, on which
+lib/libutils/isoc/bget.c:152:    programs have obtained substantial speed-ups by layering  BGET  as
+lib/libutils/isoc/bget.c:156:    of	microprocessors.   It  has served as the core for multitasking
+lib/libutils/isoc/bget.c:158:    data  network switching processors, and a host of C programs.  And
+lib/libutils/isoc/bget.c:161:    integrate into your program.
+lib/libutils/isoc/bget.c:190:    providing a roadmap to guide you  to  the  BGET  functions  you're
+lib/libutils/isoc/bget.c:198:    space distinct from the ROM that contains  the  executable	code).
+lib/libutils/isoc/bget.c:199:    To	use  BGET in such an environment, simply call bpool() with the
+lib/libutils/isoc/bget.c:204:    usually not worth it in other environments).
+lib/libutils/isoc/bget.c:210:    your  development environment (for example, an a native Windows or
+lib/libutils/isoc/bget.c:211:    Macintosh program), or otherwise unsuitable, you  can  replace  it
+lib/libutils/isoc/bget.c:212:    with  BGET.  Initially define a buffer pool of an appropriate size
+lib/libutils/isoc/bget.c:216:    of	buffers initialised to zero and [inefficient] re-allocation of
+lib/libutils/isoc/bget.c:219:    fails, obtain more storage from the underlying  operating  system,
+lib/libutils/isoc/bget.c:233:    to	provide  a  release  function without an acquisition function,
+lib/libutils/isoc/bget.c:241:    and a sequence number to allow the compaction routine to be called
+lib/libutils/isoc/bget.c:244:    was adequate) it should return a  nonzero  value,  whereupon  BGET
+lib/libutils/isoc/bget.c:248:    If	the  compaction  function  returns zero, indicating failure to
+lib/libutils/isoc/bget.c:264:    Equipped  with  appropriate  allocation,  release,	and compaction
+lib/libutils/isoc/bget.c:292:    Allocate a buffer of <size> bytes and clear it to all zeroes.  The
+lib/libutils/isoc/bget.c:313:    Expansion control: specify functions through which the package may
+lib/libutils/isoc/bget.c:314:    compact  storage  (or  take  other	appropriate  action)  when  an
+lib/libutils/isoc/bget.c:327:    the  <compact>  function  returns  a nonzero value, the allocation
+lib/libutils/isoc/bget.c:337:    control.  This does not, however, relieve the  <compact>  function
+lib/libutils/isoc/bget.c:341:    in	the  process  of  being reallocated with bgetr() would lead to
+lib/libutils/isoc/bget.c:344:    and cannot generally be easily retrofitted into existing code.
+lib/libutils/isoc/bget.c:349:    area,  allocation will proceed using the expanded buffer pool.  If
+lib/libutils/isoc/bget.c:351:    and   the	entire	allocation  process  will  fail.   <pool_incr>
+lib/libutils/isoc/bget.c:352:    specifies the normal expansion block size.	Providing an <acquire>
+lib/libutils/isoc/bget.c:385:    through blocks directly allocated by the acquisition  and  release
+lib/libutils/isoc/bget.c:396:    <dumpalloc> is nonzero, the  contents  of  allocated  buffers  are
+lib/libutils/isoc/bget.c:397:    dumped;  if <dumpfree> is nonzero, the contents of free blocks are
+lib/libutils/isoc/bget.c:404:    compiled with NDEBUG not defined, any error generates an assertion
+lib/libutils/isoc/bget.c:406:    error is found.
+lib/libutils/isoc/bget.c:414: * THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+lib/libutils/isoc/bget.c:419: * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+lib/libutils/isoc/bget.c:420: * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+lib/libutils/isoc/bget.c:428:#define TestProg    20000	      /* Generate built-in test program
+lib/libutils/isoc/bget.c:431:					 the test program should make. */
+lib/libutils/isoc/bget.c:471:					 pool space control.  */
+lib/libutils/isoc/bget.c:607:    if (size < SizeQ) { 	      /* Need at least room for the */
+lib/libutils/isoc/bget.c:620:    /* If a compact function was provided in the call to bectl(), wrap
+lib/libutils/isoc/bget.c:621:       a loop around the allocation process  to  allow	compaction  to
+lib/libutils/isoc/bget.c:654:		   entire  buffer  should  be  removed	from the free list and
+lib/libutils/isoc/bget.c:656:		   buffer if enough room remains for a header plus the minimum
+lib/libutils/isoc/bget.c:667:				/* Subtract size from length of free block. */
+lib/libutils/isoc/bget.c:681:				 * allocate memory from head if alloc size
+lib/libutils/isoc/bget.c:722:		       shebang to the caller and remove it from the free list. */
+lib/libutils/isoc/bget.c:736:		    /* Zero the back pointer in the next buffer in memory
+lib/libutils/isoc/bget.c:774:		    of its header to zero.  */
+lib/libutils/isoc/bget.c:809:/*  BGETZ  --  Allocate a buffer and clear its contents to zero.  We clear
+lib/libutils/isoc/bget.c:810:	       the  entire  contents  of  the buffer to zero, not just the
+lib/libutils/isoc/bget.c:840:	       enhanced to allow the buffer to grow into adjacent free
+lib/libutils/isoc/bget.c:861:	/*  Buffer acquired directly through acqfcn. */
+lib/libutils/isoc/bget.c:918:    /*	Back pointer in next buffer must be zero, indicating the
+lib/libutils/isoc/bget.c:928:    /* If the back link is nonzero, the previous buffer is free.  */
+lib/libutils/isoc/bget.c:958:    /* Now we look at the next buffer in memory, located by advancing from
+lib/libutils/isoc/bget.c:961:       memory, dechaining the second buffer from the free list. */
+lib/libutils/isoc/bget.c:966:	/* The buffer is free.	Remove it from the free list and add
+lib/libutils/isoc/bget.c:979:	   must be an allocated block because the process of recombination
+lib/libutils/isoc/bget.c:1009:	/*  Unlink the buffer from the free list  */
+lib/libutils/isoc/bget.c:1025:/*  BECTL  --  Establish automatic pool expansion control  */
+lib/libutils/isoc/bget.c:1091:       routines (this specific value is  not  counted  on  by  the  actual
+lib/libutils/isoc/bget.c:1212:		If DUMPALLOC is nonzero, the contents of allocated buffers
+lib/libutils/isoc/bget.c:1213:		are  dumped.   If  DUMPFREE  is  nonzero,  free blocks are
+lib/libutils/isoc/bget.c:1264:		any error generates an assertion failure.  */
+lib/libutils/isoc/bget.c:1311:	* Built-in test program *
+lib/libutils/isoc/bget.c:1315:#ifdef TestProg
+lib/libutils/isoc/bget.c:1397:static int protect = 0; 	      /* Disable compaction during bgetr() */
+lib/libutils/isoc/bget.c:1414:    if (protect || (seq > CompactTries)) {
+lib/libutils/isoc/bget.c:1520:       always use the same seed.  Otherwise, we seed from the clock to
+lib/libutils/isoc/bget.c:1521:       shake things up from run to run. */
+lib/libutils/isoc/bget.c:1530:	p ranges from 0 to ExpIncr-1, with a concentration in the lower
+lib/libutils/isoc/bget.c:1552:    for (i = 0; i < TestProg; i++) {
+lib/libutils/isoc/bget.c:1627:		    protect = 1;      /* Protect against compaction */
+lib/libutils/isoc/bget.c:1631:		    protect = 0;
+lib/libutils/isoc/include/machine/ansi.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/include/machine/ansi.h:9: * Proprietary and confidential
+lib/libutils/isoc/include/assert.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/include/assert.h:9: * Proprietary and confidential
+lib/libutils/isoc/include/assert.h:14: * Copyright (c) 2014, STMicroelectronics International N.V.
+lib/libutils/isoc/include/assert.h:18: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/include/assert.h:23: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/include/assert.h:25: * and/or other materials provided with the distribution.
+lib/libutils/isoc/include/assert.h:27: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/include/assert.h:32: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/include/assert.h:33: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/include/unistd.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/include/unistd.h:9: * Proprietary and confidential
+lib/libutils/isoc/include/unistd.h:14: * Copyright (c) 2014, STMicroelectronics International N.V.
+lib/libutils/isoc/include/unistd.h:18: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/include/unistd.h:23: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/include/unistd.h:25: * and/or other materials provided with the distribution.
+lib/libutils/isoc/include/unistd.h:27: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/include/unistd.h:32: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/include/unistd.h:33: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/include/signal.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/include/signal.h:9: * Proprietary and confidential
+lib/libutils/isoc/include/signal.h:14: * Copyright (c) 2014, STMicroelectronics International N.V.
+lib/libutils/isoc/include/signal.h:18: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/include/signal.h:23: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/include/signal.h:25: * and/or other materials provided with the distribution.
+lib/libutils/isoc/include/signal.h:27: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/include/signal.h:32: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/include/signal.h:33: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/include/sys/list.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/include/sys/list.h:9: * Proprietary and confidential
+lib/libutils/isoc/include/sys/cdefs.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/include/sys/cdefs.h:9: * Proprietary and confidential
+lib/libutils/isoc/include/sys/cdefs.h:14: * Copyright (c) 2014, STMicroelectronics International N.V.
+lib/libutils/isoc/include/sys/cdefs.h:18: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/include/sys/cdefs.h:23: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/include/sys/cdefs.h:25: * and/or other materials provided with the distribution.
+lib/libutils/isoc/include/sys/cdefs.h:27: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/include/sys/cdefs.h:32: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/include/sys/cdefs.h:33: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/include/sys/cdefs.h:43: * GCC 2.95 provides `__restrict' as an extension to C90 to support the
+lib/libutils/isoc/include/sys/types.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/include/sys/types.h:9: * Proprietary and confidential
+lib/libutils/isoc/include/sys/types.h:14: * Copyright (c) 2014, STMicroelectronics International N.V.
+lib/libutils/isoc/include/sys/types.h:18: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/include/sys/types.h:23: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/include/sys/types.h:25: * and/or other materials provided with the distribution.
+lib/libutils/isoc/include/sys/types.h:27: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/include/sys/types.h:32: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/include/sys/types.h:33: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/include/machine/setjmp.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/include/machine/setjmp.h:9: * Proprietary and confidential
+lib/libutils/isoc/include/machine/setjmp.h:166:#ifdef __MICROBLAZE__
+lib/libutils/isoc/include/machine/setjmp.h:218:#define _JBLEN (68/2)  /* room for 68 32-bit regs */
+lib/libutils/isoc/include/machine/setjmp.h:318:/* POSIX sigsetjmp/siglongjmp macros */
+lib/libutils/isoc/include/machine/setjmp.h:335:#define __SIGMASK_FUNC sigprocmask
+out/exynos4412/tsee.dmp:8:Program Header:
+out/exynos4412/tsee.dmp:25:  2 .rodata       0000104c  50009538  50009538  00011538  2**2
+out/exynos4412/tsee.dmp:60:50009538 l    d  .rodata	00000000 .rodata
+out/exynos4412/tsee.dmp:87:500014b8 l       .text	00000000 tsee_sm_proxy
+out/exynos4412/tsee.dmp:88:50001050 l       .text	00000000 tsee_sm_from_ns_entry
+out/exynos4412/tsee.dmp:89:50001298 l       .text	00000000 tsee_sm_from_s_entry
+out/exynos4412/tsee.dmp:95:50009d8c l       .rodata	00000000 .LC0
+out/exynos4412/tsee.dmp:96:50009dbc l       .rodata	00000000 .LC1
+out/exynos4412/tsee.dmp:97:50009dfc l       .rodata	00000000 .LC2
+out/exynos4412/tsee.dmp:98:50009f64 l     O .rodata	00000011 __func__.956
+out/exynos4412/tsee.dmp:99:50009e1c l       .rodata	00000000 .LC3
+out/exynos4412/tsee.dmp:100:50009e34 l       .rodata	00000000 .LC4
+out/exynos4412/tsee.dmp:101:50009e4c l       .rodata	00000000 .LC5
+out/exynos4412/tsee.dmp:102:50009e60 l       .rodata	00000000 .LC6
+out/exynos4412/tsee.dmp:103:50009e78 l       .rodata	00000000 .LC7
+out/exynos4412/tsee.dmp:104:50009e8c l       .rodata	00000000 .LC8
+out/exynos4412/tsee.dmp:105:50009ea4 l       .rodata	00000000 .LC9
+out/exynos4412/tsee.dmp:106:50009ecc l       .rodata	00000000 .LC10
+out/exynos4412/tsee.dmp:107:50009f54 l     O .rodata	0000000d __func__.972
+out/exynos4412/tsee.dmp:108:50009ef0 l       .rodata	00000000 .LC11
+out/exynos4412/tsee.dmp:109:50009f20 l       .rodata	00000000 .LC12
+out/exynos4412/tsee.dmp:110:50009f44 l     O .rodata	0000000f __func__.979
+out/exynos4412/tsee.dmp:112:50009538 l       .rodata	00000000 .LC0
+out/exynos4412/tsee.dmp:114:50009548 l       .rodata	00000000 .LC0
+out/exynos4412/tsee.dmp:115:50009558 l     O .rodata	00000009 __func__.901
+out/exynos4412/tsee.dmp:118:50009578 l       .rodata	00000000 .LC0
+out/exynos4412/tsee.dmp:119:50009594 l       .rodata	00000000 .LC1
+out/exynos4412/tsee.dmp:120:50009610 l     O .rodata	00000010 __func__.1014
+out/exynos4412/tsee.dmp:121:500095b0 l       .rodata	00000000 .LC2
+out/exynos4412/tsee.dmp:122:500095d8 l       .rodata	00000000 .LC3
+out/exynos4412/tsee.dmp:123:500095f0 l       .rodata	00000000 .LC4
+out/exynos4412/tsee.dmp:124:50009608 l     O .rodata	00000006 __func__.1021
+out/exynos4412/tsee.dmp:133:50002c54 l     F .text	0000005c is_krodata_range
+out/exynos4412/tsee.dmp:140:50002f94 l     F .text	000000b0 tsee_mempg_protect
+out/exynos4412/tsee.dmp:141:50003044 l     F .text	000000b4 tsee_mempg_unprotect
+out/exynos4412/tsee.dmp:142:500030f8 l     F .text	000000b8 tsee_is_mempg_protected
+out/exynos4412/tsee.dmp:143:50009620 l       .rodata	00000000 .LC0
+out/exynos4412/tsee.dmp:144:5000964c l       .rodata	00000000 .LC1
+out/exynos4412/tsee.dmp:145:50009678 l       .rodata	00000000 .LC2
+out/exynos4412/tsee.dmp:146:50009690 l       .rodata	00000000 .LC3
+out/exynos4412/tsee.dmp:147:500096c8 l       .rodata	00000000 .LC4
+out/exynos4412/tsee.dmp:148:500096f8 l       .rodata	00000000 .LC5
+out/exynos4412/tsee.dmp:149:50009710 l       .rodata	00000000 .LC6
+out/exynos4412/tsee.dmp:150:50009748 l       .rodata	00000000 .LC7
+out/exynos4412/tsee.dmp:151:50009d7c l     O .rodata	0000000d __func__.1067
+out/exynos4412/tsee.dmp:152:5000978c l       .rodata	00000000 .LC8
+out/exynos4412/tsee.dmp:153:500097d4 l       .rodata	00000000 .LC9
+out/exynos4412/tsee.dmp:154:500097f0 l       .rodata	00000000 .LC10
+out/exynos4412/tsee.dmp:155:50009808 l       .rodata	00000000 .LC11
+out/exynos4412/tsee.dmp:156:5000981c l       .rodata	00000000 .LC12
+out/exynos4412/tsee.dmp:157:50009840 l       .rodata	00000000 .LC13
+out/exynos4412/tsee.dmp:158:50009864 l       .rodata	00000000 .LC14
+out/exynos4412/tsee.dmp:159:50009894 l       .rodata	00000000 .LC15
+out/exynos4412/tsee.dmp:160:500098b4 l       .rodata	00000000 .LC16
+out/exynos4412/tsee.dmp:161:500098d8 l       .rodata	00000000 .LC17
+out/exynos4412/tsee.dmp:162:50009900 l       .rodata	00000000 .LC18
+out/exynos4412/tsee.dmp:163:50009928 l       .rodata	00000000 .LC19
+out/exynos4412/tsee.dmp:164:5000995c l       .rodata	00000000 .LC20
+out/exynos4412/tsee.dmp:165:50009980 l       .rodata	00000000 .LC21
+out/exynos4412/tsee.dmp:166:500099a4 l       .rodata	00000000 .LC22
+out/exynos4412/tsee.dmp:167:500099b8 l       .rodata	00000000 .LC23
+out/exynos4412/tsee.dmp:168:500099d0 l       .rodata	00000000 .LC24
+out/exynos4412/tsee.dmp:169:500099f4 l       .rodata	00000000 .LC25
+out/exynos4412/tsee.dmp:170:50009a0c l       .rodata	00000000 .LC26
+out/exynos4412/tsee.dmp:171:50009a20 l       .rodata	00000000 .LC27
+out/exynos4412/tsee.dmp:172:50009a40 l       .rodata	00000000 .LC28
+out/exynos4412/tsee.dmp:173:50009a58 l       .rodata	00000000 .LC29
+out/exynos4412/tsee.dmp:174:50009a6c l       .rodata	00000000 .LC30
+out/exynos4412/tsee.dmp:175:50009a8c l       .rodata	00000000 .LC31
+out/exynos4412/tsee.dmp:176:50009aa4 l       .rodata	00000000 .LC32
+out/exynos4412/tsee.dmp:177:50009ac8 l       .rodata	00000000 .LC33
+out/exynos4412/tsee.dmp:178:50009ae0 l       .rodata	00000000 .LC34
+out/exynos4412/tsee.dmp:179:50009b04 l       .rodata	00000000 .LC35
+out/exynos4412/tsee.dmp:180:50009b20 l       .rodata	00000000 .LC36
+out/exynos4412/tsee.dmp:181:50009b4c l       .rodata	00000000 .LC37
+out/exynos4412/tsee.dmp:182:50009b60 l       .rodata	00000000 .LC38
+out/exynos4412/tsee.dmp:183:50009b80 l       .rodata	00000000 .LC39
+out/exynos4412/tsee.dmp:184:50009b94 l       .rodata	00000000 .LC40
+out/exynos4412/tsee.dmp:185:50009ba8 l       .rodata	00000000 .LC41
+out/exynos4412/tsee.dmp:186:50009bc0 l       .rodata	00000000 .LC42
+out/exynos4412/tsee.dmp:187:50009be4 l       .rodata	00000000 .LC43
+out/exynos4412/tsee.dmp:188:50009bf8 l       .rodata	00000000 .LC44
+out/exynos4412/tsee.dmp:189:50009c10 l       .rodata	00000000 .LC45
+out/exynos4412/tsee.dmp:190:50009c2c l       .rodata	00000000 .LC46
+out/exynos4412/tsee.dmp:191:50009c44 l       .rodata	00000000 .LC47
+out/exynos4412/tsee.dmp:192:50009c5c l       .rodata	00000000 .LC48
+out/exynos4412/tsee.dmp:193:50009c74 l       .rodata	00000000 .LC49
+out/exynos4412/tsee.dmp:194:50009c9c l       .rodata	00000000 .LC50
+out/exynos4412/tsee.dmp:195:50009cc8 l       .rodata	00000000 .LC51
+out/exynos4412/tsee.dmp:196:50009d00 l       .rodata	00000000 .LC52
+out/exynos4412/tsee.dmp:197:50009d3c l       .rodata	00000000 .LC53
+out/exynos4412/tsee.dmp:198:50009d70 l     O .rodata	0000000a __func__.1087
+out/exynos4412/tsee.dmp:202:5000a2d8 l       .rodata	00000000 .LC30
+out/exynos4412/tsee.dmp:203:5000a31c l       .rodata	00000000 .LC31
+out/exynos4412/tsee.dmp:204:5000a488 l     O .rodata	0000000f __func__.889
+out/exynos4412/tsee.dmp:205:5000a328 l       .rodata	00000000 .LC32
+out/exynos4412/tsee.dmp:206:5000a478 l     O .rodata	0000000f __func__.896
+out/exynos4412/tsee.dmp:207:5000a354 l       .rodata	00000000 .LC33
+out/exynos4412/tsee.dmp:208:5000a364 l       .rodata	00000000 .LC34
+out/exynos4412/tsee.dmp:209:5000a374 l       .rodata	00000000 .LC35
+out/exynos4412/tsee.dmp:210:5000a384 l       .rodata	00000000 .LC36
+out/exynos4412/tsee.dmp:211:5000a394 l       .rodata	00000000 .LC37
+out/exynos4412/tsee.dmp:212:5000a3a4 l       .rodata	00000000 .LC38
+out/exynos4412/tsee.dmp:213:5000a3b4 l       .rodata	00000000 .LC39
+out/exynos4412/tsee.dmp:214:5000a3c4 l       .rodata	00000000 .LC40
+out/exynos4412/tsee.dmp:215:5000a3d4 l       .rodata	00000000 .LC41
+out/exynos4412/tsee.dmp:216:5000a3e4 l       .rodata	00000000 .LC42
+out/exynos4412/tsee.dmp:217:5000a3f4 l       .rodata	00000000 .LC43
+out/exynos4412/tsee.dmp:218:5000a404 l       .rodata	00000000 .LC44
+out/exynos4412/tsee.dmp:219:5000a414 l       .rodata	00000000 .LC45
+out/exynos4412/tsee.dmp:220:5000a424 l       .rodata	00000000 .LC46
+out/exynos4412/tsee.dmp:221:5000a434 l       .rodata	00000000 .LC47
+out/exynos4412/tsee.dmp:222:5000a444 l       .rodata	00000000 .LC48
+out/exynos4412/tsee.dmp:223:5000a454 l       .rodata	00000000 .LC49
+out/exynos4412/tsee.dmp:224:5000a468 l     O .rodata	0000000f __func__.901
+out/exynos4412/tsee.dmp:227:5000a4cc l       .rodata	00000000 .LC0
+out/exynos4412/tsee.dmp:229:5000a524 l     O .rodata	00000014 lvl_strs.927
+out/exynos4412/tsee.dmp:230:5000a4d0 l       .rodata	00000000 .LC1
+out/exynos4412/tsee.dmp:231:5000a4e8 l       .rodata	00000000 .LC2
+out/exynos4412/tsee.dmp:233:5000a4f8 l       .rodata	00000000 .LC3
+out/exynos4412/tsee.dmp:234:5000a500 l       .rodata	00000000 .LC4
+out/exynos4412/tsee.dmp:235:5000a504 l       .rodata	00000000 .LC5
+out/exynos4412/tsee.dmp:236:5000a508 l       .rodata	00000000 .LC6
+out/exynos4412/tsee.dmp:237:5000a518 l     O .rodata	0000000a __func__.969
+out/exynos4412/tsee.dmp:239:5000a538 l     O .rodata	00000011 hexdigits
+out/exynos4412/tsee.dmp:240:5000a54c l     O .rodata	00000011 HEXDIGITS
+out/exynos4412/tsee.dmp:242:5000a560 l       .rodata	00000000 .LC0
+out/exynos4412/tsee.dmp:243:5000a568 l       .rodata	00000000 .LC1
+out/exynos4412/tsee.dmp:261:5000a498 g     O .rodata	00000031 v_str
+out/exynos4412/tsee.dmp:267:5000c000 g       .data	00000000 __tsee_data_ro_end
+out/exynos4412/tsee.dmp:270:50001000 g       .text	00000000 __tsee_text_ro_start
+out/exynos4412/tsee.dmp:276:5000a584 g       .rodata	00000000 __rodata_end
+out/exynos4412/tsee.dmp:286:50009564 g     O .rodata	00000011 trace_ext_prefix
+out/exynos4412/tsee.dmp:309:50009538 g       .rodata	00000000 __rodata_start
+out/exynos4412/tsee.dmp:338:50002000 g       .text	00000000 __tsee_text_ro_end
+out/exynos4412/tsee.dmp:344:5000b000 g       .data	00000000 __tsee_data_ro_start
+out/exynos4412/tsee.dmp:671:50001000 <__tsee_text_ro_start>:
+out/exynos4412/tsee.dmp:704:5000103c:	1a00011d 	bne	500014b8 <tsee_sm_proxy>
+out/exynos4412/tsee.dmp:710:50001048:	1a000000 	bne	50001050 <tsee_sm_from_ns_entry>
+out/exynos4412/tsee.dmp:712:5000104c:	0a000091 	beq	50001298 <tsee_sm_from_s_entry>
+out/exynos4412/tsee.dmp:714:50001050 <tsee_sm_from_ns_entry>:
+out/exynos4412/tsee.dmp:715:tsee_sm_from_ns_entry():
+out/exynos4412/tsee.dmp:759:500010e4:	1afffffe 	bne	500010e4 <tsee_sm_from_ns_entry+0x94>
+out/exynos4412/tsee.dmp:763:500010f4:	1afffffe 	bne	500010f4 <tsee_sm_from_ns_entry+0xa4>
+out/exynos4412/tsee.dmp:767:50001104:	1afffffe 	bne	50001104 <tsee_sm_from_ns_entry+0xb4>
+out/exynos4412/tsee.dmp:771:50001114:	1afffffe 	bne	50001114 <tsee_sm_from_ns_entry+0xc4>
+out/exynos4412/tsee.dmp:776:50001128:	1afffffe 	bne	50001128 <tsee_sm_from_ns_entry+0xd8>
+out/exynos4412/tsee.dmp:821:500011d0:	1afffffe 	bne	500011d0 <tsee_sm_from_ns_entry+0x180>
+out/exynos4412/tsee.dmp:828:500011ec:	1afffffe 	bne	500011ec <tsee_sm_from_ns_entry+0x19c>
+out/exynos4412/tsee.dmp:835:50001208:	1afffffe 	bne	50001208 <tsee_sm_from_ns_entry+0x1b8>
+out/exynos4412/tsee.dmp:842:50001224:	1afffffe 	bne	50001224 <tsee_sm_from_ns_entry+0x1d4>
+out/exynos4412/tsee.dmp:847:50001238:	1afffffe 	bne	50001238 <tsee_sm_from_ns_entry+0x1e8>
+out/exynos4412/tsee.dmp:854:50001254:	1afffffe 	bne	50001254 <tsee_sm_from_ns_entry+0x204>
+out/exynos4412/tsee.dmp:879:50001298 <tsee_sm_from_s_entry>:
+out/exynos4412/tsee.dmp:880:tsee_sm_from_s_entry():
+out/exynos4412/tsee.dmp:914:50001318:	1afffffe 	bne	50001318 <tsee_sm_from_s_entry+0x80>
+out/exynos4412/tsee.dmp:918:50001328:	1afffffe 	bne	50001328 <tsee_sm_from_s_entry+0x90>
+out/exynos4412/tsee.dmp:922:50001338:	1afffffe 	bne	50001338 <tsee_sm_from_s_entry+0xa0>
+out/exynos4412/tsee.dmp:926:50001348:	1afffffe 	bne	50001348 <tsee_sm_from_s_entry+0xb0>
+out/exynos4412/tsee.dmp:931:5000135c:	1afffffe 	bne	5000135c <tsee_sm_from_s_entry+0xc4>
+out/exynos4412/tsee.dmp:976:50001404:	1afffffe 	bne	50001404 <tsee_sm_from_s_entry+0x16c>
+out/exynos4412/tsee.dmp:983:50001420:	1afffffe 	bne	50001420 <tsee_sm_from_s_entry+0x188>
+out/exynos4412/tsee.dmp:990:5000143c:	1afffffe 	bne	5000143c <tsee_sm_from_s_entry+0x1a4>
+out/exynos4412/tsee.dmp:997:50001458:	1afffffe 	bne	50001458 <tsee_sm_from_s_entry+0x1c0>
+out/exynos4412/tsee.dmp:1002:5000146c:	1afffffe 	bne	5000146c <tsee_sm_from_s_entry+0x1d4>
+out/exynos4412/tsee.dmp:1009:50001488:	1afffffe 	bne	50001488 <tsee_sm_from_s_entry+0x1f0>
+out/exynos4412/tsee.dmp:1024:500014b8 <tsee_sm_proxy>:
+out/exynos4412/tsee.dmp:1025:tsee_sm_proxy():
+out/exynos4412/tsee.dmp:1107:50002000 <__tsee_text_ro_end>:
+out/exynos4412/tsee.dmp:1108:__tsee_text_ro_end():
+out/exynos4412/tsee.dmp:1110:50002000:	eafffffe 	b	50002000 <__tsee_text_ro_end>
+out/exynos4412/tsee.dmp:1112:50002004:	eafffffe 	b	50002004 <__tsee_text_ro_end+0x4>
+out/exynos4412/tsee.dmp:1114:50002008:	eafffffe 	b	50002008 <__tsee_text_ro_end+0x8>
+out/exynos4412/tsee.dmp:1120:50002014:	eafffffe 	b	50002014 <__tsee_text_ro_end+0x14>
+out/exynos4412/tsee.dmp:1122:50002018:	eafffffe 	b	50002018 <__tsee_text_ro_end+0x18>
+out/exynos4412/tsee.dmp:1124:5000201c:	eafffffe 	b	5000201c <__tsee_text_ro_end+0x1c>
+out/exynos4412/tsee.dmp:2165:50002c54 <is_krodata_range>:
+out/exynos4412/tsee.dmp:2166:is_krodata_range():
+out/exynos4412/tsee.dmp:2178:50002c78:	8a000007 	bhi	50002c9c <is_krodata_range+0x48>
+out/exynos4412/tsee.dmp:2184:50002c90:	9a000001 	bls	50002c9c <is_krodata_range+0x48>
+out/exynos4412/tsee.dmp:2187:50002c98:	ea000000 	b	50002ca0 <is_krodata_range+0x4c>
+out/exynos4412/tsee.dmp:2445:50002f94 <tsee_mempg_protect>:
+out/exynos4412/tsee.dmp:2446:tsee_mempg_protect():
+out/exynos4412/tsee.dmp:2465:50002fcc:	1a000001 	bne	50002fd8 <tsee_mempg_protect+0x44>
+out/exynos4412/tsee.dmp:2468:50002fd4:	ea000017 	b	50003038 <tsee_mempg_protect+0xa4>
+out/exynos4412/tsee.dmp:2504:50003044 <tsee_mempg_unprotect>:
+out/exynos4412/tsee.dmp:2505:tsee_mempg_unprotect():
+out/exynos4412/tsee.dmp:2524:5000307c:	1a000001 	bne	50003088 <tsee_mempg_unprotect+0x44>
+out/exynos4412/tsee.dmp:2527:50003084:	ea000018 	b	500030ec <tsee_mempg_unprotect+0xa8>
+out/exynos4412/tsee.dmp:2564:500030f8 <tsee_is_mempg_protected>:
+out/exynos4412/tsee.dmp:2565:tsee_is_mempg_protected():
+out/exynos4412/tsee.dmp:2584:50003130:	1a000001 	bne	5000313c <tsee_is_mempg_protected+0x44>
+out/exynos4412/tsee.dmp:2587:50003138:	ea000019 	b	500031a4 <tsee_is_mempg_protected+0xac>
+lib/libutils/isoc/newlib/memset.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/newlib/memset.c:9: * Proprietary and confidential
+lib/libutils/isoc/newlib/memset.c:18: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/newlib/memset.c:23: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/newlib/memset.c:25: * and/or other materials provided with the distribution.
+lib/libutils/isoc/newlib/memset.c:28: * contributors may be used to endorse or promote products derived from this
+lib/libutils/isoc/newlib/memset.c:31: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/newlib/memset.c:36: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/newlib/memset.c:37: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/newlib/memset.c:73:    <<memset>> requires no supporting OS subroutines.
+lib/libutils/isoc/newlib/memset.c:118:		/* Unroll the loop.  */
+lib/libutils/isoc/newlib/strstr.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/newlib/strstr.c:9: * Proprietary and confidential
+lib/libutils/isoc/newlib/memcmp.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/newlib/memcmp.c:9: * Proprietary and confidential
+lib/libutils/isoc/newlib/memcmp.c:18: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/newlib/memcmp.c:23: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/newlib/memcmp.c:25: * and/or other materials provided with the distribution.
+lib/libutils/isoc/newlib/memcmp.c:28: * contributors may be used to endorse or promote products derived from this
+lib/libutils/isoc/newlib/memcmp.c:31: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/newlib/memcmp.c:36: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/newlib/memcmp.c:37: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/newlib/memcmp.c:68:	less than zero 	according to whether the object pointed to by
+lib/libutils/isoc/newlib/memcmp.c:75:<<memcmp>> requires no supporting OS subroutines.
+lib/libutils/isoc/newlib/memcmp.c:84:/* Nonzero if either X or Y is not aligned on a "long" boundary.  */
+lib/libutils/isoc/newlib/memcpy.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/newlib/memcpy.c:9: * Proprietary and confidential
+lib/libutils/isoc/newlib/memcpy.c:18: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/newlib/memcpy.c:23: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/newlib/memcpy.c:25: * and/or other materials provided with the distribution.
+lib/libutils/isoc/newlib/memcpy.c:28: * contributors may be used to endorse or promote products derived from this
+lib/libutils/isoc/newlib/memcpy.c:31: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/newlib/memcpy.c:36: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/newlib/memcpy.c:37: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/newlib/memcpy.c:60:	This function copies <[n]> bytes from the memory region
+lib/libutils/isoc/newlib/memcpy.c:73:<<memcpy>> requires no supporting OS subroutines.
+lib/libutils/isoc/newlib/memcpy.c:82:/* Nonzero if either X or Y is not aligned on a "long" boundary.  */
+lib/libutils/isoc/newlib/memcpy.c:86:/* How many bytes are copied each iteration of the 4X unrolled loop.  */
+lib/libutils/isoc/newlib/strncmp.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/newlib/strncmp.c:9: * Proprietary and confidential
+lib/libutils/isoc/newlib/strncmp.c:18: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/newlib/strncmp.c:23: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/newlib/strncmp.c:25: * and/or other materials provided with the distribution.
+lib/libutils/isoc/newlib/strncmp.c:28: * contributors may be used to endorse or promote products derived from this
+lib/libutils/isoc/newlib/strncmp.c:31: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/newlib/strncmp.c:36: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/newlib/strncmp.c:37: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/newlib/strncmp.c:64:	from the string at <[a]> to the string at <[b]>.
+lib/libutils/isoc/newlib/strncmp.c:68:	<<strncmp>> returns a number greater than zero.  If the two
+lib/libutils/isoc/newlib/strncmp.c:69:	strings are equivalent, <<strncmp>> returns zero.  If <<*<[a]>>>
+lib/libutils/isoc/newlib/strncmp.c:71:	number less than zero.
+lib/libutils/isoc/newlib/strncmp.c:76:<<strncmp>> requires no supporting OS subroutines.
+lib/libutils/isoc/newlib/strncmp.c:86:/* Nonzero if either X or Y is not aligned on a "long" boundary.  */
+lib/libutils/isoc/newlib/strncmp.c:90:/* DETECTNULL returns nonzero if (long)X contains a NULL byte. */
+lib/libutils/isoc/newlib/strncmp.c:97:#error long int is not a 32bit or 64bit type.
+lib/libutils/isoc/newlib/strncmp.c:102:#error long int is not a 32bit or 64bit byte
+lib/libutils/isoc/newlib/strncmp.c:141:          /* If we've run out of bytes or hit a null, return zero
+lib/libutils/isoc/newlib/strncmp.c:157:      /* If we've run out of bytes or hit a null, return zero
+lib/libutils/isoc/newlib/strcpy.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/newlib/strcpy.c:9: * Proprietary and confidential
+lib/libutils/isoc/newlib/strlen.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/newlib/strlen.c:9: * Proprietary and confidential
+lib/libutils/isoc/newlib/strlen.c:18: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/newlib/strlen.c:23: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/newlib/strlen.c:25: * and/or other materials provided with the distribution.
+lib/libutils/isoc/newlib/strlen.c:28: * contributors may be used to endorse or promote products derived from this
+lib/libutils/isoc/newlib/strlen.c:31: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/newlib/strlen.c:36: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/newlib/strlen.c:37: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/newlib/strlen.c:44:/* This file is copied from newlib-1.19 */
+lib/libutils/isoc/newlib/strlen.c:73:<<strlen>> requires no supporting OS subroutines.
+lib/libutils/isoc/newlib/strlen.c:90:/* Nonzero if X (a long int) contains a NULL byte. */
+lib/libutils/isoc/newlib/strlen.c:93:#error long int is not a 32bit or 64bit type.
+lib/libutils/isoc/newlib/strlen.c:98:#error long int is not a 32bit or 64bit byte
+lib/libutils/isoc/include/sys/queue.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/include/sys/queue.h:9: * Proprietary and confidential
+lib/libutils/isoc/include/sys/queue.h:20: * modification, are permitted provided that the following conditions
+lib/libutils/isoc/include/sys/queue.h:24: * 2. Redistributions in binary form must reproduce the above copyright
+lib/libutils/isoc/include/sys/queue.h:26: *    documentation and/or other materials provided with the distribution.
+lib/libutils/isoc/include/sys/queue.h:28: *    may be used to endorse or promote products derived from this software
+lib/libutils/isoc/include/sys/queue.h:31: * THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
+lib/libutils/isoc/include/sys/queue.h:36: * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+lib/libutils/isoc/include/sys/queue.h:37: * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+lib/libutils/isoc/include/sys/queue.h:59: * head of the list.  Elements being removed from the head of the list
+lib/libutils/isoc/include/sys/queue.h:60: * should use the explicit macro for this purpose for optimum
+lib/libutils/isoc/include/sys/queue.h:74: * linked to save space, so elements can only be removed from the
+lib/libutils/isoc/include/sys/queue.h:94: * For details on the use of these macros, see the queue(3) manual page.
+lib/libutils/isoc/newlib/strchr.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/newlib/strchr.c:9: * Proprietary and confidential
+lib/libutils/isoc/include/limits.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/include/limits.h:9: * Proprietary and confidential
+lib/libutils/isoc/include/limits.h:14: * Copyright (c) 2014, STMicroelectronics International N.V.
+lib/libutils/isoc/include/limits.h:18: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/include/limits.h:23: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/include/limits.h:25: * and/or other materials provided with the distribution.
+lib/libutils/isoc/include/limits.h:27: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/include/limits.h:32: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/include/limits.h:33: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/include/string.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/include/string.h:9: * Proprietary and confidential
+lib/libutils/isoc/include/string.h:14: * Copyright (c) 2014, STMicroelectronics International N.V.
+lib/libutils/isoc/include/string.h:18: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/include/string.h:23: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/include/string.h:25: * and/or other materials provided with the distribution.
+lib/libutils/isoc/include/string.h:27: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/include/string.h:32: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/include/string.h:33: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/include/string.h:41: * This file provides what C99 standard requires for <string.h>
+lib/libutils/isoc/newlib/strcat.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/newlib/strcat.c:9: * Proprietary and confidential
+lib/libutils/isoc/include/_ansi.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/include/_ansi.h:9: * Proprietary and confidential
+lib/libutils/isoc/include/_ansi.h:18: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/include/_ansi.h:23: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/include/_ansi.h:25: * and/or other materials provided with the distribution.
+lib/libutils/isoc/include/_ansi.h:28: * contributors may be used to endorse or promote products derived from this
+lib/libutils/isoc/include/_ansi.h:31: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/include/_ansi.h:36: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/include/_ansi.h:37: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/include/_ansi.h:44:/* Provide support for both ANSI and non-ANSI environments.  */
+lib/libutils/isoc/include/_ansi.h:46:/* Some ANSI environments are "broken" in the sense that __STDC__ cannot be
+lib/libutils/isoc/include/_ansi.h:51:   To get a strict ANSI C environment, define macro __STRICT_ANSI__.  This will
+lib/libutils/isoc/include/_ansi.h:62: * First try to figure out whether we really are in an ANSI C environment.
+lib/libutils/isoc/include/_ansi.h:63: * This probably needs some work.  Perhaps sys/config.h can be
+lib/libutils/isoc/include/_ansi.h:81:#define _EXFUN(name, proto)   __cdecl name proto
+lib/libutils/isoc/include/_ansi.h:82:#define _EXPARM(name, proto)    (* __cdecl name) proto
+lib/libutils/isoc/include/_ansi.h:84:#define _EXFUN(name, proto)   name proto
+lib/libutils/isoc/include/_ansi.h:85:#define _EXPARM(name, proto)    (* name) proto
+lib/libutils/isoc/include/_ansi.h:105:#define _EXFUN(name, proto)   name()
+lib/libutils/isoc/newlib/strcmp.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/newlib/strcmp.c:9: * Proprietary and confidential
+lib/libutils/isoc/newlib/strcmp.c:18: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/newlib/strcmp.c:23: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/newlib/strcmp.c:25: * and/or other materials provided with the distribution.
+lib/libutils/isoc/newlib/strcmp.c:28: * contributors may be used to endorse or promote products derived from this
+lib/libutils/isoc/newlib/strcmp.c:31: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/newlib/strcmp.c:36: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/newlib/strcmp.c:37: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/newlib/strcmp.c:44:/* This file is copied from newlib-1.19 */
+lib/libutils/isoc/newlib/strcmp.c:69:	<<strcmp>> returns a number greater than zero.  If the two
+lib/libutils/isoc/newlib/strcmp.c:70:	strings match, <<strcmp>> returns zero.  If <<*<[a]>>>
+lib/libutils/isoc/newlib/strcmp.c:72:	number less than zero.
+lib/libutils/isoc/newlib/strcmp.c:77:<<strcmp>> requires no supporting OS subroutines.
+lib/libutils/isoc/newlib/strcmp.c:87:/* Nonzero if either X or Y is not aligned on a "long" boundary.  */
+lib/libutils/isoc/newlib/strcmp.c:91:/* DETECTNULL returns nonzero if (long)X contains a NULL byte. */
+lib/libutils/isoc/newlib/strcmp.c:98:#error long int is not a 32bit or 64bit type.
+lib/libutils/isoc/newlib/strcmp.c:103:#error long int is not a 32bit or 64bit byte
+lib/libutils/isoc/newlib/strcmp.c:129:			 * *a1, then the strings must be equal, so return zero.
+lib/libutils/isoc/newlib/strrchr.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/newlib/strrchr.c:9: * Proprietary and confidential
+lib/libutils/isoc/include/ctype.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/include/ctype.h:9: * Proprietary and confidential
+lib/libutils/isoc/include/ctype.h:14: * Copyright (c) 2014, STMicroelectronics International N.V.
+lib/libutils/isoc/include/ctype.h:18: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/include/ctype.h:23: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/include/ctype.h:25: * and/or other materials provided with the distribution.
+lib/libutils/isoc/include/ctype.h:27: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/include/ctype.h:32: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/include/ctype.h:33: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/newlib/memmove.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/newlib/memmove.c:9: * Proprietary and confidential
+lib/libutils/isoc/newlib/memmove.c:18: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/newlib/memmove.c:23: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/newlib/memmove.c:25: * and/or other materials provided with the distribution.
+lib/libutils/isoc/newlib/memmove.c:28: * contributors may be used to endorse or promote products derived from this
+lib/libutils/isoc/newlib/memmove.c:31: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/newlib/memmove.c:36: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/newlib/memmove.c:37: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/newlib/memmove.c:63:	This function moves <[length]> characters from the block of
+lib/libutils/isoc/newlib/memmove.c:65:	<<*<[dst]>>>. <<memmove>> reproduces the characters correctly
+lib/libutils/isoc/newlib/memmove.c:74:<<memmove>> requires no supporting OS subroutines.
+lib/libutils/isoc/newlib/memmove.c:85:/* Nonzero if either X or Y is not aligned on a "long" boundary.  */
+lib/libutils/isoc/newlib/memmove.c:89:/* How many bytes are copied each iteration of the 4X unrolled loop.  */
+lib/libutils/isoc/newlib/strnlen.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/newlib/strnlen.c:9: * Proprietary and confidential
+lib/libutils/isoc/newlib/strnlen.c:18: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/newlib/strnlen.c:23: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/newlib/strnlen.c:25: * and/or other materials provided with the distribution.
+lib/libutils/isoc/newlib/strnlen.c:28: * contributors may be used to endorse or promote products derived from this
+lib/libutils/isoc/newlib/strnlen.c:31: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/newlib/strnlen.c:36: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/newlib/strnlen.c:37: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/newlib/strnlen.c:73:<<strnlen>> requires no supporting OS subroutines.
+lib/libutils/isoc/arch/arm/arm32_aeabi_divmod.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/arch/arm/arm32_aeabi_divmod.c:9: * Proprietary and confidential
+lib/libutils/isoc/arch/arm/arm32_aeabi_divmod.c:14: * Copyright (c) 2014, STMicroelectronics International N.V.
+lib/libutils/isoc/arch/arm/arm32_aeabi_divmod.c:18: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/arch/arm/arm32_aeabi_divmod.c:23: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/arch/arm/arm32_aeabi_divmod.c:25: * and/or other materials provided with the distribution.
+lib/libutils/isoc/arch/arm/arm32_aeabi_divmod.c:27: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/arch/arm/arm32_aeabi_divmod.c:32: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/arch/arm/arm32_aeabi_divmod.c:33: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/arch/arm/arm32_aeabi_divmod.c:91:#error "Compiler not supported"
+lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod_a32.S:2: * Copyright (c) 2015, Linaro Limited
+lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod_a32.S:6: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod_a32.S:11: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod_a32.S:13: * and/or other materials provided with the distribution.
+lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod_a32.S:15: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod_a32.S:20: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod_a32.S:21: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod_a32.S:28:	.macro FUNC name colon
+lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod_a32.S:34:	.macro END_FUNC name
+lib/libutils/isoc/arch/arm/arm32_aeabi_divmod_a32.S:2: * Copyright (c) 2014, STMicroelectronics International N.V.
+lib/libutils/isoc/arch/arm/arm32_aeabi_divmod_a32.S:6: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/arch/arm/arm32_aeabi_divmod_a32.S:11: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/arch/arm/arm32_aeabi_divmod_a32.S:13: * and/or other materials provided with the distribution.
+lib/libutils/isoc/arch/arm/arm32_aeabi_divmod_a32.S:15: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/arch/arm/arm32_aeabi_divmod_a32.S:20: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/arch/arm/arm32_aeabi_divmod_a32.S:21: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/include/inttypes.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/include/inttypes.h:9: * Proprietary and confidential
+lib/libutils/isoc/include/inttypes.h:14: * Copyright (c) 2014, STMicroelectronics International N.V.
+lib/libutils/isoc/include/inttypes.h:18: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/include/inttypes.h:23: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/include/inttypes.h:25: * and/or other materials provided with the distribution.
+lib/libutils/isoc/include/inttypes.h:27: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/include/inttypes.h:32: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/include/inttypes.h:33: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/newlib/_ansi.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/newlib/_ansi.h:9: * Proprietary and confidential
+lib/libutils/isoc/newlib/_ansi.h:18: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/newlib/_ansi.h:23: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/newlib/_ansi.h:25: * and/or other materials provided with the distribution.
+lib/libutils/isoc/newlib/_ansi.h:28: * contributors may be used to endorse or promote products derived from this
+lib/libutils/isoc/newlib/_ansi.h:31: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/newlib/_ansi.h:36: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/newlib/_ansi.h:37: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/newlib/_ansi.h:44:/* Provide support for both ANSI and non-ANSI environments.  */
+lib/libutils/isoc/newlib/_ansi.h:46:/* Some ANSI environments are "broken" in the sense that __STDC__ cannot be
+lib/libutils/isoc/newlib/_ansi.h:51:   To get a strict ANSI C environment, define macro __STRICT_ANSI__.  This will
+lib/libutils/isoc/newlib/_ansi.h:62: * First try to figure out whether we really are in an ANSI C environment.
+lib/libutils/isoc/newlib/_ansi.h:63: * This probably needs some work.  Perhaps sys/config.h can be
+lib/libutils/isoc/newlib/_ansi.h:81:#define _EXFUN(name, proto)   __cdecl name proto
+lib/libutils/isoc/newlib/_ansi.h:82:#define _EXPARM(name, proto)    (* __cdecl name) proto
+lib/libutils/isoc/newlib/_ansi.h:84:#define _EXFUN(name, proto)   name proto
+lib/libutils/isoc/newlib/_ansi.h:85:#define _EXPARM(name, proto)    (* name) proto
+lib/libutils/isoc/newlib/_ansi.h:105:#define _EXFUN(name, proto)   name()
+lib/libutils/isoc/stack_check.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/stack_check.c:9: * Proprietary and confidential
+lib/libutils/isoc/strdup.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/strdup.c:9: * Proprietary and confidential
+__exPJ_SelectWindow__:1:file filter = s,ld,S,c,C,c++,cc,cp,cpp,cxx,h,H,h++,hh,hp,hpp,hxx,inl,ipp,cs,js,as,java,hlsl,vsh,psh,fx,fxh,cg,shd,glsl,py,pyw,pyx,pxd,lua,wlua,vim,uc,m,wiki,ini,cfg,mak,mk,Makefile,makefile,sh,SH,bsh,bash,ksh,zsh,bat,log,err,exe,qrc,pro,pri,i,swg,
+__exPJ_SelectWindow__:171: |-[s]quick_gen_project_tsee_autogen.sh }
+lib/libutils/isoc/bget.doc:15:    *   A  built-in  test  program  to  exercise  BGET   and
+lib/libutils/isoc/bget.doc:24:    *   Built-in  routines to dump individual buffers or the
+lib/libutils/isoc/bget.doc:32:    *   Automatic  pool compaction, growth, and shrinkage by
+lib/libutils/isoc/bget.doc:35:Applications  of  BGET  can  range  from storage management in ROM-based
+lib/libutils/isoc/bget.doc:36:embedded programs to providing the framework upon which  a  multitasking
+lib/libutils/isoc/bget.doc:46:schemes of many operating systems: the Macintosh and  Microsoft  Windows
+lib/libutils/isoc/bget.doc:47:to  name  two,  on which programs have obtained substantial speed-ups by
+lib/libutils/isoc/bget.doc:52:microprocessors.  It has served as the core for  multitasking  operating
+lib/libutils/isoc/bget.doc:54:switching processors, and a host  of  C  programs.   And  while  it  has
+lib/libutils/isoc/bget.doc:57:program.
+lib/libutils/isoc/bget.doc:84:references which are made in the interest  of  providing  a  roadmap  to
+lib/libutils/isoc/bget.doc:91:buffer  allocation  (often in a separate RAM address space distinct from
+lib/libutils/isoc/bget.doc:92:the ROM that contains the executable code).  To  use  BGET  in  such  an
+lib/libutils/isoc/bget.doc:93:environment,  simply  call  bpool() with the start address and length of
+lib/libutils/isoc/bget.doc:97:allocation (which is usually not worth it in other environments).
+lib/libutils/isoc/bget.doc:103:development environment (for example, an a native Windows  or  Macintosh
+lib/libutils/isoc/bget.doc:104:program),  or  otherwise  unsuitable,  you  can  replace  it  with BGET.
+lib/libutils/isoc/bget.doc:105:Initially  define  a  buffer  pool   of   an   appropriate   size   with
+lib/libutils/isoc/bget.doc:109:to  zero  and  [inefficient]  re-allocation  of  existing  buffers   for
+lib/libutils/isoc/bget.doc:111:brel().  If a buffer allocation request fails, obtain more storage  from
+lib/libutils/isoc/bget.doc:124:doesn't make much  sense  to  provide  a  release  function  without  an
+lib/libutils/isoc/bget.doc:132:to allow the  compaction  routine  to  be  called  successively  without
+lib/libutils/isoc/bget.doc:135:a  nonzero  value, whereupon BGET will retry the allocation request and,
+lib/libutils/isoc/bget.doc:139:If  the  compaction  function  returns  zero, indicating failure to free
+lib/libutils/isoc/bget.doc:154:Equipped with appropriate allocation, release, and compaction functions,
+lib/libutils/isoc/bget.doc:182:Allocate  a  buffer  of  <size>  bytes  and clear it to all zeroes.  The
+lib/libutils/isoc/bget.doc:203:Expansion  control:  specify  functions  through  which  the package may
+lib/libutils/isoc/bget.doc:204:compact storage (or take other appropriate action)  when  an  allocation
+lib/libutils/isoc/bget.doc:216:the <compact> function returns a nonzero value, the  allocation  attempt
+lib/libutils/isoc/bget.doc:225:in  control.   This does not, however, relieve the <compact> function of
+lib/libutils/isoc/bget.doc:228:example, a <compact> function that released a buffer in the  process  of
+lib/libutils/isoc/bget.doc:232:retrofitted into existing code.
+lib/libutils/isoc/bget.doc:237:allocation  will  proceed  using the expanded buffer pool.  If <acquire>
+lib/libutils/isoc/bget.doc:239:allocation   process   will  fail.   <pool_incr>  specifies  the  normal
+lib/libutils/isoc/bget.doc:240:expansion block  size.   Providing  an  <acquire>  function  will  cause
+lib/libutils/isoc/bget.doc:271:managed through blocks directly allocated by the acquisition and release
+lib/libutils/isoc/bget.doc:282:<dumpalloc> is nonzero, the contents of allocated buffers are dumped; if
+lib/libutils/isoc/bget.doc:283:<dumpfree> is nonzero, the contents of free blocks are dumped.
+lib/libutils/isoc/bget.doc:289:NDEBUG not defined, any error generates an assertion failure.  Otherwise 1
+lib/libutils/isoc/bget.doc:290:is returned if the pool is valid, 0 if an error is found.
+lib/libutils/isoc/bget.doc:295:#define TestProg    20000  /* Generate built-in test program
+lib/libutils/isoc/bget.doc:298:                              the test program should make. */
+lib/libutils/isoc/bget.doc:338:                              pool space control.  */
+lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod.c:9: * Proprietary and confidential
+lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod.c:14: * Copyright (c) 2015, STMicroelectronics International N.V.
+lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod.c:18: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod.c:23: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod.c:25: * and/or other materials provided with the distribution.
+lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod.c:27: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod.c:32: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod.c:33: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod.c:97:/* called from assembly function __aeabi_uldivmod */
+lib/libutils/isoc/arch/arm/arm32_aeabi_ldivmod.c:116:/* called from assembly function __aeabi_ldivmod */
+tsee/linux/tsee_sm.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+tsee/linux/tsee_sm.c:9: * Proprietary and confidential
+tsee/linux/tsee_sm.c:63:			EMSG("Error:Not page type for addr: 0x%x, val:0x%x\n", addr, *pde);
+tsee/linux/tsee_sm.c:70:				EMSG("Error: unsupported pte type, addr: 0x%x-*pte: 0x%x-*pde:0x%x\n", addr, *pte, *pde);
+tsee/linux/tsee_sm.c:85:			EMSG("Error: unsupported pde type\n");
+tsee/linux/tsee_sm.c:91:extern uint32_t __tsee_text_ro_start;
+tsee/linux/tsee_sm.c:92:extern uint32_t __tsee_text_ro_end;
+tsee/linux/tsee_sm.c:93:extern uint32_t __tsee_data_ro_start;
+tsee/linux/tsee_sm.c:94:extern uint32_t __tsee_data_ro_end;
+tsee/linux/tsee_sm.c:107:	// RODATA and DATA is set to non-executable
+tsee/linux/tsee_sm.c:108:	DMSG("enforcing rodata ro nx");
+tsee/linux/tsee_sm.c:109:	mem_enforce_perm(tsee_init.krodata_start, tsee_init.krodata_end, 0x0, 0x1, 0x1, 0x0);
+tsee/linux/tsee_sm.c:110:	mem_enforce_perm(tee_phys_to_virt(tsee_init.krodata_start), tee_phys_to_virt(tsee_init.krodata_end), 0x0, 0x1, 0x1, 0x0);
+tsee/linux/tsee_sm.c:119:	DMSG("enforcing ktext ro");
+tsee/linux/tsee_sm.c:124:	DMSG("enforcing l2pgtbl ro");
+tsee/linux/tsee_sm.c:127:	DMSG("enforcing kpt ro");
+tsee/linux/tsee_sm.c:132:	DMSG("enforcing pgtbl ro nx");
+tsee/linux/tsee_sm.c:137:	// BUG: currently if we enable this protection, NS-TSEE call will fail due to cache/TLB bug in TSEE 
+tsee/linux/tsee_sm.c:138:	DMSG("enforcing tsee ro and non-accessible");
+tsee/linux/tsee_sm.c:140:	//mem_enforce_perm((uint32_t)&__tsee_text_ro_start, (uint32_t)&__tsee_text_ro_end, 0x1, 0x1, 0x0, 0x0);
+tsee/linux/tsee_sm.c:141:	//mem_enforce_perm((uint32_t)&__tsee_data_ro_start, (uint32_t)&__tsee_data_ro_end, 0x1, 0x1, 0x1, 0x0);
+tsee/linux/tsee_sm.c:154:		EMSG("Error: TEE has de-init, deny write to mvbar\n");
+tsee/linux/tsee_sm.c:177:pt_state_t tsee_pt __attribute__((section(".data.tsee_ro"))) = { .ttbcr = 0, .ttbr0 = 0, .ttbr1 = 0, .sctlr = 0};
+tsee/linux/tsee_sm.c:178:pt_state_t tee_pt  __attribute__((section(".data.tsee_ro"))) = { .ttbcr = 0, .ttbr0 = 0, .ttbr1 = 0, .sctlr = 0};
+tsee/linux/tsee_sm.c:180:// map TSEE into TEE, called when entering TSEE from TEE
+tsee/linux/tsee_sm.c:201:// remove TSEE mapping from TEE, called when returning TEE from TSEE
+tsee/linux/tsee_fault.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+tsee/linux/tsee_fault.c:9: * Proprietary and confidential
+tsee/linux/tsee_fault.c:28:	"Synchronous External Abort",               /*  8 = 0b01000, */
+tsee/linux/tsee_fault.c:45:	"Memory Access Synchronous Parity Error",   /* 19 = 0b11001, */
+tsee/linux/tsee_fault.c:46:	"IMPLEMENTATION DEFINED Coprocessor Abort", /* 1a = 0b11010, */
+tsee/linux/tsee_fault.c:67:	"Synchronous External Abort",
+tsee/linux/tsee_fault.c:81:	"Asynchronous external abort",              /* 16 = 0b10110, */
+tsee/linux/tsee_fault.c:83:	"Memory Access Synchronous Parity Error",   /* 18 = 0b11000, */
+tsee/linux/tsee_fault.c:84:	"Memory Access Synchronous Parity Error-2", /* 19 = 0b11001, */
+tsee/linux/tsee_fault.c:85:	"IMPLEMENTATION DEFINED Coprocessor Abort", /* 1a = 0b11010, */
+tsee/linux/tsee_fault.c:115:// trap routine
+tsee/linux/tsee_fault.c:139:// trap routine
+tsee/linux/tsee_rtks_call.S:10:ENDPROC(tsee_rtks_call)
+tsee/linux/tsee_rtks_call.S:16:ENDPROC(tsee_rtks_call)
+lib/libutils/isoc/newlib/setjmp.S:5:/* ANSI concatenation macros.  */
+lib/libutils/isoc/newlib/setjmp.S:10:#error  __USER_LABEL_PREFIX__ not defined
+lib/libutils/isoc/newlib/setjmp.S:26:   to return control to their parent.  Since we need this code to work
+lib/libutils/isoc/newlib/setjmp.S:27:   in both interworked and non-interworked environments as well as with
+lib/libutils/isoc/newlib/setjmp.S:28:   older processors which do not have the BX instruction we do the 
+lib/libutils/isoc/newlib/setjmp.S:36:   an older processor, because that kind of processor will never be 
+lib/libutils/isoc/newlib/setjmp.S:41:   require us to tell the assembler that the processor is an ARM7TDMI and
+lib/libutils/isoc/newlib/setjmp.S:43:   able to be linked with binaries compiled for older processors however, so
+lib/libutils/isoc/newlib/setjmp.S:47:   test the bottom bit, because this is part of the processor status.  
+lib/libutils/isoc/newlib/setjmp.S:52:   just switch into ARM mode and then drop through into the rest of the
+lib/libutils/isoc/newlib/setjmp.S:78:	/* Return zero.  */
+lib/libutils/isoc/newlib/setjmp.S:98:	/* Return the result argument, or 1 if it is zero.  */
+lib/libutils/isoc/newlib/setjmp.S:118:.macro COND where when 
+lib/libutils/isoc/newlib/setjmp.S:122:.macro COND where when 
+lib/libutils/isoc/newlib/setjmp.S:128:.macro MODE
+lib/libutils/isoc/newlib/setjmp.S:132:.macro PROLOGUE name
+lib/libutils/isoc/newlib/setjmp.S:137:.macro PROLOGUE name
+lib/libutils/isoc/newlib/setjmp.S:146:.macro PROLOGUE name
+lib/libutils/isoc/newlib/setjmp.S:150:.macro FUNC_START name
+lib/libutils/isoc/newlib/setjmp.S:157:	PROLOGUE \name
+lib/libutils/isoc/newlib/setjmp.S:160:.macro FUNC_END name
+lib/libutils/isoc/newlib/setjmp.S:213:	   But if it is zero then return 1 instead.  */	
+lib/libutils/isoc/bget_malloc.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/bget_malloc.c:9: * Proprietary and confidential
+lib/libutils/isoc/bget_malloc.c:13:#define PROTOTYPES
+lib/libutils/isoc/bget_malloc.c:22:#define TestProg    20000	/* Generate built-in test program
+lib/libutils/isoc/bget_malloc.c:25:				   the test program should make. */
+lib/libutils/isoc/bget_malloc.c:68:				   pool space control.  */
+lib/libutils/isoc/bget_malloc.c:228:/* Convenience macro for looping over all allocated buffers */
+lib/libutils/isoc/bget_malloc.c:314:	/* Next block shouldn't already have free block in front */
+lib/libutils/isoc/bget_malloc.c:341:	/* There has to be room for the freebuf header */
+lib/libutils/isoc/bget_malloc.c:437:		/* Assing blink and flink from old free buffer */
+lib/libutils/isoc/bget_malloc.c:490:		 * what's in front.
+lib/libutils/isoc/bget_malloc.c:505:		/* Free the front part of the buffer */
+lib/libutils/isoc/bget_malloc.c:523:/* Most of the stuff in this function is copied from bgetr() in bget.c */
+lib/libutils/isoc/bget_malloc.c:533:		/*  Buffer acquired directly through acqfcn. */
+lib/libutils/isoc/bget_malloc.c:563:	size_t ftr_pad = ROUNDUP(pl_size, sizeof(uint32_t)) - pl_size;
+lib/libutils/isoc/bget_malloc.c:769:	start = ROUNDUP(start, SizeQuant);
+lib/libutils/isoc/bget_malloc.c:770:	end = ROUNDDOWN(end, SizeQuant);
+tsee/linux/kee.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+tsee/linux/kee.c:9: * Proprietary and confidential
+tsee/linux/kee.c:104:	if(smp_processor_id() != 0) { return 0; }
+tsee/linux/_kee.S:15:	#msr		ttbr1_el1, xzr	   // load the value zero to TTBR1
+lib/libutils/isoc/snprintf.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/snprintf.c:9: * Proprietary and confidential
+lib/libutils/isoc/snprintf.c:14: * Imported from NetBSD 5.1 with modifications to make it a vsnprintf(3)
+lib/libutils/isoc/snprintf.c:24: * All or some portions of this file are derived from material licensed
+lib/libutils/isoc/snprintf.c:26: * Co. or Unix System Laboratories, Inc. and are reproduced herein with
+lib/libutils/isoc/snprintf.c:30: * modification, are permitted provided that the following conditions
+lib/libutils/isoc/snprintf.c:34: * 2. Redistributions in binary form must reproduce the above copyright
+lib/libutils/isoc/snprintf.c:36: *    documentation and/or other materials provided with the distribution.
+lib/libutils/isoc/snprintf.c:38: *    may be used to endorse or promote products derived from this software
+lib/libutils/isoc/snprintf.c:41: * THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
+lib/libutils/isoc/snprintf.c:46: * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+lib/libutils/isoc/snprintf.c:47: * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+lib/libutils/isoc/snprintf.c:64:#define TOTTY        0x0002	/* to the process' tty */
+lib/libutils/isoc/snprintf.c:74: * The following macro is used to remove const cast-away warnings
+lib/libutils/isoc/snprintf.c:75: * from gcc -Wcast-qual; it should be used with caution because it
+lib/libutils/isoc/snprintf.c:76: * can hide valid errors; in particular most valid uses are in
+lib/libutils/isoc/snprintf.c:133: * this version based on vfprintf() from libc which was derived from
+lib/libutils/isoc/snprintf.c:139: * macros for converting digits to letters and vice versa
+lib/libutils/isoc/snprintf.c:158:#define	ZEROPAD		0x400		/* zero (as opposed to blank) pad */
+lib/libutils/isoc/snprintf.c:162:	 * To extend shorts properly, we need both signed and unsigned
+lib/libutils/isoc/snprintf.c:198:	int ch;			/* character from fmt */
+lib/libutils/isoc/snprintf.c:203:	int width;		/* width from format (%8d), or 0 */
+lib/libutils/isoc/snprintf.c:204:	int prec;		/* precision from format (%.3d), or -1 */
+lib/libutils/isoc/snprintf.c:267:			 * They don't exclude field widths read from args.
+lib/libutils/isoc/snprintf.c:272:			/* FALLTHROUGH */
+lib/libutils/isoc/snprintf.c:298:			flags |= ZEROPAD;
+lib/libutils/isoc/snprintf.c:339:			/*FALLTHROUGH*/
+lib/libutils/isoc/snprintf.c:367:			/*FALLTHROUGH*/
+lib/libutils/isoc/snprintf.c:411:			/*FALLTHROUGH*/
+lib/libutils/isoc/snprintf.c:423:			/* leading 0x/X only if non-zero */
+lib/libutils/isoc/snprintf.c:435:				flags &= ~ZEROPAD;
+lib/libutils/isoc/snprintf.c:438:			 * ``The result of converting a zero value with an
+lib/libutils/isoc/snprintf.c:439:			 * explicit precision of zero is no characters.''
+lib/libutils/isoc/snprintf.c:500:		 * padded out to `width' places.  If flags&ZEROPAD, it should
+lib/libutils/isoc/snprintf.c:503:		 * After any left-hand padding and prefixing, emit zeroes
+lib/libutils/isoc/snprintf.c:505:		 * string proper, then emit zeroes required by any leftover
+lib/libutils/isoc/snprintf.c:521:		if ((flags & (LADJUST|ZEROPAD)) == 0) {
+lib/libutils/isoc/snprintf.c:535:		/* right-adjusting zero padding */
+lib/libutils/isoc/snprintf.c:536:		if ((flags & (LADJUST|ZEROPAD)) == ZEROPAD) {
+lib/libutils/isoc/snprintf.c:542:		/* leading zeroes from decimal precision */
+lib/libutils/isoc/snprintf.c:547:		/* the string or number proper */
+tsee/linux/ld.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+tsee/linux/ld.h:9: * Proprietary and confidential
+lib/libutils/isoc/newlib/memchr.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+lib/libutils/isoc/newlib/memchr.c:9: * Proprietary and confidential
+lib/libutils/isoc/newlib/memchr.c:18: * modification, are permitted provided that the following conditions are met:
+lib/libutils/isoc/newlib/memchr.c:23: * 2. Redistributions in binary form must reproduce the above copyright notice,
+lib/libutils/isoc/newlib/memchr.c:25: * and/or other materials provided with the distribution.
+lib/libutils/isoc/newlib/memchr.c:28: * contributors may be used to endorse or promote products derived from this
+lib/libutils/isoc/newlib/memchr.c:31: * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+lib/libutils/isoc/newlib/memchr.c:36: * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+lib/libutils/isoc/newlib/memchr.c:37: * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+lib/libutils/isoc/newlib/memchr.c:76:<<memchr>> requires no supporting OS subroutines.
+lib/libutils/isoc/newlib/memchr.c:86:/* Nonzero if either X or Y is not aligned on a "long" boundary.  */
+lib/libutils/isoc/newlib/memchr.c:99:/* Nonzero if X (a long int) contains a NULL byte. */
+lib/libutils/isoc/newlib/memchr.c:102:#error long int is not a 32bit or 64bit type.
+lib/libutils/isoc/newlib/memchr.c:107:#error long int is not a 32bit or 64bit byte
+lib/libutils/isoc/newlib/memchr.c:110:/* DETECTCHAR returns nonzero if (long)X contains the byte used
+tsee/linux/tsee_sm.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+tsee/linux/tsee_sm.h:9: * Proprietary and confidential
+tsee/linux/tsee_sm.h:33:int is_tsee_call(uint32_t prefix) __attribute__((section(".text.tsee_ro")));
+tsee/linux/tsee_sm.h:34:void map_tsee(void) __attribute__((section(".text.tsee_ro")));;
+tsee/linux/ld.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+tsee/linux/ld.c:9: * Proprietary and confidential
+tsee/linux/ld.c:21:#include <linux/proc_fs.h>
+tsee/tee/tsee_sm.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+tsee/tee/tsee_sm.c:9: * Proprietary and confidential
+tsee/tee/tsee_sm.c:63:			EMSG("Error:Not page type for addr: 0x%x, val:0x%x\n", addr, *pde);
+tsee/tee/tsee_sm.c:70:				EMSG("Error: unsupported pte type, addr: 0x%x-*pte: 0x%x-*pde:0x%x\n", addr, *pte, *pde);
+tsee/tee/tsee_sm.c:85:			EMSG("Error: unsupported pde type\n");
+tsee/tee/tsee_sm.c:91:extern uint32_t __tsee_text_ro_start;
+tsee/tee/tsee_sm.c:92:extern uint32_t __tsee_text_ro_end;
+tsee/tee/tsee_sm.c:93:extern uint32_t __tsee_data_ro_start;
+tsee/tee/tsee_sm.c:94:extern uint32_t __tsee_data_ro_end;
+tsee/tee/tsee_sm.c:107:	// RODATA and DATA is set to non-executable
+tsee/tee/tsee_sm.c:108:	DMSG("enforcing rodata ro nx");
+tsee/tee/tsee_sm.c:109:	mem_enforce_perm(tsee_init.krodata_start, tsee_init.krodata_end, 0x0, 0x1, 0x1, 0x0);
+tsee/tee/tsee_sm.c:110:	mem_enforce_perm(tee_phys_to_virt(tsee_init.krodata_start), tee_phys_to_virt(tsee_init.krodata_end), 0x0, 0x1, 0x1, 0x0);
+tsee/tee/tsee_sm.c:119:	DMSG("enforcing ktext ro");
+tsee/tee/tsee_sm.c:124:	DMSG("enforcing l2pgtbl ro");
+tsee/tee/tsee_sm.c:127:	DMSG("enforcing kpt ro");
+tsee/tee/tsee_sm.c:132:	DMSG("enforcing pgtbl ro nx");
+tsee/tee/tsee_sm.c:137:	DMSG("enforcing tsee ro and non-accessible");
+tsee/tee/tsee_sm.c:139:	mem_enforce_perm((uint32_t)&__tsee_text_ro_start, (uint32_t)&__tsee_text_ro_end, 0x1, 0x1, 0x0, 0x0);
+tsee/tee/tsee_sm.c:140:	mem_enforce_perm((uint32_t)&__tsee_data_ro_start, (uint32_t)&__tsee_data_ro_end, 0x1, 0x1, 0x1, 0x0);
+tsee/tee/tsee_sm.c:145:	tlb_lockdown((uint32_t)&__tsee_text_ro_start);
+tsee/tee/tsee_sm.c:146:	tlb_lockdown((uint32_t)&__tsee_data_ro_start);
+tsee/tee/tsee_sm.c:158:		EMSG("Error: TEE has de-init, deny write to mvbar\n");
+tsee/tee/tsee_sm.c:172:// DO NOT print any information here because it is in tsee_ro region
+tsee/tee/tsee_sm.c:182:pt_state_t tsee_pt __attribute__((section(".data.tsee_ro"))) = { .ttbcr = 0, .ttbr0 = 0, .ttbr1 = 0, .sctlr = 0};
+tsee/tee/tsee_sm.c:183:pt_state_t tee_pt  __attribute__((section(".data.tsee_ro"))) = { .ttbcr = 0, .ttbr0 = 0, .ttbr1 = 0, .sctlr = 0};
+tsee/tee/tsee_sm.c:185:// map TSEE into TEE, called when entering TSEE from TEE
+tsee/tee/tsee_sm.c:206:// remove TSEE mapping from TEE, called when returning TEE from TSEE
+tsee/linux/tsee_rtks.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+tsee/linux/tsee_rtks.c:9: * Proprietary and confidential
+tsee/linux/tsee_rtks.c:57:	init.zero_pg_addr = page_to_phys(empty_zero_page);
+tsee/linux/tsee_rtks.c:66:	init._srodata = (u64) __start_rodata;
+tsee/linux/tsee_rtks.c:67:	init._erodata =(u64) __end_rodata;
+tsee/linux/tsee_rtks.c:70:	printk("initing tsee real-time kernel protection...\n");
+tsee/tee/dispatch.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+tsee/tee/dispatch.c:9: * Proprietary and confidential
+tsee/tee/dispatch.c:73:static int is_krodata_range(uint32_t pa) {
+tsee/tee/dispatch.c:74:	if(pa >= tsee_init.krodata_start && pa < tsee_init.krodata_end) {
+tsee/tee/dispatch.c:136:static int tsee_mempg_protect(uint32_t pa) {
+tsee/tee/dispatch.c:155:static int tsee_mempg_unprotect(uint32_t pa) {
+tsee/tee/dispatch.c:174:static int tsee_is_mempg_protected(uint32_t pa) {
+tsee/tee/dispatch.c:202:		case TSEE_RTKS_MEM_PROTECT_NS:
+tsee/tee/dispatch.c:203:			// Once a page is protected, any further mapping from TEE will be denied
+tsee/tee/dispatch.c:204:			DMSG("tsee rtks mem map protection ns: 0x%x-0x%x\n", arg0, arg0 + arg1);
+tsee/tee/dispatch.c:210:					if(tsee_mempg_protect(tmp) != 0) {
+tsee/tee/dispatch.c:211:						EMSG("protect 0x%x failed\n", tmp);
+tsee/tee/dispatch.c:214:				//TODO: We need to remove existing mapping of the protected memory from TEE/TA
+tsee/tee/dispatch.c:216:				EMSG("illegal parameters for NS mem protection: 0x%x-0x%x \n", arg0, arg0 + arg1);
+tsee/tee/dispatch.c:219:		case TSEE_RTKS_MEM_UNPROTECT_NS:
+tsee/tee/dispatch.c:220:			DMSG("tsee rtks mem map unprotection ns: 0x%x-0x%x\n", arg0, arg0 + arg1);
+tsee/tee/dispatch.c:226:					if(tsee_mempg_unprotect(tmp) != 0) {
+tsee/tee/dispatch.c:227:						EMSG("unprotect 0x%x failed\n", tmp);
+tsee/tee/dispatch.c:231:				EMSG("illegal parameters for NS mem unprotection: 0x%x-0x%x \n", arg0, arg0 + arg1);
+tsee/tee/dispatch.c:235:			DMSG("TSEE-NS Error: unknown cmd for tsee: 0x%x-0x%x-0x%x-0x%x-0x%x-0x%x\n", cmd, arg0, arg1, arg2, arg3, arg4);
+tsee/tee/dispatch.c:248:		// Verify that the caller comes from TEE kernel and TEE SP sits outside TSEE
+tsee/tee/dispatch.c:281:			// pde either comes from kpgtbl or kpt
+tsee/tee/dispatch.c:302:			// pte pointer could only comes from initial l2pgtbl or kpt
+tsee/tee/dispatch.c:311:			if(tsee_is_mempg_protected(tmp)) {
+tsee/tee/dispatch.c:312:				EMSG("0x%x is protected from mapping\n", arg1);
+tsee/tee/dispatch.c:328:				if(is_kdata_range(tmp) || is_krodata_range(tmp) || is_ktext_range(tmp)) {
+tsee/tee/dispatch.c:371:		case TSEE_RTKS_KRODATA_SET:
+tsee/tee/dispatch.c:377:				EMSG("Invalid krodata range\n");
+tsee/tee/dispatch.c:380:			DMSG("tsee rtks krodata set: 0x%x-0x%x\n", arg0, arg0 + arg1);
+tsee/tee/dispatch.c:381:			tsee_init.krodata_start = arg0;
+tsee/tee/dispatch.c:382:			tsee_init.krodata_end = arg0 + arg1;
+tsee/tee/dispatch.c:552:		case TSEE_RTKS_MEM_PROTECT:
+tsee/tee/dispatch.c:553:			// Once a page is protected, any further mapping from TEE will be denied
+tsee/tee/dispatch.c:554:			//DMSG("tsee rtks mem map protection: 0x%x-0x%x\n", arg0, arg0 + arg1);
+tsee/tee/dispatch.c:559:				EMSG("illegal parameters for TEE mem protection: 0x%x-0x%x \n", arg0, arg0 + arg1);
+tsee/tee/dispatch.c:563:				if(tsee_mempg_protect(tmp) != 0) {
+tsee/tee/dispatch.c:564:					EMSG("protect 0x%x failed\n", tmp);
+tsee/tee/dispatch.c:568:		case TSEE_RTKS_MEM_UNPROTECT:
+tsee/tee/dispatch.c:569:			//DMSG("tsee rtks mem map unprotection: 0x%x-0x%x\n", arg0, arg0 + arg1);
+tsee/tee/dispatch.c:574:				EMSG("illegal parameters for TEE mem unprotection: 0x%x-0x%x \n", arg0, arg0 + arg1);
+tsee/tee/dispatch.c:578:				if(tsee_mempg_unprotect(tmp) != 0) {
+tsee/tee/dispatch.c:579:					EMSG("unprotect 0x%x failed\n", tmp);
+tsee/tee/dispatch.c:584:			DMSG("TSEE Error: unknown cmd for tsee: 0x%x-0x%x-0x%x\n", cmd, arg0, arg1);
+tsee/linux/elf.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+tsee/linux/elf.h:9: * Proprietary and confidential
+tsee/tee/tsee_sm.h:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+tsee/tee/tsee_sm.h:9: * Proprietary and confidential
+tsee/tee/tsee_sm.h:33:int is_tsee_call(uint32_t prefix) __attribute__((section(".text.tsee_ro")));
+tsee/linux/tsee_mm.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+tsee/linux/tsee_mm.c:9: * Proprietary and confidential
+tsee/linux/tsee_mm.c:26:static spinlock_t ro_tsee_rtks_pages_lock = __SPIN_LOCK_UNLOCKED();
+tsee/linux/tsee_mm.c:28:static char ro_pages_stat[TSEE_RTKS_RO_PAGES] = {0};
+tsee/linux/tsee_mm.c:29:static unsigned ro_alloc_last = 0;
+tsee/linux/tsee_mm.c:31:void *tsee_rtks_ro_alloc(void)
+tsee/linux/tsee_mm.c:38:	spin_lock_irqsave(&ro_tsee_rtks_pages_lock,flags);
+tsee/linux/tsee_mm.c:41:	for (i = 0, j = ro_alloc_last; i < (TSEE_RTKS_RO_PAGES) ; i++) {
+tsee/linux/tsee_mm.c:42:		j =  (j+i) %(TSEE_RTKS_RO_PAGES);
+tsee/linux/tsee_mm.c:43:		if (!ro_pages_stat[j]) {
+tsee/linux/tsee_mm.c:44:			ro_pages_stat[j] = 1;
+tsee/linux/tsee_mm.c:45:			ro_alloc_last = j+1;
+tsee/linux/tsee_mm.c:46:			alloc_addr = (void*) ((u64)TSEE_RTKS_ROBUF_VA +  (j << PAGE_SHIFT));
+tsee/linux/tsee_mm.c:51:	spin_unlock_irqrestore(&ro_tsee_rtks_pages_lock,flags);
+tsee/linux/tsee_mm.c:57:void tsee_rtks_ro_free(void *free_addr)
+tsee/linux/tsee_mm.c:62:	i =  ((u64)free_addr - (u64)TSEE_RTKS_ROBUF_VA) >> PAGE_SHIFT;
+tsee/linux/tsee_mm.c:64:	spin_lock_irqsave(&ro_tsee_rtks_pages_lock,flags);
+tsee/linux/tsee_mm.c:66:	ro_pages_stat[i] = 0;
+tsee/linux/tsee_mm.c:67:	ro_alloc_last = i;
+tsee/linux/tsee_mm.c:69:	spin_unlock_irqrestore(&ro_tsee_rtks_pages_lock,flags);
+tsee/linux/tsee_mm.c:73:unsigned int is_tsee_rtks_ro_page(u64 addr)
+tsee/linux/tsee_mm.c:75:	if( (addr >= (u64)TSEE_RTKS_ROBUF_VA)
+tsee/linux/tsee_mm.c:76:		&& (addr < (u64)(TSEE_RTKS_ROBUF_VA+ TSEE_RTKS_ROBUF_SIZE)))
+tsee/linux/thee.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+tsee/linux/thee.c:9: * Proprietary and confidential
+tsee/linux/thee.c:105:	if(smp_processor_id() != 0) { return 0; }
+tsee/tee/tsee_fault.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+tsee/tee/tsee_fault.c:9: * Proprietary and confidential
+tsee/tee/tsee_fault.c:28:	"Synchronous External Abort",               /*  8 = 0b01000, */
+tsee/tee/tsee_fault.c:45:	"Memory Access Synchronous Parity Error",   /* 19 = 0b11001, */
+tsee/tee/tsee_fault.c:46:	"IMPLEMENTATION DEFINED Coprocessor Abort", /* 1a = 0b11010, */
+tsee/tee/tsee_fault.c:67:	"Synchronous External Abort",
+tsee/tee/tsee_fault.c:81:	"Asynchronous external abort",              /* 16 = 0b10110, */
+tsee/tee/tsee_fault.c:83:	"Memory Access Synchronous Parity Error",   /* 18 = 0b11000, */
+tsee/tee/tsee_fault.c:84:	"Memory Access Synchronous Parity Error-2", /* 19 = 0b11001, */
+tsee/tee/tsee_fault.c:85:	"IMPLEMENTATION DEFINED Coprocessor Abort", /* 1a = 0b11010, */
+tsee/tee/tsee_fault.c:115:// trap routine
+tsee/tee/tsee_fault.c:139:// trap routine
+tsee/linux/dispatch.c:8: * Unauthorized copying of this file, via any medium is strictly prohibited
+tsee/linux/dispatch.c:9: * Proprietary and confidential
+tsee/linux/dispatch.c:64:			printk("TSEE Error: unknown cmd for tsee\n");
+tsee/linux/dispatch.c:132:static int is_krodata_range(uint32_t pa) {
+tsee/linux/dispatch.c:133:	if(pa >= tsee_init.krodata_start && pa < tsee_init.krodata_end) {
+tsee/linux/dispatch.c:195:static int tsee_mempg_protect(uint32_t pa) {
+tsee/linux/dispatch.c:214:static int tsee_mempg_unprotect(uint32_t pa) {
+tsee/linux/dispatch.c:233:static int tsee_is_mempg_protected(uint32_t pa) {
+tsee/linux/dispatch.c:261:		case TSEE_RTKS_MEM_PROTECT_NS:
+tsee/linux/dispatch.c:262:			// Once a page is protected, any further mapping from TEE will be denied
+tsee/linux/dispatch.c:263:			DMSG("tsee rtks mem map protection ns: 0x%x-0x%x\n", arg0, arg0 + arg1);
+tsee/linux/dispatch.c:269:					if(tsee_mempg_protect(tmp) != 0) {
+tsee/linux/dispatch.c:270:						EMSG("protect 0x%x failed\n", tmp);
+tsee/linux/dispatch.c:273:				//TODO: We need to remove existing mapping of the protected memory from TEE/TA
+tsee/linux/dispatch.c:275:				EMSG("illegal parameters for NS mem protection: 0x%x-0x%x \n", arg0, arg0 + arg1);
+tsee/linux/dispatch.c:278:		case TSEE_RTKS_MEM_UNPROTECT_NS:
+tsee/linux/dispatch.c:279:			DMSG("tsee rtks mem map unprotection ns: 0x%x-0x%x\n", arg0, arg0 + arg1);
+tsee/linux/dispatch.c:285:					if(tsee_mempg_unprotect(tmp) != 0) {
+tsee/linux/dispatch.c:286:						EMSG("unprotect 0x%x failed\n", tmp);
+tsee/linux/dispatch.c:290:				EMSG("illegal parameters for NS mem unprotection: 0x%x-0x%x \n", arg0, arg0 + arg1);
+tsee/linux/dispatch.c:294:			DMSG("TSEE-NS Error: unknown cmd for tsee: 0x%x-0x%x-0x%x-0x%x-0x%x-0x%x\n", cmd, arg0, arg1, arg2, arg3, arg4);
+tsee/linux/dispatch.c:307:		// Verify that the caller comes from TEE kernel and TEE SP sits outside TSEE
+tsee/linux/dispatch.c:340:			// pde either comes from kpgtbl or kpt
+tsee/linux/dispatch.c:361:			// pte pointer could only comes from initial l2pgtbl or kpt
+tsee/linux/dispatch.c:370:			if(tsee_is_mempg_protected(tmp)) {
+tsee/linux/dispatch.c:371:				EMSG("0x%x is protected from mapping\n", arg1);
+tsee/linux/dispatch.c:387:				if(is_kdata_range(tmp) || is_krodata_range(tmp) || is_ktext_range(tmp)) {
+tsee/linux/dispatch.c:430:		case TSEE_RTKS_KRODATA_SET:
+tsee/linux/dispatch.c:436:				EMSG("Invalid krodata range\n");
+tsee/linux/dispatch.c:439:			DMSG("tsee rtks krodata set: 0x%x-0x%x\n", arg0, arg0 + arg1);
+tsee/linux/dispatch.c:440:			tsee_init.krodata_start = arg0;
+tsee/linux/dispatch.c:441:			tsee_init.krodata_end = arg0 + arg1;
+tsee/linux/dispatch.c:611:		case TSEE_RTKS_MEM_PROTECT:
+tsee/linux/dispatch.c:612:			// Once a page is protected, any further mapping from TEE will be denied
+tsee/linux/dispatch.c:613:			//DMSG("tsee rtks mem map protection: 0x%x-0x%x\n", arg0, arg0 + arg1);
+tsee/linux/dispatch.c:617:				EMSG("illegal parameters for TEE mem protection: 0x%x-0x%x \n", arg0, arg0 + arg1);
+tsee/linux/dispatch.c:621:				if(tsee_mempg_protect(tmp) != 0) {
+tsee/linux/dispatch.c:622:					EMSG("protect 0x%x failed\n", tmp);
+tsee/linux/dispatch.c:626:		case TSEE_RTKS_MEM_UNPROTECT:
+tsee/linux/dispatch.c:627:			//DMSG("tsee rtks mem map unprotection: 0x%x-0x%x\n", arg0, arg0 + arg1);
+tsee/linux/dispatch.c:631:				EMSG("illegal parameters for TEE mem unprotection: 0x%x-0x%x \n", arg0, arg0 + arg1);
+tsee/linux/dispatch.c:635:				if(tsee_mempg_unprotect(tmp) != 0) {
+tsee/linux/dispatch.c:636:					EMSG("unprotect 0x%x failed\n", tmp);
+tsee/linux/dispatch.c:641:			DMSG("TSEE Error: unknown cmd for tsee: 0x%x-0x%x-0x%x\n", cmd, arg0, arg1);
+tsee/tee/tsee_sm_gate.S:46:.section .text.tsee_ro
+tsee/tee/tsee_sm_gate.S:48:.macro tsee_entry_gate
+tsee/tee/tsee_sm_gate.S:86:	# To prevent control flow attacks from TEE(e.g., ROP), we need to further check the written TTBR regs
+tsee/tee/tsee_sm_gate.S:155:.macro tsee_exit_gate
+tsee/tee/tsee_sm_gate.S:172:	# To prevent control flow attacks from TEE(e.g., ROP), we need to further check the written TTBR regs
+tsee/tee/tsee_sm_gate.S:259:.macro save_callstate
+tsee/tee/tsee_sm_gate.S:267:.macro restore_callstate
+tsee/tee/tsee_sm_gate.S:295:	bne		tsee_sm_proxy
+tsee/tee/tsee_sm_gate.S:297:	# check where is the calling from
+tsee/tee/tsee_sm_gate.S:300:	bne		tsee_sm_from_ns_entry
+tsee/tee/tsee_sm_gate.S:301:	beq		tsee_sm_from_s_entry
+tsee/tee/tsee_sm_gate.S:302:tsee_sm_from_ns_entry:
+tsee/tee/tsee_sm_gate.S:319:tsee_sm_from_s_entry:
+tsee/tee/tsee_sm_gate.S:324:tsee_sm_proxy:

@@ -1,0 +1,922 @@
+Archive member included because of file (symbol)
+
+out/exynos4412/lib/libutils/libutils.a(memset.o)
+                              out/exynos4412/boot/tee/start.o (memset)
+out/exynos4412/lib/libutils/libutils.a(trace.o)
+                              out/exynos4412/boot/plat-exynos4412/exynos4412_uart.o (trace_printf)
+out/exynos4412/lib/libutils/libutils.a(snprintf.o)
+                              out/exynos4412/lib/libutils/libutils.a(trace.o) (snprintf)
+out/exynos4412/lib/libutils/libutils.a(memchr.o)
+                              out/exynos4412/lib/libutils/libutils.a(snprintf.o) (memchr)
+out/exynos4412/lib/libutils/libutils.a(strlen.o)
+                              out/exynos4412/lib/libutils/libutils.a(snprintf.o) (strlen)
+/home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_aeabi_uldivmod.o)
+                              out/exynos4412/lib/libutils/libutils.a(snprintf.o) (__aeabi_uldivmod)
+/home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(bpabi.o)
+                              /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_aeabi_uldivmod.o) (__gnu_uldivmod_helper)
+/home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_dvmd_tls.o)
+                              /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_aeabi_uldivmod.o) (__aeabi_ldiv0)
+/home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_divdi3.o)
+                              /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(bpabi.o) (__divdi3)
+/home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_udivdi3.o)
+                              /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(bpabi.o) (__udivdi3)
+/home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_udivsi3.o)
+                              /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_divdi3.o) (__aeabi_uidiv)
+/home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_clzsi2.o)
+                              /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_divdi3.o) (__clzsi2)
+
+Discarded input sections
+
+ .comment       0x00000000       0x12 out/exynos4412/boot/plat-exynos4412/setup.o
+ .comment       0x00000000       0x12 out/exynos4412/boot/plat-exynos4412/exynos4412_uart.o
+ .comment       0x00000000       0x12 out/exynos4412/boot/tee/trace_ext.o
+ .comment       0x00000000       0x12 out/exynos4412/boot/tee/start.o
+ .comment       0x00000000       0x12 out/exynos4412/tsee/tee/dispatch.o
+ .comment       0x00000000       0x12 out/exynos4412/tsee/tee/tsee_sm.o
+ .comment       0x00000000       0x12 out/exynos4412/tsee/tee/tsee_fault.o
+ .comment       0x00000000       0x12 out/exynos4412/version.o
+ .comment       0x00000000       0x12 out/exynos4412/lib/libutils/libutils.a(memset.o)
+ .comment       0x00000000       0x12 out/exynos4412/lib/libutils/libutils.a(trace.o)
+ .comment       0x00000000       0x12 out/exynos4412/lib/libutils/libutils.a(snprintf.o)
+ .comment       0x00000000       0x12 out/exynos4412/lib/libutils/libutils.a(memchr.o)
+ .comment       0x00000000       0x12 out/exynos4412/lib/libutils/libutils.a(strlen.o)
+ .comment       0x00000000       0x12 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(bpabi.o)
+ .comment       0x00000000       0x12 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_divdi3.o)
+ .comment       0x00000000       0x12 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_udivdi3.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x50000000                . = 0x50000000
+
+.text           0x50000000     0x952c
+                0x50000000                __text_start = .
+ *(SORT(.text.boot.vectab1))
+ *(SORT(.text.boot.vectab2))
+ *(SORT(.text.boot))
+ .text.boot     0x50000000      0x228 out/exynos4412/boot/tee/entry.o
+                0x50000000                _start
+                0x500000a4                cpu_init
+                0x50000110                flush_tlb_all
+                0x50000124                flush_cache_all
+                0x50000144                v7_flush_dcache_all
+                0x500001d8                tlb_lockdown
+                0x50001000                . = ALIGN (0x1000)
+ *fill*         0x50000228      0xdd8 00
+                0x50001000                __tsee_text_ro_start = .
+ *(SORT(.text.tsee_ro))
+ .text.tsee_ro  0x50001000      0x500 out/exynos4412/tsee/tee/tsee_sm_gate.o
+                0x50001000                monitor_entry
+                0x500014c8                default_sm_handler
+                0x500014c8                sm_tee_reset_handler
+                0x500014cc                sm_tee_undef_handler
+                0x500014d0                sm_tee_smc_handler
+                0x500014d4                sm_tee_pref_handler
+                0x500014d8                sm_tee_abort_handler
+                0x500014dc                sm_tee_reserv_handler
+                0x500014e0                sm_tee_irq_handler
+                0x500014e4                sm_tee_fiq_handler
+ .text.tsee_ro  0x50001500       0x44 out/exynos4412/tsee/tee/tsee_sm.o
+                0x50001500                is_tsee_call
+                0x50002000                . = ALIGN (0x1000)
+ *fill*         0x50001544      0xabc 00
+                0x50002000                __tsee_text_ro_end = .
+ *(SORT(.text) SORT(.text.*))
+ .text          0x50002000       0x80 out/exynos4412/tsee/tee/tsee_sm_gate.o
+                0x50002000                trap_entry
+ .text.console_init
+                0x50002080       0x34 out/exynos4412/boot/plat-exynos4412/setup.o
+                0x50002080                console_init
+ .text.console_putc
+                0x500020b4       0x44 out/exynos4412/boot/plat-exynos4412/setup.o
+                0x500020b4                console_putc
+ .text.console_flush
+                0x500020f8       0x14 out/exynos4412/boot/plat-exynos4412/setup.o
+                0x500020f8                console_flush
+ .text.uart_enable_rx
+                0x5000210c       0x64 out/exynos4412/boot/plat-exynos4412/exynos4412_uart.o
+                0x5000210c                uart_enable_rx
+ .text.uartgetc
+                0x50002170       0x68 out/exynos4412/boot/plat-exynos4412/exynos4412_uart.o
+                0x50002170                uartgetc
+ .text.isr_uart
+                0x500021d8       0x88 out/exynos4412/boot/plat-exynos4412/exynos4412_uart.o
+                0x500021d8                isr_uart
+ .text.uart_init
+                0x50002260       0x84 out/exynos4412/boot/plat-exynos4412/exynos4412_uart.o
+                0x50002260                uart_init
+ .text.uartputc
+                0x500022e4       0x54 out/exynos4412/boot/plat-exynos4412/exynos4412_uart.o
+                0x500022e4                uartputc
+ .text.uart_puts
+                0x50002338       0x68 out/exynos4412/boot/plat-exynos4412/exynos4412_uart.o
+                0x50002338                uart_puts
+ .text.trace_ext_puts
+                0x500023a0       0x70 out/exynos4412/boot/tee/trace_ext.o
+                0x500023a0                trace_ext_puts
+ .text.trace_ext_get_thread_id
+                0x50002410       0x1c out/exynos4412/boot/tee/trace_ext.o
+                0x50002410                trace_ext_get_thread_id
+ .text.set_bootpgtbl
+                0x5000242c       0xe8 out/exynos4412/boot/tee/start.o
+                0x5000242c                set_bootpgtbl
+ .text.load_pgtlb
+                0x50002514       0x9c out/exynos4412/boot/tee/start.o
+                0x50002514                load_pgtlb
+ .text.start_secondary
+                0x500025b0       0xa8 out/exynos4412/boot/tee/start.o
+                0x500025b0                start_secondary
+ .text.start    0x50002658      0x2e8 out/exynos4412/boot/tee/start.o
+                0x50002658                start
+ .text.is_tsee_range
+                0x50002940       0x4c out/exynos4412/tsee/tee/dispatch.o
+ .text.is_tee_range
+                0x5000298c       0x8c out/exynos4412/tsee/tee/dispatch.o
+ .text.is_l2pgtbl_range
+                0x50002a18       0x5c out/exynos4412/tsee/tee/dispatch.o
+ .text.is_kpt_range
+                0x50002a74       0x8c out/exynos4412/tsee/tee/dispatch.o
+ .text.is_reeshr_range
+                0x50002b00       0x5c out/exynos4412/tsee/tee/dispatch.o
+ .text.is_kpgtbl_range
+                0x50002b5c       0x6c out/exynos4412/tsee/tee/dispatch.o
+ .text.is_kdata_range
+                0x50002bc8       0x8c out/exynos4412/tsee/tee/dispatch.o
+ .text.is_krodata_range
+                0x50002c54       0x5c out/exynos4412/tsee/tee/dispatch.o
+ .text.is_ktext_range
+                0x50002cb0       0x8c out/exynos4412/tsee/tee/dispatch.o
+ .text.is_devmem_range
+                0x50002d3c       0x44 out/exynos4412/tsee/tee/dispatch.o
+ .text.is_dram0_ranges
+                0x50002d80       0x4c out/exynos4412/tsee/tee/dispatch.o
+ .text.is_dram1_ranges
+                0x50002dcc       0x48 out/exynos4412/tsee/tee/dispatch.o
+ .text.is_devmem_ranges
+                0x50002e14       0x48 out/exynos4412/tsee/tee/dispatch.o
+ .text.get_phymap_index
+                0x50002e5c      0x138 out/exynos4412/tsee/tee/dispatch.o
+ .text.tsee_mempg_protect
+                0x50002f94       0xb0 out/exynos4412/tsee/tee/dispatch.o
+ .text.tsee_mempg_unprotect
+                0x50003044       0xb4 out/exynos4412/tsee/tee/dispatch.o
+ .text.tsee_is_mempg_protected
+                0x500030f8       0xb8 out/exynos4412/tsee/tee/dispatch.o
+ .text.tsee_ns_main
+                0x500031b0      0x488 out/exynos4412/tsee/tee/dispatch.o
+                0x500031b0                tsee_ns_main
+ .text.tsee_main
+                0x50003638     0x18a8 out/exynos4412/tsee/tee/dispatch.o
+                0x50003638                tsee_main
+ .text.tee_phys_to_virt
+                0x50004ee0       0x2c out/exynos4412/tsee/tee/tsee_sm.o
+ .text.set_jump_addr
+                0x50004f0c       0x54 out/exynos4412/tsee/tee/tsee_sm.o
+ .text.mem_enforce_perm
+                0x50004f60      0x2a8 out/exynos4412/tsee/tee/tsee_sm.o
+                0x50004f60                mem_enforce_perm
+ .text.is_sm_lock_down
+                0x50005208       0x24 out/exynos4412/tsee/tee/tsee_sm.o
+                0x50005208                is_sm_lock_down
+ .text.sm_lock_down
+                0x5000522c      0xe84 out/exynos4412/tsee/tee/tsee_sm.o
+                0x5000522c                sm_lock_down
+ .text.sm_tee_deinit
+                0x500060b0       0x24 out/exynos4412/tsee/tee/tsee_sm.o
+                0x500060b0                sm_tee_deinit
+ .text.sm_write_mvbar
+                0x500060d4      0x1bc out/exynos4412/tsee/tee/tsee_sm.o
+                0x500060d4                sm_write_mvbar
+ .text.map_tsee
+                0x50006290       0xa4 out/exynos4412/tsee/tee/tsee_sm.o
+                0x50006290                map_tsee
+ .text.unmap_tsee
+                0x50006334       0xa4 out/exynos4412/tsee/tee/tsee_sm.o
+                0x50006334                unmap_tsee
+ .text.dabort_handler
+                0x500063d8       0xec out/exynos4412/tsee/tee/tsee_fault.o
+                0x500063d8                dabort_handler
+ .text.iabort_handler
+                0x500064c4       0xc8 out/exynos4412/tsee/tee/tsee_fault.o
+                0x500064c4                iabort_handler
+ .text.dump_trapframe
+                0x5000658c      0x3d0 out/exynos4412/tsee/tee/tsee_fault.o
+                0x5000658c                dump_trapframe
+ .text.memset   0x5000695c      0x224 out/exynos4412/lib/libutils/libutils.a(memset.o)
+                0x5000695c                memset
+ .text.trace_set_level
+                0x50006b80       0x58 out/exynos4412/lib/libutils/libutils.a(trace.o)
+                0x50006b80                trace_set_level
+ .text.trace_get_level
+                0x50006bd8       0x24 out/exynos4412/lib/libutils/libutils.a(trace.o)
+                0x50006bd8                trace_get_level
+ .text.trace_level_to_string
+                0x50006bfc       0x84 out/exynos4412/lib/libutils/libutils.a(trace.o)
+ .text.trace_printf
+                0x50006c80      0x278 out/exynos4412/lib/libutils/libutils.a(trace.o)
+                0x50006c80                trace_printf
+ .text.append   0x50006ef8       0xfc out/exynos4412/lib/libutils/libutils.a(trace.o)
+ .text.dhex_dump
+                0x50006ff4      0x1dc out/exynos4412/lib/libutils/libutils.a(trace.o)
+                0x50006ff4                dhex_dump
+ .text.snprintf
+                0x500071d0       0x58 out/exynos4412/lib/libutils/libutils.a(snprintf.o)
+                0x500071d0                snprintf
+ .text.vsnprintf
+                0x50007228       0xc0 out/exynos4412/lib/libutils/libutils.a(snprintf.o)
+                0x50007228                vsnprintf
+ .text.kprintf  0x500072e8     0x1458 out/exynos4412/lib/libutils/libutils.a(snprintf.o)
+ .text.memchr   0x50008740      0x1fc out/exynos4412/lib/libutils/libutils.a(memchr.o)
+                0x50008740                memchr
+ .text.strlen   0x5000893c       0xec out/exynos4412/lib/libutils/libutils.a(strlen.o)
+                0x5000893c                strlen
+ .text          0x50008a28       0x3c /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_aeabi_uldivmod.o)
+                0x50008a28                __aeabi_uldivmod
+ .text          0x50008a64       0x80 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(bpabi.o)
+                0x50008a64                __gnu_ldivmod_helper
+                0x50008aa4                __gnu_uldivmod_helper
+ .text          0x50008ae4        0x4 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_dvmd_tls.o)
+                0x50008ae4                __aeabi_ldiv0
+                0x50008ae4                __aeabi_idiv0
+ .text          0x50008ae8      0x4a8 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_divdi3.o)
+                0x50008ae8                __divdi3
+ .text          0x50008f90      0x438 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_udivdi3.o)
+                0x50008f90                __udivdi3
+ .text          0x500093c8      0x114 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_udivsi3.o)
+                0x500093c8                __udivsi3
+                0x500093c8                __aeabi_uidiv
+                0x500094bc                __aeabi_uidivmod
+ .text          0x500094dc       0x48 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_clzsi2.o)
+                0x500094dc                __clzsi2
+ .text          0x50009524        0x0 out/exynos4412/boot/plat-exynos4412/setup.o
+ .text          0x50009524        0x0 out/exynos4412/boot/plat-exynos4412/exynos4412_uart.o
+ .text          0x50009524        0x0 out/exynos4412/boot/tee/trace_ext.o
+ .text          0x50009524        0x0 out/exynos4412/boot/tee/entry.o
+ .text          0x50009524        0x0 out/exynos4412/boot/tee/start.o
+ .text          0x50009524        0x0 out/exynos4412/tsee/tee/dispatch.o
+ .text          0x50009524        0x0 out/exynos4412/tsee/tee/tsee_sm.o
+ .text          0x50009524        0x8 out/exynos4412/tsee/tee/tsee_rtks_call.o
+                0x50009524                tsee_rtks_call
+                0x50009528                tsee_rtks_ns_call
+ .text          0x5000952c        0x0 out/exynos4412/tsee/tee/tsee_fault.o
+ .text          0x5000952c        0x0 out/exynos4412/version.o
+ .text          0x5000952c        0x0 out/exynos4412/lib/libutils/libutils.a(memset.o)
+ .text          0x5000952c        0x0 out/exynos4412/lib/libutils/libutils.a(trace.o)
+ .text          0x5000952c        0x0 out/exynos4412/lib/libutils/libutils.a(snprintf.o)
+ .text          0x5000952c        0x0 out/exynos4412/lib/libutils/libutils.a(memchr.o)
+ .text          0x5000952c        0x0 out/exynos4412/lib/libutils/libutils.a(strlen.o)
+ *(SORT(.sram.text.glue_7*) SORT(.gnu.linkonce.t.*))
+                0x5000952c                __text_end = .
+
+.glue_7         0x5000952c        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x5000952c        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x5000952c        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x5000952c        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.interp
+ *(SORT(.interp))
+
+.dynsym
+ *(SORT(.dynsym))
+
+.dynstr
+ *(SORT(.dynstr))
+
+.rel.text
+ *(SORT(.rel.text))
+ *(SORT(.rel.gnu.linkonce.t*))
+
+.rela.text
+ *(SORT(.rela.text))
+ *(SORT(.rela.gnu.linkonce.t*))
+
+.rel.data
+ *(SORT(.rel.data))
+ *(SORT(.rel.gnu.linkonce.d*))
+
+.rela.data
+ *(SORT(.rela.data))
+ *(SORT(.rela.gnu.linkonce.d*))
+
+.rel.rodata
+ *(SORT(.rel.rodata))
+ *(SORT(.rel.gnu.linkonce.r*))
+
+.rela.rodata
+ *(SORT(.rela.rodata))
+ *(SORT(.rela.gnu.linkonce.r*))
+
+.rel.got
+ *(SORT(.rel.got))
+
+.rela.got
+ *(SORT(.rela.got))
+
+.rel.ctors
+ *(SORT(.rel.ctors))
+
+.rela.ctors
+ *(SORT(.rela.ctors))
+
+.rel.dtors
+ *(SORT(.rel.dtors))
+
+.rela.dtors
+ *(SORT(.rela.dtors))
+
+.rel.init
+ *(SORT(.rel.init))
+
+.rela.init
+ *(SORT(.rela.init))
+
+.rel.fini
+ *(SORT(.rel.fini))
+
+.rela.fini
+ *(SORT(.rela.fini))
+
+.rel.bss
+ *(SORT(.rel.bss))
+
+.rela.bss
+ *(SORT(.rela.bss))
+
+.rel.plt
+ *(SORT(.rel.plt))
+
+.rela.plt
+ *(SORT(.rela.plt))
+
+.plt
+ *(SORT(.plt))
+                0x50009530                . = ALIGN (0x8)
+
+.ARM.exidx      0x50009530        0x8
+                0x50009530                __exidx_start = .
+ *(SORT(.ARM.exidx*) SORT(.gnu.linkonce.armexidx.*))
+ .ARM.exidx     0x50009530        0x8 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_divdi3.o)
+ .ARM.exidx     0x50009538        0x0 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_udivdi3.o)
+                                  0x8 (size before relaxing)
+                0x50009538                __exidx_end = .
+
+.rodata         0x50009538     0x104c
+                0x50009538                __rodata_start = .
+ *(SORT(.gnu.linkonce.r.*))
+ *(SORT(.rodata) SORT(.rodata.*))
+ .rodata.boot/plat-exynos4412/setup.c
+                0x50009538       0x10 out/exynos4412/boot/plat-exynos4412/setup.o
+ .rodata.boot/plat-exynos4412/exynos4412_uart.c
+                0x50009548       0x10 out/exynos4412/boot/plat-exynos4412/exynos4412_uart.o
+ .rodata.__func__.901
+                0x50009558        0xc out/exynos4412/boot/plat-exynos4412/exynos4412_uart.o
+ .rodata.trace_ext_prefix
+                0x50009564       0x14 out/exynos4412/boot/tee/trace_ext.o
+                0x50009564                trace_ext_prefix
+ .rodata.boot/tee/start.c
+                0x50009578       0x90 out/exynos4412/boot/tee/start.o
+ .rodata.__func__.1021
+                0x50009608        0x8 out/exynos4412/boot/tee/start.o
+ .rodata.__func__.1014
+                0x50009610       0x10 out/exynos4412/boot/tee/start.o
+ .rodata.tsee/tee/dispatch.c
+                0x50009620      0x750 out/exynos4412/tsee/tee/dispatch.o
+ .rodata.__func__.1087
+                0x50009d70        0xc out/exynos4412/tsee/tee/dispatch.o
+ .rodata.__func__.1067
+                0x50009d7c       0x10 out/exynos4412/tsee/tee/dispatch.o
+ .rodata.tsee/tee/tsee_sm.c
+                0x50009d8c      0x1b8 out/exynos4412/tsee/tee/tsee_sm.o
+ .rodata.__func__.979
+                0x50009f44       0x10 out/exynos4412/tsee/tee/tsee_sm.o
+ .rodata.__func__.972
+                0x50009f54       0x10 out/exynos4412/tsee/tee/tsee_sm.o
+ .rodata.__func__.956
+                0x50009f64       0x14 out/exynos4412/tsee/tee/tsee_sm.o
+ .rodata.tsee/tee/tsee_fault.c
+                0x50009f78      0x4f0 out/exynos4412/tsee/tee/tsee_fault.o
+ .rodata.__func__.901
+                0x5000a468       0x10 out/exynos4412/tsee/tee/tsee_fault.o
+ .rodata.__func__.896
+                0x5000a478       0x10 out/exynos4412/tsee/tee/tsee_fault.o
+ .rodata.__func__.889
+                0x5000a488       0x10 out/exynos4412/tsee/tee/tsee_fault.o
+ .rodata.v_str  0x5000a498       0x34 out/exynos4412/version.o
+                0x5000a498                v_str
+ .rodata.lib/libutils/ext/trace.c
+                0x5000a4cc       0x4c out/exynos4412/lib/libutils/libutils.a(trace.o)
+ .rodata.__func__.969
+                0x5000a518        0xc out/exynos4412/lib/libutils/libutils.a(trace.o)
+ .rodata.lvl_strs.927
+                0x5000a524       0x14 out/exynos4412/lib/libutils/libutils.a(trace.o)
+ .rodata.hexdigits
+                0x5000a538       0x14 out/exynos4412/lib/libutils/libutils.a(snprintf.o)
+ .rodata.HEXDIGITS
+                0x5000a54c       0x14 out/exynos4412/lib/libutils/libutils.a(snprintf.o)
+ .rodata.lib/libutils/isoc/snprintf.c
+                0x5000a560       0x24 out/exynos4412/lib/libutils/libutils.a(snprintf.o)
+                0x5000a584                . = ALIGN (0x4)
+                0x5000a584                __rodata_end = .
+
+.ARM.extab      0x5000a584        0x0
+ .ARM.extab     0x5000a584        0x0 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_divdi3.o)
+ .ARM.extab     0x5000a584        0x0 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_udivdi3.o)
+
+.data           0x5000a584     0x1b94
+                0x5000b000                . = ALIGN (0x1000)
+ *fill*         0x5000a584      0xa7c 00
+                0x5000b000                __tsee_data_ro_start = .
+ *(SORT(.data.tsee_ro))
+ .data.tsee_ro  0x5000b000       0x30 out/exynos4412/tsee/tee/tsee_sm.o
+                0x5000b000                tsee_pt
+                0x5000b018                tee_pt
+                0x5000c000                . = ALIGN (0x1000)
+ *fill*         0x5000b030      0xfd0 00
+                0x5000c000                __tsee_data_ro_end = .
+                0x5000c000                __data_start = .
+ *(SORT(.data) SORT(.data.*) SORT(.gnu.linkonce.d.*))
+ .data.uart_base
+                0x5000c000        0x4 out/exynos4412/boot/plat-exynos4412/exynos4412_uart.o
+                0x5000c000                uart_base
+ .data.trace_level
+                0x5000c004        0x4 out/exynos4412/boot/tee/trace_ext.o
+                0x5000c004                trace_level
+ .data          0x5000c008        0xc out/exynos4412/boot/tee/entry.o
+                0x5000c008                get_core_pos
+ .data.tsee_pgtbl
+                0x5000c014        0x4 out/exynos4412/boot/tee/start.o
+                0x5000c014                tsee_pgtbl
+ .data.prefetch_abt_fault_string
+                0x5000c018       0x80 out/exynos4412/tsee/tee/tsee_fault.o
+ .data.data_abt_fault_string
+                0x5000c098       0x80 out/exynos4412/tsee/tee/tsee_fault.o
+ .data          0x5000c118        0x0 out/exynos4412/boot/plat-exynos4412/setup.o
+ .data          0x5000c118        0x0 out/exynos4412/boot/plat-exynos4412/exynos4412_uart.o
+ .data          0x5000c118        0x0 out/exynos4412/boot/tee/trace_ext.o
+ .data          0x5000c118        0x0 out/exynos4412/boot/tee/start.o
+ .data          0x5000c118        0x0 out/exynos4412/tsee/tee/dispatch.o
+ .data          0x5000c118        0x0 out/exynos4412/tsee/tee/tsee_sm.o
+ .data          0x5000c118        0x0 out/exynos4412/tsee/tee/tsee_rtks_call.o
+ .data          0x5000c118        0x0 out/exynos4412/tsee/tee/tsee_fault.o
+ .data          0x5000c118        0x0 out/exynos4412/tsee/tee/tsee_sm_gate.o
+ .data          0x5000c118        0x0 out/exynos4412/version.o
+ .data          0x5000c118        0x0 out/exynos4412/lib/libutils/libutils.a(memset.o)
+ .data          0x5000c118        0x0 out/exynos4412/lib/libutils/libutils.a(trace.o)
+ .data          0x5000c118        0x0 out/exynos4412/lib/libutils/libutils.a(snprintf.o)
+ .data          0x5000c118        0x0 out/exynos4412/lib/libutils/libutils.a(memchr.o)
+ .data          0x5000c118        0x0 out/exynos4412/lib/libutils/libutils.a(strlen.o)
+ .data          0x5000c118        0x0 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_aeabi_uldivmod.o)
+ .data          0x5000c118        0x0 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(bpabi.o)
+ .data          0x5000c118        0x0 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_dvmd_tls.o)
+ .data          0x5000c118        0x0 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_divdi3.o)
+ .data          0x5000c118        0x0 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_udivdi3.o)
+ .data          0x5000c118        0x0 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_udivsi3.o)
+ .data          0x5000c118        0x0 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_clzsi2.o)
+                0x5000c118                . = ALIGN (0x4)
+
+.ctors          0x5000c118        0x0
+                0x5000c118                __ctor_list = .
+ *(SORT(.ctors))
+ *(SORT(.init_array))
+                0x5000c118                __ctor_end = .
+
+.dtors          0x5000c118        0x0
+                0x5000c118                __dtor_list = .
+ *(SORT(.dtors))
+                0x5000c118                __dtor_end = .
+
+.got
+ *(SORT(.got.plt))
+ *(SORT(.got))
+
+.dynamic
+ *(SORT(.dynamic))
+                0x5000c118                __data_end = .
+
+.bss            0x5000c118     0x7ee8
+                0x5000c118                __bss_start = .
+ *(SORT(.bss) SORT(.bss.*))
+ .bss.tsee_init
+                0x5000c118       0x64 out/exynos4412/tsee/tee/dispatch.o
+                0x5000c118                tsee_init
+ .bss.is_lock_down
+                0x5000c17c        0x4 out/exynos4412/tsee/tee/tsee_sm.o
+ .bss.is_init   0x5000c180        0x4 out/exynos4412/tsee/tee/tsee_sm.o
+ .bss           0x5000c184        0x0 out/exynos4412/boot/plat-exynos4412/setup.o
+ .bss           0x5000c184        0x0 out/exynos4412/boot/plat-exynos4412/exynos4412_uart.o
+ .bss           0x5000c184        0x0 out/exynos4412/boot/tee/trace_ext.o
+ .bss           0x5000c184        0x0 out/exynos4412/boot/tee/entry.o
+ .bss           0x5000c184        0x0 out/exynos4412/boot/tee/start.o
+ .bss           0x5000c184        0x0 out/exynos4412/tsee/tee/dispatch.o
+ .bss           0x5000c184        0x0 out/exynos4412/tsee/tee/tsee_sm.o
+ .bss           0x5000c184        0x0 out/exynos4412/tsee/tee/tsee_rtks_call.o
+ .bss           0x5000c184        0x0 out/exynos4412/tsee/tee/tsee_fault.o
+ .bss           0x5000c184        0x0 out/exynos4412/tsee/tee/tsee_sm_gate.o
+ .bss           0x5000c184        0x0 out/exynos4412/version.o
+ .bss           0x5000c184        0x0 out/exynos4412/lib/libutils/libutils.a(memset.o)
+ .bss           0x5000c184        0x0 out/exynos4412/lib/libutils/libutils.a(trace.o)
+ .bss           0x5000c184        0x0 out/exynos4412/lib/libutils/libutils.a(snprintf.o)
+ .bss           0x5000c184        0x0 out/exynos4412/lib/libutils/libutils.a(memchr.o)
+ .bss           0x5000c184        0x0 out/exynos4412/lib/libutils/libutils.a(strlen.o)
+ .bss           0x5000c184        0x0 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_aeabi_uldivmod.o)
+ .bss           0x5000c184        0x0 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(bpabi.o)
+ .bss           0x5000c184        0x0 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_dvmd_tls.o)
+ .bss           0x5000c184        0x0 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_divdi3.o)
+ .bss           0x5000c184        0x0 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_udivdi3.o)
+ .bss           0x5000c184        0x0 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_udivsi3.o)
+ .bss           0x5000c184        0x0 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_clzsi2.o)
+ *(SORT(.gnu.linkonce.b.*))
+ *(SORT(COMMON))
+                0x5000c184                . = ALIGN (0x4)
+                0x5000d000                . = ALIGN (0x1000)
+ *fill*         0x5000c184      0xe7c 00
+                0x5000e000                . = (. + 0x1000)
+ *fill*         0x5000d000     0x1000 00
+                0x5000e000                PROVIDE (mon_stktop, .)
+                0x5000e000                PROVIDE (tee_rw_stack_start, .)
+                0x5000f000                . = (. + 0x1000)
+ *fill*         0x5000e000     0x1000 00
+                0x5000f000                PROVIDE (mon_stktop_init, .)
+                0x5000f000                PROVIDE (tee_rw_stack_end, .)
+                0x50013000                . = (. + 0x4000)
+ *fill*         0x5000f000     0x4000 00
+                0x50013000                PROVIDE (mon_stktop_others, .)
+                0x50014000                . = (. + 0x1000)
+ *fill*         0x50013000     0x1000 00
+                0x50014000                __bss_end = .
+                0x50014000                . = ALIGN (0x1000)
+
+.tsee_rtks.phymap
+                0x50014000    0x20000
+                0x50014000                tsee_rtks_map_bitmap = .
+ *(SORT(.tsee_rtks.phymap))
+ .tsee_rtks.phymap
+                0x50014000    0x20000 out/exynos4412/tsee/tee/dispatch.o
+                0x50014000                tsee_rtks_phymap
+                0x50034000                tsee_rtks_map_bitmap_end = .
+                0x50034000                . = ALIGN (0x4000)
+                0x50034000                _tsee_pgtbl = .
+                0x50038000                . = (. + 0x4000)
+                0x50038000                _end = .
+                0x00038000                __init_mem_usage = (_end - 0x50000000)
+                0x50100000                . = 0x50100000
+                0x50100000                . = ALIGN (0x100000)
+                0x50100000                PROVIDE (_binary_tee_img_start, .)
+
+tee_img         0x50100000   0xfae138
+ *(SORT(tee_img))
+ tee_img        0x50100000   0xfae138 out/exynos4412/boot/tee/entry.o
+                0x510ae138                PROVIDE (_binary_tee_img_end, .)
+                0x00fae138                _binary_tee_img_size = (_binary_tee_img_end - _binary_tee_img_start)
+                0x510ae138                _end_of_ram = .
+
+/DISCARD/
+ *(SORT(.comment) SORT(.note) SORT(.eh_frame))
+LOAD out/exynos4412/boot/plat-exynos4412/setup.o
+LOAD out/exynos4412/boot/plat-exynos4412/exynos4412_uart.o
+LOAD out/exynos4412/boot/tee/trace_ext.o
+LOAD out/exynos4412/boot/tee/entry.o
+LOAD out/exynos4412/boot/tee/start.o
+LOAD out/exynos4412/tsee/tee/dispatch.o
+LOAD out/exynos4412/tsee/tee/tsee_sm.o
+LOAD out/exynos4412/tsee/tee/tsee_rtks_call.o
+LOAD out/exynos4412/tsee/tee/tsee_fault.o
+LOAD out/exynos4412/tsee/tee/tsee_sm_gate.o
+LOAD out/exynos4412/version.o
+LOAD out/exynos4412/lib/libutils/libutils.a
+LOAD /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a
+OUTPUT(out/exynos4412/tsee.elf elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x33
+ .ARM.attributes
+                0x00000000       0x35 out/exynos4412/boot/plat-exynos4412/setup.o
+ .ARM.attributes
+                0x00000035       0x35 out/exynos4412/boot/plat-exynos4412/exynos4412_uart.o
+ .ARM.attributes
+                0x0000006a       0x35 out/exynos4412/boot/tee/trace_ext.o
+ .ARM.attributes
+                0x0000009f       0x25 out/exynos4412/boot/tee/entry.o
+ .ARM.attributes
+                0x000000c4       0x35 out/exynos4412/boot/tee/start.o
+ .ARM.attributes
+                0x000000f9       0x35 out/exynos4412/tsee/tee/dispatch.o
+ .ARM.attributes
+                0x0000012e       0x35 out/exynos4412/tsee/tee/tsee_sm.o
+ .ARM.attributes
+                0x00000163       0x25 out/exynos4412/tsee/tee/tsee_rtks_call.o
+ .ARM.attributes
+                0x00000188       0x35 out/exynos4412/tsee/tee/tsee_fault.o
+ .ARM.attributes
+                0x000001bd       0x25 out/exynos4412/tsee/tee/tsee_sm_gate.o
+ .ARM.attributes
+                0x000001e2       0x35 out/exynos4412/version.o
+ .ARM.attributes
+                0x00000217       0x35 out/exynos4412/lib/libutils/libutils.a(memset.o)
+ .ARM.attributes
+                0x0000024c       0x35 out/exynos4412/lib/libutils/libutils.a(trace.o)
+ .ARM.attributes
+                0x00000281       0x35 out/exynos4412/lib/libutils/libutils.a(snprintf.o)
+ .ARM.attributes
+                0x000002b6       0x35 out/exynos4412/lib/libutils/libutils.a(memchr.o)
+ .ARM.attributes
+                0x000002eb       0x35 out/exynos4412/lib/libutils/libutils.a(strlen.o)
+ .ARM.attributes
+                0x00000320       0x1a /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_aeabi_uldivmod.o)
+ .ARM.attributes
+                0x0000033a       0x34 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(bpabi.o)
+ .ARM.attributes
+                0x0000036e       0x18 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x00000386       0x34 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_divdi3.o)
+ .ARM.attributes
+                0x000003ba       0x34 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_udivdi3.o)
+ .ARM.attributes
+                0x000003ee       0x1a /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x00000408       0x1a /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_clzsi2.o)
+
+.debug_abbrev   0x00000000      0xf71
+ .debug_abbrev  0x00000000       0x67 out/exynos4412/boot/plat-exynos4412/setup.o
+ .debug_abbrev  0x00000067      0x113 out/exynos4412/boot/plat-exynos4412/exynos4412_uart.o
+ .debug_abbrev  0x0000017a       0xab out/exynos4412/boot/tee/trace_ext.o
+ .debug_abbrev  0x00000225       0x12 out/exynos4412/boot/tee/entry.o
+ .debug_abbrev  0x00000237      0x148 out/exynos4412/boot/tee/start.o
+ .debug_abbrev  0x0000037f      0x139 out/exynos4412/tsee/tee/dispatch.o
+ .debug_abbrev  0x000004b8      0x19c out/exynos4412/tsee/tee/tsee_sm.o
+ .debug_abbrev  0x00000654       0x14 out/exynos4412/tsee/tee/tsee_rtks_call.o
+ .debug_abbrev  0x00000668       0xd9 out/exynos4412/tsee/tee/tsee_fault.o
+ .debug_abbrev  0x00000741       0x12 out/exynos4412/tsee/tee/tsee_sm_gate.o
+ .debug_abbrev  0x00000753       0x47 out/exynos4412/version.o
+ .debug_abbrev  0x0000079a       0x8f out/exynos4412/lib/libutils/libutils.a(memset.o)
+ .debug_abbrev  0x00000829      0x167 out/exynos4412/lib/libutils/libutils.a(trace.o)
+ .debug_abbrev  0x00000990      0x144 out/exynos4412/lib/libutils/libutils.a(snprintf.o)
+ .debug_abbrev  0x00000ad4       0xaa out/exynos4412/lib/libutils/libutils.a(memchr.o)
+ .debug_abbrev  0x00000b7e       0x80 out/exynos4412/lib/libutils/libutils.a(strlen.o)
+ .debug_abbrev  0x00000bfe       0x14 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_aeabi_uldivmod.o)
+ .debug_abbrev  0x00000c12       0x6e /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(bpabi.o)
+ .debug_abbrev  0x00000c80       0x14 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_dvmd_tls.o)
+ .debug_abbrev  0x00000c94      0x162 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_divdi3.o)
+ .debug_abbrev  0x00000df6      0x153 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_udivdi3.o)
+ .debug_abbrev  0x00000f49       0x14 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_udivsi3.o)
+ .debug_abbrev  0x00000f5d       0x14 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_clzsi2.o)
+
+.debug_info     0x00000000     0x35ec
+ .debug_info    0x00000000       0xc1 out/exynos4412/boot/plat-exynos4412/setup.o
+ .debug_info    0x000000c1      0x330 out/exynos4412/boot/plat-exynos4412/exynos4412_uart.o
+ .debug_info    0x000003f1       0xd0 out/exynos4412/boot/tee/trace_ext.o
+ .debug_info    0x000004c1       0x65 out/exynos4412/boot/tee/entry.o
+ .debug_info    0x00000526      0x4c6 out/exynos4412/boot/tee/start.o
+ .debug_info    0x000009ec      0x7f5 out/exynos4412/tsee/tee/dispatch.o
+ .debug_info    0x000011e1      0x6c5 out/exynos4412/tsee/tee/tsee_sm.o
+ .debug_info    0x000018a6       0x72 out/exynos4412/tsee/tee/tsee_rtks_call.o
+ .debug_info    0x00001918      0x2ca out/exynos4412/tsee/tee/tsee_fault.o
+ .debug_info    0x00001be2       0x6c out/exynos4412/tsee/tee/tsee_sm_gate.o
+ .debug_info    0x00001c4e       0x57 out/exynos4412/version.o
+ .debug_info    0x00001ca5       0xe1 out/exynos4412/lib/libutils/libutils.a(memset.o)
+ .debug_info    0x00001d86      0x3d8 out/exynos4412/lib/libutils/libutils.a(trace.o)
+ .debug_info    0x0000215e      0x3d0 out/exynos4412/lib/libutils/libutils.a(snprintf.o)
+ .debug_info    0x0000252e       0xf3 out/exynos4412/lib/libutils/libutils.a(memchr.o)
+ .debug_info    0x00002621       0xaa out/exynos4412/lib/libutils/libutils.a(strlen.o)
+ .debug_info    0x000026cb       0xa4 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_aeabi_uldivmod.o)
+ .debug_info    0x0000276f       0xf0 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(bpabi.o)
+ .debug_info    0x0000285f       0xaa /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_dvmd_tls.o)
+ .debug_info    0x00002909      0x5e8 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_divdi3.o)
+ .debug_info    0x00002ef1      0x5a7 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_udivdi3.o)
+ .debug_info    0x00003498       0xaa /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_udivsi3.o)
+ .debug_info    0x00003542       0xaa /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_clzsi2.o)
+
+.debug_line     0x00000000     0x1af1
+ .debug_line    0x00000000       0x72 out/exynos4412/boot/plat-exynos4412/setup.o
+ .debug_line    0x00000072      0x16f out/exynos4412/boot/plat-exynos4412/exynos4412_uart.o
+ .debug_line    0x000001e1       0x6a out/exynos4412/boot/tee/trace_ext.o
+ .debug_line    0x0000024b       0xce out/exynos4412/boot/tee/entry.o
+ .debug_line    0x00000319      0x11b out/exynos4412/boot/tee/start.o
+ .debug_line    0x00000434      0x567 out/exynos4412/tsee/tee/dispatch.o
+ .debug_line    0x0000099b      0x205 out/exynos4412/tsee/tee/tsee_sm.o
+ .debug_line    0x00000ba0       0x48 out/exynos4412/tsee/tee/tsee_rtks_call.o
+ .debug_line    0x00000be8       0xcc out/exynos4412/tsee/tee/tsee_fault.o
+ .debug_line    0x00000cb4       0xc6 out/exynos4412/tsee/tee/tsee_sm_gate.o
+ .debug_line    0x00000d7a       0x28 out/exynos4412/version.o
+ .debug_line    0x00000da2       0xf8 out/exynos4412/lib/libutils/libutils.a(memset.o)
+ .debug_line    0x00000e9a      0x1b3 out/exynos4412/lib/libutils/libutils.a(trace.o)
+ .debug_line    0x0000104d      0x492 out/exynos4412/lib/libutils/libutils.a(snprintf.o)
+ .debug_line    0x000014df       0xf7 out/exynos4412/lib/libutils/libutils.a(memchr.o)
+ .debug_line    0x000015d6       0xd2 out/exynos4412/lib/libutils/libutils.a(strlen.o)
+ .debug_line    0x000016a8       0x76 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_aeabi_uldivmod.o)
+ .debug_line    0x0000171e       0x75 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(bpabi.o)
+ .debug_line    0x00001793       0x73 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x00001806       0xf0 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_divdi3.o)
+ .debug_line    0x000018f6       0xdf /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_udivdi3.o)
+ .debug_line    0x000019d5       0x9c /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_udivsi3.o)
+ .debug_line    0x00001a71       0x80 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_clzsi2.o)
+
+.debug_loc      0x00000000     0x1e6a
+ .debug_loc     0x00000000       0x84 out/exynos4412/boot/plat-exynos4412/setup.o
+ .debug_loc     0x00000084      0x108 out/exynos4412/boot/plat-exynos4412/exynos4412_uart.o
+ .debug_loc     0x0000018c       0x58 out/exynos4412/boot/tee/trace_ext.o
+ .debug_loc     0x000001e4       0xb0 out/exynos4412/boot/tee/start.o
+ .debug_loc     0x00000294      0x344 out/exynos4412/tsee/tee/dispatch.o
+ .debug_loc     0x000005d8      0x1b8 out/exynos4412/tsee/tee/tsee_sm.o
+ .debug_loc     0x00000790       0x84 out/exynos4412/tsee/tee/tsee_fault.o
+ .debug_loc     0x00000814       0x2c out/exynos4412/lib/libutils/libutils.a(memset.o)
+ .debug_loc     0x00000840      0x114 out/exynos4412/lib/libutils/libutils.a(trace.o)
+ .debug_loc     0x00000954       0x90 out/exynos4412/lib/libutils/libutils.a(snprintf.o)
+ .debug_loc     0x000009e4       0x2c out/exynos4412/lib/libutils/libutils.a(memchr.o)
+ .debug_loc     0x00000a10       0x2c out/exynos4412/lib/libutils/libutils.a(strlen.o)
+ .debug_loc     0x00000a3c       0xa0 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(bpabi.o)
+ .debug_loc     0x00000adc      0x9cd /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_divdi3.o)
+ .debug_loc     0x000014a9      0x9c1 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_udivdi3.o)
+
+.debug_pubnames
+                0x00000000      0x453
+ .debug_pubnames
+                0x00000000       0x46 out/exynos4412/boot/plat-exynos4412/setup.o
+ .debug_pubnames
+                0x00000046       0x76 out/exynos4412/boot/plat-exynos4412/exynos4412_uart.o
+ .debug_pubnames
+                0x000000bc       0x66 out/exynos4412/boot/tee/trace_ext.o
+ .debug_pubnames
+                0x00000122       0x60 out/exynos4412/boot/tee/start.o
+ .debug_pubnames
+                0x00000182       0x54 out/exynos4412/tsee/tee/dispatch.o
+ .debug_pubnames
+                0x000001d6       0xb5 out/exynos4412/tsee/tee/tsee_sm.o
+ .debug_pubnames
+                0x0000028b       0x4b out/exynos4412/tsee/tee/tsee_fault.o
+ .debug_pubnames
+                0x000002d6       0x1c out/exynos4412/version.o
+ .debug_pubnames
+                0x000002f2       0x1d out/exynos4412/lib/libutils/libutils.a(memset.o)
+ .debug_pubnames
+                0x0000030f       0x59 out/exynos4412/lib/libutils/libutils.a(trace.o)
+ .debug_pubnames
+                0x00000368       0x2d out/exynos4412/lib/libutils/libutils.a(snprintf.o)
+ .debug_pubnames
+                0x00000395       0x1d out/exynos4412/lib/libutils/libutils.a(memchr.o)
+ .debug_pubnames
+                0x000003b2       0x1d out/exynos4412/lib/libutils/libutils.a(strlen.o)
+ .debug_pubnames
+                0x000003cf       0x45 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(bpabi.o)
+ .debug_pubnames
+                0x00000414       0x1f /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_divdi3.o)
+ .debug_pubnames
+                0x00000433       0x20 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_udivdi3.o)
+
+.debug_pubtypes
+                0x00000000      0x3ac
+ .debug_pubtypes
+                0x00000000       0x12 out/exynos4412/boot/plat-exynos4412/setup.o
+ .debug_pubtypes
+                0x00000012       0x3a out/exynos4412/boot/plat-exynos4412/exynos4412_uart.o
+ .debug_pubtypes
+                0x0000004c       0x12 out/exynos4412/boot/tee/trace_ext.o
+ .debug_pubtypes
+                0x0000005e       0x7e out/exynos4412/boot/tee/start.o
+ .debug_pubtypes
+                0x000000dc       0x6b out/exynos4412/tsee/tee/dispatch.o
+ .debug_pubtypes
+                0x00000147       0x77 out/exynos4412/tsee/tee/tsee_sm.o
+ .debug_pubtypes
+                0x000001be       0x2d out/exynos4412/tsee/tee/tsee_fault.o
+ .debug_pubtypes
+                0x000001eb       0x1d out/exynos4412/lib/libutils/libutils.a(memset.o)
+ .debug_pubtypes
+                0x00000208       0x55 out/exynos4412/lib/libutils/libutils.a(trace.o)
+ .debug_pubtypes
+                0x0000025d       0x63 out/exynos4412/lib/libutils/libutils.a(snprintf.o)
+ .debug_pubtypes
+                0x000002c0       0x1d out/exynos4412/lib/libutils/libutils.a(memchr.o)
+ .debug_pubtypes
+                0x000002dd       0x1d out/exynos4412/lib/libutils/libutils.a(strlen.o)
+ .debug_pubtypes
+                0x000002fa       0x59 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_divdi3.o)
+ .debug_pubtypes
+                0x00000353       0x59 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_udivdi3.o)
+
+.debug_aranges  0x00000000      0x448
+ .debug_aranges
+                0x00000000       0x30 out/exynos4412/boot/plat-exynos4412/setup.o
+ .debug_aranges
+                0x00000030       0x48 out/exynos4412/boot/plat-exynos4412/exynos4412_uart.o
+ .debug_aranges
+                0x00000078       0x28 out/exynos4412/boot/tee/trace_ext.o
+ .debug_aranges
+                0x000000a0       0x28 out/exynos4412/boot/tee/entry.o
+ .debug_aranges
+                0x000000c8       0x38 out/exynos4412/boot/tee/start.o
+ .debug_aranges
+                0x00000100       0xb0 out/exynos4412/tsee/tee/dispatch.o
+ .debug_aranges
+                0x000001b0       0x68 out/exynos4412/tsee/tee/tsee_sm.o
+ .debug_aranges
+                0x00000218       0x20 out/exynos4412/tsee/tee/tsee_rtks_call.o
+ .debug_aranges
+                0x00000238       0x30 out/exynos4412/tsee/tee/tsee_fault.o
+ .debug_aranges
+                0x00000268       0x28 out/exynos4412/tsee/tee/tsee_sm_gate.o
+ .debug_aranges
+                0x00000290       0x20 out/exynos4412/lib/libutils/libutils.a(memset.o)
+ .debug_aranges
+                0x000002b0       0x48 out/exynos4412/lib/libutils/libutils.a(trace.o)
+ .debug_aranges
+                0x000002f8       0x30 out/exynos4412/lib/libutils/libutils.a(snprintf.o)
+ .debug_aranges
+                0x00000328       0x20 out/exynos4412/lib/libutils/libutils.a(memchr.o)
+ .debug_aranges
+                0x00000348       0x20 out/exynos4412/lib/libutils/libutils.a(strlen.o)
+ .debug_aranges
+                0x00000368       0x20 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_aeabi_uldivmod.o)
+ .debug_aranges
+                0x00000388       0x20 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(bpabi.o)
+ .debug_aranges
+                0x000003a8       0x20 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_dvmd_tls.o)
+ .debug_aranges
+                0x000003c8       0x20 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_divdi3.o)
+ .debug_aranges
+                0x000003e8       0x20 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_udivdi3.o)
+ .debug_aranges
+                0x00000408       0x20 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_udivsi3.o)
+ .debug_aranges
+                0x00000428       0x20 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_clzsi2.o)
+
+.debug_ranges   0x00000000      0x3f8
+ .debug_ranges  0x00000000       0x20 out/exynos4412/boot/plat-exynos4412/setup.o
+ .debug_ranges  0x00000020       0x38 out/exynos4412/boot/plat-exynos4412/exynos4412_uart.o
+ .debug_ranges  0x00000058       0x18 out/exynos4412/boot/tee/trace_ext.o
+ .debug_ranges  0x00000070       0x20 out/exynos4412/boot/tee/entry.o
+ .debug_ranges  0x00000090       0x28 out/exynos4412/boot/tee/start.o
+ .debug_ranges  0x000000b8       0xa0 out/exynos4412/tsee/tee/dispatch.o
+ .debug_ranges  0x00000158       0x58 out/exynos4412/tsee/tee/tsee_sm.o
+ .debug_ranges  0x000001b0       0x20 out/exynos4412/tsee/tee/tsee_fault.o
+ .debug_ranges  0x000001d0       0x20 out/exynos4412/tsee/tee/tsee_sm_gate.o
+ .debug_ranges  0x000001f0       0x10 out/exynos4412/lib/libutils/libutils.a(memset.o)
+ .debug_ranges  0x00000200       0x50 out/exynos4412/lib/libutils/libutils.a(trace.o)
+ .debug_ranges  0x00000250       0x20 out/exynos4412/lib/libutils/libutils.a(snprintf.o)
+ .debug_ranges  0x00000270       0x10 out/exynos4412/lib/libutils/libutils.a(memchr.o)
+ .debug_ranges  0x00000280       0x10 out/exynos4412/lib/libutils/libutils.a(strlen.o)
+ .debug_ranges  0x00000290       0xb0 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_divdi3.o)
+ .debug_ranges  0x00000340       0xb8 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_udivdi3.o)
+
+.debug_str      0x00000000      0xc0b
+ .debug_str     0x00000000       0xd0 out/exynos4412/boot/plat-exynos4412/setup.o
+                                0x104 (size before relaxing)
+ .debug_str     0x000000d0      0x10b out/exynos4412/boot/plat-exynos4412/exynos4412_uart.o
+                                0x1df (size before relaxing)
+ .debug_str     0x000001db       0x59 out/exynos4412/boot/tee/trace_ext.o
+                                 0xa6 (size before relaxing)
+ .debug_str     0x00000234      0x247 out/exynos4412/boot/tee/start.o
+                                0x338 (size before relaxing)
+ .debug_str     0x0000047b      0x17f out/exynos4412/tsee/tee/dispatch.o
+                                0x3da (size before relaxing)
+ .debug_str     0x000005fa      0x1d2 out/exynos4412/tsee/tee/tsee_sm.o
+                                0x46e (size before relaxing)
+ .debug_str     0x000007cc       0x9b out/exynos4412/tsee/tee/tsee_fault.o
+                                0x17b (size before relaxing)
+ .debug_str     0x00000867        0x6 out/exynos4412/version.o
+                                 0x53 (size before relaxing)
+ .debug_str     0x0000086d       0x3d out/exynos4412/lib/libutils/libutils.a(memset.o)
+                                 0xa3 (size before relaxing)
+ .debug_str     0x000008aa       0xc8 out/exynos4412/lib/libutils/libutils.a(trace.o)
+                                0x15a (size before relaxing)
+ .debug_str     0x00000972       0xb0 out/exynos4412/lib/libutils/libutils.a(snprintf.o)
+                                0x1d1 (size before relaxing)
+ .debug_str     0x00000a22       0x43 out/exynos4412/lib/libutils/libutils.a(memchr.o)
+                                 0xb2 (size before relaxing)
+ .debug_str     0x00000a65       0x29 out/exynos4412/lib/libutils/libutils.a(strlen.o)
+                                 0xa2 (size before relaxing)
+ .debug_str     0x00000a8e       0xb9 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(bpabi.o)
+                                 0xea (size before relaxing)
+ .debug_str     0x00000b47       0xba /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_divdi3.o)
+                                0x1a8 (size before relaxing)
+ .debug_str     0x00000c01        0xa /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_udivdi3.o)
+                                0x1a9 (size before relaxing)
+
+.debug_frame    0x00000000      0x7c4
+ .debug_frame   0x00000000       0x60 out/exynos4412/boot/plat-exynos4412/setup.o
+ .debug_frame   0x00000060       0xa8 out/exynos4412/boot/plat-exynos4412/exynos4412_uart.o
+ .debug_frame   0x00000108       0x44 out/exynos4412/boot/tee/trace_ext.o
+ .debug_frame   0x0000014c       0x84 out/exynos4412/boot/tee/start.o
+ .debug_frame   0x000001d0      0x1f0 out/exynos4412/tsee/tee/dispatch.o
+ .debug_frame   0x000003c0      0x118 out/exynos4412/tsee/tee/tsee_sm.o
+ .debug_frame   0x000004d8       0x6c out/exynos4412/tsee/tee/tsee_fault.o
+ .debug_frame   0x00000544       0x28 out/exynos4412/lib/libutils/libutils.a(memset.o)
+ .debug_frame   0x0000056c       0xb4 out/exynos4412/lib/libutils/libutils.a(trace.o)
+ .debug_frame   0x00000620       0x6c out/exynos4412/lib/libutils/libutils.a(snprintf.o)
+ .debug_frame   0x0000068c       0x28 out/exynos4412/lib/libutils/libutils.a(memchr.o)
+ .debug_frame   0x000006b4       0x28 out/exynos4412/lib/libutils/libutils.a(strlen.o)
+ .debug_frame   0x000006dc       0x50 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(bpabi.o)
+ .debug_frame   0x0000072c       0x3c /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_divdi3.o)
+ .debug_frame   0x00000768       0x3c /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_udivdi3.o)
+ .debug_frame   0x000007a4       0x20 /home/liwenhaosuper/ARM/trustzone/toolchain/bin/../lib/gcc/arm-none-eabi/4.5.1/libgcc.a(_udivsi3.o)
